@@ -61,7 +61,8 @@ async def index(
                     "role": "system",
                     "content": {
                         "type": "text",
-                        "text": f"You are an expert customer support agent for {product}.",
+                        "text": f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, a screenshot of their current page, and the HTML domtree of their page.\n\n"
+                        "Tell the user the next step to resolve their issue by returning the classname, id, href, or text selectors of the element they should click on next.",
                     },
                 },
                 {
