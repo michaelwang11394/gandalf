@@ -1,30 +1,31 @@
 {
-  "name": "reactour-tour-demo-using-react-router-dom",
-  "version": "1.0.0",
-  "description": "https://blog.pshrmn.com/entry/simple-react-router-v4-tutorial/",
-  "keywords": [],
+  "name": "Gandalf",
+  "version": "0.0.1",
   "main": "index.js",
-  "dependencies": {
-    "@reactour/tour": "3.1.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-router-dom": "5.2.1",
-    "react-scripts": "^5.0.1",
-    "html2canvas": "^1.4.1"
-  },
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "rollup -c --bundleConfigAsCjs rollup.config.mjs"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "type": "module",
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-react": "^7.24.6",
+    "@babel/preset-typescript": "^7.24.6",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "rollup": "^4.18.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "typescript": "^5.4.5"
   }
 }
