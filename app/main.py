@@ -59,11 +59,12 @@ async def index(
             messages=[
                 {
                     "role": "system",
-                    "content": {
-                        "type": "text",
-                        "text": f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, a screenshot of their current page, and the HTML domtree of their page.\n\n"
-                        "Tell the user the next step to resolve their issue by returning the classname, id, href, or text selectors of the element they should click on next.",
-                    },
+                    "content": [
+                            {
+                            "type": "text",
+                            "text": "You are an expert customer support agent for {product}. The user will describe an issue they are facing, a screenshot of their current page, and the HTML domtree of their page.\nYou have one job and you must return it in the correct format or else bad things might happen. Your job is to return either the classname, id, href, or text selectors of the element they need to click ONLY for the next step they must take to resolve their issue. Again, you are ONLY focused on the NEXT step (1 step) that they must take given their current status to resolve the issue.\nYou must ONLY return the following JSON format, if you don't know any of the fields, just leave it blank: { Instructions: , classname: , id: , href: , text: , }"
+                            }
+                        ]
                 },
                 {
                     "role": "user",
@@ -75,13 +76,12 @@ async def index(
                         {
                             "type": "image_url",
                             "image_url": {
-                                # "url": "https://vtkckkrjbnerbwnyustk.supabase.co/storage/v1/object/sign/screenshots/temp/0ada06bc-f351-4a17-92e7-57a783b5c85c_supabase.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzY3JlZW5zaG90cy90ZW1wLzBhZGEwNmJjLWYzNTEtNGExNy05MmU3LTU3YTc4M2I1Yzg1Y19zdXBhYmFzZS5wbmciLCJpYXQiOjE3MTcwMDM0ODgsImV4cCI6MTcxNzAzOTQ4OH0.z1dEm7zfoMFVwbX6KYPE-Du_ovJo3_kYH0KC-fpY9aE"
                                 "url": signed_url["signedURL"],
                             },
                         },
                         {
                             "type": "text",
-                            "text": f"Here is the DOM tree of the current page: {dom_tree}",
+                            "text": f"Here is the DOM tree of the current page: {dom_tree}.]\n ONLY return the JSON and nothing else",
                         },
                     ],
                 },
