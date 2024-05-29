@@ -31,6 +31,7 @@ async def root():
 async def index(
     product: str = Form(...),
     user_input: str = Form(...),
+    dom_tree: str = Form(...),
     screenshot: UploadFile = File(...),
 ):
     # Save the uploaded file temporarily
@@ -44,18 +45,14 @@ async def index(
     try:
         # Upload to Supabase
         bucket_name = "screenshots"
-        res = supabase.storage.get_bucket(bucket_name)
-        logger.info(f"Supabase buckets: {res}")
-        response = supabase.storage.from_(bucket_name).upload(file_path, file_path)
-        logger.info(f"Supabase response: {response}")
+        bucket_response = supabase.storage.from_(bucket_name).upload(
+            file_path, file_path
+        )
 
         # Get the signed URL of the uploaded file
         signed_url = supabase.storage.from_(bucket_name).create_signed_url(
             file_path, 36000
         )
-
-        logger.info(f"Signed URL: {signed_url}")
-
         # Use the public URL in the OpenAI API call
         response = openai.chat.completions.create(
             model="gpt-4o",
@@ -80,6 +77,10 @@ async def index(
                                 # "url": "https://vtkckkrjbnerbwnyustk.supabase.co/storage/v1/object/sign/screenshots/temp/0ada06bc-f351-4a17-92e7-57a783b5c85c_supabase.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzY3JlZW5zaG90cy90ZW1wLzBhZGEwNmJjLWYzNTEtNGExNy05MmU3LTU3YTc4M2I1Yzg1Y19zdXBhYmFzZS5wbmciLCJpYXQiOjE3MTcwMDM0ODgsImV4cCI6MTcxNzAzOTQ4OH0.z1dEm7zfoMFVwbX6KYPE-Du_ovJo3_kYH0KC-fpY9aE"
                                 "url": signed_url["signedURL"],
                             },
+                        },
+                        {
+                            "type": "text",
+                            "text": f"Here is the DOM tree of the current page: {dom_tree}",
                         },
                     ],
                 },
