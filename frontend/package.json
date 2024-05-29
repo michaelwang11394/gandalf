@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "react-scripts start",
     "build": "rollup -c --bundleConfigAsCjs rollup.config.mjs"
   },
   "type": "module",
