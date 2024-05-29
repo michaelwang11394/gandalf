@@ -1,3 +1,6 @@
 fastapi
 openai
 supabase
+pydantic
+pydantic_settings
+typing 
