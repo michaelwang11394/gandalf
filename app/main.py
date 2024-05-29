@@ -5,8 +5,7 @@ import uuid
 
 from supabase import Client, create_client
 
-
-from settings import Settings
+from app.settings import Settings
 from openai import OpenAI
 
 from fastapi import FastAPI, File, Form, UploadFile
@@ -50,10 +49,12 @@ async def index(
         response = supabase.storage.from_(bucket_name).upload(file_path, file_path)
         logger.info(f"Supabase response: {response}")
 
-        # Get the public URL of the uploaded file
-        public_url = supabase.storage.from_(bucket_name).create_signed_url(
-            file_path, 3600
+        # Get the signed URL of the uploaded file
+        signed_url = supabase.storage.from_(bucket_name).create_signed_url(
+            file_path, 36000
         )
+
+        logger.info(f"Signed URL: {signed_url}")
 
         # Use the public URL in the OpenAI API call
         response = openai.chat.completions.create(
@@ -73,7 +74,13 @@ async def index(
                             "type": "text",
                             "text": f"{user_input}. Here's a screenshot of the issue I'm facing.",
                         },
-                        {"type": "image_url", "image_url": {"url": f"{public_url}"}},
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                # "url": "https://vtkckkrjbnerbwnyustk.supabase.co/storage/v1/object/sign/screenshots/temp/0ada06bc-f351-4a17-92e7-57a783b5c85c_supabase.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzY3JlZW5zaG90cy90ZW1wLzBhZGEwNmJjLWYzNTEtNGExNy05MmU3LTU3YTc4M2I1Yzg1Y19zdXBhYmFzZS5wbmciLCJpYXQiOjE3MTcwMDM0ODgsImV4cCI6MTcxNzAzOTQ4OH0.z1dEm7zfoMFVwbX6KYPE-Du_ovJo3_kYH0KC-fpY9aE"
+                                "url": signed_url["signedURL"],
+                            },
+                        },
                     ],
                 },
             ],

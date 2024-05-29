@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
+app/__pycache__/
 __pycache__/
-
+temp/
 # environments 
 venv
 .env
