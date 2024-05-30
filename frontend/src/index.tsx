@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const MyComponent: React.FC = () => {
+const Gandalf: React.FC = () => {
   const [product, setProduct] = useState("Amazon Web Services");
   const [userInput, setUserInput] = useState("");
   const [domTree, setDomTree] = useState("");
@@ -37,4 +37,4 @@ const MyComponent: React.FC = () => {
   );
 };
 
-export default MyComponent;
+export default Gandalf;
