@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import TODOHero from "@/components/TODOHero";
 import TODOList from "@/components/TODOList";
 
+import Gandalf from "../../../frontend/src/index";
+
 function Home() {
   const [todos, setTodos] = React.useState([]);
 
@@ -23,6 +25,7 @@ function Home() {
   const total_todos = todos.length;
   return (
     <div className="wrapper">
+      <Gandalf />
       <Header />
       <TODOHero todos_completed={todos_completed} total_todos={total_todos} />
       <Form todos={todos} setTodos={setTodos} />
