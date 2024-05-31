@@ -10,6 +10,7 @@ from openai import OpenAI
 
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -18,6 +19,14 @@ logger = logging.getLogger(__name__)
 settings = Settings()
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # TODO: Add AWS 
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"],  
+)
+
 openai = OpenAI(api_key=settings.OPENAI_API_KEY)
 supabase: Client = create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)
 
