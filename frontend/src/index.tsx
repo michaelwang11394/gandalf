@@ -68,7 +68,7 @@ const Gandalf: React.FC = () => {
 
             if (popoverRef.current) {
               createPopper(targetElement, popoverRef.current, {
-                placement: "top", // You can change the placement according to your needs
+                placement: "top",
               });
             }
           })
