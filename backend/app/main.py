@@ -137,7 +137,7 @@ async def index(
             messages=messages,
             temperature=1.0,
         )
-        result = response.choices[0]
+        result = response.choices[0].message.content
         logger.info(f"Result: {result}")
 
         # Save the current state and response

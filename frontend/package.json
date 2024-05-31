@@ -29,6 +29,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "html2canvas": "^1.4.1"
   }
 }
