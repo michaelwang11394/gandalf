@@ -89,7 +89,8 @@ async def index(
                             "1- The english text Instruction for the next step they must take to complete their task or solve their issue based on their CURRENT progress which is given by the screenshot and dom tree. Also, you should consider the most recent state and instruction when giving the user the next step. \n"
                             "For example, if the screenshot shows the user has not yet entered the necessary information in a required field, the next step should be to complete that field. If they have completed all required fields, the next step for example is to submit the form by clicking a button. If they have just completed a step, and the next step is to verify/review default selections that they have the option to modify then you must describe what are the default choices and what their options are. You must be very specific with the step they must take.\n"
                             "2- Either the classname, id, href, or text selectors of the element they need to click or fill in or take any action on ONLY for the next step they must take to resolve their issue. Again, you are ONLY focused on the NEXT step (1 step) that they must take given their current status to resolve the issue.\n"
-                            "You must ONLY return the following JSON format, if you don't know any of the fields, just leave it blank: { Instructions: , classname: , id: , href: , text: , }"
+                            "You must ONLY return the following JSON format, if you don't know any of the fields, just leave it blank: { Instructions: , classname: , id: , href: , text: , }\n"
+                            "An example of a properly formatted response would be: { Instructions: Click the submit button, classname: submit-button, id: , href: , text: Submit }\n"
                         ),
                     }
                 ],
