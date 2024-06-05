@@ -2,19 +2,17 @@ import React, { useState, useEffect, useRef } from "react";
 import "./index.css";
 import html2canvas from "html2canvas";
 import { usePopper } from "react-popper";
+import Input from "./components/input";
 
-interface PopoverProps {
-  content: string;
-  styles: React.CSSProperties;
-  attributes: { [key: string]: any };
-}
+// TODO: 1) Add an useEffect to listen for whether the insturction was followed.
 
 const Gandalf: React.FC = () => {
   const [product, setProduct] = useState("To do app");
-  const [userInput, setUserInput] = useState("");
   const [domTree, setDomTree] = useState("");
   const [screenshot, setScreenshot] = useState<File | null>(null);
   const [popoverContent, setPopoverContent] = useState("");
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
   const arrowRef = useRef<HTMLDivElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
   const targetRef = useRef<HTMLElement | null>(null);
@@ -27,6 +25,23 @@ const Gandalf: React.FC = () => {
     }
   );
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "p" && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault(); // Prevent the default action of the event
+        setOpen(true);
+      }
+    };
+
+    // Add event listener
+    document.addEventListener("keydown", handleKeyDown);
+
+    // Remove event listener on cleanup
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   // useEffect(() => {
   //   if (popoverRef.current && targetRef.current && popoverContent) {
   //     // Make sure the popover is visible before creating Popper
@@ -37,11 +52,11 @@ const Gandalf: React.FC = () => {
   //   }
   // }, [popoverContent]);
 
-  const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
+  const handleSubmit = async (query: string) => {
+    console.log("User Input:", query);
 
     // Capture DOM Tree
-    const domTreeString = document.documentElement.innerHTML;
+    const domTreeString = document.documentElement.outerHTML;
     setDomTree(domTreeString);
 
     // Capture Screenshot
@@ -50,7 +65,7 @@ const Gandalf: React.FC = () => {
         setScreenshot(blob as File);
 
         const formData = new FormData();
-        formData.append("user_input", userInput);
+        formData.append("user_input", query);
         formData.append("product", product);
         formData.append("dom_tree", domTreeString);
         if (blob) {
@@ -143,12 +158,13 @@ const Gandalf: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={userInput}
-        onChange={(e) => setUserInput(e.target.value)}
-        placeholder="User Input"
+    <>
+      <Input
+        open={open}
+        query={query}
+        setQuery={setQuery}
+        setOpen={setOpen}
+        handleSubmit={handleSubmit}
       />
       <div
         ref={popoverRef}
@@ -173,7 +189,7 @@ const Gandalf: React.FC = () => {
           }}
         ></div>
       </div>
-    </form>
+    </>
   );
 };
 

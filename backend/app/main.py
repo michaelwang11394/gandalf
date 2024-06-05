@@ -136,7 +136,7 @@ async def index(
         response = openai.chat.completions.create(
             model="gpt-4o",
             messages=messages,
-            temperature=1.0,
+            temperature=0.2,
         )
         result = response.choices[0].message.content
         logger.info(f"Result: {result}")
