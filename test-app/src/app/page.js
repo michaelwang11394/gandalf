@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 import Form from "@/components/Form";
 import Header from "@/components/Header";
@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className="wrapper">
       <Gandalf />
-      <Header />
+      <Header className="bg-pink-500 text-4xl text-white" />
       <TODOHero todos_completed={todos_completed} total_todos={total_todos} />
       <Form todos={todos} setTodos={setTodos} />
       <TODOList todos={todos} setTodos={setTodos} />

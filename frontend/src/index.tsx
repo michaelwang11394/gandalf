@@ -2,18 +2,21 @@ import React, { useState, useEffect, useRef } from "react";
 import "./index.css";
 import html2canvas from "html2canvas";
 import { usePopper } from "react-popper";
+import { debounce } from "lodash";
 import Input from "./components/input";
 
 // TODO: 1) Add an useEffect to listen for whether the insturction was followed.
 
 const Gandalf: React.FC = () => {
-  const [product, setProduct] = useState("To do app");
+  const [product, setProduct] = useState("To do app"); // TODO: Update after admin dashboard
   const [domTree, setDomTree] = useState("");
   const [screenshot, setScreenshot] = useState<File | null>(null);
   const [popoverContent, setPopoverContent] = useState("");
   const [hasMoreInstructions, setHasMoreInstructions] = useState(false);
+  const [isApiCallInProgress, setIsApiCallInProgress] = useState(false);
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
+
   const arrowRef = useRef<HTMLDivElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
   const targetRef = useRef<HTMLElement | null>(null);
@@ -26,6 +29,16 @@ const Gandalf: React.FC = () => {
     }
   );
 
+  // Debounce the check for more instructions to avoid excessive API calls
+  const debouncedCheckForMoreInstructions = useRef(
+    debounce(() => {
+      if (hasMoreInstructions && !isApiCallInProgress) {
+        checkForMoreInstructions();
+      }
+    }, 1000)
+  ).current;
+
+  // Effect to open the popover when the user presses the keyboard shortcut
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "p" && (event.metaKey || event.ctrlKey)) {
@@ -42,11 +55,12 @@ const Gandalf: React.FC = () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
+
+  // Effect to check for more instructions
   useEffect(() => {
-    // Listen for user interactions that might trigger a check for more instructions
-    const handleUserInteraction = () => {
-      if (hasMoreInstructions) {
-        checkForMoreInstructions();
+    const handleUserInteraction = (event: Event) => {
+      if (event.type === "keyup" || event.type === "click") {
+        debouncedCheckForMoreInstructions();
       }
     };
 
@@ -57,7 +71,7 @@ const Gandalf: React.FC = () => {
       document.removeEventListener("click", handleUserInteraction);
       document.removeEventListener("keyup", handleUserInteraction);
     };
-  }, [hasMoreInstructions]);
+  }, [debouncedCheckForMoreInstructions]);
 
   const checkForMoreInstructions = () => {
     console.log("Checking for more instructions...");
@@ -66,6 +80,11 @@ const Gandalf: React.FC = () => {
   };
 
   const handleSubmit = async (query: string) => {
+    if (isApiCallInProgress) {
+      return;
+    }
+    setIsApiCallInProgress(true);
+
     console.log("User Input:", query);
 
     // Capture DOM Tree
@@ -100,7 +119,14 @@ const Gandalf: React.FC = () => {
             try {
               const resultObject = JSON.parse(jsonString);
               console.log("Result Object:", resultObject);
-              const { Instructions, classname, id, href, text } = resultObject;
+              const {
+                Instructions,
+                classname,
+                id,
+                href,
+                text,
+                hasMoreInstructions,
+              } = resultObject;
               console.log(
                 "Instructions:",
                 Instructions,
@@ -111,11 +137,16 @@ const Gandalf: React.FC = () => {
                 "href:",
                 href,
                 "text:",
-                text
+                text,
+                "hasMoreInstructions:",
+                hasMoreInstructions
               );
 
               if (Instructions) {
                 setPopoverContent(Instructions);
+              }
+              if (hasMoreInstructions) {
+                setHasMoreInstructions(true);
               }
 
               // Determine the target for the popover based on availability and document presence
@@ -150,11 +181,15 @@ const Gandalf: React.FC = () => {
               if (!targetElement) {
                 console.warn("No valid target element found for the popover.");
               }
+              setIsApiCallInProgress(false);
             } catch (error) {
               console.error("Error parsing JSON:", error);
             }
           })
-          .catch((error) => console.error("Error:", error));
+          .catch((error) => {
+            console.error("Error:", error);
+            setIsApiCallInProgress(false);
+          });
       });
     });
   };
