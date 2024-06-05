@@ -11,6 +11,7 @@ const Gandalf: React.FC = () => {
   const [domTree, setDomTree] = useState("");
   const [screenshot, setScreenshot] = useState<File | null>(null);
   const [popoverContent, setPopoverContent] = useState("");
+  const [hasMoreInstructions, setHasMoreInstructions] = useState(false);
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const arrowRef = useRef<HTMLDivElement>(null);
@@ -41,16 +42,28 @@ const Gandalf: React.FC = () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
+  useEffect(() => {
+    // Listen for user interactions that might trigger a check for more instructions
+    const handleUserInteraction = () => {
+      if (hasMoreInstructions) {
+        checkForMoreInstructions();
+      }
+    };
 
-  // useEffect(() => {
-  //   if (popoverRef.current && targetRef.current && popoverContent) {
-  //     // Make sure the popover is visible before creating Popper
-  //     popoverRef.current.style.visibility = "visible";
-  //     createPopper(targetRef.current, popoverRef.current, {
-  //       placement: "top",
-  //     });
-  //   }
-  // }, [popoverContent]);
+    document.addEventListener("click", handleUserInteraction);
+    document.addEventListener("keyup", handleUserInteraction);
+
+    return () => {
+      document.removeEventListener("click", handleUserInteraction);
+      document.removeEventListener("keyup", handleUserInteraction);
+    };
+  }, [hasMoreInstructions]);
+
+  const checkForMoreInstructions = () => {
+    console.log("Checking for more instructions...");
+    // Trigger another handleSubmit or similar function to fetch the next set of instructions
+    handleSubmit(query);
+  };
 
   const handleSubmit = async (query: string) => {
     console.log("User Input:", query);

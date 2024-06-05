@@ -21,10 +21,10 @@ settings = Settings()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # TODO: Add AWS 
+    allow_origins=["http://localhost:3000"],  # TODO: Add AWS
     allow_credentials=True,
-    allow_methods=["*"], 
-    allow_headers=["*"],  
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 openai = OpenAI(api_key=settings.OPENAI_API_KEY)
@@ -42,7 +42,7 @@ async def index(
     user_input: str = Form(...),
     dom_tree: str = Form(...),
     screenshot: UploadFile = File(...),
-    session_id: str = Form(None)
+    session_id: str = Form(None),
 ):
     # Save the uploaded file temporarily
     unique_id = uuid.uuid4()
@@ -68,11 +68,19 @@ async def index(
         previous_screenshot_url = None
         previous_response_instruction = None
         if session_id:
-            response = supabase.table('session_data').select('screenshot_url', 'response_instruction').eq('session_id', session_id).order('created_at', desc=True).limit(1).execute()
+            response = (
+                supabase.table("session_data")
+                .select("screenshot_url", "response_instruction")
+                .eq("session_id", session_id)
+                .order("created_at", desc=True)
+                .limit(1)
+                .execute()
+            )
             if response.data:
-                previous_screenshot_url = response.data[0].get('screenshot_url')
-                previous_response_instruction = response.data[0].get('response_instruction')
-
+                previous_screenshot_url = response.data[0].get("screenshot_url")
+                previous_response_instruction = response.data[0].get(
+                    "response_instruction"
+                )
 
         # Construct the messages for the OpenAI API call
         messages = [
@@ -90,7 +98,9 @@ async def index(
                             "For example, if the screenshot shows the user has not yet entered the necessary information in a required field, the next step should be to complete that field. If they have completed all required fields, the next step for example is to submit the form by clicking a button. If they have just completed a step, and the next step is to verify/review default selections that they have the option to modify then you must describe what are the default choices and what their options are. You must be very specific with the step they must take.\n"
                             "2- Either the classname, id, href, or text selectors of the element they need to click or fill in or take any action on ONLY for the next step they must take to resolve their issue. Again, you are ONLY focused on the NEXT step (1 step) that they must take given their current status to resolve the issue.\n"
                             "You must ONLY return the following JSON format, if you don't know any of the fields, just leave it blank: { Instructions: , classname: , id: , href: , text: , }\n"
-                            "An example of a properly formatted response would be: { Instructions: Click the submit button, classname: submit-button, id: , href: , text: Submit }\n"
+                            "3- A true or false flag 'hasMoreInstructions' indicating whether there are more steps after the current one.\n"
+                            "You must ONLY return the following JSON format: { Instructions: , classname: , id: , href: , text: , hasMoreInstructions: }\n"
+                            "An example of a properly formatted response would be: { Instructions: Click the submit button, classname: submit-button, id: , href: , text: Submit , hasMoreInstructions: false }\n"
                         ),
                     }
                 ],
@@ -118,20 +128,29 @@ async def index(
 
         # Include previous state and response if available
         if previous_screenshot_url and previous_response_instruction:
-            messages[1].insert(0, {
-                "type": "text",
-                "text": f"The user was previously at this step, shown in this screenshot"
-            })
-            messages.insert(1, {
-                "type": "image_url",
-                "image_url": {
-                    "url": previous_screenshot_url,
+            messages[1].insert(
+                0,
+                {
+                    "type": "text",
+                    "text": f"The user was previously at this step, shown in this screenshot",
                 },
-            })
-            messages.insert(2, {
-                "type": "text",
-                "text": f"the llm responded with this instuction for the user to follow: {previous_response_instruction}"
-            })
+            )
+            messages.insert(
+                1,
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": previous_screenshot_url,
+                    },
+                },
+            )
+            messages.insert(
+                2,
+                {
+                    "type": "text",
+                    "text": f"the llm responded with this instuction for the user to follow: {previous_response_instruction}",
+                },
+            )
 
         response = openai.chat.completions.create(
             model="gpt-4o",
@@ -143,14 +162,15 @@ async def index(
 
         # Save the current state and response
         if session_id:
-            supabase.table('session_data').upsert({
-                "session_id": session_id,
-                "screenshot_url": signed_url["signedURL"],
-                "response_instruction": result
-            }).execute()
+            supabase.table("session_data").upsert(
+                {
+                    "session_id": session_id,
+                    "screenshot_url": signed_url["signedURL"],
+                    "response_instruction": result,
+                }
+            ).execute()
 
         return {"result": result}
     finally:
         # Clean up the temporary file
         os.remove(file_path)
-
