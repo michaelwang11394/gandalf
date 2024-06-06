@@ -195,30 +195,42 @@ const Gandalf: React.FC = () => {
   };
   const customPopperStyles = {
     ...styles.popper,
-    opacity: popoverContent ? 1 : 0.5, // Conditional styling for visibility
-    backgroundColor: "#f9f9f9", // Light grey background
-    color: "black", // Text color
-    padding: "8px 12px", // Padding around the text
-    borderRadius: "8px", // Rounded corners
-    boxShadow: "0 4px 8px rgba(0,0,0,0.1)", // Subtle shadow
-    fontSize: "14px", // Font size
-    zIndex: 1000, // Ensure it floats above other content
+    opacity: popoverContent ? 1 : 0.5,
+    visibility: popoverContent ? ("visible" as const) : ("hidden" as const),
+    backgroundColor: "#f9f9f9",
+    color: "black",
+    padding: "8px 12px",
+    borderRadius: "8px",
+    boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+    fontSize: "14px",
+    zIndex: 1000,
   };
 
   return (
     <>
-      <Input
-        open={open}
-        query={query}
-        setQuery={setQuery}
-        setOpen={setOpen}
-        handleSubmit={handleSubmit}
-      />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <Input
+          open={open}
+          query={query}
+          setQuery={setQuery}
+          setOpen={setOpen}
+          handleSubmit={handleSubmit}
+        />
+      </div>
       <div
         ref={popoverRef}
-        className={`popover bg-white text-black p-2 rounded shadow-lg ${
-          popoverContent ? "visible" : "invisible"
-        }`}
+        className={`popover text-black p-2 rounded shadow-lg`}
         style={customPopperStyles}
         {...attributes.popper}
       >
@@ -233,7 +245,7 @@ const Gandalf: React.FC = () => {
             height: "10px",
             background: "inherit",
             visibility: "hidden", // Hide by default, shown by Popper.js when needed
-            transform: "rotate(45deg)", // Rotate to form an arrow shape
+            transform: "rotate(45deg)",
           }}
         ></div>
       </div>

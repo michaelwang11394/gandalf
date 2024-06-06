@@ -36,7 +36,11 @@ export default function Input({
 
   return (
     <Transition show={open} afterLeave={() => setQuery("")} appear>
-      <Dialog className="relative z-10" onClose={() => setOpen(false)}>
+      <Dialog
+        className="relative z-10"
+        onClose={() => setOpen(false)}
+        style={{ position: "relative", zIndex: 10 }}
+      >
         <form onSubmit={handleFormSubmit}>
           <TransitionChild
             enter="ease-out duration-300"
@@ -46,28 +50,77 @@ export default function Input({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity" />
+            <div
+              style={{
+                position: "fixed",
+                inset: 0,
+                backgroundColor: "rgba(75, 85, 99, 0.25)",
+                transition: "opacity 0.3s ease-in-out",
+              }}
+            />
           </TransitionChild>
 
-          <div className="fixed inset-0 z-10 w-screen overflow-y-auto p-4 sm:p-6 md:p-20">
+          <div
+            style={{
+              position: "fixed",
+              inset: 0,
+              width: "100vw",
+              overflowY: "auto",
+              padding: "16px",
+              paddingTop: "24px",
+              paddingBottom: "24px",
+              paddingLeft: "80px",
+            }}
+          >
             <TransitionChild
-              enter="ease-out duration-300"
+              enter="ease-out duration-150"
               enterFrom="opacity-0 scale-95"
               enterTo="opacity-100 scale-100"
-              leave="ease-in duration-200"
+              leave="ease-in duration-100"
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <DialogPanel className="mx-auto max-w-xl transform divide-y divide-gray-100 overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 transition-all">
+              <DialogPanel
+                style={{
+                  margin: "auto",
+                  maxWidth: "640px",
+                  transform: "scale(1)",
+                  overflow: "hidden",
+                  borderRadius: "16px",
+                  backgroundColor: "rgba(255, 255, 255, 0.6)",
+                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                  border: "1px solid rgba(0, 0, 0, 0.05)",
+                  transition: "all 0.3s ease-in-out",
+                }}
+              >
                 <Combobox>
-                  <div className="relative">
+                  <div style={{ position: "relative" }}>
                     <MagnifyingGlassIcon
-                      className="pointer-events-none absolute left-4 top-3.5 h-5 w-5 text-gray-400"
+                      style={{
+                        position: "absolute",
+                        left: "16px",
+                        top: "14px",
+                        height: "20px",
+                        width: "20px",
+                        color: "#9CA3AF",
+                        pointerEvents: "none",
+                      }}
                       aria-hidden="true"
                     />
                     <ComboboxInput
                       autoFocus
-                      className="h-12 w-full border-0 bg-transparent pl-11 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
+                      style={{
+                        height: "48px",
+                        width: "100%",
+                        border: 0,
+                        backgroundColor: "rgba(229, 231, 235, 0.6)",
+                        paddingLeft: "44px",
+                        paddingRight: "16px",
+                        color: "#374151",
+                        fontSize: "0.875rem",
+                        borderRadius: "16px",
+                        outline: "none",
+                      }}
                       placeholder="Search..."
                       onChange={handleInputChange}
                       value={query}
