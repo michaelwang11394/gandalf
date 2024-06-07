@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../index.css";
 import {
-  Combobox,
-  ComboboxInput,
   Dialog,
   DialogPanel,
   Transition,
   TransitionChild,
 } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { TailSpin } from "react-loader-spinner";
 
 interface InputProps {
   open: boolean;
   query: string;
+  isApiCallInProgress: boolean;
   setQuery: (query: string) => void;
   setOpen: (open: boolean) => void;
   handleSubmit: (query: string) => void;
@@ -21,6 +21,7 @@ interface InputProps {
 export default function Input({
   open,
   query,
+  isApiCallInProgress,
   setQuery,
   setOpen,
   handleSubmit,
@@ -30,15 +31,21 @@ export default function Input({
   };
 
   const handleFormSubmit = (event: React.FormEvent) => {
-    event.preventDefault(); // Prevent the default form submission
-    handleSubmit(query); // Call the passed handleSubmit function with the current query
+    console.log("called from input");
+    event.preventDefault();
+    handleSubmit(query);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setQuery("");
   };
 
   return (
-    <Transition show={open} afterLeave={() => setQuery("")} appear>
+    <Transition show={open} appear>
       <Dialog
         className="relative z-10"
-        onClose={() => setOpen(false)}
+        onClose={handleClose}
         style={{ position: "relative", zIndex: 10 }}
       >
         <form onSubmit={handleFormSubmit}>
@@ -93,40 +100,56 @@ export default function Input({
                   transition: "all 0.3s ease-in-out",
                 }}
               >
-                <Combobox>
-                  <div style={{ position: "relative" }}>
-                    <MagnifyingGlassIcon
-                      style={{
+                <div style={{ position: "relative" }}>
+                  <MagnifyingGlassIcon
+                    style={{
+                      position: "absolute",
+                      left: "16px",
+                      top: "14px",
+                      height: "20px",
+                      width: "20px",
+                      color: "#9CA3AF",
+                      pointerEvents: "none",
+                    }}
+                    aria-hidden="true"
+                  />
+                  <input
+                    data-autofocus
+                    type="text"
+                    autoFocus={true}
+                    style={{
+                      height: "48px",
+                      width: "100%",
+                      border: 0,
+                      backgroundColor: "rgba(229, 231, 235, 0.6)",
+                      paddingLeft: "44px",
+                      paddingRight: "16px",
+                      color: "#374151",
+                      fontSize: "0.875rem",
+                      borderRadius: "16px",
+                      outline: "none",
+                    }}
+                    placeholder="Enter how I can help you"
+                    onChange={handleInputChange}
+                    value={query}
+                  />
+                  {isApiCallInProgress && (
+                    <TailSpin
+                      visible={true}
+                      height="20"
+                      width="20"
+                      color="black"
+                      ariaLabel="tail-spin-loading"
+                      radius="1"
+                      wrapperStyle={{
                         position: "absolute",
-                        left: "16px",
+                        right: "10px",
                         top: "14px",
-                        height: "20px",
-                        width: "20px",
-                        color: "#9CA3AF",
-                        pointerEvents: "none",
                       }}
-                      aria-hidden="true"
+                      wrapperClass=""
                     />
-                    <ComboboxInput
-                      autoFocus
-                      style={{
-                        height: "48px",
-                        width: "100%",
-                        border: 0,
-                        backgroundColor: "rgba(229, 231, 235, 0.6)",
-                        paddingLeft: "44px",
-                        paddingRight: "16px",
-                        color: "#374151",
-                        fontSize: "0.875rem",
-                        borderRadius: "16px",
-                        outline: "none",
-                      }}
-                      placeholder="Search..."
-                      onChange={handleInputChange}
-                      value={query}
-                    />
-                  </div>
-                </Combobox>
+                  )}
+                </div>
               </DialogPanel>
             </TransitionChild>
           </div>

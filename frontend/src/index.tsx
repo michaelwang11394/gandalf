@@ -80,6 +80,7 @@ const Gandalf: React.FC = () => {
   };
 
   const handleSubmit = async (query: string) => {
+    console.log("Submitting query from index:", query);
     if (isApiCallInProgress) {
       return;
     }
@@ -182,6 +183,7 @@ const Gandalf: React.FC = () => {
                 console.warn("No valid target element found for the popover.");
               }
               setIsApiCallInProgress(false);
+              setOpen(false);
             } catch (error) {
               console.error("Error parsing JSON:", error);
             }
@@ -223,6 +225,7 @@ const Gandalf: React.FC = () => {
         <Input
           open={open}
           query={query}
+          isApiCallInProgress={isApiCallInProgress}
           setQuery={setQuery}
           setOpen={setOpen}
           handleSubmit={handleSubmit}
