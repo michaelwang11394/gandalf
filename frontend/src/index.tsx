@@ -199,23 +199,23 @@ const Gandalf: React.FC = () => {
     ...styles.popper,
     opacity: popoverContent ? 1 : 0.5,
     visibility: popoverContent ? ("visible" as const) : ("hidden" as const),
-    backgroundColor: "#343a40", // Dark background similar to Bootstrap
-    color: "white", // White text color
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    color: "black",
     padding: "8px 12px",
-    borderRadius: "0.25rem", // Bootstrap's border radius
-    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)", // Bootstrap's box shadow
+    borderRadius: "0.25rem",
+    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
     fontSize: "14px",
-    // zIndex: 1000,
   };
 
   const arrowStyles = {
     position: "absolute" as const,
-    width: "1rem",
-    height: "1rem",
-    background: "#343a40", // Same background color as the popper
-    visibility: "visible" as const, // Make the arrow visible
-    transform: "rotate(45deg)",
-    boxShadow: "-0.25rem -0.25rem 0.5rem rgba(0, 0, 0, 0.15)", // Add shadow to the arrow
+    width: 0,
+    height: 0,
+    borderLeft: "0.5rem solid transparent",
+    borderRight: "0.5rem solid transparent",
+    borderTop: "0.5rem solid rgba(255, 255, 255, 0.9)",
+    top: "100%",
+    left: "calc(50% - 0.5rem)",
   };
 
   return (
