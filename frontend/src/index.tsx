@@ -57,21 +57,21 @@ const Gandalf: React.FC = () => {
   }, []);
 
   // Effect to check for more instructions
-  // useEffect(() => {
-  //   const handleUserInteraction = (event: Event) => {
-  //     if (event.type === "keyup" || event.type === "click") {
-  //       debouncedCheckForMoreInstructions();
-  //     }
-  //   };
+  useEffect(() => {
+    const handleUserInteraction = (event: Event) => {
+      if (event.type === "keyup" || event.type === "click") {
+        debouncedCheckForMoreInstructions();
+      }
+    };
 
-  //   document.addEventListener("click", handleUserInteraction);
-  //   document.addEventListener("keyup", handleUserInteraction);
+    document.addEventListener("click", handleUserInteraction);
+    document.addEventListener("keyup", handleUserInteraction);
 
-  //   return () => {
-  //     document.removeEventListener("click", handleUserInteraction);
-  //     document.removeEventListener("keyup", handleUserInteraction);
-  //   };
-  // }, [debouncedCheckForMoreInstructions]);
+    return () => {
+      document.removeEventListener("click", handleUserInteraction);
+      document.removeEventListener("keyup", handleUserInteraction);
+    };
+  }, [debouncedCheckForMoreInstructions]);
 
   const checkForMoreInstructions = () => {
     console.log("Checking for more instructions...");
