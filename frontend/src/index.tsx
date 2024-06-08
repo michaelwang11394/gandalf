@@ -57,21 +57,21 @@ const Gandalf: React.FC = () => {
   }, []);
 
   // Effect to check for more instructions
-  useEffect(() => {
-    const handleUserInteraction = (event: Event) => {
-      if (event.type === "keyup" || event.type === "click") {
-        debouncedCheckForMoreInstructions();
-      }
-    };
+  // useEffect(() => {
+  //   const handleUserInteraction = (event: Event) => {
+  //     if (event.type === "keyup" || event.type === "click") {
+  //       debouncedCheckForMoreInstructions();
+  //     }
+  //   };
 
-    document.addEventListener("click", handleUserInteraction);
-    document.addEventListener("keyup", handleUserInteraction);
+  //   document.addEventListener("click", handleUserInteraction);
+  //   document.addEventListener("keyup", handleUserInteraction);
 
-    return () => {
-      document.removeEventListener("click", handleUserInteraction);
-      document.removeEventListener("keyup", handleUserInteraction);
-    };
-  }, [debouncedCheckForMoreInstructions]);
+  //   return () => {
+  //     document.removeEventListener("click", handleUserInteraction);
+  //     document.removeEventListener("keyup", handleUserInteraction);
+  //   };
+  // }, [debouncedCheckForMoreInstructions]);
 
   const checkForMoreInstructions = () => {
     console.log("Checking for more instructions...");
@@ -199,13 +199,23 @@ const Gandalf: React.FC = () => {
     ...styles.popper,
     opacity: popoverContent ? 1 : 0.5,
     visibility: popoverContent ? ("visible" as const) : ("hidden" as const),
-    backgroundColor: "#f9f9f9",
-    color: "black",
+    backgroundColor: "#343a40", // Dark background similar to Bootstrap
+    color: "white", // White text color
     padding: "8px 12px",
-    borderRadius: "8px",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+    borderRadius: "0.25rem", // Bootstrap's border radius
+    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)", // Bootstrap's box shadow
     fontSize: "14px",
-    zIndex: 1000,
+    // zIndex: 1000,
+  };
+
+  const arrowStyles = {
+    position: "absolute" as const,
+    width: "1rem",
+    height: "1rem",
+    background: "#343a40", // Same background color as the popper
+    visibility: "visible" as const, // Make the arrow visible
+    transform: "rotate(45deg)",
+    boxShadow: "-0.25rem -0.25rem 0.5rem rgba(0, 0, 0, 0.15)", // Add shadow to the arrow
   };
 
   return (
@@ -218,8 +228,6 @@ const Gandalf: React.FC = () => {
           position: "absolute",
           top: 0,
           left: 0,
-          width: "100%",
-          height: "100%",
         }}
       >
         <Input
@@ -233,7 +241,7 @@ const Gandalf: React.FC = () => {
       </div>
       <div
         ref={popoverRef}
-        className={`popover text-black p-2 rounded shadow-lg`}
+        className={`popover text-white p-2 rounded shadow-lg`}
         style={customPopperStyles}
         {...attributes.popper}
       >
@@ -242,14 +250,7 @@ const Gandalf: React.FC = () => {
           ref={arrowRef}
           className="arrow"
           data-popper-arrow
-          style={{
-            position: "absolute",
-            width: "10px",
-            height: "10px",
-            background: "inherit",
-            visibility: "hidden", // Hide by default, shown by Popper.js when needed
-            transform: "rotate(45deg)",
-          }}
+          style={arrowStyles}
         ></div>
       </div>
     </>
