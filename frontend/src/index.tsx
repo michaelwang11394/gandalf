@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./index.css";
 import html2canvas from "html2canvas";
 import { usePopper } from "react-popper";
 import { debounce } from "lodash";
@@ -8,7 +7,7 @@ import Input from "./components/input";
 // TODO: 1) Add an useEffect to listen for whether the insturction was followed.
 
 const Gandalf: React.FC = () => {
-  const [product, setProduct] = useState("To do app"); // TODO: Update after admin dashboard
+  const [product, setProduct] = useState("Helicone"); // TODO: Update after admin dashboard
   const [domTree, setDomTree] = useState("");
   const [screenshot, setScreenshot] = useState<File | null>(null);
   const [popoverContent, setPopoverContent] = useState("");
@@ -99,7 +98,7 @@ const Gandalf: React.FC = () => {
 
         const formData = new FormData();
         formData.append("user_input", query);
-        formData.append("product", product);
+        formData.append("product", "supabase");
         formData.append("dom_tree", domTreeString);
         if (blob) {
           formData.append("screenshot", blob, "screenshot.png");
