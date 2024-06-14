@@ -1,6 +1,6 @@
 {
   "name": "gandalf-react-component",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
@@ -14,8 +14,8 @@
   },
   "type": "module",
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
@@ -42,6 +42,8 @@
     "@types/lodash": "^4.17.4",
     "html2canvas": "^1.4.1",
     "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-loader-spinner": "^6.1.6",
     "react-popper": "^2.3.0",
     "react-scripts": "^5.0.1",
