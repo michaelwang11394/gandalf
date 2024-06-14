@@ -1,8 +1,8 @@
 {
   "name": "gandalf-react-component",
-  "version": "0.0.10",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.0.11",
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
   "license": "MIT",
   "files": [
     "dist"
