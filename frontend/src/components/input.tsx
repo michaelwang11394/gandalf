@@ -122,7 +122,7 @@ export default function Input({
                       height: "48px",
                       width: "100%",
                       border: 0,
-                      backgroundColor: "rgba(229, 231, 235, 0.6)",
+                      backgroundColor: "rgba(229, 231, 235, 0.95)",
                       paddingLeft: "44px",
                       paddingRight: "16px",
                       color: "#374151",
