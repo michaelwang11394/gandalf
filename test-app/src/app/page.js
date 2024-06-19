@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import TODOHero from "@/components/TODOHero";
 import TODOList from "@/components/TODOList";
 
-import Gandalf from "../../../frontend/src/index";
+import Gandalf from "gandalf-react-component";
 
 function Home() {
   const [todos, setTodos] = React.useState([]);

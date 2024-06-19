@@ -5,7 +5,8 @@ import {
   Transition,
   TransitionChild,
 } from "@headlessui/react";
-import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { TailSpin } from "react-loader-spinner";
 
 interface InputProps {
@@ -100,7 +101,8 @@ export default function Input({
                 }}
               >
                 <div style={{ position: "relative" }}>
-                  <MagnifyingGlassIcon
+                  <FontAwesomeIcon
+                    icon={faSearch}
                     style={{
                       position: "absolute",
                       left: "16px",
