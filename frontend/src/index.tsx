@@ -3,6 +3,7 @@ import html2canvas from "html2canvas";
 import { usePopper } from "react-popper";
 import { debounce } from "lodash";
 import Input from "./components/input";
+import parseTree from "./utilities/parseTree";
 
 // TODO: 1) Add an useEffect to listen for whether the insturction was followed.
 
@@ -88,7 +89,7 @@ const Gandalf: React.FC = () => {
     console.log("User Input:", query);
 
     // Capture DOM Tree
-    const domTreeString = document.documentElement.outerHTML;
+    const domTreeString = parseTree();
     setDomTree(domTreeString);
 
     // Capture Screenshot
