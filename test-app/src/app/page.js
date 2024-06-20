@@ -27,7 +27,11 @@ function Home() {
   const total_todos = todos.length;
   return (
     <div className="wrapper">
-      <Gandalf />
+      <Gandalf
+        productName="Todo App"
+        isWidgetVisible={true}
+        widgetColor="pink"
+      />
       <Header className="bg-pink-500 text-4xl text-white" />
       <TODOHero todos_completed={todos_completed} total_todos={total_todos} />
       <Form todos={todos} setTodos={setTodos} />

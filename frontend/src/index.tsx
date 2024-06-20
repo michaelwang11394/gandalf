@@ -5,10 +5,18 @@ import { debounce } from "lodash";
 import Input from "./components/input";
 import parseTree from "./utilities/parseTree";
 
-// TODO: 1) Add an useEffect to listen for whether the insturction was followed.
+interface GandalfProps {
+  productName: string;
+  isWidgetVisible?: boolean;
+  widgetColor?: string;
+}
 
-const Gandalf: React.FC = () => {
-  const [product, setProduct] = useState("Helicone"); // TODO: Update after admin dashboard
+const Gandalf: React.FC<GandalfProps> = ({
+  productName,
+  isWidgetVisible,
+  widgetColor,
+}) => {
+  const [product, setProduct] = useState(productName);
   const [domTree, setDomTree] = useState("");
   const [screenshot, setScreenshot] = useState<File | null>(null);
   const [popoverContent, setPopoverContent] = useState("");
@@ -72,6 +80,8 @@ const Gandalf: React.FC = () => {
       document.removeEventListener("keyup", handleUserInteraction);
     };
   }, [debouncedCheckForMoreInstructions]);
+
+  console.log("Gandalf is here!", product, isWidgetVisible, widgetColor);
 
   const checkForMoreInstructions = () => {
     console.log("Checking for more instructions...");
@@ -253,6 +263,32 @@ const Gandalf: React.FC = () => {
           style={arrowStyles}
         ></div>
       </div>
+      {isWidgetVisible && (
+        <button
+          disabled={!isWidgetVisible}
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            backgroundColor: widgetColor || "#007bff",
+            color: "white",
+            border: "none",
+            borderRadius: "50%",
+            width: "50px",
+            height: "50px",
+            cursor: "pointer",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "24px",
+          }}
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle chat"
+        >
+          💬
+        </button>
+      )}
     </>
   );
 };
