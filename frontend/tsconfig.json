@@ -11,6 +11,6 @@
     "strict": true,
     "outDir": "./dist"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/typings.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

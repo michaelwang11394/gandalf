@@ -5,6 +5,8 @@ import { debounce } from "lodash";
 import Input from "./components/input";
 import parseTree from "./utilities/parseTree";
 
+import gandalfStyles from "./Gandalf.module.css";
+
 interface GandalfProps {
   productName: string;
   isWidgetVisible?: boolean;
@@ -205,41 +207,10 @@ const Gandalf: React.FC<GandalfProps> = ({
       });
     });
   };
-  const customPopperStyles = {
-    ...styles.popper,
-    opacity: popoverContent ? 1 : 0.5,
-    visibility: popoverContent ? ("visible" as const) : ("hidden" as const),
-    backgroundColor: "rgba(255, 255, 255, 0.9)",
-    color: "black",
-    padding: "8px 12px",
-    borderRadius: "0.25rem",
-    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
-    fontSize: "14px",
-  };
-
-  const arrowStyles = {
-    position: "absolute" as const,
-    width: 0,
-    height: 0,
-    borderLeft: "0.5rem solid transparent",
-    borderRight: "0.5rem solid transparent",
-    borderTop: "0.5rem solid rgba(255, 255, 255, 0.9)",
-    top: "100%",
-    left: "calc(50% - 0.5rem)",
-  };
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      >
+      <div className={gandalfStyles.container}>
         <Input
           open={open}
           query={query}
@@ -251,38 +222,25 @@ const Gandalf: React.FC<GandalfProps> = ({
       </div>
       <div
         ref={popoverRef}
-        className={`popover text-white p-2 rounded shadow-lg`}
-        style={customPopperStyles}
+        className={gandalfStyles.popover}
+        style={{
+          opacity: popoverContent ? 1 : 0.5,
+          visibility: popoverContent ? "visible" : "hidden",
+        }}
         {...attributes.popper}
       >
         {popoverContent}
         <div
           ref={arrowRef}
-          className="arrow"
+          className={gandalfStyles.arrow}
           data-popper-arrow
-          style={arrowStyles}
         ></div>
       </div>
       {isWidgetVisible && (
         <button
+          className={gandalfStyles.widgetButton}
+          style={{ backgroundColor: widgetColor || "#007bff" }}
           disabled={!isWidgetVisible}
-          style={{
-            position: "fixed",
-            bottom: "20px",
-            right: "20px",
-            backgroundColor: widgetColor || "#007bff",
-            color: "white",
-            border: "none",
-            borderRadius: "50%",
-            width: "50px",
-            height: "50px",
-            cursor: "pointer",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: "24px",
-          }}
           onClick={() => setOpen(!open)}
           aria-label="Toggle chat"
         >

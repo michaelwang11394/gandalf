@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Input.module.css";
 import {
   Dialog,
   DialogPanel,
@@ -43,11 +44,7 @@ export default function Input({
 
   return (
     <Transition show={open} appear>
-      <Dialog
-        className="relative z-10"
-        onClose={handleClose}
-        style={{ position: "relative", zIndex: 10 }}
-      >
+      <Dialog className={styles.dialog} onClose={handleClose}>
         <form onSubmit={handleFormSubmit}>
           <TransitionChild
             enter="ease-out duration-300"
@@ -57,28 +54,10 @@ export default function Input({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div
-              style={{
-                position: "fixed",
-                inset: 0,
-                backgroundColor: "rgba(75, 85, 99, 0.25)",
-                transition: "opacity 0.3s ease-in-out",
-              }}
-            />
+            <div className={styles.overlay} />
           </TransitionChild>
 
-          <div
-            style={{
-              position: "fixed",
-              inset: 0,
-              width: "100vw",
-              overflowY: "auto",
-              padding: "16px",
-              paddingTop: "24px",
-              paddingBottom: "24px",
-              paddingLeft: "80px",
-            }}
-          >
+          <div className={styles.container}>
             <TransitionChild
               enter="ease-out duration-150"
               enterFrom="opacity-0 scale-95"
@@ -87,49 +66,18 @@ export default function Input({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <DialogPanel
-                style={{
-                  margin: "auto",
-                  maxWidth: "640px",
-                  transform: "scale(1)",
-                  overflow: "hidden",
-                  borderRadius: "16px",
-                  backgroundColor: "rgba(255, 255, 255, 0.6)",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  border: "1px solid rgba(0, 0, 0, 0.05)",
-                  transition: "all 0.3s ease-in-out",
-                }}
-              >
+              <DialogPanel className={styles.dialogPanel}>
                 <div style={{ position: "relative" }}>
                   <FontAwesomeIcon
                     icon={faSearch}
-                    style={{
-                      position: "absolute",
-                      left: "16px",
-                      top: "14px",
-                      height: "20px",
-                      width: "20px",
-                      color: "#9CA3AF",
-                      pointerEvents: "none",
-                    }}
+                    className={styles.searchIcon}
                     aria-hidden="true"
                   />
                   <input
                     data-autofocus
                     type="text"
                     autoFocus={true}
-                    style={{
-                      height: "48px",
-                      width: "100%",
-                      border: 0,
-                      backgroundColor: "rgba(229, 231, 235, 0.95)",
-                      paddingLeft: "44px",
-                      paddingRight: "16px",
-                      color: "#374151",
-                      fontSize: "0.875rem",
-                      borderRadius: "16px",
-                      outline: "none",
-                    }}
+                    className={styles.inputField}
                     placeholder="Enter how I can help you"
                     onChange={handleInputChange}
                     value={query}
