@@ -9,3 +9,5 @@ frontned/yarn.lock
 # environments 
 backend/venv
 .env
+frontend/.yarn
+frontend/yarn.lock

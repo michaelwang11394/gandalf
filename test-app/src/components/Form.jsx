@@ -24,13 +24,13 @@ function Form({ todos, setTodos }) {
       <label htmlFor="todo">
         <input
           type="text"
-          name="todo"
-          id="todo"
+          name="todo input"
+          id="todo input"
           placeholder="Write your next task"
         />
       </label>
 
-      <button>
+      <button id="todo button">
         <span className="visually-hidden">Submit</span>
         <svg
           clipRule="evenodd"

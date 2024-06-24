@@ -126,7 +126,7 @@ function Item({ item, todos, setTodos }) {
             </p>
           </button>
           <div className="todo_items_right">
-            <button onClick={handleEdit}>
+            <button id="edit-todo-button" onClick={handleEdit}>
               <span className="visually-hidden">Edit</span>
               <svg
                 clipRule="evenodd"
@@ -144,7 +144,7 @@ function Item({ item, todos, setTodos }) {
                 />
               </svg>
             </button>
-            <button onClick={handleDelete}>
+            <button id="delete-todo-button" onClick={handleDelete}>
               <span className="visually-hidden">Delete</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

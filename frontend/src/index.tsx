@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import html2canvas from "html2canvas";
-import { usePopper } from "react-popper";
 import { debounce } from "lodash";
 import Input from "./components/input";
 import parseTree from "./utilities/parseTree";
 
 import gandalfStyles from "./Gandalf.module.css";
+import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
 
 interface GandalfProps {
   productName: string;
@@ -24,20 +24,41 @@ const Gandalf: React.FC<GandalfProps> = ({
   const [popoverContent, setPopoverContent] = useState("");
   const [hasMoreInstructions, setHasMoreInstructions] = useState(false);
   const [isApiCallInProgress, setIsApiCallInProgress] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [isOpenInput, setIsOpenInput] = useState(false);
   const [query, setQuery] = useState("");
 
   const arrowRef = useRef<HTMLDivElement>(null);
-  const popoverRef = useRef<HTMLDivElement>(null);
-  const targetRef = useRef<HTMLElement | null>(null);
-  const { styles, attributes } = usePopper(
-    targetRef.current,
-    popoverRef.current,
+
+  const { refs, floatingStyles, middlewareData, placement } = useFloating({
+    middleware: [offset(10), flip(), shift(), arrow({ element: arrowRef })],
+  });
+
+  // Custom styles for the floating element
+  const staticSide =
     {
-      placement: "top",
-      modifiers: [{ name: "arrow", options: { element: arrowRef.current } }],
-    }
-  );
+      top: "bottom",
+      right: "left",
+      bottom: "top",
+      left: "right",
+    }[placement.split("-")[0] as "top" | "right" | "bottom" | "left"] || "top";
+
+  const customFloatingStyles = {
+    ...floatingStyles,
+    backgroundColor: "rgba(250, 250, 250, 0.95)",
+    color: "#000000",
+    border: "none",
+    borderRadius: "13px",
+    padding: "16px",
+    boxShadow: "0 8px 32px rgba(0, 0, 0, 0.15)",
+    backdropFilter: "blur(10px)",
+    WebkitBackdropFilter: "blur(10px)",
+    zIndex: 1000,
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    fontSize: "14px",
+    lineHeight: "1.4",
+    overflow: "visible",
+  };
 
   // Debounce the check for more instructions to avoid excessive API calls
   const debouncedCheckForMoreInstructions = useRef(
@@ -53,7 +74,7 @@ const Gandalf: React.FC<GandalfProps> = ({
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "p" && (event.metaKey || event.ctrlKey)) {
         event.preventDefault(); // Prevent the default action of the event
-        setOpen(true);
+        setIsOpenInput(true);
       }
     };
 
@@ -83,8 +104,6 @@ const Gandalf: React.FC<GandalfProps> = ({
     };
   }, [debouncedCheckForMoreInstructions]);
 
-  console.log("Gandalf is here!", product, isWidgetVisible, widgetColor);
-
   const checkForMoreInstructions = () => {
     console.log("Checking for more instructions...");
     // Trigger another handleSubmit or similar function to fetch the next set of instructions
@@ -97,8 +116,6 @@ const Gandalf: React.FC<GandalfProps> = ({
       return;
     }
     setIsApiCallInProgress(true);
-
-    console.log("User Input:", query);
 
     // Capture DOM Tree
     const domTreeString = parseTree();
@@ -187,7 +204,10 @@ const Gandalf: React.FC<GandalfProps> = ({
               }
 
               // Update the target reference for Popper
-              targetRef.current = targetElement;
+              // targetRef.current = targetElement;
+
+              refs.setReference(targetElement);
+
               console.log("Target Element:", targetElement);
 
               // If no valid target element is found, consider handling this scenario
@@ -195,14 +215,17 @@ const Gandalf: React.FC<GandalfProps> = ({
                 console.warn("No valid target element found for the popover.");
               }
               setIsApiCallInProgress(false);
-              setOpen(false);
+              setIsOpenInput(false);
             } catch (error) {
               console.error("Error parsing JSON:", error);
+              setIsApiCallInProgress(false);
+              setIsOpenInput(false);
             }
           })
           .catch((error) => {
             console.error("Error:", error);
             setIsApiCallInProgress(false);
+            setIsOpenInput(false);
           });
       });
     });
@@ -212,36 +235,37 @@ const Gandalf: React.FC<GandalfProps> = ({
     <>
       <div className={gandalfStyles.container}>
         <Input
-          open={open}
+          open={isOpenInput}
           query={query}
           isApiCallInProgress={isApiCallInProgress}
           setQuery={setQuery}
-          setOpen={setOpen}
+          setOpen={setIsOpenInput}
           handleSubmit={handleSubmit}
         />
       </div>
-      <div
-        ref={popoverRef}
-        className={gandalfStyles.popover}
-        style={{
-          opacity: popoverContent ? 1 : 0.5,
-          visibility: popoverContent ? "visible" : "hidden",
-        }}
-        {...attributes.popper}
-      >
+      <div ref={refs.setFloating} style={customFloatingStyles}>
         {popoverContent}
         <div
           ref={arrowRef}
           className={gandalfStyles.arrow}
-          data-popper-arrow
-        ></div>
+          style={{
+            [staticSide]: "-6px",
+            ...(middlewareData.arrow?.x != null && {
+              left: `${middlewareData.arrow.x}px`,
+            }),
+            ...(middlewareData.arrow?.y != null && {
+              top: `${middlewareData.arrow.y}px`,
+            }),
+          }}
+        />
       </div>
+
       {isWidgetVisible && (
         <button
           className={gandalfStyles.widgetButton}
           style={{ backgroundColor: widgetColor || "#007bff" }}
           disabled={!isWidgetVisible}
-          onClick={() => setOpen(!open)}
+          onClick={() => setIsOpenInput(!isOpenInput)}
           aria-label="Toggle chat"
         >
           💬

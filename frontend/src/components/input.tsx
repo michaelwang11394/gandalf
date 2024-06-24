@@ -32,7 +32,6 @@ export default function Input({
   };
 
   const handleFormSubmit = (event: React.FormEvent) => {
-    console.log("called from input");
     event.preventDefault();
     handleSubmit(query);
   };
