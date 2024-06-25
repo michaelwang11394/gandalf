@@ -1,6 +1,6 @@
 {
   "name": "gandalf-react-component",
-  "version": "0.0.36",
+  "version": "0.0.38",
   "main": "dist/index.js",
   "module": "dist/gandalf-react-component.es.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "start": "vite"
   },
   "type": "module",
@@ -33,7 +33,8 @@
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.5",
-    "vite": "^5.3.1"
+    "vite": "^5.3.1",
+    "vite-plugin-dts": "^3.9.1"
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.17",
