@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useMemo,
+  useCallback,
+} from "react";
 import html2canvas from "html2canvas";
 import { debounce } from "lodash";
 import Input from "./components/input";
@@ -13,6 +19,23 @@ interface GandalfProps {
   widgetColor?: string;
 }
 
+function useCallbackRef<T>(callback: () => T): () => T {
+  const ref = useRef(callback);
+
+  ref.current = callback;
+
+  return useCallback(() => {
+    return ref.current();
+  }, []);
+}
+
+function useDebounce(callback: () => void, duration: number) {
+  const inner = useCallbackRef(callback);
+  return useMemo(() => {
+    return debounce(inner, duration);
+  }, [inner]);
+}
+
 const Gandalf: React.FC<GandalfProps> = ({
   productName,
   isWidgetVisible,
@@ -22,7 +45,7 @@ const Gandalf: React.FC<GandalfProps> = ({
   const [domTree, setDomTree] = useState("");
   const [screenshot, setScreenshot] = useState<File | null>(null);
   const [popoverContent, setPopoverContent] = useState("");
-  const [hasMoreInstructions, setHasMoreInstructions] = useState(false);
+  const hasMoreInstructionsRef = useRef(false);
   const [isApiCallInProgress, setIsApiCallInProgress] = useState(false);
   const [isOpenInput, setIsOpenInput] = useState(false);
   const [query, setQuery] = useState("");
@@ -61,13 +84,11 @@ const Gandalf: React.FC<GandalfProps> = ({
   };
 
   // Debounce the check for more instructions to avoid excessive API calls
-  const debouncedCheckForMoreInstructions = useRef(
-    debounce(() => {
-      if (hasMoreInstructions && !isApiCallInProgress) {
-        checkForMoreInstructions();
-      }
-    }, 1000)
-  ).current;
+  const debouncedCheckForMoreInstructions = useDebounce(() => {
+    if (hasMoreInstructionsRef.current && !isApiCallInProgress) {
+      checkForMoreInstructions();
+    }
+  }, 1000);
 
   // Effect to open the popover when the user presses the keyboard shortcut
   useEffect(() => {
@@ -124,6 +145,17 @@ const Gandalf: React.FC<GandalfProps> = ({
     // Capture Screenshot
     html2canvas(document.body).then((canvas) => {
       canvas.toBlob((blob) => {
+        // const a = document.createElement("a");
+        // document.body.appendChild(a);
+        // const url = window.URL.createObjectURL(blob!);
+        // a.href = url;
+        // a.download = "screenshot.png";
+        // a.click();
+        // setTimeout(() => {
+        //   window.URL.revokeObjectURL(url);
+        //   document.body.removeChild(a);
+        // }, 0);
+
         setScreenshot(blob as File);
 
         const formData = new FormData();
@@ -149,25 +181,13 @@ const Gandalf: React.FC<GandalfProps> = ({
             try {
               const resultObject = JSON.parse(jsonString);
               console.log("Result Object:", resultObject);
-              const {
-                Instructions,
-                classname,
-                id,
-                href,
-                text,
-                hasMoreInstructions,
-              } = resultObject;
+              const { Instructions, selector, hasMoreInstructions } =
+                resultObject;
               console.log(
                 "Instructions:",
                 Instructions,
-                "classname:",
-                classname,
-                "id:",
-                id,
-                "href:",
-                href,
-                "text:",
-                text,
+                "selector:",
+                selector,
                 "hasMoreInstructions:",
                 hasMoreInstructions
               );
@@ -176,32 +196,11 @@ const Gandalf: React.FC<GandalfProps> = ({
                 setPopoverContent(Instructions);
               }
               if (hasMoreInstructions) {
-                setHasMoreInstructions(true);
+                hasMoreInstructionsRef.current = true;
               }
 
               // Determine the target for the popover based on availability and document presence
-              let targetElement = null;
-              if (
-                classname &&
-                document.getElementsByClassName(classname).length > 0
-              ) {
-                targetElement = document.getElementsByClassName(
-                  classname
-                )[0] as HTMLElement;
-              } else if (id && document.getElementById(id)) {
-                targetElement = document.getElementById(id) as HTMLElement;
-              } else if (href && document.querySelector(`[href="${href}"]`)) {
-                targetElement = document.querySelector(
-                  `[href="${href}"]`
-                ) as HTMLElement;
-              } else if (
-                text &&
-                document.querySelector(`:contains("${text}")`)
-              ) {
-                targetElement = document.querySelector(
-                  `:contains("${text}")`
-                ) as HTMLElement;
-              }
+              let targetElement = document.querySelector(selector);
 
               // Update the target reference for Popper
               // targetRef.current = targetElement;

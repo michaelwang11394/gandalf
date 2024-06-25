@@ -30,7 +30,7 @@ function Form({ todos, setTodos }) {
         />
       </label>
 
-      <button id="todo button">
+      <button id="todo_button">
         <span className="visually-hidden">Submit</span>
         <svg
           clipRule="evenodd"
