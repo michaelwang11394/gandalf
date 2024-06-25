@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+app/__pycache__/
+__pycache__/
+temp/
+frontend/node_modules/
+frontend/dist/
+frontned/yarn.lock
+
+# environments 
+backend/venv
+.env
+frontend/.yarn
+frontend/yarn.lock
