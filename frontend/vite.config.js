@@ -18,7 +18,7 @@ export default defineConfig({
       fileName: (format) => `gandalf-react-component.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
     },
   },
 });
