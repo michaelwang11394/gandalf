@@ -5,6 +5,7 @@ temp/
 frontend/node_modules/
 frontend/dist/
 frontned/yarn.lock
+.DS_Store
 
 # environments 
 backend/venv

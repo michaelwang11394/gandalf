@@ -157,6 +157,8 @@ const Gandalf: React.FC<GandalfProps> = ({
         //   document.body.removeChild(a);
         // }, 0);
 
+        // console.log(domTreeString)
+
         setScreenshot(blob as File);
 
         const formData = new FormData();
