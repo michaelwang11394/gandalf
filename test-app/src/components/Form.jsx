@@ -1,8 +1,13 @@
+import { useState } from "react"
+
 function Form({ todos, setTodos }) {
+
+  const [inputValue, setInputValue] = useState("")
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const value = event.target.todo.value;
+    const value = event.target.todo_input.value;
     const newTodo = {
       title: value,
       id: self.crypto.randomUUID(),
@@ -25,12 +30,14 @@ function Form({ todos, setTodos }) {
         <input
           type="text"
           name="todo input"
-          id="todo input"
+          id="todo_input"
+          value={inputValue}
+          onChange={e => setInputValue(e.target.value)}
           placeholder="Write your next task"
         />
       </label>
 
-      <button id="todo_button">
+      <button id="todo_button" disabled={inputValue === ""}>
         <span className="visually-hidden">Submit</span>
         <svg
           clipRule="evenodd"

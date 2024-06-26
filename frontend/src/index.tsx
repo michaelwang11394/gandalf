@@ -5,6 +5,7 @@ import React, {
   useMemo,
   useCallback,
 } from "react";
+import ReactDOM from "react-dom";
 import html2canvas from "html2canvas";
 import { debounce } from "lodash";
 import Input from "./components/input";
@@ -156,6 +157,8 @@ const Gandalf: React.FC<GandalfProps> = ({
         //   document.body.removeChild(a);
         // }, 0);
 
+        // console.log(domTreeString)
+
         setScreenshot(blob as File);
 
         const formData = new FormData();
@@ -273,5 +276,13 @@ const Gandalf: React.FC<GandalfProps> = ({
     </>
   );
 };
+
+// uncomment this, comment out the export, then comment out the external options in vite.config.js to build a standalone injectable js bundle
+// const mountNode = document.createElement("div");
+// document.body.appendChild(mountNode);
+// ReactDOM.render(
+//   <Gandalf productName="Todo App" isWidgetVisible={true} widgetColor="pink" />,
+//   mountNode
+// );
 
 export default Gandalf;
