@@ -4,7 +4,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 import argparse
-from backend.app.experiments.base import supabase, bucket_name
+from app.experiments.base import supabase, bucket_name
 
 
 def main():

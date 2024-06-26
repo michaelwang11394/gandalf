@@ -1,0 +1,824 @@
+[
+    {
+      "type": "button",
+      "top": 16,
+      "left": 64,
+      "width": 93.375,
+      "height": 40,
+      "html": "<button type=\"button\" class=\"HeaderMenu-link border-0 width-full width-lg-auto px-0 px-lg-2 py-3 py-lg-2 no-wrap d-flex flex-items-center flex-justify-between js-details-target\" aria-expanded=\"false\">\n        Product\n        <svg opacity=\"0.5\" aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-chevron-down HeaderMenu-icon ml-1\">\n    <path d=\"M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z\"></path>\n</svg>\n      </button>",
+      "text": "Product"
+    },
+    {
+      "type": "button",
+      "top": 16,
+      "left": 157.375,
+      "width": 103.15625,
+      "height": 40,
+      "html": "<button type=\"button\" class=\"HeaderMenu-link border-0 width-full width-lg-auto px-0 px-lg-2 py-3 py-lg-2 no-wrap d-flex flex-items-center flex-justify-between js-details-target\" aria-expanded=\"false\">\n        Solutions\n        <svg opacity=\"0.5\" aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-chevron-down HeaderMenu-icon ml-1\">\n    <path d=\"M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z\"></path>\n</svg>\n      </button>",
+      "text": "Solutions"
+    },
+    {
+      "type": "button",
+      "top": 16,
+      "left": 260.53125,
+      "width": 112.046875,
+      "height": 40,
+      "html": "<button type=\"button\" class=\"HeaderMenu-link border-0 width-full width-lg-auto px-0 px-lg-2 py-3 py-lg-2 no-wrap d-flex flex-items-center flex-justify-between js-details-target\" aria-expanded=\"false\">\n        Resources\n        <svg opacity=\"0.5\" aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-chevron-down HeaderMenu-icon ml-1\">\n    <path d=\"M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z\"></path>\n</svg>\n      </button>",
+      "text": "Resources"
+    },
+    {
+      "type": "button",
+      "top": 16,
+      "left": 372.578125,
+      "width": 130.59375,
+      "height": 40,
+      "html": "<button type=\"button\" class=\"HeaderMenu-link border-0 width-full width-lg-auto px-0 px-lg-2 py-3 py-lg-2 no-wrap d-flex flex-items-center flex-justify-between js-details-target\" aria-expanded=\"false\">\n        Open Source\n        <svg opacity=\"0.5\" aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-chevron-down HeaderMenu-icon ml-1\">\n    <path d=\"M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z\"></path>\n</svg>\n      </button>",
+      "text": "Open Source"
+    },
+    {
+      "type": "button",
+      "top": 16,
+      "left": 503.171875,
+      "width": 110.15625,
+      "height": 40,
+      "html": "<button type=\"button\" class=\"HeaderMenu-link border-0 width-full width-lg-auto px-0 px-lg-2 py-3 py-lg-2 no-wrap d-flex flex-items-center flex-justify-between js-details-target\" aria-expanded=\"false\">\n        Enterprise\n        <svg opacity=\"0.5\" aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-chevron-down HeaderMenu-icon ml-1\">\n    <path d=\"M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z\"></path>\n</svg>\n      </button>",
+      "text": "Enterprise"
+    },
+    {
+      "type": "button",
+      "top": 21,
+      "left": 710.5,
+      "width": 324,
+      "height": 30,
+      "html": "<button type=\"button\" class=\"header-search-button placeholder input-button form-control d-flex flex-1 flex-self-stretch flex-items-center no-wrap width-full py-0 pl-2 pr-0 text-left border-0 box-shadow-none\" data-target=\"qbsearch-input.inputButton\" placeholder=\"Search or jump to...\" data-hotkey=\"s,/\" autocapitalize=\"off\" data-action=\"click:qbsearch-input#handleExpand\">\n        <div class=\"mr-2 color-fg-muted\">\n          <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-search\">\n    <path d=\"M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z\"></path>\n</svg>\n        </div>\n        <span class=\"flex-1\" data-target=\"qbsearch-input.inputButtonText\">Search or jump to...</span>\n          <div class=\"d-flex\" data-target=\"qbsearch-input.hotkeyIndicator\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"20\" aria-hidden=\"true\" class=\"mr-1\"><path fill=\"none\" stroke=\"#979A9C\" opacity=\".4\" d=\"M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z\"></path><path fill=\"#979A9C\" d=\"M11.8 6L8 15.1h-.9L10.8 6h1z\"></path></svg>\n\n          </div>\n      </button>",
+      "text": "Search or jump to..."
+    },
+    {
+      "type": "button",
+      "top": 88,
+      "left": 1147,
+      "width": 34,
+      "height": 28,
+      "html": "<button aria-label=\"You must be signed in to add this repository to a list\" type=\"button\" disabled=\"disabled\" data-view-component=\"true\" class=\"btn-sm btn BtnGroup-item px-2\">    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-triangle-down\">\n    <path d=\"m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z\"></path>\n</svg>\n</button>"
+    },
+    {
+      "type": "button",
+      "top": 142,
+      "left": 1149,
+      "width": 32,
+      "height": 32,
+      "html": "<button id=\"action-menu-417c2ff1-8bfe-42a5-be13-d8ac9069561e-button\" popovertarget=\"action-menu-417c2ff1-8bfe-42a5-be13-d8ac9069561e-overlay\" aria-controls=\"action-menu-417c2ff1-8bfe-42a5-be13-d8ac9069561e-list\" aria-haspopup=\"true\" aria-labelledby=\"tooltip-2591f740-956a-40c6-8d50-fb0cde586b06\" type=\"button\" data-view-component=\"true\" class=\"Button Button--iconOnly Button--secondary Button--medium UnderlineNav-item\">  <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-kebab-horizontal Button-visual\">\n    <path d=\"M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z\"></path>\n</svg>\n</button>"
+    },
+    {
+      "type": "button",
+      "top": 206,
+      "left": 32,
+      "width": 105.484375,
+      "height": 32,
+      "html": "<button type=\"button\" id=\"branch-picker-repos-header-ref-selector\" aria-haspopup=\"true\" aria-expanded=\"false\" tabindex=\"0\" aria-label=\"main branch\" data-testid=\"anchor-button\" class=\"types__StyledButton-sc-ws60qy-0 gBsjGI overview-ref-selector width-full\" data-hotkey=\"w\"><span data-component=\"buttonContent\" class=\"Box-sc-g0xbh4-0 kkrdEu\"><span data-component=\"text\"><div class=\"Box-sc-g0xbh4-0 bKgizp\"><div class=\"Box-sc-g0xbh4-0 dIAShY\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"img\" class=\"octicon octicon-git-branch\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible\"><path d=\"M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z\"></path></svg></div><div class=\"Box-sc-g0xbh4-0 caeYDk ref-selector-button-text-container\"><span class=\"Text-sc-17v1xeu-0 bOMzPg\">&nbsp;<!-- -->main</span></div></div></span><span data-component=\"trailingVisual\" class=\"Box-sc-g0xbh4-0 trpoQ\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"img\" class=\"octicon octicon-triangle-down\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible\"><path d=\"m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z\"></path></svg></span></span></button>",
+      "text": "main"
+    },
+    {
+      "type": "button",
+      "top": 206,
+      "left": 756.140625,
+      "width": 104.859375,
+      "height": 32,
+      "html": "<button type=\"button\" id=\":R55ab:\" aria-haspopup=\"true\" aria-expanded=\"false\" tabindex=\"0\" class=\"types__StyledButton-sc-ws60qy-0 kHdfWW\"><span data-component=\"buttonContent\" class=\"Box-sc-g0xbh4-0 kkrdEu\"><span data-component=\"leadingVisual\" class=\"Box-sc-g0xbh4-0 trpoQ\"><div class=\"Box-sc-g0xbh4-0 bVvbgP\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"img\" class=\"octicon octicon-code\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible\"><path d=\"m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z\"></path></svg></div></span><span data-component=\"text\">Code</span></span><span data-component=\"trailingAction\" class=\"Box-sc-g0xbh4-0 trpoQ\"><svg aria-hidden=\"true\" focusable=\"false\" class=\"octicon octicon-triangle-down\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible\"><path d=\"m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z\"></path></svg></span></button>",
+      "text": "Code"
+    },
+    {
+      "type": "button",
+      "top": 761,
+      "left": 683.84375,
+      "width": 91.796875,
+      "height": 18,
+      "html": "<button type=\"button\" class=\"Link--secondary underline-on-hover border-0 p-0 color-bg-transparent\" data-action=\"click:cookie-consent-link#showConsentManagement\">\n      Manage cookies\n    </button>",
+      "text": "Manage cookies"
+    },
+    {
+      "type": "button",
+      "top": 761,
+      "left": 791.640625,
+      "width": 212.046875,
+      "height": 18,
+      "html": "<button type=\"button\" class=\"Link--secondary underline-on-hover border-0 p-0 color-bg-transparent\" data-action=\"click:cookie-consent-link#showConsentManagement\">\n      Do not share my personal information\n    </button>",
+      "text": "Do not share my personal information"
+    },
+    {
+      "type": "button",
+      "top": 0,
+      "left": 0,
+      "width": 1,
+      "height": 0,
+      "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
+    },
+    {
+      "type": "button",
+      "top": 0,
+      "left": 0,
+      "width": 1,
+      "height": 0,
+      "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
+    },
+    {
+      "type": "link or button",
+      "top": 0,
+      "left": 0,
+      "width": 1,
+      "height": 1,
+      "html": "<a href=\"#start-of-content\" data-skip-target-assigned=\"false\" class=\"px-2 py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content\">Skip to content</a>",
+      "text": "Skip to content"
+    },
+    {
+      "type": "link or button",
+      "top": 18.5,
+      "left": 16,
+      "width": 32,
+      "height": 35,
+      "html": "<a class=\"mr-lg-3 color-fg-inherit flex-order-2\" href=\"https://github.com/\" aria-label=\"Homepage\" data-ga-click=\"(Logged out) Header, go to homepage, icon:logo-wordmark\">\n        <svg height=\"32\" aria-hidden=\"true\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"32\" data-view-component=\"true\" class=\"octicon octicon-mark-github\">\n    <path d=\"M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z\"></path>\n</svg>\n      </a>"
+    },
+    {
+      "type": "link or button",
+      "top": 68.6719970703125,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 60.885009765625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Actions&quot;,&quot;label&quot;:&quot;ref_cta:Actions;&quot;}\" href=\"https://github.com/features/actions\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-workflow color-fg-subtle mr-3\">\n    <path d=\"M1 3a2 2 0 0 1 2-2h6.5a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H7v4.063C7 16.355 7.644 17 8.438 17H12.5v-2.5a2 2 0 0 1 2-2H21a2 2 0 0 1 2 2V21a2 2 0 0 1-2 2h-6.5a2 2 0 0 1-2-2v-2.5H8.437A2.939 2.939 0 0 1 5.5 15.562V11.5H3a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v6.5a.5.5 0 0 0 .5.5h6.5a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5ZM14.5 14a.5.5 0 0 0-.5.5V21a.5.5 0 0 0 .5.5H21a.5.5 0 0 0 .5-.5v-6.5a.5.5 0 0 0-.5-.5Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Actions</div>\n        Automate any workflow\n      </div>\n\n    \n</a>",
+      "text": "Actions\n        Automate any workflow"
+    },
+    {
+      "type": "link or button",
+      "top": 129.5570068359375,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 60.88499450683594,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Packages&quot;,&quot;label&quot;:&quot;ref_cta:Packages;&quot;}\" href=\"https://github.com/features/packages\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-package color-fg-subtle mr-3\">\n    <path d=\"M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Packages</div>\n        Host and manage packages\n      </div>\n\n    \n</a>",
+      "text": "Packages\n        Host and manage packages"
+    },
+    {
+      "type": "link or button",
+      "top": 190.44200134277344,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 60.885009765625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Security&quot;,&quot;label&quot;:&quot;ref_cta:Security;&quot;}\" href=\"https://github.com/features/security\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-shield-check color-fg-subtle mr-3\">\n    <path d=\"M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z\"></path><path d=\"m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Security</div>\n        Find and fix vulnerabilities\n      </div>\n\n    \n</a>",
+      "text": "Security\n        Find and fix vulnerabilities"
+    },
+    {
+      "type": "link or button",
+      "top": 251.32701110839844,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 60.88496398925781,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Codespaces&quot;,&quot;label&quot;:&quot;ref_cta:Codespaces;&quot;}\" href=\"https://github.com/features/codespaces\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-codespaces color-fg-subtle mr-3\">\n    <path d=\"M3.5 3.75C3.5 2.784 4.284 2 5.25 2h13.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 18.75 13H5.25a1.75 1.75 0 0 1-1.75-1.75Zm-2 12c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v4a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75ZM5.25 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h13.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Zm-2 12a.25.25 0 0 0-.25.25v4c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25v-4a.25.25 0 0 0-.25-.25Z\"></path><path d=\"M10 17.75a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Codespaces</div>\n        Instant dev environments\n      </div>\n\n    \n</a>",
+      "text": "Codespaces\n        Instant dev environments"
+    },
+    {
+      "type": "link or button",
+      "top": 312.21197509765625,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 60.885009765625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to GitHub Copilot&quot;,&quot;label&quot;:&quot;ref_cta:GitHub Copilot;&quot;}\" href=\"https://github.com/features/copilot\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-copilot color-fg-subtle mr-3\">\n    <path d=\"M23.922 16.992c-.861 1.495-5.859 5.023-11.922 5.023-6.063 0-11.061-3.528-11.922-5.023A.641.641 0 0 1 0 16.736v-2.869a.841.841 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.195 10.195 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952 1.399-1.136 3.392-2.093 6.122-2.093 2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.832.832 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256ZM12.172 11h-.344a4.323 4.323 0 0 1-.355.508C10.703 12.455 9.555 13 7.965 13c-1.725 0-2.989-.359-3.782-1.259a2.005 2.005 0 0 1-.085-.104L4 11.741v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.323 4.323 0 0 1-.355-.508h-.016.016Zm.641-2.935c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z\"></path><path d=\"M14.5 14.25a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Zm-5 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">GitHub Copilot</div>\n        Write better code with AI\n      </div>\n\n    \n</a>",
+      "text": "GitHub Copilot\n        Write better code with AI"
+    },
+    {
+      "type": "link or button",
+      "top": 373.09698486328125,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 60.885009765625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Code review&quot;,&quot;label&quot;:&quot;ref_cta:Code review;&quot;}\" href=\"https://github.com/features/code-review\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-code-review color-fg-subtle mr-3\">\n    <path d=\"M10.3 6.74a.75.75 0 0 1-.04 1.06l-2.908 2.7 2.908 2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z\"></path><path d=\"M1.5 4.25c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v12.5a1.75 1.75 0 0 1-1.75 1.75h-9.69l-3.573 3.573A1.458 1.458 0 0 1 5 21.043V18.5H3.25a1.75 1.75 0 0 1-1.75-1.75ZM3.25 4a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 .75.75v3.19l3.72-3.72a.749.749 0 0 1 .53-.22h10a.25.25 0 0 0 .25-.25V4.25a.25.25 0 0 0-.25-.25Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Code review</div>\n        Manage code changes\n      </div>\n\n    \n</a>",
+      "text": "Code review\n        Manage code changes"
+    },
+    {
+      "type": "link or button",
+      "top": 433.98199462890625,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 60.885009765625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Issues&quot;,&quot;label&quot;:&quot;ref_cta:Issues;&quot;}\" href=\"https://github.com/features/issues\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-issue-opened color-fg-subtle mr-3\">\n    <path d=\"M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Issues</div>\n        Plan and track work\n      </div>\n\n    \n</a>",
+      "text": "Issues\n        Plan and track work"
+    },
+    {
+      "type": "link or button",
+      "top": 494.86700439453125,
+      "left": 90.26000213623047,
+      "width": 216.93374633789062,
+      "height": 52.96502685546875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Discussions&quot;,&quot;label&quot;:&quot;ref_cta:Discussions;&quot;}\" href=\"https://github.com/features/discussions\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-comment-discussion color-fg-subtle mr-3\">\n    <path d=\"M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z\"></path><path d=\"M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Discussions</div>\n        Collaborate outside of code\n      </div>\n\n    \n</a>",
+      "text": "Discussions\n        Collaborate outside of code"
+    },
+    {
+      "type": "link or button",
+      "top": 100.35200500488281,
+      "left": 379.4637451171875,
+      "width": 117.25314331054688,
+      "height": 33.16499328613281,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to All features&quot;,&quot;label&quot;:&quot;ref_cta:All features;&quot;}\" href=\"https://github.com/features\">\n      All features\n\n    \n</a>",
+      "text": "All features"
+    },
+    {
+      "type": "link or button",
+      "top": 133.51699829101562,
+      "left": 379.4637451171875,
+      "width": 117.25314331054688,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" target=\"_blank\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Documentation&quot;,&quot;label&quot;:&quot;ref_cta:Documentation;&quot;}\" href=\"https://docs.github.com\">\n      Documentation\n\n    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle\">\n    <path d=\"M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z\"></path>\n</svg>\n</a>",
+      "text": "Documentation"
+    },
+    {
+      "type": "link or button",
+      "top": 166.6820068359375,
+      "left": 379.4637451171875,
+      "width": 117.25314331054688,
+      "height": 33.16499328613281,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" target=\"_blank\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to GitHub Skills&quot;,&quot;label&quot;:&quot;ref_cta:GitHub Skills;&quot;}\" href=\"https://skills.github.com\">\n      GitHub Skills\n\n    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle\">\n    <path d=\"M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z\"></path>\n</svg>\n</a>",
+      "text": "GitHub Skills"
+    },
+    {
+      "type": "link or button",
+      "top": 199.8470001220703,
+      "left": 379.4637451171875,
+      "width": 117.25314331054688,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" target=\"_blank\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Blog&quot;,&quot;label&quot;:&quot;ref_cta:Blog;&quot;}\" href=\"https://github.blog\">\n      Blog\n\n    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle\">\n    <path d=\"M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z\"></path>\n</svg>\n</a>",
+      "text": "Blog"
+    },
+    {
+      "type": "link or button",
+      "top": 100.35200500488281,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.16499328613281,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to Enterprise&quot;,&quot;label&quot;:&quot;ref_cta:Enterprise;&quot;}\" href=\"https://github.com/enterprise\">\n      Enterprise\n\n    \n</a>",
+      "text": "Enterprise"
+    },
+    {
+      "type": "link or button",
+      "top": 133.51699829101562,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to Teams&quot;,&quot;label&quot;:&quot;ref_cta:Teams;&quot;}\" href=\"https://github.com/team\">\n      Teams\n\n    \n</a>",
+      "text": "Teams"
+    },
+    {
+      "type": "link or button",
+      "top": 166.6820068359375,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.16499328613281,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to Startups&quot;,&quot;label&quot;:&quot;ref_cta:Startups;&quot;}\" href=\"https://github.com/enterprise/startups\">\n      Startups\n\n    \n</a>",
+      "text": "Startups"
+    },
+    {
+      "type": "link or button",
+      "top": 260.23699951171875,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to Healthcare&quot;,&quot;label&quot;:&quot;ref_cta:Healthcare;&quot;}\" href=\"https://github.com/solutions/industries/healthcare\">\n      Healthcare\n\n    \n</a>",
+      "text": "Healthcare"
+    },
+    {
+      "type": "link or button",
+      "top": 293.4020080566406,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.16497802734375,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to Financial services&quot;,&quot;label&quot;:&quot;ref_cta:Financial services;&quot;}\" href=\"https://github.com/solutions/industries/financial-services\">\n      Financial services\n\n    \n</a>",
+      "text": "Financial services"
+    },
+    {
+      "type": "link or button",
+      "top": 326.5669860839844,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to Manufacturing&quot;,&quot;label&quot;:&quot;ref_cta:Manufacturing;&quot;}\" href=\"https://github.com/solutions/industries/manufacturing\">\n      Manufacturing\n\n    \n</a>",
+      "text": "Manufacturing"
+    },
+    {
+      "type": "link or button",
+      "top": 420.1219787597656,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to CI/CD &amp;amp; Automation&quot;,&quot;label&quot;:&quot;ref_cta:CI/CD &amp;amp; Automation;&quot;}\" href=\"https://github.com/solutions/ci-cd\">\n      CI/CD &amp; Automation\n\n    \n</a>",
+      "text": "CI/CD & Automation"
+    },
+    {
+      "type": "link or button",
+      "top": 453.2869873046875,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to DevOps&quot;,&quot;label&quot;:&quot;ref_cta:DevOps;&quot;}\" href=\"https://github.com/solutions/devops\">\n      DevOps\n\n    \n</a>",
+      "text": "DevOps"
+    },
+    {
+      "type": "link or button",
+      "top": 486.4519958496094,
+      "left": 182.73500061035156,
+      "width": 269.280029296875,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Solutions&quot;,&quot;action&quot;:&quot;click to go to DevSecOps&quot;,&quot;label&quot;:&quot;ref_cta:DevSecOps;&quot;}\" href=\"https://github.com/solutions/devsecops\">\n      DevSecOps\n\n    \n</a>",
+      "text": "DevSecOps"
+    },
+    {
+      "type": "link or button",
+      "top": 100.35200500488281,
+      "left": 285.8912658691406,
+      "width": 269.2799987792969,
+      "height": 33.16499328613281,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" target=\"_blank\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Resources&quot;,&quot;action&quot;:&quot;click to go to Learning Pathways&quot;,&quot;label&quot;:&quot;ref_cta:Learning Pathways;&quot;}\" href=\"https://resources.github.com/learn/pathways\">\n      Learning Pathways\n\n    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle\">\n    <path d=\"M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z\"></path>\n</svg>\n</a>",
+      "text": "Learning Pathways"
+    },
+    {
+      "type": "link or button",
+      "top": 133.51699829101562,
+      "left": 285.8912658691406,
+      "width": 269.2799987792969,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" target=\"_blank\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Resources&quot;,&quot;action&quot;:&quot;click to go to White papers, Ebooks, Webinars&quot;,&quot;label&quot;:&quot;ref_cta:White papers, Ebooks, Webinars;&quot;}\" href=\"https://resources.github.com\">\n      White papers, Ebooks, Webinars\n\n    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle\">\n    <path d=\"M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z\"></path>\n</svg>\n</a>",
+      "text": "White papers, Ebooks, Webinars"
+    },
+    {
+      "type": "link or button",
+      "top": 166.6820068359375,
+      "left": 285.8912658691406,
+      "width": 269.2799987792969,
+      "height": 33.16499328613281,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Resources&quot;,&quot;action&quot;:&quot;click to go to Customer Stories&quot;,&quot;label&quot;:&quot;ref_cta:Customer Stories;&quot;}\" href=\"https://github.com/customer-stories\">\n      Customer Stories\n\n    \n</a>",
+      "text": "Customer Stories"
+    },
+    {
+      "type": "link or button",
+      "top": 199.8470001220703,
+      "left": 285.8912658691406,
+      "width": 269.2799987792969,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" target=\"_blank\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Resources&quot;,&quot;action&quot;:&quot;click to go to Partners&quot;,&quot;label&quot;:&quot;ref_cta:Partners;&quot;}\" href=\"https://partner.github.com\">\n      Partners\n\n    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle\">\n    <path d=\"M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z\"></path>\n</svg>\n</a>",
+      "text": "Partners"
+    },
+    {
+      "type": "link or button",
+      "top": 68.6719970703125,
+      "left": 397.9381408691406,
+      "width": 269.2799987792969,
+      "height": 52.964996337890625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Open Source&quot;,&quot;action&quot;:&quot;click to go to GitHub Sponsors&quot;,&quot;label&quot;:&quot;ref_cta:GitHub Sponsors;&quot;}\" href=\"/sponsors\">\n      \n      <div>\n        <div class=\"color-fg-default h4\">GitHub Sponsors</div>\n        Fund open source developers\n      </div>\n\n    \n</a>",
+      "text": "GitHub Sponsors\n        Fund open source developers"
+    },
+    {
+      "type": "link or button",
+      "top": 154.3070068359375,
+      "left": 397.9381408691406,
+      "width": 269.2799987792969,
+      "height": 52.964996337890625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Open Source&quot;,&quot;action&quot;:&quot;click to go to The ReadME Project&quot;,&quot;label&quot;:&quot;ref_cta:The ReadME Project;&quot;}\" href=\"https://github.com/readme\">\n      \n      <div>\n        <div class=\"color-fg-default h4\">The ReadME Project</div>\n        GitHub community articles\n      </div>\n\n    \n</a>",
+      "text": "The ReadME Project\n        GitHub community articles"
+    },
+    {
+      "type": "link or button",
+      "top": 267.6619873046875,
+      "left": 397.9381408691406,
+      "width": 269.2799987792969,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Open Source&quot;,&quot;action&quot;:&quot;click to go to Topics&quot;,&quot;label&quot;:&quot;ref_cta:Topics;&quot;}\" href=\"https://github.com/topics\">\n      Topics\n\n    \n</a>",
+      "text": "Topics"
+    },
+    {
+      "type": "link or button",
+      "top": 300.8269958496094,
+      "left": 397.9381408691406,
+      "width": 269.2799987792969,
+      "height": 33.165008544921875,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Open Source&quot;,&quot;action&quot;:&quot;click to go to Trending&quot;,&quot;label&quot;:&quot;ref_cta:Trending;&quot;}\" href=\"https://github.com/trending\">\n      Trending\n\n    \n</a>",
+      "text": "Trending"
+    },
+    {
+      "type": "link or button",
+      "top": 333.99200439453125,
+      "left": 397.9381408691406,
+      "width": 269.2799987792969,
+      "height": 33.16497802734375,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Open Source&quot;,&quot;action&quot;:&quot;click to go to Collections&quot;,&quot;label&quot;:&quot;ref_cta:Collections;&quot;}\" href=\"https://github.com/collections\">\n      Collections\n\n    \n</a>",
+      "text": "Collections"
+    },
+    {
+      "type": "link or button",
+      "top": 68.6719970703125,
+      "left": 528.5318603515625,
+      "width": 269.280029296875,
+      "height": 52.964996337890625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Enterprise&quot;,&quot;action&quot;:&quot;click to go to Enterprise platform&quot;,&quot;label&quot;:&quot;ref_cta:Enterprise platform;&quot;}\" href=\"/enterprise\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-stack color-fg-subtle mr-3\">\n    <path d=\"M11.063 1.456a1.749 1.749 0 0 1 1.874 0l8.383 5.316a1.751 1.751 0 0 1 0 2.956l-8.383 5.316a1.749 1.749 0 0 1-1.874 0L2.68 9.728a1.751 1.751 0 0 1 0-2.956Zm1.071 1.267a.25.25 0 0 0-.268 0L3.483 8.039a.25.25 0 0 0 0 .422l8.383 5.316a.25.25 0 0 0 .268 0l8.383-5.316a.25.25 0 0 0 0-.422Z\"></path><path d=\"M1.867 12.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.749 1.749 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035Z\"></path><path d=\"M1.867 16.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.749 1.749 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Enterprise platform</div>\n        AI-powered developer platform\n      </div>\n\n    \n</a>",
+      "text": "Enterprise platform\n        AI-powered developer platform"
+    },
+    {
+      "type": "link or button",
+      "top": 182.02700805664062,
+      "left": 528.5318603515625,
+      "width": 269.280029296875,
+      "height": 60.88499450683594,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Enterprise&quot;,&quot;action&quot;:&quot;click to go to Advanced Security&quot;,&quot;label&quot;:&quot;ref_cta:Advanced Security;&quot;}\" href=\"https://github.com/enterprise/advanced-security\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-shield-check color-fg-subtle mr-3\">\n    <path d=\"M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z\"></path><path d=\"m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Advanced Security</div>\n        Enterprise-grade security features\n      </div>\n\n    \n</a>",
+      "text": "Advanced Security\n        Enterprise-grade security features"
+    },
+    {
+      "type": "link or button",
+      "top": 242.91200256347656,
+      "left": 528.5318603515625,
+      "width": 269.280029296875,
+      "height": 60.88499450683594,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center pb-lg-3\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Enterprise&quot;,&quot;action&quot;:&quot;click to go to GitHub Copilot&quot;,&quot;label&quot;:&quot;ref_cta:GitHub Copilot;&quot;}\" href=\"/features/copilot#enterprise\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-copilot color-fg-subtle mr-3\">\n    <path d=\"M23.922 16.992c-.861 1.495-5.859 5.023-11.922 5.023-6.063 0-11.061-3.528-11.922-5.023A.641.641 0 0 1 0 16.736v-2.869a.841.841 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.195 10.195 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952 1.399-1.136 3.392-2.093 6.122-2.093 2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.832.832 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256ZM12.172 11h-.344a4.323 4.323 0 0 1-.355.508C10.703 12.455 9.555 13 7.965 13c-1.725 0-2.989-.359-3.782-1.259a2.005 2.005 0 0 1-.085-.104L4 11.741v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.323 4.323 0 0 1-.355-.508h-.016.016Zm.641-2.935c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z\"></path><path d=\"M14.5 14.25a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Zm-5 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">GitHub Copilot</div>\n        Enterprise-grade AI features\n      </div>\n\n    \n</a>",
+      "text": "GitHub Copilot\n        Enterprise-grade AI features"
+    },
+    {
+      "type": "link or button",
+      "top": 303.7969970703125,
+      "left": 528.5318603515625,
+      "width": 269.280029296875,
+      "height": 52.964996337890625,
+      "html": "<a class=\"HeaderMenu-dropdown-link lh-condensed d-block no-underline position-relative py-2 Link--secondary d-flex flex-items-center\" data-analytics-event=\"{&quot;category&quot;:&quot;Header dropdown (logged out), Enterprise&quot;,&quot;action&quot;:&quot;click to go to Premium Support&quot;,&quot;label&quot;:&quot;ref_cta:Premium Support;&quot;}\" href=\"/premium-support\">\n      <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-comment-discussion color-fg-subtle mr-3\">\n    <path d=\"M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z\"></path><path d=\"M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z\"></path>\n</svg>\n      <div>\n        <div class=\"color-fg-default h4\">Premium Support</div>\n        Enterprise-grade 24/7 support\n      </div>\n\n    \n</a>",
+      "text": "Premium Support\n        Enterprise-grade 24/7 support"
+    },
+    {
+      "type": "link or button",
+      "top": 16,
+      "left": 613.328125,
+      "width": 66.015625,
+      "height": 40,
+      "html": "<a class=\"HeaderMenu-link no-underline px-0 px-lg-2 py-3 py-lg-2 d-block d-lg-inline-block\" data-analytics-event=\"{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Pricing&quot;,&quot;label&quot;:&quot;ref_cta:Pricing;&quot;}\" href=\"https://github.com/pricing\">Pricing</a>",
+      "text": "Pricing"
+    },
+    {
+      "type": "link or button",
+      "top": 24,
+      "left": 1059.5,
+      "width": 48.84375,
+      "height": 24,
+      "html": "<a href=\"/login?return_to=https%3A%2F%2Fgithub.com%2Fyyjhao%2Fhugo-yyjhao\" class=\"HeaderMenu-link HeaderMenu-link--sign-in flex-shrink-0 no-underline d-block d-lg-inline-block border border-lg-0 rounded rounded-lg-0 p-2 p-lg-0\" data-hydro-click=\"{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/yyjhao/hugo-yyjhao&quot;,&quot;user_id&quot;:null}}\" data-hydro-click-hmac=\"230add461a4c21e428364feffe12cd6e77b761fc1b7125e66731a5d2d7ff078d\" data-ga-click=\"(Logged out) Header, clicked Sign in, text:sign-in\">\n              Sign in\n            </a>",
+      "text": "Sign in"
+    },
+    {
+      "type": "link or button",
+      "top": 19,
+      "left": 1124.34375,
+      "width": 72.65625,
+      "height": 34,
+      "html": "<a href=\"/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&amp;source=header-repo&amp;source_repo=yyjhao%2Fhugo-yyjhao\" class=\"HeaderMenu-link HeaderMenu-link--sign-up flex-shrink-0 d-none d-lg-inline-block no-underline border color-border-default rounded px-2 py-1\" data-hydro-click=\"{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/yyjhao/hugo-yyjhao&quot;,&quot;user_id&quot;:null}}\" data-hydro-click-hmac=\"230add461a4c21e428364feffe12cd6e77b761fc1b7125e66731a5d2d7ff078d\" data-analytics-event=\"{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/<user-name>/<repo-name>;ref_cta:Sign up;ref_loc:header logged out&quot;}\">\n              Sign up\n            </a>",
+      "text": "Sign up"
+    },
+    {
+      "type": "link or button",
+      "top": 91,
+      "left": 56,
+      "width": 57.109375,
+      "height": 23,
+      "html": "<a class=\"url fn\" rel=\"author\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yyjhao/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"/yyjhao\">\n        yyjhao\n</a>",
+      "text": "yyjhao"
+    },
+    {
+      "type": "link or button",
+      "top": 91,
+      "left": 126.640625,
+      "width": 116,
+      "height": 23,
+      "html": "<a data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" href=\"/yyjhao/hugo-yyjhao\">hugo-yyjhao</a>",
+      "text": "hugo-yyjhao"
+    },
+    {
+      "type": "link or button",
+      "top": 88,
+      "left": 801.28125,
+      "width": 123.671875,
+      "height": 28,
+      "html": "<a href=\"/login?return_to=%2Fyyjhao%2Fhugo-yyjhao\" rel=\"nofollow\" id=\"repository-details-watch-button\" data-hydro-click=\"{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/yyjhao/hugo-yyjhao&quot;,&quot;user_id&quot;:null}}\" data-hydro-click-hmac=\"2ccd5ce2cf5ae6b8b1dc87fcd4c902881da6e6aa371acb017371b3fc526a38fb\" aria-label=\"You must be signed in to change notification settings\" data-view-component=\"true\" class=\"btn-sm btn\" aria-describedby=\"tooltip-ac7eed19-1847-4342-b306-a316ae8f69aa\">    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-bell mr-2\">\n    <path d=\"M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z\"></path>\n</svg>Notifications\n</a>",
+      "text": "Notifications"
+    },
+    {
+      "type": "link or button",
+      "top": 88,
+      "left": 932.953125,
+      "width": 102.78125,
+      "height": 28,
+      "html": "<a icon=\"repo-forked\" id=\"fork-button\" href=\"/login?return_to=%2Fyyjhao%2Fhugo-yyjhao\" rel=\"nofollow\" data-hydro-click=\"{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:346252796,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/yyjhao/hugo-yyjhao&quot;,&quot;user_id&quot;:null}}\" data-hydro-click-hmac=\"2ecd9db627428584e52fb4b67263a509991fe46fedcf8a7ee8535ffe3b04275f\" data-view-component=\"true\" class=\"btn-sm btn\">    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-repo-forked mr-2\">\n    <path d=\"M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z\"></path>\n</svg>Fork\n    <span id=\"repo-network-counter\" data-pjax-replace=\"true\" data-turbo-replace=\"true\" title=\"0\" data-view-component=\"true\" class=\"Counter\">0</span>\n</a>",
+      "text": "Fork\n    0"
+    },
+    {
+      "type": "link or button",
+      "top": 88,
+      "left": 1043.734375,
+      "width": 103.265625,
+      "height": 28,
+      "html": "<a href=\"/login?return_to=%2Fyyjhao%2Fhugo-yyjhao\" rel=\"nofollow\" data-hydro-click=\"{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:346252796,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/yyjhao/hugo-yyjhao&quot;,&quot;user_id&quot;:null}}\" data-hydro-click-hmac=\"e22a6c0fa90a1cf200541d8e15bcec71d35004ae2d2995b18f713fd216991869\" aria-label=\"You must be signed in to star a repository\" data-view-component=\"true\" class=\"tooltipped tooltipped-s btn-sm btn BtnGroup-item\">    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-star v-align-text-bottom d-inline-block mr-2\">\n    <path d=\"M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z\"></path>\n</svg><span data-view-component=\"true\" class=\"d-inline\">\n          Star\n</span>          <span id=\"repo-stars-counter-star\" aria-label=\"0 users starred this repository\" data-singular-suffix=\"user starred this repository\" data-plural-suffix=\"users starred this repository\" data-turbo-replace=\"true\" title=\"0\" data-view-component=\"true\" class=\"Counter js-social-count\">0</span>\n</a>",
+      "text": "Star\n          0"
+    },
+    {
+      "type": "link or button",
+      "top": 143,
+      "left": 32,
+      "width": 75.421875,
+      "height": 30,
+      "html": "<a id=\"code-tab\" href=\"/yyjhao/hugo-yyjhao\" data-tab-item=\"i0code-tab\" data-selected-links=\"repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments repo_attestations /yyjhao/hugo-yyjhao\" data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" data-hotkey=\"g c\" data-analytics-event=\"{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Code&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}\" aria-current=\"page\" data-view-component=\"true\" class=\"UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected\">\n    \n              <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-code UnderlineNav-octicon d-none d-sm-inline\">\n    <path d=\"m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z\"></path>\n</svg>\n        <span data-content=\"Code\">Code</span>\n          <span id=\"code-repo-tab-count\" data-pjax-replace=\"\" data-turbo-replace=\"\" title=\"Not available\" data-view-component=\"true\" class=\"Counter\"></span>\n\n\n    \n</a>",
+      "text": "Code"
+    },
+    {
+      "type": "link or button",
+      "top": 143,
+      "left": 115.421875,
+      "width": 83.234375,
+      "height": 30,
+      "html": "<a id=\"issues-tab\" href=\"/yyjhao/hugo-yyjhao/issues\" data-tab-item=\"i1issues-tab\" data-selected-links=\"repo_issues repo_labels repo_milestones /yyjhao/hugo-yyjhao/issues /_view_fragments/issues/index/yyjhao/hugo-yyjhao/layout\" data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" data-hotkey=\"g i\" data-analytics-event=\"{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}\" data-view-component=\"true\" class=\"UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item\">\n    \n              <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline\">\n    <path d=\"M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z\"></path><path d=\"M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z\"></path>\n</svg>\n        <span data-content=\"Issues\">Issues</span>\n          <span id=\"issues-repo-tab-count\" data-pjax-replace=\"\" data-turbo-replace=\"\" title=\"0\" hidden=\"hidden\" data-view-component=\"true\" class=\"Counter\">0</span>\n\n\n    \n</a>",
+      "text": "Issues\n          0"
+    },
+    {
+      "type": "link or button",
+      "top": 143,
+      "left": 206.65625,
+      "width": 128,
+      "height": 30,
+      "html": "<a id=\"pull-requests-tab\" href=\"/yyjhao/hugo-yyjhao/pulls\" data-tab-item=\"i2pull-requests-tab\" data-selected-links=\"repo_pulls checks /yyjhao/hugo-yyjhao/pulls\" data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" data-hotkey=\"g p\" data-analytics-event=\"{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Pull requests&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}\" data-view-component=\"true\" class=\"UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item\">\n    \n              <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline\">\n    <path d=\"M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z\"></path>\n</svg>\n        <span data-content=\"Pull requests\">Pull requests</span>\n          <span id=\"pull-requests-repo-tab-count\" data-pjax-replace=\"\" data-turbo-replace=\"\" title=\"0\" hidden=\"hidden\" data-view-component=\"true\" class=\"Counter\">0</span>\n\n\n    \n</a>",
+      "text": "Pull requests\n          0"
+    },
+    {
+      "type": "link or button",
+      "top": 143,
+      "left": 342.65625,
+      "width": 90.9375,
+      "height": 30,
+      "html": "<a id=\"actions-tab\" href=\"/yyjhao/hugo-yyjhao/actions\" data-tab-item=\"i3actions-tab\" data-selected-links=\"repo_actions /yyjhao/hugo-yyjhao/actions\" data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" data-hotkey=\"g a\" data-analytics-event=\"{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Actions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}\" data-view-component=\"true\" class=\"UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item\">\n    \n              <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-play UnderlineNav-octicon d-none d-sm-inline\">\n    <path d=\"M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z\"></path>\n</svg>\n        <span data-content=\"Actions\">Actions</span>\n          <span id=\"actions-repo-tab-count\" data-pjax-replace=\"\" data-turbo-replace=\"\" title=\"Not available\" data-view-component=\"true\" class=\"Counter\"></span>\n\n\n    \n</a>",
+      "text": "Actions"
+    },
+    {
+      "type": "link or button",
+      "top": 143,
+      "left": 441.59375,
+      "width": 95.71875,
+      "height": 30,
+      "html": "<a id=\"projects-tab\" href=\"/yyjhao/hugo-yyjhao/projects\" data-tab-item=\"i4projects-tab\" data-selected-links=\"repo_projects new_repo_project repo_project /yyjhao/hugo-yyjhao/projects\" data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" data-hotkey=\"g b\" data-analytics-event=\"{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Projects&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}\" data-view-component=\"true\" class=\"UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item\">\n    \n              <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-table UnderlineNav-octicon d-none d-sm-inline\">\n    <path d=\"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z\"></path>\n</svg>\n        <span data-content=\"Projects\">Projects</span>\n          <span id=\"projects-repo-tab-count\" data-pjax-replace=\"\" data-turbo-replace=\"\" title=\"0\" hidden=\"hidden\" data-view-component=\"true\" class=\"Counter\">0</span>\n\n\n    \n</a>",
+      "text": "Projects\n          0"
+    },
+    {
+      "type": "link or button",
+      "top": 143,
+      "left": 545.3125,
+      "width": 96.34375,
+      "height": 30,
+      "html": "<a id=\"security-tab\" href=\"/yyjhao/hugo-yyjhao/security\" data-tab-item=\"i5security-tab\" data-selected-links=\"security overview alerts policy token_scanning code_scanning /yyjhao/hugo-yyjhao/security\" data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" data-hotkey=\"g s\" data-analytics-event=\"{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Security&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}\" data-view-component=\"true\" class=\"UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item\">\n    \n              <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline\">\n    <path d=\"M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path>\n</svg>\n        <span data-content=\"Security\">Security</span>\n          <include-fragment src=\"/yyjhao/hugo-yyjhao/security/overall-count\" accept=\"text/fragment+html\" class=\"is-error\"></include-fragment>\n\n    \n</a>",
+      "text": "Security"
+    },
+    {
+      "type": "link or button",
+      "top": 143,
+      "left": 649.65625,
+      "width": 93.859375,
+      "height": 30,
+      "html": "<a id=\"insights-tab\" href=\"/yyjhao/hugo-yyjhao/pulse\" data-tab-item=\"i6insights-tab\" data-selected-links=\"repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /yyjhao/hugo-yyjhao/pulse\" data-pjax=\"#repo-content-pjax-container\" data-turbo-frame=\"repo-content-turbo-frame\" data-analytics-event=\"{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}\" data-view-component=\"true\" class=\"UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item\">\n    \n              <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline\">\n    <path d=\"M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z\"></path>\n</svg>\n        <span data-content=\"Insights\">Insights</span>\n          <span id=\"insights-repo-tab-count\" data-pjax-replace=\"\" data-turbo-replace=\"\" title=\"Not available\" data-view-component=\"true\" class=\"Counter\"></span>\n\n\n    \n</a>",
+      "text": "Insights"
+    },
+    {
+      "type": "link or button",
+      "top": 206,
+      "left": 145.484375,
+      "width": 92.0625,
+      "height": 32,
+      "html": "<a style=\"--button-color:fg.muted\" type=\"button\" href=\"/yyjhao/hugo-yyjhao/branches\" class=\"types__StyledButton-sc-ws60qy-0 fKzoWe\"><span data-component=\"buttonContent\" class=\"Box-sc-g0xbh4-0 kkrdEu\"><span data-component=\"leadingVisual\" class=\"Box-sc-g0xbh4-0 trpoQ\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"img\" class=\"octicon octicon-git-branch\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible\"><path d=\"M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z\"></path></svg></span><span data-component=\"text\">Branches</span></span></a>",
+      "text": "Branches"
+    },
+    {
+      "type": "link or button",
+      "top": 206,
+      "left": 237.546875,
+      "width": 61.140625,
+      "height": 32,
+      "html": "<a style=\"--button-color:fg.muted\" type=\"button\" href=\"/yyjhao/hugo-yyjhao/tags\" class=\"types__StyledButton-sc-ws60qy-0 fKzoWe\"><span data-component=\"buttonContent\" class=\"Box-sc-g0xbh4-0 kkrdEu\"><span data-component=\"leadingVisual\" class=\"Box-sc-g0xbh4-0 trpoQ\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"img\" class=\"octicon octicon-tag\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible\"><path d=\"M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z\"></path></svg></span><span data-component=\"text\">Tags</span></span></a>",
+      "text": "Tags"
+    },
+    {
+      "type": "link or button",
+      "top": 267,
+      "left": 740.015625,
+      "width": 107.984375,
+      "height": 28,
+      "html": "<a aria-label=\"Commit history\" class=\"types__StyledButton-sc-ws60qy-0 hWITRv d-none d-lg-flex LinkButton-module__code-view-link-button--xvCGA flex-items-center fgColor-default\" href=\"/yyjhao/hugo-yyjhao/commits/main/\" data-size=\"small\"><span data-component=\"buttonContent\" class=\"Box-sc-g0xbh4-0 kkrdEu\"><span data-component=\"leadingVisual\" class=\"Box-sc-g0xbh4-0 trpoQ\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"img\" class=\"octicon octicon-history\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible\"><path d=\"m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z\"></path></svg></span><span data-component=\"text\"><span class=\"Text-sc-17v1xeu-0 gPDEWA fgColor-default\">33 Commits</span></span></span></a>",
+      "text": "33 Commits"
+    },
+    {
+      "type": "link or button",
+      "top": 319.5,
+      "left": 75,
+      "width": 114.03125,
+      "height": 17,
+      "html": "<a title=\"This path skips through empty directories\" aria-label=\".github/workflows, (Directory)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/tree/main/.github/workflows\"><span class=\"react-directory-default-color\" data-testid=\"path-name-segment\">.github/</span><span class=\"\" data-testid=\"path-name-segment\">workflows</span></a>",
+      "text": ".github/workflows"
+    },
+    {
+      "type": "link or button",
+      "top": 360.5,
+      "left": 75,
+      "width": 71.984375,
+      "height": 17,
+      "html": "<a title=\"archetypes\" aria-label=\"archetypes, (Directory)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/tree/main/archetypes\">archetypes</a>",
+      "text": "archetypes"
+    },
+    {
+      "type": "link or button",
+      "top": 401.5,
+      "left": 75,
+      "width": 49.46875,
+      "height": 17,
+      "html": "<a title=\"content\" aria-label=\"content, (Directory)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/tree/main/content\">content</a>",
+      "text": "content"
+    },
+    {
+      "type": "link or button",
+      "top": 442.5,
+      "left": 75,
+      "width": 178.765625,
+      "height": 17,
+      "html": "<a title=\"This path skips through empty directories\" aria-label=\"resources/_gen/assets/scss, (Directory)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/tree/main/resources/_gen/assets/scss\"><span class=\"react-directory-default-color\" data-testid=\"path-name-segment\">resources/</span><span class=\"react-directory-default-color\" data-testid=\"path-name-segment\">_gen/</span><span class=\"react-directory-default-color\" data-testid=\"path-name-segment\">assets/</span><span class=\"\" data-testid=\"path-name-segment\">scss</span></a>",
+      "text": "resources/_gen/assets/scss"
+    },
+    {
+      "type": "link or button",
+      "top": 483.5,
+      "left": 75,
+      "width": 47.9375,
+      "height": 17,
+      "html": "<a title=\"themes\" aria-label=\"themes, (Directory)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/tree/main/themes\">themes</a>",
+      "text": "themes"
+    },
+    {
+      "type": "link or button",
+      "top": 524.5,
+      "left": 75,
+      "width": 61.015625,
+      "height": 17,
+      "html": "<a title=\".gitignore\" aria-label=\".gitignore, (File)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/blob/main/.gitignore\">.gitignore</a>",
+      "text": ".gitignore"
+    },
+    {
+      "type": "link or button",
+      "top": 565.5,
+      "left": 75,
+      "width": 75.40625,
+      "height": 17,
+      "html": "<a title=\".gitmodules\" aria-label=\".gitmodules, (File)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/blob/main/.gitmodules\">.gitmodules</a>",
+      "text": ".gitmodules"
+    },
+    {
+      "type": "link or button",
+      "top": 606.5,
+      "left": 75,
+      "width": 72.546875,
+      "height": 17,
+      "html": "<a title=\"config.toml\" aria-label=\"config.toml, (File)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/blob/main/config.toml\">config.toml</a>",
+      "text": "config.toml"
+    },
+    {
+      "type": "link or button",
+      "top": 647.5,
+      "left": 75,
+      "width": 70.953125,
+      "height": 17,
+      "html": "<a title=\"netlify.toml\" aria-label=\"netlify.toml, (File)\" class=\"Link--primary\" href=\"/yyjhao/hugo-yyjhao/blob/main/netlify.toml\">netlify.toml</a>",
+      "text": "netlify.toml"
+    },
+    {
+      "type": "link or button",
+      "top": 316,
+      "left": 885,
+      "width": 75.875,
+      "height": 17,
+      "html": "<a href=\"/yyjhao/hugo-yyjhao/activity\" data-view-component=\"true\" class=\"Link Link--muted\">\n      <svg text=\"gray\" aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-pulse mr-2\">\n    <path d=\"M6 2c.306 0 .582.187.696.471L10 10.731l1.304-3.26A.751.751 0 0 1 12 7h3.25a.75.75 0 0 1 0 1.5h-2.742l-1.812 4.528a.751.751 0 0 1-1.392 0L6 4.77 4.696 8.03A.75.75 0 0 1 4 8.5H.75a.75.75 0 0 1 0-1.5h2.742l1.812-4.529A.751.751 0 0 1 6 2Z\"></path>\n</svg>\n      <span class=\"color-fg-muted\">Activity</span>\n</a>",
+      "text": "Activity"
+    },
+    {
+      "type": "link or button",
+      "top": 345,
+      "left": 885,
+      "width": 72.625,
+      "height": 17,
+      "html": "<a href=\"/yyjhao/hugo-yyjhao/stargazers\" data-view-component=\"true\" class=\"Link Link--muted\">\n      <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-star mr-2\">\n    <path d=\"M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z\"></path>\n</svg>\n      <strong>0</strong>\n      stars\n</a>",
+      "text": "0\n      stars"
+    },
+    {
+      "type": "link or button",
+      "top": 374,
+      "left": 885,
+      "width": 99,
+      "height": 17,
+      "html": "<a href=\"/yyjhao/hugo-yyjhao/watchers\" data-view-component=\"true\" class=\"Link Link--muted\">\n      <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-eye mr-2\">\n    <path d=\"M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z\"></path>\n</svg>\n      <strong>3</strong>\n      watching\n</a>",
+      "text": "3\n      watching"
+    },
+    {
+      "type": "link or button",
+      "top": 403,
+      "left": 885,
+      "width": 73.046875,
+      "height": 17,
+      "html": "<a href=\"/yyjhao/hugo-yyjhao/forks\" data-view-component=\"true\" class=\"Link Link--muted\">\n      <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-repo-forked mr-2\">\n    <path d=\"M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z\"></path>\n</svg>\n      <strong>0</strong>\n      forks\n</a>",
+      "text": "0\n      forks"
+    },
+    {
+      "type": "link or button",
+      "top": 432,
+      "left": 885,
+      "width": 112.6875,
+      "height": 17,
+      "html": "<a class=\"Link--muted\" href=\"/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fyyjhao%2Fhugo-yyjhao&amp;report=yyjhao+%28user%29\">\n          Report repository\n</a>",
+      "text": "Report repository"
+    },
+    {
+      "type": "link or button",
+      "top": 487,
+      "left": 885,
+      "width": 67.890625,
+      "height": 18,
+      "html": "<a href=\"/yyjhao/hugo-yyjhao/releases\" data-view-component=\"true\" class=\"Link--primary no-underline Link\" data-turbo-frame=\"repo-content-turbo-frame\">\n    Releases\n</a>",
+      "text": "Releases"
+    },
+    {
+      "type": "link or button",
+      "top": 575,
+      "left": 885,
+      "width": 296,
+      "height": 24,
+      "html": "<a href=\"/users/yyjhao/packages?repo_name=hugo-yyjhao\" data-view-component=\"true\" class=\"Link--primary no-underline Link d-flex flex-items-center\">\n    Packages\n      <span title=\"0\" hidden=\"hidden\" data-view-component=\"true\" class=\"Counter ml-1\">0</span>\n</a>",
+      "text": "Packages\n      0"
+    },
+    {
+      "type": "link or button",
+      "top": 757,
+      "left": 201.3125,
+      "width": 24,
+      "height": 26,
+      "html": "<a aria-label=\"Homepage\" title=\"GitHub\" class=\"footer-octicon mr-2\" href=\"https://github.com\">\n        <svg aria-hidden=\"true\" height=\"24\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"24\" data-view-component=\"true\" class=\"octicon octicon-mark-github\">\n    <path d=\"M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z\"></path>\n</svg>\n</a>"
+    },
+    {
+      "type": "link or button",
+      "top": 762,
+      "left": 363.265625,
+      "width": 34.703125,
+      "height": 15,
+      "html": "<a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}\" href=\"https://docs.github.com/site-policy/github-terms/github-terms-of-service\" data-view-component=\"true\" class=\"Link--secondary Link\">Terms</a>",
+      "text": "Terms"
+    },
+    {
+      "type": "link or button",
+      "top": 762,
+      "left": 413.96875,
+      "width": 41.28125,
+      "height": 15,
+      "html": "<a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}\" href=\"https://docs.github.com/site-policy/privacy-policies/github-privacy-statement\" data-view-component=\"true\" class=\"Link--secondary Link\">Privacy</a>",
+      "text": "Privacy"
+    },
+    {
+      "type": "link or button",
+      "top": 762,
+      "left": 471.25,
+      "width": 46.640625,
+      "height": 15,
+      "html": "<a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}\" href=\"https://github.com/security\" data-view-component=\"true\" class=\"Link--secondary Link\">Security</a>",
+      "text": "Security"
+    },
+    {
+      "type": "link or button",
+      "top": 762,
+      "left": 533.890625,
+      "width": 36.28125,
+      "height": 15,
+      "html": "<a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}\" href=\"https://www.githubstatus.com/\" data-view-component=\"true\" class=\"Link--secondary Link\">Status</a>",
+      "text": "Status"
+    },
+    {
+      "type": "link or button",
+      "top": 762,
+      "left": 586.171875,
+      "width": 28.8125,
+      "height": 15,
+      "html": "<a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}\" href=\"https://docs.github.com/\" data-view-component=\"true\" class=\"Link--secondary Link\">Docs</a>",
+      "text": "Docs"
+    },
+    {
+      "type": "link or button",
+      "top": 762,
+      "left": 630.984375,
+      "width": 44.859375,
+      "height": 15,
+      "html": "<a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}\" href=\"https://support.github.com?tags=dotcom-footer\" data-view-component=\"true\" class=\"Link--secondary Link\">Contact</a>",
+      "text": "Contact"
+    },
+    {
+      "type": "text field",
+      "top": 207,
+      "left": 565.140625,
+      "width": 154,
+      "height": 30,
+      "html": "<input type=\"text\" aria-label=\"Go to file\" role=\"combobox\" aria-controls=\"file-results-list\" aria-expanded=\"false\" aria-haspopup=\"dialog\" autocorrect=\"off\" spellcheck=\"false\" placeholder=\"Go to file\" data-component=\"input\" class=\"UnstyledTextInput-sc-14ypya-0 cDLBls\" value=\"\">",
+      "placeholder": "Go to file"
+    }
+  ]

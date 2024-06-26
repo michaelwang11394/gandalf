@@ -44,7 +44,7 @@ export default function Input({
   return (
     <Transition show={open} appear>
       <Dialog className={styles.dialog} onClose={handleClose}>
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={handleFormSubmit} data-isgandalf={true}>
           <TransitionChild
             enter="ease-out duration-300"
             enterFrom="opacity-0"

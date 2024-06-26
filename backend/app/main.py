@@ -12,14 +12,15 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 # OpenAI Realm Experiment 1
-# from backend.app.experiments.openai_realm_1.base_2 import (
+# from app.experiments.openai_realm_1.base_2 import (
 #     get_instruction,
 #     bucket_name,
 #     supabase,
 # )
 
 # OpenAI Realm Experiment 2
-from app.experiments.openai_realm_2.base_3 import (
+# from app.experiments.openai_realm_2.base_3 import (
+from app.experiments.realm_with_js.realm_with_js import (
     get_instruction,
     bucket_name,
     supabase,
@@ -51,6 +52,7 @@ async def index(
     product: str = Form(...),
     user_input: str = Form(...),
     dom_tree: str = Form(...),
+    screen_layout: str = Form(...),
     screenshot: UploadFile = File(...),
     session_id: str = Form(None),
 ):
@@ -91,6 +93,7 @@ async def index(
             dom_tree=dom_tree,
             file_path=file_path,
             user_input=user_input,
+            screen_layout=screen_layout,
             previous_screenshot_url=previous_screenshot_url,
             previous_response_instruction=previous_response_instruction,
         )

@@ -13,6 +13,8 @@ import parseTree from "./utilities/parseTree";
 
 import gandalfStyles from "./Gandalf.module.css";
 import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
+import { generateScreenLayout } from "./generate_screen_layout";
+import { escapeSelector } from "./utilities/escapeSelector";
 
 interface GandalfProps {
   productName: string;
@@ -142,6 +144,7 @@ const Gandalf: React.FC<GandalfProps> = ({
     // Capture DOM Tree
     const domTreeString = parseTree();
     setDomTree(domTreeString);
+    const screenLayout = generateScreenLayout()
 
     // Capture Screenshot
     html2canvas(document.body).then((canvas) => {
@@ -159,6 +162,8 @@ const Gandalf: React.FC<GandalfProps> = ({
           }, 0);
 
           console.log(domTreeString)
+
+          console.log(screenLayout)
         }
 
         setScreenshot(blob as File);
@@ -167,6 +172,7 @@ const Gandalf: React.FC<GandalfProps> = ({
         formData.append("user_input", query);
         formData.append("product", "supabase");
         formData.append("dom_tree", domTreeString);
+        formData.append("screen_layout", screenLayout)
         if (blob) {
           formData.append("screenshot", blob, "screenshot.png");
         }
@@ -186,16 +192,18 @@ const Gandalf: React.FC<GandalfProps> = ({
             try {
               const resultObject = JSON.parse(jsonString);
               console.log("Result Object:", resultObject);
-              const { Instructions, selector, hasMoreInstructions } =
+              const { Instructions, selector: _selector, hasMoreInstructions } =
                 resultObject;
               console.log(
                 "Instructions:",
                 Instructions,
                 "selector:",
-                selector,
+                _selector,
                 "hasMoreInstructions:",
                 hasMoreInstructions
               );
+
+              const selector = escapeSelector(_selector)
 
               if (Instructions) {
                 setPopoverContent(Instructions);
@@ -237,7 +245,7 @@ const Gandalf: React.FC<GandalfProps> = ({
 
   return (
     <>
-      <div className={gandalfStyles.container}>
+      <div className={gandalfStyles.container} data-isGandalf={true}>
         <Input
           open={isOpenInput}
           query={query}
@@ -247,7 +255,7 @@ const Gandalf: React.FC<GandalfProps> = ({
           handleSubmit={handleSubmit}
         />
       </div>
-      <div ref={refs.setFloating} style={customFloatingStyles}>
+      <div ref={refs.setFloating} style={customFloatingStyles} data-isgandalf={true}>
         {popoverContent}
         <div
           ref={arrowRef}
@@ -271,6 +279,7 @@ const Gandalf: React.FC<GandalfProps> = ({
           disabled={!isWidgetVisible}
           onClick={() => setIsOpenInput(!isOpenInput)}
           aria-label="Toggle chat"
+          data-isgandalf={true}
         >
           💬
         </button>

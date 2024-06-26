@@ -1,5 +1,5 @@
-from backend.app.realm.construct_screen import TextObject
-from backend.app.realm.parse_screen import parse_screen
+from app.realm.construct_screen import TextObject
+from app.realm.parse_screen import parse_screen
 
 
 def get_turn_objects_from_screen():
