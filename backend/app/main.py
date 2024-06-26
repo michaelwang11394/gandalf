@@ -11,7 +11,15 @@ from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.experiments.openai_realm_1.base_2 import (
+# OpenAI Realm Experiment 1
+# from backend.app.experiments.openai_realm_1.base_2 import (
+#     get_instruction,
+#     bucket_name,
+#     supabase,
+# )
+
+# OpenAI Realm Experiment 2
+from app.experiments.openai_realm_2.base_3 import (
     get_instruction,
     bucket_name,
     supabase,
