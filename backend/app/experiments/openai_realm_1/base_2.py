@@ -1,7 +1,7 @@
 from openai import OpenAI
 from supabase import Client, create_client
 from app.settings import Settings
-from backend.app.experiments.openai_realm_1.parse_screen import parse_screen
+from app.experiments.openai_realm_1.parse_screen import parse_screen
 
 settings = Settings()
 openai = OpenAI(api_key=settings.OPENAI_API_KEY)
@@ -98,4 +98,6 @@ def get_instruction(
         messages=messages,
         temperature=0,
     )
-    return response.choices[0].message.content
+    result = response.choices[0].message.content
+    result = result.removeprefix("```json\n").removesuffix("\n```")
+    return result 

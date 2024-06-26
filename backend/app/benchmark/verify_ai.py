@@ -4,7 +4,8 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 import argparse
-from backend.app.experiments.base import get_instruction
+from app.experiments.base import get_instruction
+from app.experiments.openai_realm_1.base_2 import get_instruction as get_instruction_realm
 
 
 def main():
@@ -18,20 +19,31 @@ def main():
         "screenshot_path_in_supabase", type=str, help="The screenshot path in supabase"
     )
     parser.add_argument("user_input", type=str, help="The user input string")
+    parser.add_argument("agent", type=str, help="The AI agent type")
 
     args = parser.parse_args()
 
     with open(args.html_file, "r") as file:
         dom_tree = file.read()
 
-    result = get_instruction(
-        product="supabase",
-        dom_tree=dom_tree,
-        file_path=args.screenshot_path_in_supabase,
-        user_input=args.user_input,
-        previous_screenshot_url=None,
-        previous_response_instruction=None,
-    )
+    if args.agent == "base":
+        result = get_instruction(
+            product="supabase",
+            dom_tree=dom_tree,
+            file_path=args.screenshot_path_in_supabase,
+            user_input=args.user_input,
+            previous_screenshot_url=None,
+            previous_response_instruction=None,
+        )
+    else:
+        result = get_instruction_realm(
+            product="supabase",
+            dom_tree=dom_tree,
+            file_path=args.screenshot_path_in_supabase,
+            user_input=args.user_input,
+            previous_screenshot_url=None,
+            previous_response_instruction=None,
+        )
     print(result)
 
 

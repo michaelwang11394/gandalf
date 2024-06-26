@@ -95,4 +95,6 @@ def get_instruction(
         messages=messages,
         temperature=0,
     )
-    return response.choices[0].message.content
+    result = response.choices[0].message.content
+    result = result.removeprefix("```json\n").removesuffix("\n```")
+    return result 

@@ -37,7 +37,7 @@ tests = {
         ("How can I run the app for real?", "[aria-label='Navigate to app in user mode']"),
         ("How can I test out an expression?", "#DebugButton"),
         ("How can I add some complicated logic in code?", "[data-testid='EditorSidebarMenuItem::Code']"),
-        ("how can I build a dashboard for my company forecast?", "data-testid='WidgetPicker:PlotlyChartWidget']")
+        ("how can I build a dashboard for my company forecast?", "[data-testid='WidgetPicker:PlotlyChartWidget']")
     ]
 }
 
@@ -56,7 +56,7 @@ def main():
                 webpages.append(webpage)
                 inputs.append(user_input)
                 expected_selectors.append(expected)
-                commands.append(f"python3 {script_path}/verify_ai.py {script_path}/{webpage}/dom.html {script_path}/{webpage}/screenshot.png \"{user_input}\"")
+                commands.append(f"python3 {script_path}/verify_ai.py {script_path}/{webpage}/dom.html {script_path}/{webpage}/screenshot.png \"{user_input}\" realm")
     print("Running these commands:")
     print("\n".join(commands))
 

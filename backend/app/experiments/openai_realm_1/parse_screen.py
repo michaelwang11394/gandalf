@@ -11,12 +11,13 @@ openai.api_key = API_KEY
 
 def parse_screen(image_path):
     system_prompt = """
-    Analyze this UI screenshot. Identify each UI element, its type (e.g., button, text field, dropdown), and its approximate position (use percentages for top, left, width, and height). Return the information as a JSON array of objects, each with 'type', 'top', 'left', 'width', and 'height' properties.
+    Analyze this UI screenshot. Identify each UI element, its type (e.g., button, text field, dropdown), and its approximate position (use percentages for top, left, width, and height). Return the information as a JSON array of objects, each with 'type', 'css_selector, 'top', 'left', 'width', and 'height' properties.
     Here are two examples of the expected output format:
 
     [
       {
         "type": "button",
+        "css_selector": ".class",
         "top": 10,
         "left": 5,
         "width": 20,
@@ -25,14 +26,15 @@ def parse_screen(image_path):
       },
       {
         "type": "text_field",
+        "css_selector": "[attribute='value']",
         "top": 25,
         "left": 5,
         "width": 90,
         "height": 10,
-        "placeholder": "Enter your name"
       },
       {
         "type": "dropdown",
+        "css_selector": "#id",
         "top": 40,
         "left": 5,
         "width": 30,
