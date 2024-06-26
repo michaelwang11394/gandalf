@@ -1,40 +1,70 @@
 import os
 from dotenv import load_dotenv
-import replicate
-from PIL import Image
-import base64
-from io import BytesIO
+from fastapi import logger
+import openai
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Get the Replicate API token from the .env file
-REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
-
-if not REPLICATE_API_TOKEN:
-    raise ValueError(
-        "REPLICATE_API_TOKEN is not set in the .env file. Please set it before running this script."
-    )
-
-# Set the API token for the replicate library
-os.environ["REPLICATE_API_TOKEN"] = REPLICATE_API_TOKEN
+API_KEY = os.getenv("OPENAI_API_KEY")
+openai.api_key = API_KEY
 
 
-def detect_ui_elements(image_uri: str, prompt: str):
-    # Call the Replicate API
-    output = replicate.run(
-        "cjwbw/pix2struct:e32d77481424b47e7959836638b62082d8528b0c66a3a30eedca3970aaf786e7",
-        input={"image": image_uri, "text": prompt},
-    )
+def parse_screen(image_path):
+    system_prompt = """
+    Analyze this UI screenshot. Identify each UI element, its type (e.g., button, text field, dropdown), and its approximate position (use percentages for top, left, width, and height). Return the information as a JSON array of objects, each with 'type', 'top', 'left', 'width', and 'height' properties.
+    Here are two examples of the expected output format:
 
-    return output
+    [
+      {
+        "type": "button",
+        "top": 10,
+        "left": 5,
+        "width": 20,
+        "height": 8,
+        "text": "Submit"
+      },
+      {
+        "type": "text_field",
+        "top": 25,
+        "left": 5,
+        "width": 90,
+        "height": 10,
+        "placeholder": "Enter your name"
+      },
+      {
+        "type": "dropdown",
+        "top": 40,
+        "left": 5,
+        "width": 30,
+        "height": 8,
+        "options": ["Option 1", "Option 2", "Option 3"]
+      }
+    ]
 
+    Please analyze the provided image and return a similar JSON structure describing the UI elements you identify. Be as accurate as possible with the positions and sizes, and include any relevant text or content for each element.
+    """
 
-if __name__ == "__main__":
-    image_uri = "https://vtkckkrjbnerbwnyustk.supabase.co/storage/v1/object/sign/screenshots/temp/f8c55a1e-c441-48d8-93eb-66eb5587a678_supabase%20.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzY3JlZW5zaG90cy90ZW1wL2Y4YzU1YTFlLWM0NDEtNDhkOC05M2ViLTY2ZWI1NTg3YTY3OF9zdXBhYmFzZSAucG5nIiwiaWF0IjoxNzE5MjczOTUzLCJleHAiOjE3MjE4NjU5NTN9.Wio8J2AZfUqKrnbIqyTz8Roa1qr6sRLXHZtBuf7TC_4&t=2024-06-25T00%3A05%3A53.978Z"
-    prompt = (
-        "Describe the UI elements in this image, including their types and positions."
-    )
-
-    description = detect_ui_elements(image_uri, prompt)
-    print(description)
+    try:
+        response = openai.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "system",
+                    "content": [{"type": "text", "text": system_prompt}],
+                },
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "image_url",
+                            "image_url": {"url": image_path},
+                        }
+                    ],
+                },
+            ],
+            temperature=0.0,
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"Error: {e}")
+        return str(e)

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import React, { useState, useEffect, useRef } from "react";
-=======
 import React, {
   useState,
   useEffect,
@@ -8,7 +5,6 @@ import React, {
   useMemo,
   useCallback,
 } from "react";
->>>>>>> main
 import html2canvas from "html2canvas";
 import { debounce } from "lodash";
 import Input from "./components/input";
@@ -185,27 +181,6 @@ const Gandalf: React.FC<GandalfProps> = ({
             try {
               const resultObject = JSON.parse(jsonString);
               console.log("Result Object:", resultObject);
-<<<<<<< HEAD
-              const {
-                Instructions,
-                classname,
-                id,
-                href,
-                text,
-                hasMoreInstructions,
-              } = resultObject;
-              console.log(
-                "Instructions:",
-                Instructions,
-                "classname:",
-                classname,
-                "id:",
-                id,
-                "href:",
-                href,
-                "text:",
-                text,
-=======
               const { Instructions, selector, hasMoreInstructions } =
                 resultObject;
               console.log(
@@ -213,7 +188,6 @@ const Gandalf: React.FC<GandalfProps> = ({
                 Instructions,
                 "selector:",
                 selector,
->>>>>>> main
                 "hasMoreInstructions:",
                 hasMoreInstructions
               );
@@ -222,40 +196,11 @@ const Gandalf: React.FC<GandalfProps> = ({
                 setPopoverContent(Instructions);
               }
               if (hasMoreInstructions) {
-<<<<<<< HEAD
-                setHasMoreInstructions(true);
-              }
-
-              // Determine the target for the popover based on availability and document presence
-              let targetElement = null;
-              if (
-                classname &&
-                document.getElementsByClassName(classname).length > 0
-              ) {
-                targetElement = document.getElementsByClassName(
-                  classname
-                )[0] as HTMLElement;
-              } else if (id && document.getElementById(id)) {
-                targetElement = document.getElementById(id) as HTMLElement;
-              } else if (href && document.querySelector(`[href="${href}"]`)) {
-                targetElement = document.querySelector(
-                  `[href="${href}"]`
-                ) as HTMLElement;
-              } else if (
-                text &&
-                document.querySelector(`:contains("${text}")`)
-              ) {
-                targetElement = document.querySelector(
-                  `:contains("${text}")`
-                ) as HTMLElement;
-              }
-=======
                 hasMoreInstructionsRef.current = true;
               }
 
               // Determine the target for the popover based on availability and document presence
               let targetElement = document.querySelector(selector);
->>>>>>> main
 
               // Update the target reference for Popper
               // targetRef.current = targetElement;

@@ -12,6 +12,8 @@ from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.realm.parse_screen import parse_screen
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -82,6 +84,8 @@ async def index(
                     "response_instruction"
                 )
 
+        gpt_screen_layout = parse_screen(signed_url["signedURL"])
+
         # Construct the messages for the OpenAI API call
         messages = [
             {
@@ -91,7 +95,7 @@ async def index(
                         "type": "text",
                         "text": (
                             "You are an expert customer support agent for {product}. The user will describe an issue they are facing, "
-                            "a screenshot of their current page and view port, and the HTML domtree of their page. You are also given a screenshot of the previous state/page of the user and the previous response from the llm for the next step the user should follow.\n"
+                            "and you will be given a screenshot of the user's current page and view port, a json representation of their page that identifies each ui elemtns type (e.g., button, text field, dropdown), and its approximate position (use percentages for top, left, width, and height), and the HTML domtree of their page. You are also given a screenshot of the previous state/page of the user and the previous response from the llm for the next step the user should follow.\n"
                             "You have one job and you must return it in the correct format or else bad things might happen.\n"
                             "Your job is to return:\n"
                             "1- The english text Instruction for the next step they must take to complete their task or solve their issue based on their CURRENT progress which is given by the screenshot and dom tree. Also, you should consider the most recent state and instruction when giving the user the next step. \n"
@@ -117,6 +121,10 @@ async def index(
                         "image_url": {
                             "url": signed_url["signedURL"],
                         },
+                    },
+                    {
+                        "type": "text",
+                        "text": f"Here is the JSON representation of the current page:\n {gpt_screen_layout}.",
                     },
                     {
                         "type": "text",
@@ -155,7 +163,7 @@ async def index(
         response = openai.chat.completions.create(
             model="gpt-4o",
             messages=messages,
-            temperature=0.2,
+            temperature=0.0,
         )
         result = response.choices[0].message.content
         logger.info(f"Result: {result}")
