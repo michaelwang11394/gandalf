@@ -7,6 +7,9 @@ frontend/dist/
 frontned/yarn.lock
 .DS_Store
 
+# benchmark output
+batched.csv
+
 # environments 
 backend/venv
 .env

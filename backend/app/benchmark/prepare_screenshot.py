@@ -11,6 +11,7 @@ def main():
     
     args = parser.parse_args()
     file_path = args.screenshot_path
+    supabase.storage.from_(bucket_name).remove([file_path])
     supabase.storage.from_(bucket_name).upload(
         file_path, file_path
     )

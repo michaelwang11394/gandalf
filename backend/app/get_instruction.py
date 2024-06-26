@@ -38,7 +38,8 @@ def get_instruction(
                         "You must ONLY return the following JSON format, if you don't know any of the fields, just leave it blank: { Instructions: , selector: , }\n"
                         "3- A true or false flag 'hasMoreInstructions' indicating whether there are more steps after the current one.\n"
                         "4- You must ONLY return the following JSON format: { Instructions: , selector: , hasMoreInstructions: }\n"
-                        "An example of a properly formatted response would be: { Instructions: Click the submit button, Instructions: , selector: .submit-button, hasMoreInstructions: false }\n"
+                        "An example of a properly formatted response would be: { Instructions: \"Click the submit button\", selector: \".submit-button\", hasMoreInstructions: false }\n"
+                        "Only return the JSON without wrapping it in anything else."
                     ),
                 }
             ],
@@ -93,6 +94,6 @@ def get_instruction(
     response = openai.chat.completions.create(
         model="gpt-4o",
         messages=messages,
-        temperature=0.2,
+        temperature=0,
     )
     return response.choices[0].message.content
