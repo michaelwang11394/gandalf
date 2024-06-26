@@ -11,7 +11,11 @@ from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.get_instruction import get_instruction, bucket_name, supabase
+from backend.app.experiments.openai_realm_1.base_2 import (
+    get_instruction,
+    bucket_name,
+    supabase,
+)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -80,7 +84,7 @@ async def index(
             file_path=file_path,
             user_input=user_input,
             previous_screenshot_url=previous_screenshot_url,
-            previous_response_instruction=previous_response_instruction
+            previous_response_instruction=previous_response_instruction,
         )
         logger.info(f"Result: {result}")
 
