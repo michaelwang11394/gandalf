@@ -146,18 +146,20 @@ const Gandalf: React.FC<GandalfProps> = ({
     // Capture Screenshot
     html2canvas(document.body).then((canvas) => {
       canvas.toBlob((blob) => {
-        // const a = document.createElement("a");
-        // document.body.appendChild(a);
-        // const url = window.URL.createObjectURL(blob!);
-        // a.href = url;
-        // a.download = "screenshot.png";
-        // a.click();
-        // setTimeout(() => {
-        //   window.URL.revokeObjectURL(url);
-        //   document.body.removeChild(a);
-        // }, 0);
+        if (location.hash) {
+          const a = document.createElement("a");
+          document.body.appendChild(a);
+          const url = window.URL.createObjectURL(blob!);
+          a.href = url;
+          a.download = "screenshot.png";
+          a.click();
+          setTimeout(() => {
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+          }, 0);
 
-        // console.log(domTreeString)
+          console.log(domTreeString)
+        }
 
         setScreenshot(blob as File);
 
