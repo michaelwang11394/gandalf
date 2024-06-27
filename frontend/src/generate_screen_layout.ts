@@ -4,6 +4,7 @@ type ScreenLayoutItem = {
     left: number
     width: number
     height: number
+    background: string
     text?: string
     placeholder?: string
     html: string
@@ -21,6 +22,7 @@ function generateScreenLayoutInner(): ScreenLayoutItem[] {
                 left: rect.left,
                 width: rect.width,
                 height: rect.height,
+                background: window.getComputedStyle(button).background,
                 html: button.outerHTML
             }
             const text = button.textContent?.trim()
@@ -40,6 +42,7 @@ function generateScreenLayoutInner(): ScreenLayoutItem[] {
                 left: rect.left,
                 width: rect.width,
                 height: rect.height,
+                background: window.getComputedStyle(link).background,
                 html: link.outerHTML
             }
             const text = link.textContent?.trim()
@@ -60,6 +63,7 @@ function generateScreenLayoutInner(): ScreenLayoutItem[] {
                 left: rect.left,
                 width: rect.width,
                 height: rect.height,
+                background: window.getComputedStyle(field).background,
                 html: field.outerHTML
             }
             const placeholder = (field as HTMLTextAreaElement).placeholder

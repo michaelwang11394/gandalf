@@ -43,6 +43,8 @@ tests = {
 
 script_path = "backend/app/benchmark"
 
+repeat = 1
+
 def main():
     threads = []
     commands = []
@@ -52,7 +54,7 @@ def main():
 
     for (webpage, user_inputs) in tests.items():
         for (user_input, expected) in user_inputs:
-            for i in range(10):
+            for i in range(repeat):
                 webpages.append(webpage)
                 inputs.append(user_input)
                 expected_selectors.append(expected)

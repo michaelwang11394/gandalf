@@ -54,7 +54,7 @@ def get_instruction(
                 },
                 {
                     "type": "text",
-                    "text": f"Here is the JSON representation of a subset of elements of the current page layout:\n {screen_layout}. You must choose elements from this list for the selector or we will be required to pay a fine.",
+                    "text": f"Here is the JSON representation of a subset of elements of the current page layout:\n {screen_layout}. Use this to find relevant elements more easily.",
                 },
                 {
                     "type": "text",

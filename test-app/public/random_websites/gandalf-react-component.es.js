@@ -20621,6 +20621,7 @@ function JG() {
         left: n.left,
         width: n.width,
         height: n.height,
+        background: window.getComputedStyle(e).background,
         html: e.outerHTML
       }, o = (t = e.textContent) == null ? void 0 : t.trim();
       o && (r.text = o), A.push(r);
@@ -20634,6 +20635,7 @@ function JG() {
         left: n.left,
         width: n.width,
         height: n.height,
+        background: window.getComputedStyle(e).background,
         html: e.outerHTML
       }, o = (t = e.textContent) == null ? void 0 : t.trim();
       o && (r.text = o), A.push(r);
@@ -20646,6 +20648,7 @@ function JG() {
         left: t.left,
         width: t.width,
         height: t.height,
+        background: window.getComputedStyle(e).background,
         html: e.outerHTML
       }, r = e.placeholder;
       r && (n.placeholder = r), A.push(n);
@@ -20740,7 +20743,7 @@ const nV = ({
             window.URL.revokeObjectURL(V), document.body.removeChild(K);
           }, 0), console.log(eA), console.log(aA);
         }
-        console.log(aA), s(fA);
+        s(fA);
         const J = new FormData();
         J.append("user_input", iA), J.append("product", "supabase"), J.append("dom_tree", eA), J.append("screen_layout", aA), fA && J.append("screenshot", fA, "screenshot.png"), fetch("http://localhost:8000/gandalf", {
           method: "POST",
