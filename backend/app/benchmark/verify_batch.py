@@ -43,7 +43,7 @@ tests = {
 
 script_path = "backend/app/benchmark"
 
-repeat = 1
+repeat = 3
 
 def main():
     threads = []

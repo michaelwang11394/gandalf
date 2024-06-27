@@ -22,22 +22,22 @@ interface GandalfProps {
   widgetColor?: string;
 }
 
-function useCallbackRef<T>(callback: () => T): () => T {
-  const ref = useRef(callback);
+// function useCallbackRef<T>(callback: () => T): () => T {
+//   const ref = useRef(callback);
 
-  ref.current = callback;
+//   ref.current = callback;
 
-  return useCallback(() => {
-    return ref.current();
-  }, []);
-}
+//   return useCallback(() => {
+//     return ref.current();
+//   }, []);
+// }
 
-function useDebounce(callback: () => void, duration: number) {
-  const inner = useCallbackRef(callback);
-  return useMemo(() => {
-    return debounce(inner, duration);
-  }, [inner]);
-}
+// function useDebounce(callback: () => void, duration: number) {
+//   const inner = useCallbackRef(callback);
+//   return useMemo(() => {
+//     return debounce(inner, duration);
+//   }, [inner]);
+// }
 
 const Gandalf: React.FC<GandalfProps> = ({
   productName,
@@ -87,11 +87,11 @@ const Gandalf: React.FC<GandalfProps> = ({
   };
 
   // Debounce the check for more instructions to avoid excessive API calls
-  const debouncedCheckForMoreInstructions = useDebounce(() => {
-    if (hasMoreInstructionsRef.current && !isApiCallInProgress) {
-      checkForMoreInstructions();
-    }
-  }, 1000);
+  // const debouncedCheckForMoreInstructions = useDebounce(() => {
+  //   if (hasMoreInstructionsRef.current && !isApiCallInProgress) {
+  //     checkForMoreInstructions();
+  //   }
+  // }, 1000);
 
   // Effect to open the popover when the user presses the keyboard shortcut
   useEffect(() => {
@@ -112,21 +112,21 @@ const Gandalf: React.FC<GandalfProps> = ({
   }, []);
 
   // Effect to check for more instructions
-  useEffect(() => {
-    const handleUserInteraction = (event: Event) => {
-      if (event.type === "keyup" || event.type === "click") {
-        debouncedCheckForMoreInstructions();
-      }
-    };
+  // useEffect(() => {
+  //   const handleUserInteraction = (event: Event) => {
+  //     if (event.type === "keyup" || event.type === "click") {
+  //       debouncedCheckForMoreInstructions();
+  //     }
+  //   };
 
-    document.addEventListener("click", handleUserInteraction);
-    document.addEventListener("keyup", handleUserInteraction);
+  //   document.addEventListener("click", handleUserInteraction);
+  //   document.addEventListener("keyup", handleUserInteraction);
 
-    return () => {
-      document.removeEventListener("click", handleUserInteraction);
-      document.removeEventListener("keyup", handleUserInteraction);
-    };
-  }, [debouncedCheckForMoreInstructions]);
+  //   return () => {
+  //     document.removeEventListener("click", handleUserInteraction);
+  //     document.removeEventListener("keyup", handleUserInteraction);
+  //   };
+  // }, [debouncedCheckForMoreInstructions]);
 
   const checkForMoreInstructions = () => {
     console.log("Checking for more instructions...");
