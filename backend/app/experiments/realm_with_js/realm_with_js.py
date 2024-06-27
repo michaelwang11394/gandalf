@@ -27,7 +27,7 @@ def get_instruction(
             "role": "system",
             "content": (
                 f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, "
-                "and you will be given a screenshot of the user's current page and view port, a json representation of their page that identifies each ui elemtns type (e.g., button, text field, dropdown), and its approximate position (use percentages for top, left, width, and height), and the HTML domtree of their page. You are also given a screenshot of the previous state/page of the user and the previous response from the llm for the next step the user should follow.\n"
+                "and you will be given a screenshot of the user's current page where actionable areas are annotated with a numeric itemId.\n"
                 "You have one job and you must return it in the correct format or else bad things might happen.\n"
                 "Your job is to return:\n"
                 "1- The english text Instruction for the next step they must take to complete their task or solve their issue based on their CURRENT progress which is given by the screenshot and dom tree. Also, you should consider the most recent state and instruction when giving the user the next step. \n"
@@ -44,7 +44,7 @@ def get_instruction(
             "content": [
                 {
                     "type": "text",
-                    "text": f"{user_input}. Here's a screenshot of the current user's state/issue:",
+                    "text": f"{user_input}. Here's a screenshot of the current user's state:",
                 },
                 {
                     "type": "image_url",
@@ -54,7 +54,7 @@ def get_instruction(
                 },
                 {
                     "type": "text",
-                    "text": f"Here is the JSON representation of a subset of elements of the current page layout:\n {screen_layout} that should match the screenshot.",
+                    "text": f"Here is the JSON representation of the elements annotated:\n {screen_layout} that should match the screenshot.",
                 },
             ],
         },

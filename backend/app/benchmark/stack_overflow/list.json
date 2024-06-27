@@ -217,7 +217,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-yj05iz46\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-damrrkcg\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 24,
@@ -233,7 +233,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-19327749\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"19327749\" data-post-type-id=\"1\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-rmqtk5yh\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-19327749\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"19327749\" data-post-type-id=\"1\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-3zm7h1qz\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 26,
@@ -241,7 +241,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/19327749/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-5synv6n3\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/19327749/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-nhvw8gn6\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 27,
@@ -318,7 +318,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-19327749\" class=\"s-btn s-btn__link js-follow-post js-follow-question js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 1 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-v93mfj44\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:4c5e24b8fa17c8cc,10:1719354885,16:55e6b5a3eb94060a,8:19327749,cc051a9cee89ad41562879f7698505059a18919a6cb153095b8788e0d8506346\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-19327749\" class=\"s-btn s-btn__link js-follow-post js-follow-question js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 1 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-ba41eqxk\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:4c5e24b8fa17c8cc,10:1719354885,16:55e6b5a3eb94060a,8:19327749,cc051a9cee89ad41562879f7698505059a18919a6cb153095b8788e0d8506346\">\n                    </button>"
   },
   {
     "itemId": 35,
@@ -388,7 +388,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-zna3td5k\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-2fadkklz\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 43,
@@ -404,7 +404,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-19328891\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"19328891\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-gztoe4up\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-19328891\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"19328891\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-e64dadrb\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 45,
@@ -412,7 +412,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/19328891/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-y24dr0gn\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/19328891/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-xt23pobt\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 46,
@@ -466,7 +466,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-19328891\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-lssbyjge\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:2f5443ceb827c8aa,10:1719354885,16:b473c9a82661169f,8:19328891,6b808fb4f79dda21e21393def6db6c57b30c4e6342327a4cba0d325e8167655c\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-19328891\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-04ds4epp\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:2f5443ceb827c8aa,10:1719354885,16:b473c9a82661169f,8:19328891,6b808fb4f79dda21e21393def6db6c57b30c4e6342327a4cba0d325e8167655c\">\n                    </button>"
   },
   {
     "itemId": 52,
@@ -563,7 +563,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-81bzsemm\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-saa3hstg\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 63,
@@ -579,7 +579,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-36899900\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"36899900\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-luwh2y3e\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-36899900\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"36899900\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-adl7l3jx\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 65,
@@ -587,7 +587,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/36899900/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-1omtk9iv\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/36899900/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-f5a3u3q1\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 66,
@@ -623,7 +623,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-36899900\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-qt2qwyki\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:d89c8652cfde2bac,10:1719354885,16:99d0f0b4dad6e641,8:36899900,1584b2872b5a81978fb8867823949088ffa2cdef85368a46e6ed06f36a705cb0\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-36899900\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-no0n4k4q\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:d89c8652cfde2bac,10:1719354885,16:99d0f0b4dad6e641,8:36899900,1584b2872b5a81978fb8867823949088ffa2cdef85368a46e6ed06f36a705cb0\">\n                    </button>"
   },
   {
     "itemId": 70,
@@ -701,7 +701,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-4kdfzhnq\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-rclw13tn\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 79,
@@ -717,7 +717,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-48968694\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"48968694\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-bdt6zret\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-48968694\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"48968694\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-ea8d2vxf\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 81,
@@ -725,7 +725,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/48968694/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-3yf3gof5\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/48968694/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-wlzm3q4b\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 82,
@@ -761,7 +761,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-48968694\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-we5eq7ps\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:e86f46c1021ea382,10:1719354885,16:cd1cf0e49eccd1b5,8:48968694,11dc1438d42074f503235cff77e3fd4a0b6c4fcc680050497caf51530eb8bb52\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-48968694\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-n4q31oqp\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:e86f46c1021ea382,10:1719354885,16:cd1cf0e49eccd1b5,8:48968694,11dc1438d42074f503235cff77e3fd4a0b6c4fcc680050497caf51530eb8bb52\">\n                    </button>"
   },
   {
     "itemId": 86,
@@ -822,7 +822,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-yr8ol2e9\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-p69owo1b\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 93,
@@ -838,7 +838,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-52273870\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"52273870\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-lnunu94v\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-52273870\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"52273870\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-7nngycjn\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 95,
@@ -846,7 +846,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/52273870/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-ieblq0rj\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/52273870/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-p1m4rbz2\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 96,
@@ -873,7 +873,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-52273870\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-8ekqwtqa\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:cb868a5add448ad0,10:1719354885,16:ec34a662e053ae78,8:52273870,b0d70bd3cc307f213f1a856371f634c15af8b046c47ce17217dd236048749c7d\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-52273870\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-wunqeunq\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:cb868a5add448ad0,10:1719354885,16:ec34a662e053ae78,8:52273870,b0d70bd3cc307f213f1a856371f634c15af8b046c47ce17217dd236048749c7d\">\n                    </button>"
   },
   {
     "itemId": 99,
@@ -978,7 +978,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-wvrazvga\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-3b9xlwiu\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 111,
@@ -994,7 +994,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-60378502\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"60378502\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-urvt150j\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-60378502\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"60378502\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-pxw6jydy\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 113,
@@ -1002,7 +1002,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/60378502/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-x97p6c8z\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/60378502/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-lp9nn6h8\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 114,
@@ -1029,7 +1029,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-60378502\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-n1hx7tn9\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:669ada39b8366ae6,10:1719354885,16:f4bb2c928f888d72,8:60378502,9d5498601639756c6559c6f69d7c127aad75a1b37b24b083a16b4334eb5393da\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-60378502\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-zcehod5l\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:669ada39b8366ae6,10:1719354885,16:f4bb2c928f888d72,8:60378502,9d5498601639756c6559c6f69d7c127aad75a1b37b24b083a16b4334eb5393da\">\n                    </button>"
   },
   {
     "itemId": 117,
@@ -1072,7 +1072,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-x032dx9i\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-3srpm5rw\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 122,
@@ -1088,7 +1088,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-49820450\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"49820450\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-g6jsdi0w\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-49820450\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"49820450\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-1brythg7\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 124,
@@ -1096,7 +1096,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/49820450/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-pgri3evf\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/49820450/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-62p2bht5\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 125,
@@ -1123,7 +1123,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-49820450\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-t80dk7bw\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:6e9aa44e03c6d8d4,10:1719354885,16:bcce7a6f2ae5b3df,8:49820450,36594821c03ece7cb3fd4761ab7310255abf25ac9c3dcb4389504771dd6c0e82\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-49820450\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-n84qawhl\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:6e9aa44e03c6d8d4,10:1719354885,16:bcce7a6f2ae5b3df,8:49820450,36594821c03ece7cb3fd4761ab7310255abf25ac9c3dcb4389504771dd6c0e82\">\n                    </button>"
   },
   {
     "itemId": 128,
@@ -1175,7 +1175,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-d2eb81dq\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-ryqc83qc\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 134,
@@ -1191,7 +1191,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-57778370\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"57778370\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-f983m80j\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-57778370\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"57778370\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-jfplkiz0\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 136,
@@ -1199,7 +1199,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/57778370/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-cpgsrwy1\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/57778370/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-e7823ntf\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 137,
@@ -1226,7 +1226,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-57778370\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-2rcg1nji\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:0b85f391635d5e5d,10:1719354885,16:06847bd5fc5d592b,8:57778370,f9b5b4fa2ff8a0a30eb63afc39d9032b53598f3baef666cb9fd4c577b81d9192\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-57778370\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-7mfjbaui\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:0b85f391635d5e5d,10:1719354885,16:06847bd5fc5d592b,8:57778370,f9b5b4fa2ff8a0a30eb63afc39d9032b53598f3baef666cb9fd4c577b81d9192\">\n                    </button>"
   },
   {
     "itemId": 140,
@@ -1269,7 +1269,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-y54s7d33\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-q290ct21\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 145,
@@ -1285,7 +1285,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-58262353\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"58262353\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-csqmmdx0\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-58262353\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"58262353\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-d4lpg0cl\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 147,
@@ -1293,7 +1293,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/58262353/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-0t727lsa\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/58262353/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-ah793osp\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 148,
@@ -1320,7 +1320,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-58262353\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-mruwequ2\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:c6e83287881f7fda,10:1719354885,16:ff02932deb5e5ee2,8:58262353,4dababb8071791d180110cb74e086e1e908d9ca975e5ffd83791cd412655c025\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-58262353\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-au7vnxrv\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:c6e83287881f7fda,10:1719354885,16:ff02932deb5e5ee2,8:58262353,4dababb8071791d180110cb74e086e1e908d9ca975e5ffd83791cd412655c025\">\n                    </button>"
   },
   {
     "itemId": 151,
@@ -1354,7 +1354,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-ytibye78\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-3zhsrrzn\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 155,
@@ -1370,7 +1370,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-76716324\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"76716324\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-frm3brwb\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-76716324\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"76716324\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-dywfxzjn\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 157,
@@ -1378,7 +1378,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/76716324/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-81shcf35\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/76716324/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-qaaddcjb\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 158,
@@ -1414,7 +1414,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-76716324\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-aautah2a\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:ce1b1e2da239432c,10:1719354885,16:0a548098ce6082bf,8:76716324,ee7179dc0a4fad5d34124c4180d7e6bbd6593f78599a4174d735de021e8ceaf7\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-76716324\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-gp63olil\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:ce1b1e2da239432c,10:1719354885,16:0a548098ce6082bf,8:76716324,ee7179dc0a4fad5d34124c4180d7e6bbd6593f78599a4174d735de021e8ceaf7\">\n                    </button>"
   },
   {
     "itemId": 162,
@@ -1474,7 +1474,7 @@
     "left": 189,
     "width": 41,
     "height": 41,
-    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-mke0nl3k\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
+    "html": "<button class=\"js-vote-up-btn flex--item s-btn s-btn__muted s-btn__outlined bar-pill bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-pressed=\"false\" aria-label=\"Up vote\" data-selected-classes=\"fc-theme-primary bc-theme-primary bg-theme-primary-100\" data-unselected-classes=\"bc-black-225 f:bc-theme-secondary-400 f:bg-theme-secondary-400 f:fc-black-050 h:bg-theme-primary-200\" aria-describedby=\"--stacks-s-tooltip-vya419p6\">\n            <svg aria-hidden=\"true\" class=\"svg-icon iconArrowUp\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n        </button>"
   },
   {
     "itemId": 169,
@@ -1490,7 +1490,7 @@
     "left": 200,
     "width": 18,
     "height": 26,
-    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-72488568\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"72488568\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-fr3za4l8\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
+    "html": "<button class=\"js-saves-btn s-btn s-btn__unset c-pointer py4\" type=\"button\" id=\"saves-btn-72488568\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" data-s-popover-placement=\"\" aria-pressed=\"false\" data-post-id=\"72488568\" data-post-type-id=\"2\" data-user-privilege-for-post-click=\"0\" aria-controls=\"\" data-s-popover-auto-show=\"false\" aria-describedby=\"--stacks-s-tooltip-8vplnwud\">\n    <svg aria-hidden=\"true\" class=\"fc-theme-primary-400 js-saves-btn-selected d-none svg-icon iconBookmark\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n    <svg aria-hidden=\"true\" class=\"js-saves-btn-unselected svg-icon iconBookmarkAlt\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\"></svg>\n</button>"
   },
   {
     "itemId": 171,
@@ -1498,7 +1498,7 @@
     "left": 201,
     "width": 17,
     "height": 30,
-    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/72488568/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-jpyg8iai\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
+    "html": "<a class=\"js-post-issue flex--item s-btn s-btn__unset c-pointer py6 mx-auto\" href=\"/posts/72488568/timeline\" data-shortcut=\"T\" data-ks-title=\"timeline\" data-controller=\"s-tooltip\" data-s-tooltip-placement=\"right\" aria-label=\"Timeline\" aria-describedby=\"--stacks-s-tooltip-66v75ou6\"><svg aria-hidden=\"true\" class=\"mln2 mr0 svg-icon iconHistory\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\"></svg></a>"
   },
   {
     "itemId": 172,
@@ -1525,7 +1525,7 @@
     "width": 39,
     "height": 17,
     "text": "Follow",
-    "html": "<button type=\"button\" id=\"btnFollowPost-72488568\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-1hbjqe9g\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:8ee60b4e19a80615,10:1719354885,16:61ac0f4835c53dae,8:72488568,fc51070ebee778c54da2a7cc33134f9cee42ee6c177d554f2c7d463c167f32eb\">\n                    </button>"
+    "html": "<button type=\"button\" id=\"btnFollowPost-72488568\" class=\"s-btn s-btn__link js-follow-post js-follow-answer js-gps-track\" data-gps-track=\"post.click({ item: 14, priv: 0, post_type: 2 })\" data-controller=\"s-tooltip \" data-s-tooltip-placement=\"bottom\" data-s-popover-placement=\"bottom\" aria-controls=\"\" aria-describedby=\"--stacks-s-tooltip-3lf1kyh6\">\n                        Follow\n                        <input type=\"hidden\" id=\"voteFollowHash\" value=\"70:3:31e,16:8ee60b4e19a80615,10:1719354885,16:61ac0f4835c53dae,8:72488568,fc51070ebee778c54da2a7cc33134f9cee42ee6c177d554f2c7d463c167f32eb\">\n                    </button>"
   },
   {
     "itemId": 175,

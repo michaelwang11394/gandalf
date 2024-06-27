@@ -100,6 +100,24 @@
   },
   {
     "itemId": 11,
+    "top": 54,
+    "left": 291,
+    "width": 480,
+    "height": 32,
+    "text": "Retool Playground Email Query",
+    "html": "<span class=\" retool-inline-edit dib truncate\" tabindex=\"0\" data-testid=\"QueryPlayground::QueryName::static\">Retool Playground Email Query</span>"
+  },
+  {
+    "itemId": 12,
+    "top": 78,
+    "left": 372,
+    "width": 280,
+    "height": 29,
+    "text": "Query for Retool hosted SMTP resource",
+    "html": "<span class=\" retool-inline-edit dib truncate\" tabindex=\"0\" data-testid=\"undefined::static\">Query for Retool hosted SMTP resource</span>"
+  },
+  {
+    "itemId": 13,
     "top": 64,
     "left": 941,
     "width": 28,
@@ -108,7 +126,7 @@
     "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg fill=\"none\" viewBox=\"0 0 16 16\" class=\"W_OR4v\"></svg></div></div></div></button>"
   },
   {
-    "itemId": 12,
+    "itemId": 14,
     "top": 64,
     "left": 977,
     "width": 28,
@@ -117,7 +135,7 @@
     "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak vx_2k6 PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\"><div class=\"gblzVO\"><div class=\"XlaFZr E02BOR Xa2Y6K\"><svg width=\"8\" height=\"20\" viewBox=\"0 0 8 20\" fill=\"none\" data-testid=\"Icon::IconRun\" class=\"\"></svg></div></div></div></button>"
   },
   {
-    "itemId": 13,
+    "itemId": 15,
     "top": 64,
     "left": 1013,
     "width": 56,
@@ -127,7 +145,7 @@
     "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Share</p></span></div></div></button>"
   },
   {
-    "itemId": 14,
+    "itemId": 16,
     "top": 64,
     "left": 1077,
     "width": 58,
@@ -137,7 +155,7 @@
     "html": "<button role=\"button\" class=\"nIczNC u8pzQq PmC2sB\" disabled=\"\" type=\"button\"><div class=\"IFXHXl wDXZP1\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Saved</p></span></div></div></button>"
   },
   {
-    "itemId": 15,
+    "itemId": 17,
     "top": 140,
     "left": 296,
     "width": 548,
@@ -147,7 +165,7 @@
     "html": "<div class=\"ant-select-selection\n                ant-select-selection--single\" role=\"combobox\" aria-autocomplete=\"list\" aria-haspopup=\"true\" aria-controls=\"50376ad4-6602-4c86-f72f-e9fb418d2660\" aria-expanded=\"false\" data-testid=\"QueryPlayground::ResourceDropdown::Select\" tabindex=\"0\"><div class=\"ant-select-selection__rendered\"><div class=\"ant-select-selection-selected-value\" title=\"retool_email (retoolEmail)\"><div class=\"PpblWp\" data-testid=\"retool_email\"><div class=\"S3oz23\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconRetoolEmail\" class=\"\"></svg></div><div class=\"qaIlI5\">Retool Email</div></div></div><div class=\"ant-select-search ant-select-search--inline\"><div class=\"ant-select-search__field__wrap\"><input autocomplete=\"off\" class=\"ant-select-search__field\" value=\"\"><span class=\"ant-select-search__field__mirror\">&nbsp;</span></div></div></div><span class=\"ant-select-arrow\" unselectable=\"on\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconCaretDown\" class=\"retool-icon retool-icon-IconCaretDown retool-icon-caret-down ant-select-arrow-icon\"></svg></span></div>"
   },
   {
-    "itemId": 16,
+    "itemId": 18,
     "top": 180,
     "left": 296,
     "width": 16,
@@ -155,7 +173,7 @@
     "html": "<div class=\"i3s1jy\" data-checked=\"false\" data-intermediate=\"false\"><input aria-checked=\"false\" name=\"add-reply-to\" id=\"add-reply-to\" type=\"checkbox\" class=\"SOuFEZ\"></div>"
   },
   {
-    "itemId": 17,
+    "itemId": 19,
     "top": 255,
     "left": 296,
     "width": 16,
@@ -163,7 +181,7 @@
     "html": "<div class=\"i3s1jy\" data-checked=\"false\" data-intermediate=\"false\"><input aria-checked=\"false\" name=\"add-cc-bcc\" id=\"add-cc-bcc\" type=\"checkbox\" class=\"SOuFEZ\"></div>"
   },
   {
-    "itemId": 18,
+    "itemId": 20,
     "top": 349,
     "left": 296,
     "width": 81,
@@ -172,7 +190,7 @@
     "html": "<label class=\"wS06hZ dbOp4S\" aria-label=\"Text\"><input class=\"a_dNeR\" id=\"text\" tabindex=\"0\" type=\"radio\" value=\"text\"><div class=\"v8i8Dc\">Text</div></label>"
   },
   {
-    "itemId": 19,
+    "itemId": 21,
     "top": 349,
     "left": 376,
     "width": 81,
@@ -181,7 +199,7 @@
     "html": "<label class=\"wS06hZ dbOp4S\" aria-label=\"HTML\"><input class=\"a_dNeR\" id=\"html\" tabindex=\"0\" type=\"radio\" value=\"html\"><div class=\"v8i8Dc\">HTML</div></label>"
   },
   {
-    "itemId": 20,
+    "itemId": 22,
     "top": 362,
     "left": 495,
     "width": 1,
@@ -189,7 +207,7 @@
     "html": "<input class=\"a_dNeR\" id=\"markdown\" tabindex=\"0\" type=\"radio\" value=\"markdown\" checked=\"\">"
   },
   {
-    "itemId": 21,
+    "itemId": 23,
     "top": 353,
     "left": 798,
     "width": 46,
@@ -198,7 +216,7 @@
     "html": "<a class=\"o8xI1V\">Preview</a>"
   },
   {
-    "itemId": 22,
+    "itemId": 24,
     "top": 491,
     "left": 814,
     "width": 20,
@@ -207,7 +225,7 @@
     "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Open pop-out code editor\" type=\"button\"><div class=\"IFXHXl wDXZP1\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 8 8\" class=\"JQrEBb\"></svg></div></div></div></button>"
   },
   {
-    "itemId": 23,
+    "itemId": 25,
     "top": 513,
     "left": 810,
     "width": 28,
@@ -215,7 +233,7 @@
     "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Toggle AI Query Assistant\" type=\"button\"><div class=\"IFXHXl wDXZP1\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"none\" class=\"PaVO0V\"></svg></div></div></div></button>"
   },
   {
-    "itemId": 24,
+    "itemId": 26,
     "top": 581,
     "left": 302,
     "width": 9,
@@ -223,7 +241,7 @@
     "html": "<input autocomplete=\"off\" class=\"ant-select-search__field\" value=\"\">"
   },
   {
-    "itemId": 25,
+    "itemId": 27,
     "top": 577,
     "left": 824,
     "width": 20,
@@ -231,7 +249,7 @@
     "html": "<button type=\"button\" class=\"QZad3S\" aria-label=\"Click to set value dynamically.\" data-testid=\"dynamic::toggle\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconFunction\" class=\"b5oHUS PGW2Xp\"></svg></button>"
   },
   {
-    "itemId": 26,
+    "itemId": 28,
     "top": 108,
     "left": 861,
     "width": 299,
@@ -240,7 +258,7 @@
     "html": "<div class=\"ant-collapse-header\" role=\"button\" tabindex=\"0\" aria-expanded=\"true\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconCaretUp\" class=\"retool-icon retool-icon-IconCaretUp retool-icon-caret-up collapse-arrow ant-collapse-arrow\"></svg>Variables (0)</div>"
   },
   {
-    "itemId": 27,
+    "itemId": 29,
     "top": 284,
     "left": 861,
     "width": 299,
@@ -249,7 +267,7 @@
     "html": "<div class=\"ant-collapse-header\" role=\"button\" tabindex=\"0\" aria-expanded=\"true\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconCaretUp\" class=\"retool-icon retool-icon-IconCaretUp retool-icon-caret-up collapse-arrow ant-collapse-arrow\"></svg>Schema</div>"
   },
   {
-    "itemId": 28,
+    "itemId": 30,
     "top": 1115,
     "left": 861,
     "width": 299,
@@ -258,7 +276,7 @@
     "html": "<div class=\"ant-collapse-header\" role=\"button\" tabindex=\"0\" aria-expanded=\"true\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconCaretUp\" class=\"retool-icon retool-icon-IconCaretUp retool-icon-caret-up collapse-arrow ant-collapse-arrow\"></svg>Usage (0)</div>"
   },
   {
-    "itemId": 29,
+    "itemId": 31,
     "top": 1214,
     "left": 0,
     "width": 88,
@@ -268,7 +286,7 @@
     "html": "<button type=\"button\" class=\"Bp6KBY O9BdeO ant-dropdown-trigger retool-dropdown retool-dropdown--small noMargin\"><span class=\"F4px_g\">production</span></button>"
   },
   {
-    "itemId": 30,
+    "itemId": 32,
     "top": 1214,
     "left": 1060,
     "width": 28,
@@ -276,7 +294,7 @@
     "html": "<button type=\"button\" class=\"Bp6KBY\" data-testid=\"DebugTools::EditingStatusBar_historyButton\" aria-label=\"History\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconHistory\" class=\"retool-icon retool-icon-IconHistory retool-icon-history\"></svg></button>"
   },
   {
-    "itemId": 31,
+    "itemId": 33,
     "top": 1214,
     "left": 1088,
     "width": 28,

@@ -144,12 +144,38 @@ const Gandalf: React.FC<GandalfProps> = ({
     // Capture DOM Tree
     const domTreeString = serializeDocument(parseTree(document.documentElement.outerHTML));
     setDomTree(domTreeString);
-    const screenLayout = generateScreenLayout()
+    const screenLayout = generateScreenLayout(document)
 
     // Capture Screenshot
-    html2canvas(document.body, { ignoreElements: (element) => {
-      return element.hasAttribute("data-isgandalf")
-    }}).then((canvas) => {
+    html2canvas(document.body, {
+      width: window.innerWidth,
+      height: Math.max(window.innerHeight, document.body.clientHeight),
+      ignoreElements: (element) => {
+        return element.hasAttribute("data-isgandalf")
+      },
+      onclone: (doc, elm) => {
+        const overlay = doc.createElement("div")
+        overlay.style.position = "fixed"
+        overlay.style.top = "0"
+        overlay.style.left = "0"
+        doc.body.appendChild(overlay)
+        screenLayout.forEach(item => {
+          const label = doc.createElement("div")
+          const innerLabel = doc.createElement("div")
+          innerLabel.innerHTML = item.itemId.toString()
+          label.appendChild(innerLabel)
+          // innerLabel.style.position = "absolute"
+          // innerLabel.style.top = "100%"
+          label.style.top = item.top + "px"
+          label.style.left = item.left + "px"
+          label.style.width = item.width + "px"
+          label.style.height = item.height + "px"
+          label.style.position = "absolute"
+          overlay.appendChild(label)
+        })
+
+      }
+    }).then((canvas) => {
       canvas.toBlob((blob) => {
         if (location.hash) {
           const a = document.createElement("a");
@@ -185,7 +211,6 @@ const Gandalf: React.FC<GandalfProps> = ({
         if (blob) {
           formData.append("screenshot", blob, "screenshot.png");
         }
-
         fetch("http://localhost:8000/gandalf", {
           method: "POST",
           body: formData,

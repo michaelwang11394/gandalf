@@ -25,7 +25,7 @@ function walkDOM(dom: HTMLElement, process: (child: HTMLElement) => boolean) {
     })
 }
 
-export function generateScreenLayout(): ScreenLayoutItem[] {
+export function generateScreenLayout(document: Document): ScreenLayoutItem[] {
     const result: ScreenLayoutItem[] = [];
     let counter = 0;
 

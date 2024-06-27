@@ -58,7 +58,8 @@ def main():
                 webpages.append(webpage)
                 inputs.append(user_input)
                 expected_itemIds.append(expected)
-                commands.append(f"python3 {script_path}/verify_ai.py {script_path}/{webpage}/dom.html {script_path}/{webpage}/list.json {script_path}/{webpage}/screenshot.png \"{user_input}\" realmjs")
+                commands.append(f"python3 {script_path}/verify_ai.py {script_path}/{webpage}/dom.html {script_path}/{webpage}/list.json {script_path}/{webpage}/screenshot_annotated.png \"{user_input}\" realmjs")
+                # commands.append(f"python3 {script_path}/verify_ai.py {script_path}/{webpage}/dom.html {script_path}/{webpage}/list.json {script_path}/{webpage}/screenshot.png \"{user_input}\" realmjs")
     print("Running these commands:")
     print("\n".join(commands))
 
