@@ -1,77 +1,48 @@
 [
   {
     "itemId": 0,
-    "type": "button",
     "top": 338,
-    "left": 855.703125,
-    "width": 44.296875,
+    "left": 335,
+    "width": 399,
     "height": 50,
-    "background": "rgb(136, 171, 51) none repeat scroll 0% 0% / auto padding-box border-box",
-    "text": "Submit",
-    "html": "<button id=\"todo_button\" disabled=\"\"><span class=\"visually-hidden\">Submit</span><svg clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\"><path d=\"m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z\" fill-rule=\"nonzero\"></path></svg></button>"
+    "backgroundColor": "rgb(31, 41, 55)",
+    "html": "<input type=\"text\" id=\"todo_input\" placeholder=\"Write your next task\" name=\"todo input\" value=\"\">"
   },
   {
     "itemId": 1,
-    "type": "button",
-    "top": 433,
-    "left": 458,
-    "width": 93.1171875,
-    "height": 34,
-    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
-    "text": "Task 1",
-    "html": "<button class=\"todo_items_left\"><svg clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"34\" height=\"34\" stroke=\"#22C55E\" fill=\"#0d0d0d\"><circle cx=\"11.998\" cy=\"11.998\" fill-rule=\"nonzero\" r=\"9.998\"></circle></svg><p style=\"\">Task 1</p></button>"
+    "top": 338,
+    "left": 745,
+    "width": 44,
+    "height": 50,
+    "backgroundColor": "rgb(136, 171, 51)",
+    "text": "Submit",
+    "html": "<button id=\"todo_button\" disabled=\"\"><span class=\"visually-hidden\">Submit</span><svg clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\"></svg></button>"
   },
   {
     "itemId": 2,
-    "type": "button",
-    "top": 431.5,
-    "left": 819,
-    "width": 32,
-    "height": 37,
-    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
-    "text": "Edit",
-    "html": "<button id=\"edit-todo-button\"><span class=\"visually-hidden\">Edit</span><svg clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"34\"><path d=\"m11.25 6c.398 0 .75.352.75.75 0 .414-.336.75-.75.75-1.505 0-7.75 0-7.75 0v12h17v-8.749c0-.414.336-.75.75-.75s.75.336.75.75v9.249c0 .621-.522 1-1 1h-18c-.48 0-1-.379-1-1v-13c0-.481.38-1 1-1zm1.521 9.689 9.012-9.012c.133-.133.217-.329.217-.532 0-.179-.065-.363-.218-.515l-2.423-2.415c-.143-.143-.333-.215-.522-.215s-.378.072-.523.215l-9.027 8.996c-.442 1.371-1.158 3.586-1.264 3.952-.126.433.198.834.572.834.41 0 .696-.099 4.176-1.308zm-2.258-2.392 1.17 1.171c-.704.232-1.274.418-1.729.566zm.968-1.154 7.356-7.331 1.347 1.342-7.346 7.347z\" fill-rule=\"nonzero\"></path></svg></button>"
+    "top": 433,
+    "left": 348,
+    "width": 93,
+    "height": 34,
+    "text": "Task 1",
+    "html": "<button class=\"todo_items_left\"><svg clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"34\" height=\"34\" stroke=\"#22C55E\" fill=\"#0d0d0d\"></svg><p>Task 1</p></button>"
   },
   {
     "itemId": 3,
-    "type": "button",
-    "top": 431.5,
-    "left": 855,
+    "top": 432,
+    "left": 709,
     "width": 32,
     "height": 37,
-    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
-    "text": "Delete",
-    "html": "<button id=\"delete-todo-button\"><span class=\"visually-hidden\">Delete</span><svg xmlns=\"http://www.w3.org/2000/svg\" clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" width=\"32\" height=\"34\"><path d=\"m4.015 5.494h-.253c-.413 0-.747-.335-.747-.747s.334-.747.747-.747h5.253v-1c0-.535.474-1 1-1h4c.526 0 1 .465 1 1v1h5.254c.412 0 .746.335.746.747s-.334.747-.746.747h-.254v15.435c0 .591-.448 1.071-1 1.071-2.873 0-11.127 0-14 0-.552 0-1-.48-1-1.071zm14.5 0h-13v15.006h13zm-4.25 2.506c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm-4.5 0c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm3.75-4v-.5h-3v.5z\" fill-rule=\"nonzero\"></path></svg></button>"
+    "text": "Edit",
+    "html": "<button id=\"edit-todo-button\"><span class=\"visually-hidden\">Edit</span><svg clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"34\"></svg></button>"
   },
   {
     "itemId": 4,
-    "type": "button",
-    "top": 0,
-    "left": 0,
-    "width": 1,
-    "height": 0,
-    "background": "rgb(239, 239, 239) none repeat scroll 0% 0% / auto padding-box border-box",
-    "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
-  },
-  {
-    "itemId": 5,
-    "type": "button",
-    "top": 0,
-    "left": 0,
-    "width": 1,
-    "height": 0,
-    "background": "rgb(239, 239, 239) none repeat scroll 0% 0% / auto padding-box border-box",
-    "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
-  },
-  {
-    "itemId": 6,
-    "type": "text field",
-    "top": 338,
-    "left": 445,
-    "width": 398.703125,
-    "height": 50,
-    "background": "rgb(31, 41, 55) none repeat scroll 0% 0% / auto padding-box border-box",
-    "placeholder": "Write your next task",
-    "html": "<input type=\"text\" id=\"todo_input\" placeholder=\"Write your next task\" name=\"todo input\" value=\"\">"
+    "top": 432,
+    "left": 745,
+    "width": 32,
+    "height": 37,
+    "text": "Delete",
+    "html": "<button id=\"delete-todo-button\"><span class=\"visually-hidden\">Delete</span><svg xmlns=\"http://www.w3.org/2000/svg\" clip-rule=\"evenodd\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" viewBox=\"0 0 24 24\" width=\"32\" height=\"34\"></svg></button>"
   }
 ]

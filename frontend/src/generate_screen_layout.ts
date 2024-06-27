@@ -1,82 +1,65 @@
 type ScreenLayoutItem = {
     element: HTMLElement
     itemId: number
-    type: "button" | "link or button" | "text field" // TODO add dropdown?
     top: number
     left: number
     width: number
     height: number
-    background: string
+    backgroundColor?: string
     text?: string
-    placeholder?: string
+}
+
+const IncludedTags = new Set([
+    "BUTTON",
+    "A",
+    "INPUT",
+    "SELECT",
+    "TEXTAREA"
+])
+
+function walkDOM(dom: HTMLElement, process: (child: HTMLElement) => boolean) {
+    dom.childNodes.forEach(n => {
+        if (n instanceof HTMLElement && process(n)) {
+            walkDOM(n, process)
+        }
+    })
 }
 
 export function generateScreenLayout(): ScreenLayoutItem[] {
     const result: ScreenLayoutItem[] = [];
     let counter = 0;
 
-    [].forEach.call(document.querySelectorAll("button"), (button: HTMLElement) => {
-        if (button.checkVisibility() && !button.matches("[data-isgandalf] *, [data-isgandalf]")) {
-            const rect = button.getBoundingClientRect()
-            const info: ScreenLayoutItem = {
-                itemId: counter++,
-                type: "button",
-                top: rect.top,
-                left: rect.left,
-                width: rect.width,
-                height: rect.height,
-                background: window.getComputedStyle(button).background,
-                element: button,
-            }
-            const text = button.textContent?.trim()
-            if (text) {
-                info.text = text
-            }
-            result.push(info)
+    walkDOM(document.body, (element: HTMLElement) => {
+        if (element.attributes.getNamedItem("data-isgandalf")) {
+            return false
         }
-    });
+        const styles = window.getComputedStyle(element)
+        const cursor = styles.cursor
+        if (element.checkVisibility() && (IncludedTags.has(element.tagName) || (element.onclick != null) || cursor == "pointer" || cursor == "grab")) {
+            const rect = element.getBoundingClientRect()
+            if (rect.width > 0 && rect.height > 0) {
+                const info: ScreenLayoutItem = {
+                    itemId: counter++,
+                    top: Math.round(rect.top),
+                    left: Math.round(rect.left),
+                    width: Math.round(rect.width),
+                    height: Math.round(rect.height),
+                    element,
+                }
+                const backgroundColor = styles.backgroundColor
+                if (backgroundColor && backgroundColor !== 'rgba(0, 0, 0, 0)') {
+                    info.backgroundColor = backgroundColor
+                }
+                const text = element.textContent?.trim()
+                if (text) {
+                    info.text = text
+                }
 
-    [].forEach.call(document.querySelectorAll(":link"), (link: HTMLElement) => {
-        if (link.checkVisibility() && !link.matches("[data-isgandalf] *, [data-isgandalf]")) {
-            const rect = link.getBoundingClientRect()
-            const info: ScreenLayoutItem = {
-                itemId: counter++,
-                type: "link or button",
-                top: rect.top,
-                left: rect.left,
-                width: rect.width,
-                height: rect.height,
-                background: window.getComputedStyle(link).background,
-                element: link
+                result.push(info)
             }
-            const text = link.textContent?.trim()
-            if (text) {
-                info.text = text
-            }
-            result.push(info)
+            return false
         }
-    });
-
-    // TODO: input may not always be text input
-    [].forEach.call(document.querySelectorAll("textarea, input"), (field: HTMLElement) => {
-        if (field.checkVisibility() && !field.matches("[data-isgandalf] *, [data-isgandalf]")) {
-            const rect = field.getBoundingClientRect()
-            const info: ScreenLayoutItem = {
-                itemId: counter++,
-                type: "text field",
-                top: rect.top,
-                left: rect.left,
-                width: rect.width,
-                height: rect.height,
-                background: window.getComputedStyle(field).background,
-                element: field
-            }
-            const placeholder = (field as HTMLTextAreaElement).placeholder
-            if (placeholder) {
-                info.placeholder = placeholder
-            }
-            result.push(info)
-        }
+        return true
     });
 
     return result;

@@ -9,7 +9,7 @@ import ReactDOM from "react-dom";
 import html2canvas from "html2canvas";
 import { debounce } from "lodash";
 import Input from "./components/input";
-import parseTree from "./utilities/parseTree";
+import parseTree, { serializeDocument } from "./utilities/parseTree";
 
 import gandalfStyles from "./Gandalf.module.css";
 import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
@@ -142,12 +142,14 @@ const Gandalf: React.FC<GandalfProps> = ({
     setIsApiCallInProgress(true);
 
     // Capture DOM Tree
-    const domTreeString = parseTree();
+    const domTreeString = serializeDocument(parseTree(document.documentElement.outerHTML));
     setDomTree(domTreeString);
     const screenLayout = generateScreenLayout()
 
     // Capture Screenshot
-    html2canvas(document.body).then((canvas) => {
+    html2canvas(document.body, { ignoreElements: (element) => {
+      return element.hasAttribute("data-isgandalf")
+    }}).then((canvas) => {
       canvas.toBlob((blob) => {
         if (location.hash) {
           const a = document.createElement("a");
@@ -162,8 +164,6 @@ const Gandalf: React.FC<GandalfProps> = ({
           }, 0);
 
           console.log(domTreeString)
-
-          console.log(screenLayout)
         }
 
         setScreenshot(blob as File);
@@ -172,7 +172,7 @@ const Gandalf: React.FC<GandalfProps> = ({
           const {element, ...rest} = item
           return {
             ...rest,
-            html: element.outerHTML
+            html: parseTree(element.outerHTML).body.innerHTML
           }
         }), null, 2)
 

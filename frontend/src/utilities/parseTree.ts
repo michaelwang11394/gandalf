@@ -1,8 +1,8 @@
-const parseTree = () => {
+const parseTree = (html: string): Document => {
   // Capture DOM Tree
   const parser = new DOMParser();
   const doc = parser.parseFromString(
-    document.documentElement.outerHTML,
+    html,
     "text/html"
   );
 
@@ -37,14 +37,22 @@ const parseTree = () => {
 
     // Remove empty elements
     if (!el.innerHTML.trim() && el.nodeType === Node.ELEMENT_NODE) {
-      el.remove();
+      if (el.tagName === "IMG") {
+        el.setAttribute("src", "")
+      } else if (el.tagName !== "INPUT" && el.tagName !== "TEXTAREA") {
+        el.remove();
+      }
     }
   });
 
+  return doc
+};
+
   // Serialize the cleaned document back to a string
+export function serializeDocument(doc: Document) {
   const serializer = new XMLSerializer();
   const cleanedHTML = serializer.serializeToString(doc);
   return cleanedHTML;
-};
+}
 
 export default parseTree;

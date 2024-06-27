@@ -437,4 +437,11 @@
                 
                 <link rel="stylesheet" type="text/css" href="./style.css">
 <script src="./gandalf-react-component.es.js"></script>
+<script>
+  // hack to maintain parity with actual website
+  ;[].forEach.call(document.querySelectorAll(".retool-inline-edit"), elm => {
+    elm.onclick = () => {"clicked"}
+  })
+
+</script>
                 </body></html>
