@@ -50,14 +50,14 @@ def main():
     commands = []
     webpages = []
     inputs = []
-    expected_selectors = []
+    expected_itemIds = []
 
     for (webpage, user_inputs) in tests.items():
         for (user_input, expected) in user_inputs:
             for i in range(repeat):
                 webpages.append(webpage)
                 inputs.append(user_input)
-                expected_selectors.append(expected)
+                expected_itemIds.append(expected)
                 commands.append(f"python3 {script_path}/verify_ai.py {script_path}/{webpage}/dom.html {script_path}/{webpage}/list.json {script_path}/{webpage}/screenshot.png \"{user_input}\" realmjs")
     print("Running these commands:")
     print("\n".join(commands))
@@ -81,12 +81,12 @@ def main():
             ai_output = json.loads(r['stdout'])
             ai_output['webpage'] = webpages[index]
             ai_output['user input'] = inputs[index]
-            ai_output['expected selector'] = expected_selectors[index]
+            ai_output['expected itemId'] = expected_itemIds[index]
             data.append(ai_output)
             
     with open("batched.csv", mode='w', newline='') as file:
         # Create a CSV DictWriter object
-        writer = csv.DictWriter(file, fieldnames=["webpage", "user input", "Instructions", "selector", "expected selector", "hasMoreInstructions"])
+        writer = csv.DictWriter(file, fieldnames=["webpage", "user input", "Instructions", "itemId", "expected itemId", "hasMoreInstructions"])
         
         # Write the header (column names)
         writer.writeheader()

@@ -168,11 +168,20 @@ const Gandalf: React.FC<GandalfProps> = ({
 
         setScreenshot(blob as File);
 
+        const backendScreenLayout = JSON.stringify(screenLayout.map(item => {
+          const {element, ...rest} = item
+          return {
+            ...rest,
+            html: element.outerHTML
+          }
+        }), null, 2)
+
         const formData = new FormData();
         formData.append("user_input", query);
         formData.append("product", "supabase");
         formData.append("dom_tree", domTreeString);
-        formData.append("screen_layout", screenLayout)
+        formData.append("screen_layout", backendScreenLayout)
+        console.log(backendScreenLayout)
         if (blob) {
           formData.append("screenshot", blob, "screenshot.png");
         }
@@ -192,18 +201,16 @@ const Gandalf: React.FC<GandalfProps> = ({
             try {
               const resultObject = JSON.parse(jsonString);
               console.log("Result Object:", resultObject);
-              const { Instructions, selector: _selector, hasMoreInstructions } =
+              const { Instructions, itemId, hasMoreInstructions } =
                 resultObject;
               console.log(
                 "Instructions:",
                 Instructions,
-                "selector:",
-                _selector,
+                "itemId:",
+                itemId,
                 "hasMoreInstructions:",
                 hasMoreInstructions
               );
-
-              const selector = escapeSelector(_selector)
 
               if (Instructions) {
                 setPopoverContent(Instructions);
@@ -213,7 +220,7 @@ const Gandalf: React.FC<GandalfProps> = ({
               }
 
               // Determine the target for the popover based on availability and document presence
-              let targetElement = document.querySelector(selector);
+              let targetElement = screenLayout.find(item => item.itemId === itemId)?.element ?? null
 
               // Update the target reference for Popper
               // targetRef.current = targetElement;

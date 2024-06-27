@@ -1,298 +1,370 @@
 [
-    {
-      "type": "button",
-      "top": 7.5,
-      "left": 43,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Header::RearrangeWorkspaceButton\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-100); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><div class=\"uaeF6W\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconRearrangeWorkspace\" class=\"retool-icon retool-icon-IconRearrangeWorkspace retool-icon-rearrange-workspace\"><path d=\"M6 14H3C1.89543 14 1 13.1046 1 12V5.27273V4C1 2.89543 1.89543 2 3 2H6M6 14H9.5H13C14.1046 14 15 13.1046 15 12V8M6 14V8M6 2H9.5H13C14.1046 2 15 2.89543 15 4V5.27273V8M6 2V8M6 8H15\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 5.5,
-      "left": 1040.765625,
-      "width": 28,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"More information\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg fill=\"none\" viewBox=\"0 0 16 16\" color=\"var(--icon-primary)\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM6.5 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM13 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z\"></path></svg></div></div></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 5.5,
-      "left": 1072.765625,
-      "width": 28,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Toggle preview mode\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg viewBox=\"0 0 16 16\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M6.529 8.529a.667.667 0 0 1 .998.88l-.056.062-3.195 3.196H6a.666.666 0 0 1 .078 1.328L6 14H2.667a.667.667 0 0 1-.662-.589L2 13.333V10a.667.667 0 0 1 1.329-.078l.004.078v1.724L6.53 8.529ZM13.333 2a.667.667 0 0 1 .662.589l.005.078V6a.667.667 0 0 1-1.329.078L12.667 6V4.276L9.47 7.471a.667.667 0 0 1-.998-.88l.056-.062 3.195-3.196H10a.667.667 0 0 1-.078-1.328L10 2h3.333Z\"></path></svg></div></div></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 5.5,
-      "left": 1136.765625,
-      "width": 56.234375,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak PmC2sB\" aria-label=\"Open options to share this app\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--always-white); --retool-button-content-icon: var(--always-white); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Share</p></span></div></div></button>",
-      "text": "Share"
-    },
-    {
-      "type": "button",
-      "top": 50,
-      "left": 6,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"PsK0f7 aoW_jo aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Add UI\" data-selected=\"true\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconAddComponent\" class=\"retool-icon retool-icon-IconAddComponent retool-icon-add-component\"><circle cx=\"9\" cy=\"9\" r=\"8.25\" stroke=\"currentColor\" stroke-width=\"1.5\"></circle><path d=\"M5.5 9H12.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M9 5.5V12.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 90,
-      "left": 6,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Component tree\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconExplorerStack\" class=\"retool-icon retool-icon-IconExplorerStack retool-icon-explorer-stack\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.5 0C1.11842 0 0 1.11842 0 2.5C0 3.62023 0.73531 4.56745 1.75 4.88573V13.1143C0.73531 13.4325 0 14.3798 0 15.5C0 16.8816 1.11842 18 2.5 18C3.62023 18 4.56745 17.2647 4.88573 16.25H8C8.41421 16.25 8.75 15.9142 8.75 15.5C8.75 15.0858 8.41421 14.75 8 14.75H4.88573C4.6417 13.972 4.02797 13.3583 3.25 13.1143V4.88573C4.02797 4.6417 4.6417 4.02797 4.88573 3.25H13.1143C13.3583 4.02797 13.972 4.6417 14.75 4.88573V8C14.75 8.41421 15.0858 8.75 15.5 8.75C15.9142 8.75 16.25 8.41421 16.25 8V4.88573C17.2647 4.56745 18 3.62023 18 2.5C18 1.11842 16.8816 0 15.5 0C14.3798 0 13.4325 0.73531 13.1143 1.75H4.88491C4.56457 0.73531 3.61261 0 2.5 0ZM2.5 1.40977C3.1015 1.40977 3.59023 1.8985 3.59023 2.5C3.59023 3.1015 3.1015 3.59023 2.5 3.59023C1.8985 3.59023 1.40977 3.1015 1.40977 2.5C1.40977 1.8985 1.8985 1.40977 2.5 1.40977ZM3.59022 15.5C3.59022 14.8985 3.1015 14.4098 2.5 14.4098C1.8985 14.4098 1.40977 14.8985 1.40977 15.5C1.40977 16.1015 1.8985 16.5902 2.5 16.5902C3.1015 16.5902 3.59022 16.1015 3.59022 15.5ZM16.5902 2.5C16.5902 1.8985 16.1015 1.40977 15.5 1.40977C14.8985 1.40977 14.4098 1.8985 14.4098 2.5C14.4098 3.1015 14.8985 3.59023 15.5 3.59023C16.1015 3.59023 16.5902 3.1015 16.5902 2.5Z\" fill=\"currentColor\"></path><path d=\"M17.7467 13.0891L14.443 14.2372C14.3347 14.2697 14.2589 14.3564 14.2264 14.4539L13.0783 17.7575C12.97 18.0716 12.5367 18.0824 12.4067 17.7791L9.02728 9.49303C8.90813 9.20058 9.20058 8.90813 9.49303 9.02728L17.7791 12.4067C18.0824 12.5367 18.0716 12.9699 17.7575 13.0783L17.7467 13.0891Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 130,
-      "left": 6,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Code\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconCodeTag\" class=\"retool-icon retool-icon-IconCodeTag retool-icon-code-tag\"><path d=\"M4.75 5L0.75 9L4.75 13\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M13.25 5L17.25 9L13.25 13\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M10 4.5L8 13.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 170,
-      "left": 6,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Code search\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconMagnifyingGlass\" class=\"retool-icon retool-icon-IconMagnifyingGlass retool-icon-magnifying-glass\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7 1C3.68544 1 1 3.68543 1 7C1 10.3146 3.68544 13 7 13C8.38686 13 9.66358 12.5299 10.6795 11.7402L13.4697 14.5305C13.7625 14.8234 14.2374 14.8234 14.5303 14.5305C14.8232 14.2376 14.8232 13.7627 14.5303 13.4698L11.7402 10.6795C12.5299 9.66359 13 8.38687 13 7C13 3.6933 10.3138 1.01048 7.00237 1L7 1ZM2.5 7C2.5 4.51426 4.51322 2.50064 6.99881 2.5C9.48757 2.50851 11.5 4.52474 11.5 7C11.5 9.48614 9.48614 11.5 7 11.5C4.51386 11.5 2.5 9.48614 2.5 7Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 210,
-      "left": 6,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::State\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconDebugToolsState\" class=\"retool-icon retool-icon-IconDebugToolsState retool-icon-debug-tools-state\"><path id=\"Rectangle 2910\" d=\"M5 2L4.71429 2C3.60972 2 2.71429 2.89543 2.71429 4L2.71429 5.87428C2.71429 6.13983 2.60866 6.39448 2.4207 6.58207L1.37865 7.62209C1.17379 7.82655 1.18479 8.16169 1.4026 8.35228L2.37279 9.20119C2.58981 9.39108 2.71429 9.66541 2.71429 9.95377L2.71429 12C2.71429 13.1046 3.60972 14 4.71429 14L5 14\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path><path id=\"Rectangle 2911\" d=\"M11.0404 14L11.303 14C12.4076 14 13.303 13.1046 13.303 12L13.303 10.1228C13.303 9.85896 13.4073 9.60584 13.593 9.41855L14.6271 8.376C14.8295 8.17193 14.8186 7.83963 14.6032 7.64927L13.6407 6.79852C13.426 6.6087 13.303 6.33587 13.303 6.04926L13.303 4C13.303 2.89543 12.4076 2 11.303 2L11 2\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path><path id=\"Vector\" d=\"M8 8L8 12\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><rect id=\"Rectangle 4202\" x=\"7\" y=\"4\" width=\"2\" height=\"2\" rx=\"1\" fill=\"currentColor\"></rect></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 250,
-      "left": 6,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Releases and history\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconHistoryAlt\" class=\"retool-icon retool-icon-IconHistoryAlt retool-icon-history-alt\"><path d=\"M8.24915 0.999023C8.24915 0.58481 8.58493 0.249023 8.99915 0.249023C13.8278 0.249023 17.7491 4.17033 17.7491 8.99902C17.7491 13.8277 13.8278 17.749 8.99915 17.749C4.17045 17.749 0.249146 13.8277 0.249146 8.99902C0.249146 8.58481 0.584932 8.24902 0.999146 8.24902C1.41336 8.24902 1.74915 8.58481 1.74915 8.99902C1.74915 12.9993 4.99888 16.249 8.99915 16.249C12.9994 16.249 16.2491 12.9993 16.2491 8.99902C16.2491 4.99876 12.9994 1.74902 8.99915 1.74902C8.58493 1.74902 8.24915 1.41324 8.24915 0.999023Z\" fill=\"currentColor\"></path><path d=\"M5.01542 1.66656C5.04148 1.77024 5.07623 1.85663 5.13703 1.93439H5.12835C5.18047 2.01214 5.25865 2.08126 5.34551 2.13309C5.42369 2.19357 5.51924 2.21949 5.61479 2.23677C5.81458 2.27133 6.01437 2.22813 6.17942 2.10718C6.2576 2.05534 6.3184 1.98622 6.37921 1.89119C6.44001 1.81343 6.46607 1.7184 6.48345 1.62337C6.50082 1.52833 6.49213 1.4333 6.47476 1.33826C6.43133 1.13092 6.30972 0.966766 6.13599 0.863092C6.04912 0.811255 5.96226 0.776697 5.8667 0.759418C5.77115 0.74214 5.6756 0.750779 5.58005 0.768058C5.47581 0.793976 5.38894 0.828534 5.31077 0.889011C5.14572 1.00996 5.04148 1.18275 5.00674 1.38146C4.98936 1.47649 4.98936 1.58017 5.01542 1.66656Z\" fill=\"currentColor\"></path><path d=\"M2.63971 3.68243C2.57902 3.60468 2.53566 3.50964 2.51832 3.41461C2.4923 3.31958 2.4923 3.22454 2.50965 3.12951C2.54433 2.9308 2.64839 2.75801 2.81314 2.63706C2.89118 2.57658 2.98656 2.53338 3.08195 2.5161C3.17733 2.49883 3.27272 2.49019 3.3681 2.50747C3.46348 2.52474 3.55887 2.55066 3.63691 2.61114C3.80166 2.71481 3.9404 2.8876 3.97509 3.08631C4.0011 3.18134 4.0011 3.27638 3.98376 3.37141C3.96642 3.46645 3.9404 3.56148 3.8797 3.63924C3.82768 3.72563 3.75831 3.80339 3.68027 3.85522C3.51551 3.97618 3.31607 4.01937 3.11663 3.98482C2.91719 3.95026 2.74377 3.84658 2.62237 3.68243H2.63971Z\" fill=\"currentColor\"></path><path d=\"M0.891667 6.4295C0.830968 6.35175 0.787612 6.25671 0.77027 6.16168C0.744256 6.06665 0.744256 5.97161 0.761598 5.87658C0.796283 5.67787 0.900339 5.50508 1.06509 5.38413C1.14313 5.32365 1.23852 5.28045 1.3339 5.26318C1.42929 5.2459 1.52467 5.23726 1.62005 5.25454C1.71544 5.27181 1.81082 5.29773 1.88886 5.35821C2.05362 5.46188 2.19236 5.63467 2.22704 5.83338C2.25306 5.92841 2.25306 6.02345 2.23571 6.11848C2.21837 6.21352 2.19236 6.30855 2.13166 6.38631C2.07963 6.4727 2.01026 6.55046 1.93222 6.60229C1.76746 6.72325 1.56803 6.76644 1.36859 6.73189C1.16915 6.69733 0.995722 6.59365 0.874325 6.4295H0.891667Z\" fill=\"currentColor\"></path><path d=\"M9.49023 5.99316C9.49023 5.57895 9.15445 5.24316 8.74023 5.24316C8.32602 5.24316 7.99023 5.57895 7.99023 5.99316V9.59992L10.7689 11.8228C11.0923 12.0816 11.5643 12.0291 11.823 11.7057C12.0818 11.3822 12.0293 10.9103 11.7059 10.6515L9.49023 8.87899V5.99316Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 290,
-      "left": 6,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::App settings\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconSettingsGear\" class=\"retool-icon retool-icon-IconSettingsGear retool-icon-settings-gear\"><path d=\"M15.2857 9.93029C15.2855 9.99498 15.3077 10.0578 15.3488 10.1086L16.2206 11.184C16.3784 11.3773 16.4729 11.6127 16.4919 11.8594C16.5108 12.1061 16.4533 12.3527 16.3269 12.5669L15.8156 13.4332C15.6896 13.6476 15.5003 13.8197 15.2727 13.9271C15.0451 14.0346 14.7896 14.0724 14.5398 14.0354L13.1508 13.8285C13.0851 13.8196 13.0182 13.832 12.9605 13.864L11.3147 14.7943C11.2575 14.8272 11.2131 14.8779 11.1886 14.9383L10.6762 16.2183C10.5844 16.4483 10.424 16.6461 10.2158 16.7855C10.0075 16.9249 9.76122 16.9997 9.50895 17H8.48644C8.23416 16.9997 7.98784 16.9249 7.77962 16.7855C7.5714 16.6461 7.41094 16.4483 7.31918 16.2183L6.80676 14.9383C6.78224 14.8779 6.73788 14.8272 6.6807 14.7943L5.03487 13.864C4.97719 13.8319 4.91028 13.8195 4.8446 13.8285L3.45557 14.0354C3.20571 14.0724 2.9503 14.0346 2.72268 13.9271C2.49508 13.8197 2.30587 13.6476 2.17977 13.4332L1.66851 12.5669C1.54208 12.3527 1.48458 12.1061 1.50354 11.8594C1.52248 11.6127 1.617 11.3773 1.77473 11.184L2.65134 10.1086C2.69235 10.0578 2.71458 9.99498 2.71437 9.93029V8.06971C2.71458 8.00502 2.69235 7.94216 2.65134 7.89143L1.77473 6.816C1.617 6.62271 1.52248 6.38734 1.50354 6.14063C1.48458 5.89393 1.54208 5.64736 1.66851 5.43314L2.17977 4.56686C2.30587 4.35246 2.49508 4.18029 2.72268 4.07283C2.9503 3.96539 3.20571 3.92765 3.45557 3.96457L4.84111 4.17143C4.90678 4.18054 4.97369 4.16808 5.03136 4.136L6.6807 3.20114C6.73788 3.16818 6.78224 3.11752 6.80676 3.05714L7.32152 1.78171C7.41327 1.55163 7.57373 1.35397 7.78196 1.21452C7.99018 1.07507 8.23649 1.00031 8.48876 1H9.51361C9.76589 1.00031 10.0122 1.07507 10.2204 1.21452C10.4286 1.35397 10.5891 1.55163 10.6809 1.78171L11.1933 3.05714C11.2169 3.11921 11.2614 3.1716 11.3194 3.20571L12.9652 4.136C13.0229 4.168 13.0898 4.18045 13.1554 4.17143L14.5445 3.96457C14.7943 3.92765 15.0498 3.96539 15.2774 4.07283C15.505 4.18029 15.6942 4.35246 15.8203 4.56686L16.3316 5.43314C16.458 5.64736 16.5154 5.89393 16.4965 6.14063C16.4775 6.38734 16.383 6.62271 16.2253 6.816L15.3488 7.89143C15.3077 7.94216 15.2855 8.00502 15.2857 8.06971V9.93029Z\" stroke=\"currentColor\" stroke-width=\"1.5\"></path><path d=\"M9 11.5C10.3816 11.5 11.5 10.3816 11.5 9C11.5 7.61842 10.3816 6.5 9 6.5C7.61842 6.5 6.5 7.61842 6.5 9C6.5 10.3816 7.61842 11.5 9 11.5Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 60,
-      "left": 73,
-      "width": 75.09375,
-      "height": 24,
-      "html": "<button type=\"button\" role=\"button\" class=\"retool-tab-menu__tab retool-tab-menu__tab--active retool-tab-menu__tab--pill retool-tab-menu__tab--pill--active\" id=\"WidgetPicker::Tab-Components\" data-testid=\"WidgetPicker::Tab-Components\">Components</button>",
-      "text": "Components"
-    },
-    {
-      "type": "button",
-      "top": 60,
-      "left": 160.09375,
-      "width": 50.1875,
-      "height": 24,
-      "html": "<button type=\"button\" role=\"button\" class=\"retool-tab-menu__tab retool-tab-menu__tab--pill\" id=\"WidgetPicker::Tab-Modules\" data-testid=\"WidgetPicker::Tab-Modules\">Modules</button>",
-      "text": "Modules"
-    },
-    {
-      "type": "button",
-      "top": 60,
-      "left": 242,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::SidebarDockButton\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" data-testid=\"Icon::IconUnpinned\" class=\"retool-icon retool-icon-IconUnpinned retool-icon-unpinned\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.2184 0.907827C10.535 0.22441 9.42698 0.224409 8.74356 0.907827L8.40923 1.24216C7.91274 1.73865 7.88102 2.52391 8.31407 3.0573L6.74114 4.63024C6.69352 4.67786 6.6287 4.70425 6.56135 4.70344L4.25967 4.67577C3.78828 4.6701 3.33454 4.85486 3.00119 5.1882L2.98435 5.20504C2.30094 5.88846 2.30094 6.9965 2.98435 7.67991L4.93802 9.63358C4.90019 9.65946 4.86422 9.68919 4.83063 9.72278L1.83063 12.7228C1.53774 13.0157 1.53774 13.4905 1.83063 13.7834C2.12353 14.0763 2.5984 14.0763 2.89129 13.7834L5.89129 10.7834C5.92488 10.7499 5.95461 10.7139 5.98049 10.6761L7.9341 12.6297C8.61752 13.3131 9.72556 13.3131 10.409 12.6297L10.4493 12.5893C10.7582 12.2804 10.9404 11.8672 10.9601 11.4308L11.0593 9.23389C11.0621 9.17155 11.0881 9.11252 11.1323 9.06839L12.7387 7.46199C13.2321 7.80063 13.9119 7.75073 14.3504 7.31229L14.7492 6.91346C15.4326 6.23004 15.4326 5.122 14.7492 4.43858L11.2184 0.907827ZM9.80422 1.96849C9.90185 1.87086 10.0601 1.87086 10.1578 1.96849L13.6885 5.49924C13.7862 5.59687 13.7862 5.75517 13.6885 5.8528L13.4394 6.10193C12.946 5.76328 12.2662 5.81318 11.8277 6.25163L10.0716 8.00773C9.76272 8.31661 9.58053 8.72985 9.56082 9.16623L9.46163 11.3632C9.45882 11.4255 9.43279 11.4845 9.38866 11.5287L9.34832 11.569C9.25068 11.6666 9.09239 11.6666 8.99476 11.569L4.04501 6.61925C3.94738 6.52162 3.94738 6.36333 4.04501 6.2657L4.06185 6.24886C4.10947 6.20124 4.17429 6.17485 4.24163 6.17566L6.54332 6.20333C7.01471 6.209 7.46845 6.02425 7.8018 5.6909L9.46989 4.02281C9.96638 3.52632 9.9981 2.74105 9.56504 2.20766L9.80422 1.96849Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 60,
-      "left": 268,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::SidebarToggleButton\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconDoubleCaretRight\" class=\"retool-icon retool-icon-IconDoubleCaretRight retool-icon-double-caret-right\" style=\"transform: rotate(180deg);\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.46963 5.53029C3.17676 5.23738 3.17679 4.7625 3.46971 4.46963C3.76262 4.17676 4.2375 4.17679 4.53037 4.46971L7.52994 7.46971C7.82278 7.76259 7.82278 8.23741 7.52994 8.53029L4.53037 11.5303C4.2375 11.8232 3.76262 11.8232 3.46971 11.5304C3.17679 11.2375 3.17676 10.7626 3.46963 10.4697L5.93899 8L3.46963 5.53029ZM8.46963 5.53029C8.17676 5.23738 8.17679 4.7625 8.46971 4.46963C8.76262 4.17676 9.2375 4.17679 9.53037 4.46971L12.5299 7.46971C12.8228 7.76259 12.8228 8.23741 12.5299 8.53029L9.53037 11.5303C9.2375 11.8232 8.76262 11.8232 8.46971 11.5304C8.17679 11.2375 8.17676 10.7626 8.46963 10.4697L10.939 8L8.46963 5.53029Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 1128,
-      "left": 313,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"1em\" height=\"1em\" fill=\"none\" viewBox=\"0 0 16 16\" data-testid=\"Icon::IconRoundedMinus\" class=\"retool-icon retool-icon-IconRoundedMinus retool-icon-rounded-minus\"><path d=\"M2.667 8h10.666\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 1128,
-      "left": 339,
-      "width": 36,
-      "height": 24,
-      "html": "<button type=\"button\" aria-label=\"Zoom control dropdown trigger\" data-testid=\"ScaleControl::DropdownTrigger\" role=\"select\" class=\"nFRfp0\" style=\"--trigger-button-width: 36px;\"><div class=\"yCzasq\">100<span class=\"r6FHwz\">%</span></div></button>",
-      "text": "100%"
-    },
-    {
-      "type": "button",
-      "top": 1128,
-      "left": 377,
-      "width": 24,
-      "height": 24,
-      "html": "<button disabled=\"\" type=\"button\" class=\"PsK0f7 _WoXNI aJhjcn Fjf7wf WodWA5 Stb2fx\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconRoundedPlus\" class=\"retool-icon retool-icon-IconRoundedPlus retool-icon-rounded-plus\"><path d=\"M8.75 2.75C8.75 2.33579 8.41421 2 8 2C7.58579 2 7.25 2.33579 7.25 2.75V7.25H2.75C2.33579 7.25 2 7.58579 2 8C2 8.41421 2.33579 8.75 2.75 8.75H7.25V13.25C7.25 13.6642 7.58579 14 8 14C8.41421 14 8.75 13.6642 8.75 13.25V8.75H13.25C13.6642 8.75 14 8.41421 14 8C14 7.58579 13.6642 7.25 13.25 7.25H8.75V2.75Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 61,
-      "left": 962,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorFormHeader::SearchButton::$main\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-100); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7 1C3.68544 1 1 3.68543 1 7C1 10.3146 3.68544 13 7 13C8.38686 13 9.66358 12.5299 10.6795 11.7402L13.4697 14.5305C13.7625 14.8234 14.2374 14.8234 14.5303 14.5305C14.8232 14.2376 14.8232 13.7627 14.5303 13.4698L11.7402 10.6795C12.5299 9.66359 13 8.38687 13 7C13 3.6933 10.3138 1.01048 7.00237 1L7 1ZM2.5 7C2.5 4.51426 4.51322 2.50064 6.99881 2.5C9.48757 2.50851 11.5 4.52474 11.5 7C11.5 9.48614 9.48614 11.5 7 11.5C4.51386 11.5 2.5 9.48614 2.5 7Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 61,
-      "left": 990,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::InspectorDockButton\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" data-testid=\"Icon::IconUnpinned\" class=\"retool-icon retool-icon-IconUnpinned retool-icon-unpinned\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.2184 0.907827C10.535 0.22441 9.42698 0.224409 8.74356 0.907827L8.40923 1.24216C7.91274 1.73865 7.88102 2.52391 8.31407 3.0573L6.74114 4.63024C6.69352 4.67786 6.6287 4.70425 6.56135 4.70344L4.25967 4.67577C3.78828 4.6701 3.33454 4.85486 3.00119 5.1882L2.98435 5.20504C2.30094 5.88846 2.30094 6.9965 2.98435 7.67991L4.93802 9.63358C4.90019 9.65946 4.86422 9.68919 4.83063 9.72278L1.83063 12.7228C1.53774 13.0157 1.53774 13.4905 1.83063 13.7834C2.12353 14.0763 2.5984 14.0763 2.89129 13.7834L5.89129 10.7834C5.92488 10.7499 5.95461 10.7139 5.98049 10.6761L7.9341 12.6297C8.61752 13.3131 9.72556 13.3131 10.409 12.6297L10.4493 12.5893C10.7582 12.2804 10.9404 11.8672 10.9601 11.4308L11.0593 9.23389C11.0621 9.17155 11.0881 9.11252 11.1323 9.06839L12.7387 7.46199C13.2321 7.80063 13.9119 7.75073 14.3504 7.31229L14.7492 6.91346C15.4326 6.23004 15.4326 5.122 14.7492 4.43858L11.2184 0.907827ZM9.80422 1.96849C9.90185 1.87086 10.0601 1.87086 10.1578 1.96849L13.6885 5.49924C13.7862 5.59687 13.7862 5.75517 13.6885 5.8528L13.4394 6.10193C12.946 5.76328 12.2662 5.81318 11.8277 6.25163L10.0716 8.00773C9.76272 8.31661 9.58053 8.72985 9.56082 9.16623L9.46163 11.3632C9.45882 11.4255 9.43279 11.4845 9.38866 11.5287L9.34832 11.569C9.25068 11.6666 9.09239 11.6666 8.99476 11.569L4.04501 6.61925C3.94738 6.52162 3.94738 6.36333 4.04501 6.2657L4.06185 6.24886C4.10947 6.20124 4.17429 6.17485 4.24163 6.17566L6.54332 6.20333C7.01471 6.209 7.46845 6.02425 7.8018 5.6909L9.46989 4.02281C9.96638 3.52632 9.9981 2.74105 9.56504 2.20766L9.80422 1.96849Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 61,
-      "left": 1014,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::InspectorPanelToggle\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><span tabindex=\"0\" class=\"trigger\" data-state=\"closed\"><div class=\"sBfatM\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconDoubleCaretRight\" class=\"retool-icon retool-icon-IconDoubleCaretRight retool-icon-double-caret-right HyGRQi\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.46963 5.53029C3.17676 5.23738 3.17679 4.7625 3.46971 4.46963C3.76262 4.17676 4.2375 4.17679 4.53037 4.46971L7.52994 7.46971C7.82278 7.76259 7.82278 8.23741 7.52994 8.53029L4.53037 11.5303C4.2375 11.8232 3.76262 11.8232 3.46971 11.5304C3.17679 11.2375 3.17676 10.7626 3.46963 10.4697L5.93899 8L3.46963 5.53029ZM8.46963 5.53029C8.17676 5.23738 8.17679 4.7625 8.46971 4.46963C8.76262 4.17676 9.2375 4.17679 9.53037 4.46971L12.5299 7.46971C12.8228 7.76259 12.8228 8.23741 12.5299 8.53029L9.53037 11.5303C9.2375 11.8232 8.76262 11.8232 8.46971 11.5304C8.17679 11.2375 8.17676 10.7626 8.46963 10.4697L10.939 8L8.46963 5.53029Z\" fill=\"currentColor\"></path></svg></div></span></button>"
-    },
-    {
-      "type": "button",
-      "top": 162,
-      "left": 836,
-      "width": 16,
-      "height": 20,
-      "html": "<button type=\"button\" class=\"rPvPV9 L295_v\" aria-label=\"Click to set value dynamically.\" data-testid=\"dynamic::toggle\"><div class=\"KWBW9f rp1SIW\"><svg width=\"12\" height=\"8\" viewBox=\"0 0 12 8\" fill=\"none\" data-testid=\"Icon::IconFunction2\" class=\"retool-icon retool-icon-IconFunction2 retool-icon-function-2\"><path d=\"M1.87151 3.33008H4.08977C4.36906 3.33008 4.56959 3.36051 4.69133 3.42139C4.78801 3.47152 4.865 3.55029 4.92229 3.65771C4.98316 3.76156 5.0136 3.87972 5.0136 4.01221C5.0136 4.14469 4.98316 4.26465 4.92229 4.37207C4.865 4.47949 4.78801 4.55827 4.69133 4.6084C4.57675 4.66569 4.37623 4.69434 4.08977 4.69434H1.87151V6.88574C1.87151 7.06836 1.86434 7.20264 1.85002 7.28857C1.83928 7.37451 1.81063 7.46403 1.76408 7.55713C1.70321 7.66813 1.61369 7.75586 1.49553 7.82031C1.37737 7.88477 1.24488 7.91699 1.09807 7.91699C0.951258 7.91699 0.818771 7.88477 0.700607 7.82031C0.582443 7.75586 0.492925 7.66813 0.432053 7.55713C0.389084 7.46761 0.360438 7.37988 0.346115 7.29395C0.335373 7.20801 0.330002 7.07194 0.330002 6.88574V0.977539C0.330002 0.873698 0.331792 0.791341 0.335373 0.730469C0.342534 0.669596 0.362228 0.592611 0.394455 0.499512C0.426682 0.406413 0.476812 0.325846 0.544846 0.257812C0.612879 0.189779 0.693446 0.139648 0.786545 0.107422C0.879644 0.0751953 0.956629 0.0572917 1.0175 0.0537109C1.07837 0.0465495 1.16073 0.0429688 1.26457 0.0429688H4.62688C4.90975 0.0429688 5.10848 0.0716146 5.22307 0.128906C5.31975 0.179036 5.39852 0.257812 5.4594 0.365234C5.52027 0.472656 5.5507 0.592611 5.5507 0.725098C5.5507 0.857585 5.52027 0.977539 5.4594 1.08496C5.39852 1.1888 5.31975 1.26579 5.22307 1.31592C5.10132 1.37679 4.90259 1.40723 4.62688 1.40723H1.87151V3.33008Z\" fill=\"currentColor\"></path><path d=\"M6.27322 0.757324C6.26606 0.635579 6.2965 0.517415 6.36453 0.402832C6.43257 0.284668 6.52925 0.189779 6.65457 0.118164C6.79422 0.039388 6.93029 0 7.06278 0C7.16304 0 7.25076 0.0143229 7.32596 0.0429688C7.40115 0.0716146 7.46919 0.119954 7.53006 0.187988C7.59451 0.252441 7.64464 0.313314 7.68045 0.370605C7.71984 0.427897 7.76997 0.512044 7.83084 0.623047L8.91043 2.56738L9.99002 0.623047C10.0509 0.515625 10.101 0.433268 10.1404 0.375977C10.1798 0.315104 10.2299 0.252441 10.2908 0.187988C10.3517 0.119954 10.4197 0.0716146 10.4949 0.0429688C10.5737 0.0143229 10.6632 0 10.7635 0C10.8924 0 11.0266 0.039388 11.1663 0.118164C11.2916 0.189779 11.3883 0.284668 11.4563 0.402832C11.5244 0.517415 11.5548 0.635579 11.5476 0.757324C11.5405 0.900553 11.4581 1.10645 11.3006 1.375L9.85037 3.85645L11.4187 6.54199C11.5763 6.81055 11.6586 7.01644 11.6658 7.15967C11.673 7.28141 11.6425 7.40137 11.5745 7.51953C11.5065 7.63411 11.4098 7.72721 11.2845 7.79883C11.1448 7.8776 11.0087 7.91699 10.8763 7.91699C10.776 7.91699 10.6883 7.90267 10.6131 7.87402C10.5379 7.84538 10.468 7.79704 10.4036 7.729C10.3427 7.65739 10.2944 7.59473 10.2586 7.54102C10.2228 7.4873 10.1726 7.40316 10.1082 7.28857L8.91043 5.15088L7.71268 7.28857C7.64822 7.40316 7.59809 7.4873 7.56229 7.54102C7.52648 7.59473 7.47635 7.65739 7.4119 7.729C7.35102 7.79704 7.28299 7.84538 7.20779 7.87402C7.1326 7.90267 7.04487 7.91699 6.94461 7.91699C6.81212 7.91699 6.67606 7.8776 6.53641 7.79883C6.41108 7.72721 6.3144 7.63411 6.24637 7.51953C6.18192 7.40495 6.15327 7.28499 6.16043 7.15967C6.16759 7.01644 6.24995 6.81055 6.4075 6.54199L7.97049 3.85645L6.52029 1.375C6.36274 1.10645 6.28039 0.900553 6.27322 0.757324Z\" fill=\"currentColor\"></path></svg></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 196,
-      "left": 991,
-      "width": 18,
-      "height": 24,
-      "html": "<button type=\"button\" data-testid=\"StyleEditorSection::Reset\" class=\"CBK_8b lkZEaV ZYMtBc\"><svg width=\"10\" height=\"12\" viewBox=\"0 0 10 12\" fill=\"none\" data-testid=\"Icon::IconReset\" class=\"retool-icon retool-icon-IconReset retool-icon-reset\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6 1.5H4C2.61929 1.5 1.5 2.61929 1.5 4H0C0 1.79086 1.79086 0 4 0H6C8.20914 0 10 1.79086 10 4V5C10 7.20914 8.20914 9 6 9H2.81598L4.85152 11.0355L3.79085 12L2.45588e-05 8.2981L3.79085 4.5L4.85152 5.5L2.81598 7.5H6C7.38071 7.5 8.5 6.38071 8.5 5V4C8.5 2.61929 7.38071 1.5 6 1.5Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 196,
-      "left": 1012,
-      "width": 24,
-      "height": 24,
-      "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"$main::ListEditor-Styles::AddEditorButton\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-100); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconPlusListEditor\" class=\"\"><path d=\"M2.66699 8L13.3337 8\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path><path d=\"M8 2.66699L8 13.3337\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 0,
-      "width": 88.390625,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY O9BdeO ant-dropdown-trigger retool-dropdown retool-dropdown--small noMargin\" style=\"--color: #3C92DC;\"><div class=\"dQkpM3\" style=\"--color: rgba(0,0,0,0.25); --size: 8px; --border-radius: 25px;\"></div><span class=\"F4px_g\" style=\"--text-color: #ffffffff;\">production</span></button>",
-      "text": "production"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 88.390625,
-      "width": 67.640625,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconRelease\" class=\"retool-icon retool-icon-IconRelease retool-icon-release\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.5 7.775V2.75C2.5 2.6837 2.52634 2.62011 2.57322 2.57322C2.62011 2.52634 2.6837 2.5 2.75 2.5H7.775C7.80785 2.49994 7.84039 2.50636 7.87077 2.51888C7.90114 2.53141 7.92874 2.5498 7.952 2.573L14.202 8.823C14.2253 8.84622 14.2438 8.87381 14.2564 8.90418C14.269 8.93456 14.2754 8.96712 14.2754 9C14.2754 9.03288 14.269 9.06544 14.2564 9.09582C14.2438 9.12619 14.2253 9.15378 14.202 9.177L9.177 14.202C9.15378 14.2253 9.12619 14.2438 9.09582 14.2564C9.06544 14.269 9.03288 14.2754 9 14.2754C8.96712 14.2754 8.93456 14.269 8.90418 14.2564C8.87381 14.2438 8.84622 14.2253 8.823 14.202L2.573 7.952C2.5498 7.92874 2.53141 7.90114 2.51888 7.87077C2.50636 7.84039 2.49994 7.80785 2.5 7.775ZM1 7.775V2.75C1 1.784 1.784 1 2.75 1H7.775C8.239 1 8.685 1.184 9.013 1.513L15.263 7.763C15.5909 8.09115 15.7751 8.53609 15.7751 9C15.7751 9.46391 15.5909 9.90885 15.263 10.237L10.237 15.263C9.90885 15.5909 9.46391 15.7751 9 15.7751C8.53609 15.7751 8.09115 15.5909 7.763 15.263L1.513 9.013C1.35035 8.85047 1.22133 8.65747 1.1333 8.44505C1.04528 8.23263 0.999983 8.00494 1 7.775ZM6 5C5.73478 5 5.48043 5.10536 5.29289 5.29289C5.10536 5.48043 5 5.73478 5 6C5 6.26522 5.10536 6.51957 5.29289 6.70711C5.48043 6.89464 5.73478 7 6 7C6.26522 7 6.51957 6.89464 6.70711 6.70711C6.89464 6.51957 7 6.26522 7 6C7 5.73478 6.89464 5.48043 6.70711 5.29289C6.51957 5.10536 6.26522 5 6 5Z\" fill=\"currentColor\"></path></svg><span data-testid=\"ReleaseManagement::Launcher\"> &nbsp; Latest</span></button>",
-      "text": "Latest"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 1081.921875,
-      "width": 67.09375,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY\" id=\"DebugButton\" data-testid=\"DebugTools::EditingStatusBar_debugModalButton\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconStatusBarDebugging\" class=\"retool-icon retool-icon-IconStatusBarDebugging retool-icon-status-bar-debugging\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.7692 4C10.8967 4 11 3.89668 11 3.76923C11 2.23983 9.76017 1 8.23077 1H7.76923C6.23983 1 5 2.23983 5 3.76923C5 3.89668 5.10332 4 5.23077 4L10.7692 4ZM12 10V11C12 11.0442 11.9993 11.0883 11.9979 11.1322L14.2456 12.3319C14.7328 12.5919 14.917 13.1977 14.6569 13.6849C14.3969 14.1722 13.7911 14.3564 13.3039 14.0963L11.413 13.0871C10.8346 14.0309 9.87583 14.7162 8.75 14.9298V7.75C8.75 7.33579 8.41421 7 8 7C7.58579 7 7.25 7.33579 7.25 7.75V14.9298C6.12417 14.7162 5.16536 14.0309 4.587 13.0871L2.69612 14.0963C2.20889 14.3564 1.6031 14.1722 1.34306 13.6849C1.08301 13.1977 1.26719 12.5919 1.75442 12.3319L4.00214 11.1322C4.00072 11.0883 4 11.0442 4 11V10H2C1.44772 10 1 9.55229 1 9C1 8.44772 1.44772 8 2 8H4V7.86634C3.92516 7.82309 3.85474 7.76935 3.79087 7.70512L1.80206 5.70512C1.41264 5.3135 1.41441 4.68034 1.80603 4.29091C2.19765 3.90148 2.83081 3.90326 3.22024 4.29488L4.18673 5.26681C4.32779 5.10341 4.53643 5 4.76923 5H11.2308C11.4636 5 11.6722 5.10341 11.8133 5.26681L12.7798 4.29488C13.1692 3.90326 13.8024 3.90148 14.194 4.29091C14.5856 4.68034 14.5874 5.3135 14.1979 5.70512L12.2091 7.70512C12.1453 7.76935 12.0748 7.82309 12 7.86634V8H14C14.5523 8 15 8.44772 15 9C15 9.55229 14.5523 10 14 10H12Z\" fill=\"currentColor\"></path></svg><span style=\"margin-left: 4px;\">Debug</span></button>",
-      "text": "Debug"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 1149.015625,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY\" data-testid=\"DebugTools::EditingStatusBar_historyButton\" aria-label=\"History\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconHistory\" class=\"retool-icon retool-icon-IconHistory retool-icon-history\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1.64294 3.14291L0.426777 1.92675C0.269286 1.76926 0 1.8808 0 2.10353V5.74998C0 5.88805 0.111929 5.99998 0.25 5.99998H3.89645C4.11917 5.99998 4.23071 5.73069 4.07322 5.5732L2.715 4.21498C3.89508 2.57019 5.82314 1.5 8.00007 1.5C11.5899 1.5 14.5001 4.41015 14.5001 8C14.5001 11.5899 11.5899 14.5 8.00007 14.5C4.63773 14.5 1.87085 11.9464 1.53446 8.67332C1.49211 8.26128 1.12376 7.96158 0.711712 8.00393C0.299669 8.04628 -2.88747e-05 8.41463 0.0423185 8.82668C0.456521 12.8569 3.86076 16 8.00007 16C12.4183 16 16.0001 12.4183 16.0001 8C16.0001 3.58172 12.4183 0 8.00007 0C5.40771 0 3.10436 1.23301 1.64294 3.14291ZM7.75 4C8.16421 4 8.5 4.33579 8.5 4.75V7.74223L10.5285 8.55364C10.9131 8.70748 11.1002 9.14396 10.9464 9.52854C10.7925 9.91313 10.356 10.1002 9.97146 9.94636L7.47146 8.94636C7.18671 8.83246 7 8.55668 7 8.25V4.75C7 4.33579 7.33579 4 7.75 4Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 1177.015625,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY ant-dropdown-trigger retool-dropdown retool-dropdown--default kjVNxy\" aria-label=\"Help\" data-testid=\"DebugTools::EditingStatusBar_helpButton\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconStatusBarHelpButton\" class=\"retool-icon retool-icon-IconStatusBarHelpButton retool-icon-status-bar-help-button\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM9 11C9 11.5523 8.55229 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10C8.55229 10 9 10.4477 9 11ZM6.92082 6.08541C7.00133 5.92438 7.11032 5.78617 7.25977 5.68654C7.40453 5.59004 7.63124 5.5 8 5.5C8.27975 5.5 8.55291 5.58656 8.7375 5.725C8.90206 5.84842 9 6.01009 9 6.25C9 6.42662 8.95919 6.51381 8.92283 6.56835C8.87748 6.63639 8.79924 6.71162 8.64646 6.81349C8.57007 6.86441 8.48788 6.9139 8.38754 6.97411L8.38141 6.97779L8.38139 6.9778C8.28769 7.03402 8.17704 7.10041 8.06831 7.1729C7.84608 7.32107 7.58057 7.52712 7.37593 7.83412C7.14619 8.17878 7.23935 8.64442 7.58401 8.87417C7.92867 9.10391 8.39432 9.01075 8.62406 8.66609C8.66942 8.59803 8.74766 8.52279 8.90043 8.42093C8.97681 8.37001 9.059 8.32052 9.15933 8.26032L9.16554 8.25659L9.1656 8.25656C9.25926 8.20036 9.36986 8.134 9.47854 8.06154C9.70075 7.91339 9.96627 7.70737 10.1709 7.4004C10.3846 7.07994 10.5 6.69838 10.5 6.25C10.5 5.48991 10.1396 4.90158 9.6375 4.525C9.15542 4.16344 8.55358 4 8 4C7.36876 4 6.84547 4.15996 6.42772 4.43846C6.01467 4.71383 5.74866 5.07562 5.57918 5.41459C5.39393 5.78507 5.5441 6.23558 5.91459 6.42082C6.28507 6.60606 6.73558 6.45589 6.92082 6.08541Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 0,
-      "left": 0,
-      "width": 1,
-      "height": 0,
-      "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
-    },
-    {
-      "type": "button",
-      "top": 0,
-      "left": 0,
-      "width": 1,
-      "height": 0,
-      "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
-    },
-    {
-      "type": "link or button",
-      "top": 5.5,
-      "left": 1104.765625,
-      "width": 28,
-      "height": 28,
-      "html": "<a role=\"button\" class=\"nIczNC NGAsrY itQ6UP Fh7Sak PmC2sB\" aria-label=\"Navigate to app in user mode\" type=\"button\" href=\"/apps/1e56f010-3370-11ef-b1ba-83778aafe36d/Untitled\" target=\"_blank\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg fill=\"none\" viewBox=\"0 0 16 16\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M12.8471 7.4879L5.59136 2.167C4.93084 1.68261 4 2.1543 4 2.9734V13.1315C4 13.9302 4.89015 14.4066 5.5547 13.9635L12.8105 9.12635C13.3883 8.74111 13.4072 7.8986 12.8471 7.4879Z\"></path></svg></div></div></div></a>"
-    },
-    {
-      "type": "text field",
-      "top": 95,
-      "left": 96,
-      "width": 191,
-      "height": 26,
-      "html": "<input data-testid=\"widget-search\" id=\"react-aria6159954465-10\" autocomplete=\"off\" placeholder=\"Search components\" autocapitalize=\"none\" spellcheck=\"false\" class=\"lPgV2z MjhMCf default\" type=\"text\" value=\"\" style=\"--retool-base-input-background: #ffffff; --retool-base-input-text: #0d0d0dff; --retool-base-input-placeholder: var(--gray-400); --retool-base-input-placeholder-font-size: 12px; --retool-base-input-placeholder-font-weight: 500; --retool-base-input-padding-horizontal: 8px; --retool-base-input-padding-vertical: 5px; --retool-base-input-content-padding-top: 5px; --retool-base-input-content-padding-right: 4px; --retool-base-input-content-padding-bottom: 5px; --retool-base-input-content-padding-left: 12px; --retool-base-input-input-hover-background: #ffffff; --retool-base-input-font-size: 12px;\">",
-      "placeholder": "Search components"
-    },
-    {
-      "type": "text field",
-      "top": 132,
-      "left": 1020,
-      "width": 16,
-      "height": 16,
-      "html": "<input aria-checked=\"false\" type=\"checkbox\" class=\"SOuFEZ\" data-testid=\"FullBleedEditor::Checkbox\">"
-    },
-    {
-      "type": "text field",
-      "top": 172,
-      "left": 882.109375,
-      "width": 0,
-      "height": 0,
-      "html": "<input type=\"radio\" class=\"ant-radio-button-input\" aria-label=\"Normal\" value=\"8px 12px\" checked=\"\">"
-    },
-    {
-      "type": "text field",
-      "top": 172,
-      "left": 973.8125,
-      "width": 0,
-      "height": 0,
-      "html": "<input type=\"radio\" class=\"ant-radio-button-input\" aria-label=\"None\" value=\"0\">"
-    }
-  ]
+  {
+    "itemId": 0,
+    "type": "button",
+    "top": 7.5,
+    "left": 43,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Header::RearrangeWorkspaceButton\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-100); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><div class=\"uaeF6W\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconRearrangeWorkspace\" class=\"retool-icon retool-icon-IconRearrangeWorkspace retool-icon-rearrange-workspace\"><path d=\"M6 14H3C1.89543 14 1 13.1046 1 12V5.27273V4C1 2.89543 1.89543 2 3 2H6M6 14H9.5H13C14.1046 14 15 13.1046 15 12V8M6 14V8M6 2H9.5H13C14.1046 2 15 2.89543 15 4V5.27273V8M6 2V8M6 8H15\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></button>"
+  },
+  {
+    "itemId": 1,
+    "type": "button",
+    "top": 5.5,
+    "left": 1175.3828125,
+    "width": 28,
+    "height": 28,
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"More information\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg fill=\"none\" viewBox=\"0 0 16 16\" color=\"var(--icon-primary)\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM6.5 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM13 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z\"></path></svg></div></div></div></button>"
+  },
+  {
+    "itemId": 2,
+    "type": "button",
+    "top": 5.5,
+    "left": 1207.3828125,
+    "width": 28,
+    "height": 28,
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Toggle preview mode\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg viewBox=\"0 0 16 16\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M6.529 8.529a.667.667 0 0 1 .998.88l-.056.062-3.195 3.196H6a.666.666 0 0 1 .078 1.328L6 14H2.667a.667.667 0 0 1-.662-.589L2 13.333V10a.667.667 0 0 1 1.329-.078l.004.078v1.724L6.53 8.529ZM13.333 2a.667.667 0 0 1 .662.589l.005.078V6a.667.667 0 0 1-1.329.078L12.667 6V4.276L9.47 7.471a.667.667 0 0 1-.998-.88l.056-.062 3.195-3.196H10a.667.667 0 0 1-.078-1.328L10 2h3.333Z\"></path></svg></div></div></div></button>"
+  },
+  {
+    "itemId": 3,
+    "type": "button",
+    "top": 5.5,
+    "left": 1271.3828125,
+    "width": 53.6171875,
+    "height": 28,
+    "background": "rgb(59, 130, 246) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Share",
+    "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak PmC2sB\" aria-label=\"Open options to share this app\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--always-white); --retool-button-content-icon: var(--always-white); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Share</p></span></div></div></button>"
+  },
+  {
+    "itemId": 4,
+    "type": "button",
+    "top": 50,
+    "left": 6,
+    "width": 28,
+    "height": 28,
+    "background": "rgb(235, 235, 235) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aoW_jo aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Add UI\" data-selected=\"true\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconAddComponent\" class=\"retool-icon retool-icon-IconAddComponent retool-icon-add-component\"><circle cx=\"9\" cy=\"9\" r=\"8.25\" stroke=\"currentColor\" stroke-width=\"1.5\"></circle><path d=\"M5.5 9H12.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M9 5.5V12.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button>"
+  },
+  {
+    "itemId": 5,
+    "type": "button",
+    "top": 90,
+    "left": 6,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Component tree\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconExplorerStack\" class=\"retool-icon retool-icon-IconExplorerStack retool-icon-explorer-stack\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.5 0C1.11842 0 0 1.11842 0 2.5C0 3.62023 0.73531 4.56745 1.75 4.88573V13.1143C0.73531 13.4325 0 14.3798 0 15.5C0 16.8816 1.11842 18 2.5 18C3.62023 18 4.56745 17.2647 4.88573 16.25H8C8.41421 16.25 8.75 15.9142 8.75 15.5C8.75 15.0858 8.41421 14.75 8 14.75H4.88573C4.6417 13.972 4.02797 13.3583 3.25 13.1143V4.88573C4.02797 4.6417 4.6417 4.02797 4.88573 3.25H13.1143C13.3583 4.02797 13.972 4.6417 14.75 4.88573V8C14.75 8.41421 15.0858 8.75 15.5 8.75C15.9142 8.75 16.25 8.41421 16.25 8V4.88573C17.2647 4.56745 18 3.62023 18 2.5C18 1.11842 16.8816 0 15.5 0C14.3798 0 13.4325 0.73531 13.1143 1.75H4.88491C4.56457 0.73531 3.61261 0 2.5 0ZM2.5 1.40977C3.1015 1.40977 3.59023 1.8985 3.59023 2.5C3.59023 3.1015 3.1015 3.59023 2.5 3.59023C1.8985 3.59023 1.40977 3.1015 1.40977 2.5C1.40977 1.8985 1.8985 1.40977 2.5 1.40977ZM3.59022 15.5C3.59022 14.8985 3.1015 14.4098 2.5 14.4098C1.8985 14.4098 1.40977 14.8985 1.40977 15.5C1.40977 16.1015 1.8985 16.5902 2.5 16.5902C3.1015 16.5902 3.59022 16.1015 3.59022 15.5ZM16.5902 2.5C16.5902 1.8985 16.1015 1.40977 15.5 1.40977C14.8985 1.40977 14.4098 1.8985 14.4098 2.5C14.4098 3.1015 14.8985 3.59023 15.5 3.59023C16.1015 3.59023 16.5902 3.1015 16.5902 2.5Z\" fill=\"currentColor\"></path><path d=\"M17.7467 13.0891L14.443 14.2372C14.3347 14.2697 14.2589 14.3564 14.2264 14.4539L13.0783 17.7575C12.97 18.0716 12.5367 18.0824 12.4067 17.7791L9.02728 9.49303C8.90813 9.20058 9.20058 8.90813 9.49303 9.02728L17.7791 12.4067C18.0824 12.5367 18.0716 12.9699 17.7575 13.0783L17.7467 13.0891Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 6,
+    "type": "button",
+    "top": 130,
+    "left": 6,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Code\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconCodeTag\" class=\"retool-icon retool-icon-IconCodeTag retool-icon-code-tag\"><path d=\"M4.75 5L0.75 9L4.75 13\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M13.25 5L17.25 9L13.25 13\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M10 4.5L8 13.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button>"
+  },
+  {
+    "itemId": 7,
+    "type": "button",
+    "top": 170,
+    "left": 6,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Code search\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconMagnifyingGlass\" class=\"retool-icon retool-icon-IconMagnifyingGlass retool-icon-magnifying-glass\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7 1C3.68544 1 1 3.68543 1 7C1 10.3146 3.68544 13 7 13C8.38686 13 9.66358 12.5299 10.6795 11.7402L13.4697 14.5305C13.7625 14.8234 14.2374 14.8234 14.5303 14.5305C14.8232 14.2376 14.8232 13.7627 14.5303 13.4698L11.7402 10.6795C12.5299 9.66359 13 8.38687 13 7C13 3.6933 10.3138 1.01048 7.00237 1L7 1ZM2.5 7C2.5 4.51426 4.51322 2.50064 6.99881 2.5C9.48757 2.50851 11.5 4.52474 11.5 7C11.5 9.48614 9.48614 11.5 7 11.5C4.51386 11.5 2.5 9.48614 2.5 7Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 8,
+    "type": "button",
+    "top": 210,
+    "left": 6,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::State\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconDebugToolsState\" class=\"retool-icon retool-icon-IconDebugToolsState retool-icon-debug-tools-state\"><path id=\"Rectangle 2910\" d=\"M5 2L4.71429 2C3.60972 2 2.71429 2.89543 2.71429 4L2.71429 5.87428C2.71429 6.13983 2.60866 6.39448 2.4207 6.58207L1.37865 7.62209C1.17379 7.82655 1.18479 8.16169 1.4026 8.35228L2.37279 9.20119C2.58981 9.39108 2.71429 9.66541 2.71429 9.95377L2.71429 12C2.71429 13.1046 3.60972 14 4.71429 14L5 14\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path><path id=\"Rectangle 2911\" d=\"M11.0404 14L11.303 14C12.4076 14 13.303 13.1046 13.303 12L13.303 10.1228C13.303 9.85896 13.4073 9.60584 13.593 9.41855L14.6271 8.376C14.8295 8.17193 14.8186 7.83963 14.6032 7.64927L13.6407 6.79852C13.426 6.6087 13.303 6.33587 13.303 6.04926L13.303 4C13.303 2.89543 12.4076 2 11.303 2L11 2\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path><path id=\"Vector\" d=\"M8 8L8 12\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><rect id=\"Rectangle 4202\" x=\"7\" y=\"4\" width=\"2\" height=\"2\" rx=\"1\" fill=\"currentColor\"></rect></svg></button>"
+  },
+  {
+    "itemId": 9,
+    "type": "button",
+    "top": 250,
+    "left": 6,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::Releases and history\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconHistoryAlt\" class=\"retool-icon retool-icon-IconHistoryAlt retool-icon-history-alt\"><path d=\"M8.24915 0.999023C8.24915 0.58481 8.58493 0.249023 8.99915 0.249023C13.8278 0.249023 17.7491 4.17033 17.7491 8.99902C17.7491 13.8277 13.8278 17.749 8.99915 17.749C4.17045 17.749 0.249146 13.8277 0.249146 8.99902C0.249146 8.58481 0.584932 8.24902 0.999146 8.24902C1.41336 8.24902 1.74915 8.58481 1.74915 8.99902C1.74915 12.9993 4.99888 16.249 8.99915 16.249C12.9994 16.249 16.2491 12.9993 16.2491 8.99902C16.2491 4.99876 12.9994 1.74902 8.99915 1.74902C8.58493 1.74902 8.24915 1.41324 8.24915 0.999023Z\" fill=\"currentColor\"></path><path d=\"M5.01542 1.66656C5.04148 1.77024 5.07623 1.85663 5.13703 1.93439H5.12835C5.18047 2.01214 5.25865 2.08126 5.34551 2.13309C5.42369 2.19357 5.51924 2.21949 5.61479 2.23677C5.81458 2.27133 6.01437 2.22813 6.17942 2.10718C6.2576 2.05534 6.3184 1.98622 6.37921 1.89119C6.44001 1.81343 6.46607 1.7184 6.48345 1.62337C6.50082 1.52833 6.49213 1.4333 6.47476 1.33826C6.43133 1.13092 6.30972 0.966766 6.13599 0.863092C6.04912 0.811255 5.96226 0.776697 5.8667 0.759418C5.77115 0.74214 5.6756 0.750779 5.58005 0.768058C5.47581 0.793976 5.38894 0.828534 5.31077 0.889011C5.14572 1.00996 5.04148 1.18275 5.00674 1.38146C4.98936 1.47649 4.98936 1.58017 5.01542 1.66656Z\" fill=\"currentColor\"></path><path d=\"M2.63971 3.68243C2.57902 3.60468 2.53566 3.50964 2.51832 3.41461C2.4923 3.31958 2.4923 3.22454 2.50965 3.12951C2.54433 2.9308 2.64839 2.75801 2.81314 2.63706C2.89118 2.57658 2.98656 2.53338 3.08195 2.5161C3.17733 2.49883 3.27272 2.49019 3.3681 2.50747C3.46348 2.52474 3.55887 2.55066 3.63691 2.61114C3.80166 2.71481 3.9404 2.8876 3.97509 3.08631C4.0011 3.18134 4.0011 3.27638 3.98376 3.37141C3.96642 3.46645 3.9404 3.56148 3.8797 3.63924C3.82768 3.72563 3.75831 3.80339 3.68027 3.85522C3.51551 3.97618 3.31607 4.01937 3.11663 3.98482C2.91719 3.95026 2.74377 3.84658 2.62237 3.68243H2.63971Z\" fill=\"currentColor\"></path><path d=\"M0.891667 6.4295C0.830968 6.35175 0.787612 6.25671 0.77027 6.16168C0.744256 6.06665 0.744256 5.97161 0.761598 5.87658C0.796283 5.67787 0.900339 5.50508 1.06509 5.38413C1.14313 5.32365 1.23852 5.28045 1.3339 5.26318C1.42929 5.2459 1.52467 5.23726 1.62005 5.25454C1.71544 5.27181 1.81082 5.29773 1.88886 5.35821C2.05362 5.46188 2.19236 5.63467 2.22704 5.83338C2.25306 5.92841 2.25306 6.02345 2.23571 6.11848C2.21837 6.21352 2.19236 6.30855 2.13166 6.38631C2.07963 6.4727 2.01026 6.55046 1.93222 6.60229C1.76746 6.72325 1.56803 6.76644 1.36859 6.73189C1.16915 6.69733 0.995722 6.59365 0.874325 6.4295H0.891667Z\" fill=\"currentColor\"></path><path d=\"M9.49023 5.99316C9.49023 5.57895 9.15445 5.24316 8.74023 5.24316C8.32602 5.24316 7.99023 5.57895 7.99023 5.99316V9.59992L10.7689 11.8228C11.0923 12.0816 11.5643 12.0291 11.823 11.7057C12.0818 11.3822 12.0293 10.9103 11.7059 10.6515L9.49023 8.87899V5.99316Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 10,
+    "type": "button",
+    "top": 290,
+    "left": 6,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorSidebarMenuItem::App settings\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-150); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconSettingsGear\" class=\"retool-icon retool-icon-IconSettingsGear retool-icon-settings-gear\"><path d=\"M15.2857 9.93029C15.2855 9.99498 15.3077 10.0578 15.3488 10.1086L16.2206 11.184C16.3784 11.3773 16.4729 11.6127 16.4919 11.8594C16.5108 12.1061 16.4533 12.3527 16.3269 12.5669L15.8156 13.4332C15.6896 13.6476 15.5003 13.8197 15.2727 13.9271C15.0451 14.0346 14.7896 14.0724 14.5398 14.0354L13.1508 13.8285C13.0851 13.8196 13.0182 13.832 12.9605 13.864L11.3147 14.7943C11.2575 14.8272 11.2131 14.8779 11.1886 14.9383L10.6762 16.2183C10.5844 16.4483 10.424 16.6461 10.2158 16.7855C10.0075 16.9249 9.76122 16.9997 9.50895 17H8.48644C8.23416 16.9997 7.98784 16.9249 7.77962 16.7855C7.5714 16.6461 7.41094 16.4483 7.31918 16.2183L6.80676 14.9383C6.78224 14.8779 6.73788 14.8272 6.6807 14.7943L5.03487 13.864C4.97719 13.8319 4.91028 13.8195 4.8446 13.8285L3.45557 14.0354C3.20571 14.0724 2.9503 14.0346 2.72268 13.9271C2.49508 13.8197 2.30587 13.6476 2.17977 13.4332L1.66851 12.5669C1.54208 12.3527 1.48458 12.1061 1.50354 11.8594C1.52248 11.6127 1.617 11.3773 1.77473 11.184L2.65134 10.1086C2.69235 10.0578 2.71458 9.99498 2.71437 9.93029V8.06971C2.71458 8.00502 2.69235 7.94216 2.65134 7.89143L1.77473 6.816C1.617 6.62271 1.52248 6.38734 1.50354 6.14063C1.48458 5.89393 1.54208 5.64736 1.66851 5.43314L2.17977 4.56686C2.30587 4.35246 2.49508 4.18029 2.72268 4.07283C2.9503 3.96539 3.20571 3.92765 3.45557 3.96457L4.84111 4.17143C4.90678 4.18054 4.97369 4.16808 5.03136 4.136L6.6807 3.20114C6.73788 3.16818 6.78224 3.11752 6.80676 3.05714L7.32152 1.78171C7.41327 1.55163 7.57373 1.35397 7.78196 1.21452C7.99018 1.07507 8.23649 1.00031 8.48876 1H9.51361C9.76589 1.00031 10.0122 1.07507 10.2204 1.21452C10.4286 1.35397 10.5891 1.55163 10.6809 1.78171L11.1933 3.05714C11.2169 3.11921 11.2614 3.1716 11.3194 3.20571L12.9652 4.136C13.0229 4.168 13.0898 4.18045 13.1554 4.17143L14.5445 3.96457C14.7943 3.92765 15.0498 3.96539 15.2774 4.07283C15.505 4.18029 15.6942 4.35246 15.8203 4.56686L16.3316 5.43314C16.458 5.64736 16.5154 5.89393 16.4965 6.14063C16.4775 6.38734 16.383 6.62271 16.2253 6.816L15.3488 7.89143C15.3077 7.94216 15.2855 8.00502 15.2857 8.06971V9.93029Z\" stroke=\"currentColor\" stroke-width=\"1.5\"></path><path d=\"M9 11.5C10.3816 11.5 11.5 10.3816 11.5 9C11.5 7.61842 10.3816 6.5 9 6.5C7.61842 6.5 6.5 7.61842 6.5 9C6.5 10.3816 7.61842 11.5 9 11.5Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button>"
+  },
+  {
+    "itemId": 11,
+    "type": "button",
+    "top": 60,
+    "left": 73,
+    "width": 69.9921875,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Components",
+    "html": "<button type=\"button\" role=\"button\" class=\"retool-tab-menu__tab retool-tab-menu__tab--active retool-tab-menu__tab--pill retool-tab-menu__tab--pill--active\" id=\"WidgetPicker::Tab-Components\" data-testid=\"WidgetPicker::Tab-Components\">Components</button>"
+  },
+  {
+    "itemId": 12,
+    "type": "button",
+    "top": 60,
+    "left": 154.9921875,
+    "width": 46.6171875,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Modules",
+    "html": "<button type=\"button\" role=\"button\" class=\"retool-tab-menu__tab retool-tab-menu__tab--pill\" id=\"WidgetPicker::Tab-Modules\" data-testid=\"WidgetPicker::Tab-Modules\">Modules</button>"
+  },
+  {
+    "itemId": 13,
+    "type": "button",
+    "top": 60,
+    "left": 242,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::SidebarDockButton\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" data-testid=\"Icon::IconUnpinned\" class=\"retool-icon retool-icon-IconUnpinned retool-icon-unpinned\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.2184 0.907827C10.535 0.22441 9.42698 0.224409 8.74356 0.907827L8.40923 1.24216C7.91274 1.73865 7.88102 2.52391 8.31407 3.0573L6.74114 4.63024C6.69352 4.67786 6.6287 4.70425 6.56135 4.70344L4.25967 4.67577C3.78828 4.6701 3.33454 4.85486 3.00119 5.1882L2.98435 5.20504C2.30094 5.88846 2.30094 6.9965 2.98435 7.67991L4.93802 9.63358C4.90019 9.65946 4.86422 9.68919 4.83063 9.72278L1.83063 12.7228C1.53774 13.0157 1.53774 13.4905 1.83063 13.7834C2.12353 14.0763 2.5984 14.0763 2.89129 13.7834L5.89129 10.7834C5.92488 10.7499 5.95461 10.7139 5.98049 10.6761L7.9341 12.6297C8.61752 13.3131 9.72556 13.3131 10.409 12.6297L10.4493 12.5893C10.7582 12.2804 10.9404 11.8672 10.9601 11.4308L11.0593 9.23389C11.0621 9.17155 11.0881 9.11252 11.1323 9.06839L12.7387 7.46199C13.2321 7.80063 13.9119 7.75073 14.3504 7.31229L14.7492 6.91346C15.4326 6.23004 15.4326 5.122 14.7492 4.43858L11.2184 0.907827ZM9.80422 1.96849C9.90185 1.87086 10.0601 1.87086 10.1578 1.96849L13.6885 5.49924C13.7862 5.59687 13.7862 5.75517 13.6885 5.8528L13.4394 6.10193C12.946 5.76328 12.2662 5.81318 11.8277 6.25163L10.0716 8.00773C9.76272 8.31661 9.58053 8.72985 9.56082 9.16623L9.46163 11.3632C9.45882 11.4255 9.43279 11.4845 9.38866 11.5287L9.34832 11.569C9.25068 11.6666 9.09239 11.6666 8.99476 11.569L4.04501 6.61925C3.94738 6.52162 3.94738 6.36333 4.04501 6.2657L4.06185 6.24886C4.10947 6.20124 4.17429 6.17485 4.24163 6.17566L6.54332 6.20333C7.01471 6.209 7.46845 6.02425 7.8018 5.6909L9.46989 4.02281C9.96638 3.52632 9.9981 2.74105 9.56504 2.20766L9.80422 1.96849Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 14,
+    "type": "button",
+    "top": 60,
+    "left": 268,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::SidebarToggleButton\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconDoubleCaretRight\" class=\"retool-icon retool-icon-IconDoubleCaretRight retool-icon-double-caret-right\" style=\"transform: rotate(180deg);\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.46963 5.53029C3.17676 5.23738 3.17679 4.7625 3.46971 4.46963C3.76262 4.17676 4.2375 4.17679 4.53037 4.46971L7.52994 7.46971C7.82278 7.76259 7.82278 8.23741 7.52994 8.53029L4.53037 11.5303C4.2375 11.8232 3.76262 11.8232 3.46971 11.5304C3.17679 11.2375 3.17676 10.7626 3.46963 10.4697L5.93899 8L3.46963 5.53029ZM8.46963 5.53029C8.17676 5.23738 8.17679 4.7625 8.46971 4.46963C8.76262 4.17676 9.2375 4.17679 9.53037 4.46971L12.5299 7.46971C12.8228 7.76259 12.8228 8.23741 12.5299 8.53029L9.53037 11.5303C9.2375 11.8232 8.76262 11.8232 8.46971 11.5304C8.17679 11.2375 8.17676 10.7626 8.46963 10.4697L10.939 8L8.46963 5.53029Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 15,
+    "type": "button",
+    "top": 1128,
+    "left": 313,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"1em\" height=\"1em\" fill=\"none\" viewBox=\"0 0 16 16\" data-testid=\"Icon::IconRoundedMinus\" class=\"retool-icon retool-icon-IconRoundedMinus retool-icon-rounded-minus\"><path d=\"M2.667 8h10.666\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"></path></svg></button>"
+  },
+  {
+    "itemId": 16,
+    "type": "button",
+    "top": 1128,
+    "left": 339,
+    "width": 36,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "100%",
+    "html": "<button type=\"button\" aria-label=\"Zoom control dropdown trigger\" data-testid=\"ScaleControl::DropdownTrigger\" role=\"select\" class=\"nFRfp0\" style=\"--trigger-button-width: 36px;\"><div class=\"yCzasq\">100<span class=\"r6FHwz\">%</span></div></button>"
+  },
+  {
+    "itemId": 17,
+    "type": "button",
+    "top": 1128,
+    "left": 377,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button disabled=\"\" type=\"button\" class=\"PsK0f7 _WoXNI aJhjcn Fjf7wf WodWA5 Stb2fx\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconRoundedPlus\" class=\"retool-icon retool-icon-IconRoundedPlus retool-icon-rounded-plus\"><path d=\"M8.75 2.75C8.75 2.33579 8.41421 2 8 2C7.58579 2 7.25 2.33579 7.25 2.75V7.25H2.75C2.33579 7.25 2 7.58579 2 8C2 8.41421 2.33579 8.75 2.75 8.75H7.25V13.25C7.25 13.6642 7.58579 14 8 14C8.41421 14 8.75 13.6642 8.75 13.25V8.75H13.25C13.6642 8.75 14 8.41421 14 8C14 7.58579 13.6642 7.25 13.25 7.25H8.75V2.75Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 18,
+    "type": "button",
+    "top": 61,
+    "left": 962,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"EditorFormHeader::SearchButton::$main\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-100); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7 1C3.68544 1 1 3.68543 1 7C1 10.3146 3.68544 13 7 13C8.38686 13 9.66358 12.5299 10.6795 11.7402L13.4697 14.5305C13.7625 14.8234 14.2374 14.8234 14.5303 14.5305C14.8232 14.2376 14.8232 13.7627 14.5303 13.4698L11.7402 10.6795C12.5299 9.66359 13 8.38687 13 7C13 3.6933 10.3138 1.01048 7.00237 1L7 1ZM2.5 7C2.5 4.51426 4.51322 2.50064 6.99881 2.5C9.48757 2.50851 11.5 4.52474 11.5 7C11.5 9.48614 9.48614 11.5 7 11.5C4.51386 11.5 2.5 9.48614 2.5 7Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 19,
+    "type": "button",
+    "top": 61,
+    "left": 990,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::InspectorDockButton\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" data-testid=\"Icon::IconUnpinned\" class=\"retool-icon retool-icon-IconUnpinned retool-icon-unpinned\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.2184 0.907827C10.535 0.22441 9.42698 0.224409 8.74356 0.907827L8.40923 1.24216C7.91274 1.73865 7.88102 2.52391 8.31407 3.0573L6.74114 4.63024C6.69352 4.67786 6.6287 4.70425 6.56135 4.70344L4.25967 4.67577C3.78828 4.6701 3.33454 4.85486 3.00119 5.1882L2.98435 5.20504C2.30094 5.88846 2.30094 6.9965 2.98435 7.67991L4.93802 9.63358C4.90019 9.65946 4.86422 9.68919 4.83063 9.72278L1.83063 12.7228C1.53774 13.0157 1.53774 13.4905 1.83063 13.7834C2.12353 14.0763 2.5984 14.0763 2.89129 13.7834L5.89129 10.7834C5.92488 10.7499 5.95461 10.7139 5.98049 10.6761L7.9341 12.6297C8.61752 13.3131 9.72556 13.3131 10.409 12.6297L10.4493 12.5893C10.7582 12.2804 10.9404 11.8672 10.9601 11.4308L11.0593 9.23389C11.0621 9.17155 11.0881 9.11252 11.1323 9.06839L12.7387 7.46199C13.2321 7.80063 13.9119 7.75073 14.3504 7.31229L14.7492 6.91346C15.4326 6.23004 15.4326 5.122 14.7492 4.43858L11.2184 0.907827ZM9.80422 1.96849C9.90185 1.87086 10.0601 1.87086 10.1578 1.96849L13.6885 5.49924C13.7862 5.59687 13.7862 5.75517 13.6885 5.8528L13.4394 6.10193C12.946 5.76328 12.2662 5.81318 11.8277 6.25163L10.0716 8.00773C9.76272 8.31661 9.58053 8.72985 9.56082 9.16623L9.46163 11.3632C9.45882 11.4255 9.43279 11.4845 9.38866 11.5287L9.34832 11.569C9.25068 11.6666 9.09239 11.6666 8.99476 11.569L4.04501 6.61925C3.94738 6.52162 3.94738 6.36333 4.04501 6.2657L4.06185 6.24886C4.10947 6.20124 4.17429 6.17485 4.24163 6.17566L6.54332 6.20333C7.01471 6.209 7.46845 6.02425 7.8018 5.6909L9.46989 4.02281C9.96638 3.52632 9.9981 2.74105 9.56504 2.20766L9.80422 1.96849Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 20,
+    "type": "button",
+    "top": 61,
+    "left": 1014,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"Editor::InspectorPanelToggle\" data-selected=\"false\" style=\"--icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><span tabindex=\"0\" class=\"trigger\" data-state=\"closed\"><div class=\"sBfatM\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconDoubleCaretRight\" class=\"retool-icon retool-icon-IconDoubleCaretRight retool-icon-double-caret-right HyGRQi\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.46963 5.53029C3.17676 5.23738 3.17679 4.7625 3.46971 4.46963C3.76262 4.17676 4.2375 4.17679 4.53037 4.46971L7.52994 7.46971C7.82278 7.76259 7.82278 8.23741 7.52994 8.53029L4.53037 11.5303C4.2375 11.8232 3.76262 11.8232 3.46971 11.5304C3.17679 11.2375 3.17676 10.7626 3.46963 10.4697L5.93899 8L3.46963 5.53029ZM8.46963 5.53029C8.17676 5.23738 8.17679 4.7625 8.46971 4.46963C8.76262 4.17676 9.2375 4.17679 9.53037 4.46971L12.5299 7.46971C12.8228 7.76259 12.8228 8.23741 12.5299 8.53029L9.53037 11.5303C9.2375 11.8232 8.76262 11.8232 8.46971 11.5304C8.17679 11.2375 8.17676 10.7626 8.46963 10.4697L10.939 8L8.46963 5.53029Z\" fill=\"currentColor\"></path></svg></div></span></button>"
+  },
+  {
+    "itemId": 21,
+    "type": "button",
+    "top": 162,
+    "left": 836,
+    "width": 16,
+    "height": 20,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"rPvPV9 L295_v\" aria-label=\"Click to set value dynamically.\" data-testid=\"dynamic::toggle\"><div class=\"KWBW9f rp1SIW\"><svg width=\"12\" height=\"8\" viewBox=\"0 0 12 8\" fill=\"none\" data-testid=\"Icon::IconFunction2\" class=\"retool-icon retool-icon-IconFunction2 retool-icon-function-2\"><path d=\"M1.87151 3.33008H4.08977C4.36906 3.33008 4.56959 3.36051 4.69133 3.42139C4.78801 3.47152 4.865 3.55029 4.92229 3.65771C4.98316 3.76156 5.0136 3.87972 5.0136 4.01221C5.0136 4.14469 4.98316 4.26465 4.92229 4.37207C4.865 4.47949 4.78801 4.55827 4.69133 4.6084C4.57675 4.66569 4.37623 4.69434 4.08977 4.69434H1.87151V6.88574C1.87151 7.06836 1.86434 7.20264 1.85002 7.28857C1.83928 7.37451 1.81063 7.46403 1.76408 7.55713C1.70321 7.66813 1.61369 7.75586 1.49553 7.82031C1.37737 7.88477 1.24488 7.91699 1.09807 7.91699C0.951258 7.91699 0.818771 7.88477 0.700607 7.82031C0.582443 7.75586 0.492925 7.66813 0.432053 7.55713C0.389084 7.46761 0.360438 7.37988 0.346115 7.29395C0.335373 7.20801 0.330002 7.07194 0.330002 6.88574V0.977539C0.330002 0.873698 0.331792 0.791341 0.335373 0.730469C0.342534 0.669596 0.362228 0.592611 0.394455 0.499512C0.426682 0.406413 0.476812 0.325846 0.544846 0.257812C0.612879 0.189779 0.693446 0.139648 0.786545 0.107422C0.879644 0.0751953 0.956629 0.0572917 1.0175 0.0537109C1.07837 0.0465495 1.16073 0.0429688 1.26457 0.0429688H4.62688C4.90975 0.0429688 5.10848 0.0716146 5.22307 0.128906C5.31975 0.179036 5.39852 0.257812 5.4594 0.365234C5.52027 0.472656 5.5507 0.592611 5.5507 0.725098C5.5507 0.857585 5.52027 0.977539 5.4594 1.08496C5.39852 1.1888 5.31975 1.26579 5.22307 1.31592C5.10132 1.37679 4.90259 1.40723 4.62688 1.40723H1.87151V3.33008Z\" fill=\"currentColor\"></path><path d=\"M6.27322 0.757324C6.26606 0.635579 6.2965 0.517415 6.36453 0.402832C6.43257 0.284668 6.52925 0.189779 6.65457 0.118164C6.79422 0.039388 6.93029 0 7.06278 0C7.16304 0 7.25076 0.0143229 7.32596 0.0429688C7.40115 0.0716146 7.46919 0.119954 7.53006 0.187988C7.59451 0.252441 7.64464 0.313314 7.68045 0.370605C7.71984 0.427897 7.76997 0.512044 7.83084 0.623047L8.91043 2.56738L9.99002 0.623047C10.0509 0.515625 10.101 0.433268 10.1404 0.375977C10.1798 0.315104 10.2299 0.252441 10.2908 0.187988C10.3517 0.119954 10.4197 0.0716146 10.4949 0.0429688C10.5737 0.0143229 10.6632 0 10.7635 0C10.8924 0 11.0266 0.039388 11.1663 0.118164C11.2916 0.189779 11.3883 0.284668 11.4563 0.402832C11.5244 0.517415 11.5548 0.635579 11.5476 0.757324C11.5405 0.900553 11.4581 1.10645 11.3006 1.375L9.85037 3.85645L11.4187 6.54199C11.5763 6.81055 11.6586 7.01644 11.6658 7.15967C11.673 7.28141 11.6425 7.40137 11.5745 7.51953C11.5065 7.63411 11.4098 7.72721 11.2845 7.79883C11.1448 7.8776 11.0087 7.91699 10.8763 7.91699C10.776 7.91699 10.6883 7.90267 10.6131 7.87402C10.5379 7.84538 10.468 7.79704 10.4036 7.729C10.3427 7.65739 10.2944 7.59473 10.2586 7.54102C10.2228 7.4873 10.1726 7.40316 10.1082 7.28857L8.91043 5.15088L7.71268 7.28857C7.64822 7.40316 7.59809 7.4873 7.56229 7.54102C7.52648 7.59473 7.47635 7.65739 7.4119 7.729C7.35102 7.79704 7.28299 7.84538 7.20779 7.87402C7.1326 7.90267 7.04487 7.91699 6.94461 7.91699C6.81212 7.91699 6.67606 7.8776 6.53641 7.79883C6.41108 7.72721 6.3144 7.63411 6.24637 7.51953C6.18192 7.40495 6.15327 7.28499 6.16043 7.15967C6.16759 7.01644 6.24995 6.81055 6.4075 6.54199L7.97049 3.85645L6.52029 1.375C6.36274 1.10645 6.28039 0.900553 6.27322 0.757324Z\" fill=\"currentColor\"></path></svg></div></button>"
+  },
+  {
+    "itemId": 22,
+    "type": "button",
+    "top": 196,
+    "left": 991,
+    "width": 18,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" data-testid=\"StyleEditorSection::Reset\" class=\"CBK_8b lkZEaV ZYMtBc\"><svg width=\"10\" height=\"12\" viewBox=\"0 0 10 12\" fill=\"none\" data-testid=\"Icon::IconReset\" class=\"retool-icon retool-icon-IconReset retool-icon-reset\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6 1.5H4C2.61929 1.5 1.5 2.61929 1.5 4H0C0 1.79086 1.79086 0 4 0H6C8.20914 0 10 1.79086 10 4V5C10 7.20914 8.20914 9 6 9H2.81598L4.85152 11.0355L3.79085 12L2.45588e-05 8.2981L3.79085 4.5L4.85152 5.5L2.81598 7.5H6C7.38071 7.5 8.5 6.38071 8.5 5V4C8.5 2.61929 7.38071 1.5 6 1.5Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 23,
+    "type": "button",
+    "top": 196,
+    "left": 1012,
+    "width": 24,
+    "height": 24,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"PsK0f7 aJhjcn Fjf7wf WodWA5 Stb2fx\" data-testid=\"$main::ListEditor-Styles::AddEditorButton\" data-selected=\"false\" style=\"--button-darkened-background: var(--gray-100); --icon-hover-color: var(--gray-800); --icon-selected-color: var(--gray-800);\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-testid=\"Icon::IconPlusListEditor\" class=\"\"><path d=\"M2.66699 8L13.3337 8\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path><path d=\"M8 2.66699L8 13.3337\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path></svg></button>"
+  },
+  {
+    "itemId": 24,
+    "type": "button",
+    "top": 1214,
+    "left": 0,
+    "width": 88.3828125,
+    "height": 28,
+    "background": "rgb(60, 146, 220) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "production",
+    "html": "<button type=\"button\" class=\"Bp6KBY O9BdeO ant-dropdown-trigger retool-dropdown retool-dropdown--small noMargin\" style=\"--color: #3C92DC;\"><div class=\"dQkpM3\" style=\"--color: rgba(0,0,0,0.25); --size: 8px; --border-radius: 25px;\"></div><span class=\"F4px_g\" style=\"--text-color: #ffffffff;\">production</span></button>"
+  },
+  {
+    "itemId": 25,
+    "type": "button",
+    "top": 1214,
+    "left": 88.3828125,
+    "width": 67.640625,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Latest",
+    "html": "<button type=\"button\" class=\"Bp6KBY\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconRelease\" class=\"retool-icon retool-icon-IconRelease retool-icon-release\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.5 7.775V2.75C2.5 2.6837 2.52634 2.62011 2.57322 2.57322C2.62011 2.52634 2.6837 2.5 2.75 2.5H7.775C7.80785 2.49994 7.84039 2.50636 7.87077 2.51888C7.90114 2.53141 7.92874 2.5498 7.952 2.573L14.202 8.823C14.2253 8.84622 14.2438 8.87381 14.2564 8.90418C14.269 8.93456 14.2754 8.96712 14.2754 9C14.2754 9.03288 14.269 9.06544 14.2564 9.09582C14.2438 9.12619 14.2253 9.15378 14.202 9.177L9.177 14.202C9.15378 14.2253 9.12619 14.2438 9.09582 14.2564C9.06544 14.269 9.03288 14.2754 9 14.2754C8.96712 14.2754 8.93456 14.269 8.90418 14.2564C8.87381 14.2438 8.84622 14.2253 8.823 14.202L2.573 7.952C2.5498 7.92874 2.53141 7.90114 2.51888 7.87077C2.50636 7.84039 2.49994 7.80785 2.5 7.775ZM1 7.775V2.75C1 1.784 1.784 1 2.75 1H7.775C8.239 1 8.685 1.184 9.013 1.513L15.263 7.763C15.5909 8.09115 15.7751 8.53609 15.7751 9C15.7751 9.46391 15.5909 9.90885 15.263 10.237L10.237 15.263C9.90885 15.5909 9.46391 15.7751 9 15.7751C8.53609 15.7751 8.09115 15.5909 7.763 15.263L1.513 9.013C1.35035 8.85047 1.22133 8.65747 1.1333 8.44505C1.04528 8.23263 0.999983 8.00494 1 7.775ZM6 5C5.73478 5 5.48043 5.10536 5.29289 5.29289C5.10536 5.48043 5 5.73478 5 6C5 6.26522 5.10536 6.51957 5.29289 6.70711C5.48043 6.89464 5.73478 7 6 7C6.26522 7 6.51957 6.89464 6.70711 6.70711C6.89464 6.51957 7 6.26522 7 6C7 5.73478 6.89464 5.48043 6.70711 5.29289C6.51957 5.10536 6.26522 5 6 5Z\" fill=\"currentColor\"></path></svg><span data-testid=\"ReleaseManagement::Launcher\"> &nbsp; Latest</span></button>"
+  },
+  {
+    "itemId": 26,
+    "type": "button",
+    "top": 1214,
+    "left": 1213.8984375,
+    "width": 67.09375,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Debug",
+    "html": "<button type=\"button\" class=\"Bp6KBY\" id=\"DebugButton\" data-testid=\"DebugTools::EditingStatusBar_debugModalButton\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconStatusBarDebugging\" class=\"retool-icon retool-icon-IconStatusBarDebugging retool-icon-status-bar-debugging\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.7692 4C10.8967 4 11 3.89668 11 3.76923C11 2.23983 9.76017 1 8.23077 1H7.76923C6.23983 1 5 2.23983 5 3.76923C5 3.89668 5.10332 4 5.23077 4L10.7692 4ZM12 10V11C12 11.0442 11.9993 11.0883 11.9979 11.1322L14.2456 12.3319C14.7328 12.5919 14.917 13.1977 14.6569 13.6849C14.3969 14.1722 13.7911 14.3564 13.3039 14.0963L11.413 13.0871C10.8346 14.0309 9.87583 14.7162 8.75 14.9298V7.75C8.75 7.33579 8.41421 7 8 7C7.58579 7 7.25 7.33579 7.25 7.75V14.9298C6.12417 14.7162 5.16536 14.0309 4.587 13.0871L2.69612 14.0963C2.20889 14.3564 1.6031 14.1722 1.34306 13.6849C1.08301 13.1977 1.26719 12.5919 1.75442 12.3319L4.00214 11.1322C4.00072 11.0883 4 11.0442 4 11V10H2C1.44772 10 1 9.55229 1 9C1 8.44772 1.44772 8 2 8H4V7.86634C3.92516 7.82309 3.85474 7.76935 3.79087 7.70512L1.80206 5.70512C1.41264 5.3135 1.41441 4.68034 1.80603 4.29091C2.19765 3.90148 2.83081 3.90326 3.22024 4.29488L4.18673 5.26681C4.32779 5.10341 4.53643 5 4.76923 5H11.2308C11.4636 5 11.6722 5.10341 11.8133 5.26681L12.7798 4.29488C13.1692 3.90326 13.8024 3.90148 14.194 4.29091C14.5856 4.68034 14.5874 5.3135 14.1979 5.70512L12.2091 7.70512C12.1453 7.76935 12.0748 7.82309 12 7.86634V8H14C14.5523 8 15 8.44772 15 9C15 9.55229 14.5523 10 14 10H12Z\" fill=\"currentColor\"></path></svg><span style=\"margin-left: 4px;\">Debug</span></button>"
+  },
+  {
+    "itemId": 27,
+    "type": "button",
+    "top": 1214,
+    "left": 1280.9921875,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"Bp6KBY\" data-testid=\"DebugTools::EditingStatusBar_historyButton\" aria-label=\"History\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconHistory\" class=\"retool-icon retool-icon-IconHistory retool-icon-history\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1.64294 3.14291L0.426777 1.92675C0.269286 1.76926 0 1.8808 0 2.10353V5.74998C0 5.88805 0.111929 5.99998 0.25 5.99998H3.89645C4.11917 5.99998 4.23071 5.73069 4.07322 5.5732L2.715 4.21498C3.89508 2.57019 5.82314 1.5 8.00007 1.5C11.5899 1.5 14.5001 4.41015 14.5001 8C14.5001 11.5899 11.5899 14.5 8.00007 14.5C4.63773 14.5 1.87085 11.9464 1.53446 8.67332C1.49211 8.26128 1.12376 7.96158 0.711712 8.00393C0.299669 8.04628 -2.88747e-05 8.41463 0.0423185 8.82668C0.456521 12.8569 3.86076 16 8.00007 16C12.4183 16 16.0001 12.4183 16.0001 8C16.0001 3.58172 12.4183 0 8.00007 0C5.40771 0 3.10436 1.23301 1.64294 3.14291ZM7.75 4C8.16421 4 8.5 4.33579 8.5 4.75V7.74223L10.5285 8.55364C10.9131 8.70748 11.1002 9.14396 10.9464 9.52854C10.7925 9.91313 10.356 10.1002 9.97146 9.94636L7.47146 8.94636C7.18671 8.83246 7 8.55668 7 8.25V4.75C7 4.33579 7.33579 4 7.75 4Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 28,
+    "type": "button",
+    "top": 1214,
+    "left": 1308.9921875,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"Bp6KBY ant-dropdown-trigger retool-dropdown retool-dropdown--default kjVNxy\" aria-label=\"Help\" data-testid=\"DebugTools::EditingStatusBar_helpButton\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconStatusBarHelpButton\" class=\"retool-icon retool-icon-IconStatusBarHelpButton retool-icon-status-bar-help-button\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM9 11C9 11.5523 8.55229 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10C8.55229 10 9 10.4477 9 11ZM6.92082 6.08541C7.00133 5.92438 7.11032 5.78617 7.25977 5.68654C7.40453 5.59004 7.63124 5.5 8 5.5C8.27975 5.5 8.55291 5.58656 8.7375 5.725C8.90206 5.84842 9 6.01009 9 6.25C9 6.42662 8.95919 6.51381 8.92283 6.56835C8.87748 6.63639 8.79924 6.71162 8.64646 6.81349C8.57007 6.86441 8.48788 6.9139 8.38754 6.97411L8.38141 6.97779L8.38139 6.9778C8.28769 7.03402 8.17704 7.10041 8.06831 7.1729C7.84608 7.32107 7.58057 7.52712 7.37593 7.83412C7.14619 8.17878 7.23935 8.64442 7.58401 8.87417C7.92867 9.10391 8.39432 9.01075 8.62406 8.66609C8.66942 8.59803 8.74766 8.52279 8.90043 8.42093C8.97681 8.37001 9.059 8.32052 9.15933 8.26032L9.16554 8.25659L9.1656 8.25656C9.25926 8.20036 9.36986 8.134 9.47854 8.06154C9.70075 7.91339 9.96627 7.70737 10.1709 7.4004C10.3846 7.07994 10.5 6.69838 10.5 6.25C10.5 5.48991 10.1396 4.90158 9.6375 4.525C9.15542 4.16344 8.55358 4 8 4C7.36876 4 6.84547 4.15996 6.42772 4.43846C6.01467 4.71383 5.74866 5.07562 5.57918 5.41459C5.39393 5.78507 5.5441 6.23558 5.91459 6.42082C6.28507 6.60606 6.73558 6.45589 6.92082 6.08541Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 29,
+    "type": "button",
+    "top": 0,
+    "left": 0,
+    "width": 1,
+    "height": 0,
+    "background": "rgb(239, 239, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
+  },
+  {
+    "itemId": 30,
+    "type": "button",
+    "top": 0,
+    "left": 0,
+    "width": 1,
+    "height": 0,
+    "background": "rgb(239, 239, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
+  },
+  {
+    "itemId": 31,
+    "type": "link or button",
+    "top": 5.5,
+    "left": 1239.3828125,
+    "width": 28,
+    "height": 28,
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<a role=\"button\" class=\"nIczNC NGAsrY itQ6UP Fh7Sak PmC2sB\" aria-label=\"Navigate to app in user mode\" type=\"button\" href=\"/apps/1e56f010-3370-11ef-b1ba-83778aafe36d/Untitled\" target=\"_blank\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg fill=\"none\" viewBox=\"0 0 16 16\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M12.8471 7.4879L5.59136 2.167C4.93084 1.68261 4 2.1543 4 2.9734V13.1315C4 13.9302 4.89015 14.4066 5.5547 13.9635L12.8105 9.12635C13.3883 8.74111 13.4072 7.8986 12.8471 7.4879Z\"></path></svg></div></div></div></a>"
+  },
+  {
+    "itemId": 32,
+    "type": "text field",
+    "top": 95,
+    "left": 96,
+    "width": 191,
+    "height": 26,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "placeholder": "Search components",
+    "html": "<input data-testid=\"widget-search\" id=\"react-aria6159954465-10\" autocomplete=\"off\" placeholder=\"Search components\" autocapitalize=\"none\" spellcheck=\"false\" class=\"lPgV2z MjhMCf default\" type=\"text\" value=\"\" style=\"--retool-base-input-background: #ffffff; --retool-base-input-text: #0d0d0dff; --retool-base-input-placeholder: var(--gray-400); --retool-base-input-placeholder-font-size: 12px; --retool-base-input-placeholder-font-weight: 500; --retool-base-input-padding-horizontal: 8px; --retool-base-input-padding-vertical: 5px; --retool-base-input-content-padding-top: 5px; --retool-base-input-content-padding-right: 4px; --retool-base-input-content-padding-bottom: 5px; --retool-base-input-content-padding-left: 12px; --retool-base-input-input-hover-background: #ffffff; --retool-base-input-font-size: 12px;\">"
+  },
+  {
+    "itemId": 33,
+    "type": "text field",
+    "top": 132,
+    "left": 1020,
+    "width": 16,
+    "height": 16,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input aria-checked=\"false\" type=\"checkbox\" class=\"SOuFEZ\" data-testid=\"FullBleedEditor::Checkbox\">"
+  },
+  {
+    "itemId": 34,
+    "type": "text field",
+    "top": 172,
+    "left": 883.8203125,
+    "width": 0,
+    "height": 0,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input type=\"radio\" class=\"ant-radio-button-input\" aria-label=\"Normal\" value=\"8px 12px\" checked=\"\">"
+  },
+  {
+    "itemId": 35,
+    "type": "text field",
+    "top": 172,
+    "left": 974.8515625,
+    "width": 0,
+    "height": 0,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input type=\"radio\" class=\"ant-radio-button-input\" aria-label=\"None\" value=\"0\">"
+  }
+]

@@ -1,229 +1,283 @@
 [
-    {
-      "type": "button",
-      "top": 9.5,
-      "left": 1149,
-      "width": 48,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"onBGlh\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:r2:\" data-state=\"closed\"><img class=\"BY8FO7\" src=\"https://lh3.googleusercontent.com/a/ACg8ocKTtzVRToEtFdTg_3i_oJAwdwiWjVLm0IGAJ5RsBPDBeBTKoeQt=s96-c\" style=\"--size: 28px;\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconCaretDown\" class=\"retool-icon retool-icon-IconCaretDown retool-icon-caret-down\"><path d=\"M8 10L10.5 12.1429L13 10\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"square\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 64,
-      "left": 192,
-      "width": 66,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--always-white); --retool-button-content-icon: var(--always-white); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><svg width=\"8\" height=\"20\" viewBox=\"0 0 8 20\" fill=\"none\" data-testid=\"Icon::IconPlus\" class=\"\" style=\"margin-right: 4px;\"><line y1=\"10.2\" x2=\"8\" y2=\"10.2\" stroke=\"currentColor\" stroke-width=\"1.6\"></line><line x1=\"3.99922\" y1=\"6\" x2=\"3.99922\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.6\"></line></svg></div><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">New</p></span></div></div></button>",
-      "text": "New"
-    },
-    {
-      "type": "button",
-      "top": 63.5,
-      "left": 993.765625,
-      "width": 28,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg fill=\"none\" viewBox=\"0 0 16 16\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM6.5 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM13 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z\"></path></svg></div></div></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 63.5,
-      "left": 1029.765625,
-      "width": 28,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak vx_2k6 PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--always-white); --retool-button-content-icon: var(--always-white); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"XlaFZr E02BOR Xa2Y6K\"><svg width=\"8\" height=\"20\" viewBox=\"0 0 8 20\" fill=\"none\" data-testid=\"Icon::IconRun\" class=\"\"><path d=\"M7.03783 9.22229C7.533 9.62253 7.533 10.3775 7.03783 10.7777L2.12862 14.7458C1.47468 15.2744 0.5 14.8089 0.5 13.9681L0.5 6.03193C0.5 5.19108 1.47468 4.72565 2.12862 5.25422L7.03783 9.22229Z\" fill=\"currentColor\"></path></svg></div></div></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 63.5,
-      "left": 1065.765625,
-      "width": 56.234375,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--text-primary); --retool-button-content-icon: var(--text-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Share</p></span></div></div></button>",
-      "text": "Share"
-    },
-    {
-      "type": "button",
-      "top": 63.5,
-      "left": 1130,
-      "width": 57.96875,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC u8pzQq PmC2sB\" disabled=\"\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--blue-150); --retool-button-content-icon: var(--blue-150); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Saved</p></span></div></div></button>",
-      "text": "Saved"
-    },
-    {
-      "type": "button",
-      "top": 490.78125,
-      "left": 867,
-      "width": 20,
-      "height": 20,
-      "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Open pop-out code editor\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 8 8\" class=\"JQrEBb\"><path fill=\"currentColor\" d=\"M0 5.5v.32c0 .167 0 .25.005.321a2 2 0 0 0 1.854 1.854C1.929 8 2.013 8 2.18 8h3.64c.167 0 .25 0 .321-.005a2 2 0 0 0 1.854-1.854C8 6.071 8 5.987 8 5.82V2.18c0-.167 0-.25-.005-.321A2 2 0 0 0 6.141.005 5.037 5.037 0 0 0 5.82 0H5.5v1.5h.25a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-.75.75h-3.5a.75.75 0 0 1-.75-.75V5.5H0Z\"></path><path fill=\"currentColor\" d=\"M0 0h4v1.5H2.56l2.22 2.22a.75.75 0 0 1-1.06 1.06L1.5 2.56V4H0V0Z\"></path></svg></div></div></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 512.78125,
-      "left": 863,
-      "width": 28,
-      "height": 28,
-      "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Toggle AI Query Assistant\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--text-brand); --retool-button-content-icon: var(--text-brand); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"none\" class=\"PaVO0V\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M9 2a1 1 0 0 1-.5.866V4H11a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-1v1h1v1H5v-1h1v-1H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h2.5V2.866A1 1 0 1 1 9 2ZM5.5 6.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm5.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM6 9V8h4v1H6Z\" clip-rule=\"evenodd\"></path></svg></div></div></div></button>"
-    },
-    {
-      "type": "button",
-      "top": 576.78125,
-      "left": 877,
-      "width": 20,
-      "height": 32,
-      "html": "<button type=\"button\" class=\"QZad3S\" aria-label=\"Click to set value dynamically.\" data-testid=\"dynamic::toggle\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconFunction\" class=\"b5oHUS PGW2Xp\"><path d=\"M4.51321 15C4.4471 15 4.39919 14.937 4.41684 14.8733L6.00776 9.13181C6.02541 9.06811 5.97749 9.00511 5.91139 9.00511H4.27581C4.21347 9.00511 4.16633 8.9487 4.1774 8.88735L4.39418 7.68629C4.40279 7.63855 4.44444 7.60388 4.49296 7.60406L6.15721 7.61027C6.20573 7.61045 6.24738 7.57577 6.256 7.52801L6.3163 7.19359C6.39833 6.71051 6.54417 6.28213 6.7538 5.90843C6.96344 5.53018 7.22548 5.21344 7.53993 4.95824C7.85894 4.70303 8.22353 4.50934 8.63368 4.37718C9.0484 4.24502 9.50185 4.18122 9.99404 4.18577C10.2903 4.19033 10.5842 4.21312 10.8759 4.25413C11.134 4.29043 11.3921 4.3303 11.6503 4.37374C11.7055 4.38304 11.7422 4.43604 11.7316 4.49104L11.4834 5.77893C11.4727 5.83468 11.4178 5.87022 11.3622 5.85839C11.1812 5.8198 10.9986 5.7909 10.8143 5.77171C10.6002 5.74437 10.3837 5.7307 10.1649 5.7307C9.65907 5.72614 9.22841 5.84235 8.87294 6.07933C8.52203 6.31175 8.29189 6.68317 8.18251 7.19359L8.11947 7.48942C8.10618 7.55174 8.1538 7.61042 8.21753 7.61026L10.6192 7.60405C10.6816 7.60389 10.7289 7.66036 10.7178 7.72182L10.5011 8.92287C10.4925 8.97048 10.451 9.00511 10.4027 9.00511H7.98505C7.94015 9.00511 7.90075 9.03504 7.88871 9.07831L6.26147 14.9268C6.24943 14.9701 6.21004 15 6.16513 15H4.51321Z\" fill=\"currentColor\"></path><path d=\"M14.3578 9.40707L13.1995 10.7864L12.5202 9.46299C12.4688 9.36292 12.3658 9.3 12.2533 9.3H11.1244C10.9008 9.3 10.7558 9.53585 10.8567 9.7354L12.0088 12.0131L9.97882 14.4932C9.8185 14.6891 9.95786 14.9832 10.211 14.9832H11.4569C11.546 14.9832 11.6305 14.9436 11.6875 14.8752L12.9017 13.4172L13.6425 14.8231C13.6944 14.9215 13.7966 14.9832 13.9079 14.9832H15.0375C15.2611 14.9832 15.4061 14.7474 15.3052 14.5479L14.1043 12.1725L16.0559 9.79011C16.2164 9.59426 16.077 9.3 15.8239 9.3H14.5875C14.4989 9.3 14.4148 9.3392 14.3578 9.40707Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 0,
-      "width": 88.390625,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY O9BdeO ant-dropdown-trigger retool-dropdown retool-dropdown--small noMargin\" style=\"--color: #3C92DC;\"><div class=\"dQkpM3\" style=\"--color: rgba(0,0,0,0.25); --size: 8px; --border-radius: 25px;\"></div><span class=\"F4px_g\" style=\"--text-color: #ffffffff;\">production</span></button>",
-      "text": "production"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 1149.015625,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY\" data-testid=\"DebugTools::EditingStatusBar_historyButton\" aria-label=\"History\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconHistory\" class=\"retool-icon retool-icon-IconHistory retool-icon-history\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1.64294 3.14291L0.426777 1.92675C0.269286 1.76926 0 1.8808 0 2.10353V5.74998C0 5.88805 0.111929 5.99998 0.25 5.99998H3.89645C4.11917 5.99998 4.23071 5.73069 4.07322 5.5732L2.715 4.21498C3.89508 2.57019 5.82314 1.5 8.00007 1.5C11.5899 1.5 14.5001 4.41015 14.5001 8C14.5001 11.5899 11.5899 14.5 8.00007 14.5C4.63773 14.5 1.87085 11.9464 1.53446 8.67332C1.49211 8.26128 1.12376 7.96158 0.711712 8.00393C0.299669 8.04628 -2.88747e-05 8.41463 0.0423185 8.82668C0.456521 12.8569 3.86076 16 8.00007 16C12.4183 16 16.0001 12.4183 16.0001 8C16.0001 3.58172 12.4183 0 8.00007 0C5.40771 0 3.10436 1.23301 1.64294 3.14291ZM7.75 4C8.16421 4 8.5 4.33579 8.5 4.75V7.74223L10.5285 8.55364C10.9131 8.70748 11.1002 9.14396 10.9464 9.52854C10.7925 9.91313 10.356 10.1002 9.97146 9.94636L7.47146 8.94636C7.18671 8.83246 7 8.55668 7 8.25V4.75C7 4.33579 7.33579 4 7.75 4Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 1214,
-      "left": 1177.015625,
-      "width": 28,
-      "height": 28,
-      "html": "<button type=\"button\" class=\"Bp6KBY ant-dropdown-trigger retool-dropdown retool-dropdown--default kjVNxy\" aria-label=\"Help\" data-testid=\"DebugTools::EditingStatusBar_helpButton\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconStatusBarHelpButton\" class=\"retool-icon retool-icon-IconStatusBarHelpButton retool-icon-status-bar-help-button\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM9 11C9 11.5523 8.55229 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10C8.55229 10 9 10.4477 9 11ZM6.92082 6.08541C7.00133 5.92438 7.11032 5.78617 7.25977 5.68654C7.40453 5.59004 7.63124 5.5 8 5.5C8.27975 5.5 8.55291 5.58656 8.7375 5.725C8.90206 5.84842 9 6.01009 9 6.25C9 6.42662 8.95919 6.51381 8.92283 6.56835C8.87748 6.63639 8.79924 6.71162 8.64646 6.81349C8.57007 6.86441 8.48788 6.9139 8.38754 6.97411L8.38141 6.97779L8.38139 6.9778C8.28769 7.03402 8.17704 7.10041 8.06831 7.1729C7.84608 7.32107 7.58057 7.52712 7.37593 7.83412C7.14619 8.17878 7.23935 8.64442 7.58401 8.87417C7.92867 9.10391 8.39432 9.01075 8.62406 8.66609C8.66942 8.59803 8.74766 8.52279 8.90043 8.42093C8.97681 8.37001 9.059 8.32052 9.15933 8.26032L9.16554 8.25659L9.1656 8.25656C9.25926 8.20036 9.36986 8.134 9.47854 8.06154C9.70075 7.91339 9.96627 7.70737 10.1709 7.4004C10.3846 7.07994 10.5 6.69838 10.5 6.25C10.5 5.48991 10.1396 4.90158 9.6375 4.525C9.15542 4.16344 8.55358 4 8 4C7.36876 4 6.84547 4.15996 6.42772 4.43846C6.01467 4.71383 5.74866 5.07562 5.57918 5.41459C5.39393 5.78507 5.5441 6.23558 5.91459 6.42082C6.28507 6.60606 6.73558 6.45589 6.92082 6.08541Z\" fill=\"currentColor\"></path></svg></button>"
-    },
-    {
-      "type": "button",
-      "top": 0,
-      "left": 0,
-      "width": 1,
-      "height": 0,
-      "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
-    },
-    {
-      "type": "button",
-      "top": 0,
-      "left": 0,
-      "width": 1,
-      "height": 0,
-      "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
-    },
-    {
-      "type": "link or button",
-      "top": 0,
-      "left": 16,
-      "width": 88,
-      "height": 47,
-      "html": "<a class=\"CAUArm\" href=\"/\"><svg width=\"88\" height=\"20\" opacity=\"1\" viewBox=\"0 0 88 20\" role=\"img\" aria-labelledby=\"logoTitle logoDesc\" style=\"color: var(--always-white);\"><title id=\"logoTitle\">Return to home page</title><desc id=\"logoDesc\">Click this Retool logo to return to the home page</desc><path d=\"M1.5 1C0.671573 1 0 1.67157 0 2.5V4.25C0 4.66421 0.335786 5 0.75 5H8.25C8.66421 5 9 4.66421 9 4.25V2.5C9 1.67157 8.32843 1 7.5 1H1.5Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.4682 12.0868H28.6382V17.6421H25V2H31.601C35.2828 2 37.5703 3.76464 37.5703 7.03248C37.5703 9.36355 36.3503 10.9757 34.2589 11.6946L38.0278 17.6421H33.8668L30.4682 12.0868ZM28.6382 5.07178V9.12391H31.405C33.126 9.12391 33.9975 8.36141 33.9975 7.09784C33.9975 5.81249 33.126 5.07178 31.405 5.07178H28.6382Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M49.5163 14.5267C48.6667 16.7271 46.5753 17.8817 44.2878 17.8817C40.8239 17.8817 38.471 15.4635 38.471 11.8907C38.471 8.49212 40.911 5.92141 44.2224 5.92141C47.7081 5.92141 49.6035 8.49212 49.6035 11.7382V12.6532H41.826C42.0656 14.2217 43.0024 15.115 44.3313 15.115C45.4206 15.115 46.2703 14.5921 46.5971 13.59L49.5163 14.5267ZM46.1613 10.5182C46.1396 9.49426 45.4642 8.62283 44.1788 8.62283C43.1114 8.62283 42.2835 9.25462 41.9349 10.5182H46.1613Z\" fill=\"currentColor\"></path><path d=\"M51.5792 14.5703C51.5792 16.9232 52.8209 17.751 55.3045 17.751C56.1324 17.751 56.7859 17.6857 57.3959 17.5985V14.7446C57.0038 14.7882 56.8077 14.81 56.3938 14.81C55.5224 14.81 55.0213 14.6357 55.0213 13.6771V9.03676H57.2652V6.16106H55.0213V2.98035H51.5792V6.16106H50.1195V9.03676H51.5792V14.5703Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M64.1146 5.92141C67.4914 5.92141 69.866 8.33962 69.866 11.9125C69.866 15.4853 67.4914 17.8817 64.1146 17.8817C60.716 17.8817 58.3632 15.4853 58.3632 11.9125C58.3632 8.33962 60.716 5.92141 64.1146 5.92141ZM64.1146 8.77533C62.7203 8.77533 61.8271 9.90819 61.8271 11.9125C61.8271 13.9167 62.7203 15.0496 64.1146 15.0496C65.5089 15.0496 66.4021 13.9167 66.4021 11.9125C66.4021 9.90819 65.5089 8.77533 64.1146 8.77533Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M82.4183 11.9125C82.4183 8.33962 80.0436 5.92141 76.6668 5.92141C73.2683 5.92141 70.9154 8.33962 70.9154 11.9125C70.9154 15.4853 73.2683 17.8817 76.6668 17.8817C80.0436 17.8817 82.4183 15.4853 82.4183 11.9125ZM74.3794 11.9125C74.3794 9.90819 75.2726 8.77533 76.6668 8.77533C78.0611 8.77533 78.9543 9.90819 78.9543 11.9125C78.9543 13.9167 78.0611 15.0496 76.6668 15.0496C75.2726 15.0496 74.3794 13.9167 74.3794 11.9125Z\" fill=\"currentColor\"></path><path d=\"M84.0569 2H87.5426V17.6421H84.0569V2Z\" fill=\"currentColor\"></path><path d=\"M9 15.75C9 15.3358 9.33579 15 9.75 15H17.25C17.6642 15 18 15.3358 18 15.75V17.5C18 18.3284 17.3284 19 16.5 19H10.5C9.67157 19 9 18.3284 9 17.5V15.75Z\" fill=\"currentColor\"></path><path d=\"M0.75 7C0.335786 7 0 7.33579 0 7.75V11.5C0 12.3284 0.671573 13 1.5 13H17.25C17.6642 13 18 12.6642 18 12.25V8.5C18 7.67157 17.3284 7 16.5 7H0.75Z\" fill=\"currentColor\"></path></svg></a>",
-      "text": "Return to home pageClick this Retool logo to return to the home page"
-    },
-    {
-      "type": "link or button",
-      "top": 9.5,
-      "left": 136,
-      "width": 56.65625,
-      "height": 28,
-      "html": "<a class=\"eNPhnZ\" href=\"/\">Apps</a>",
-      "text": "Apps"
-    },
-    {
-      "type": "link or button",
-      "top": 9.5,
-      "left": 196.65625,
-      "width": 90.34375,
-      "height": 28,
-      "html": "<a class=\"eNPhnZ\" href=\"/resources\">Resources</a>",
-      "text": "Resources"
-    },
-    {
-      "type": "link or button",
-      "top": 9.5,
-      "left": 291,
-      "width": 83.8125,
-      "height": 28,
-      "html": "<a class=\"eNPhnZ\" href=\"/resources/new/retooldb\">Database</a>",
-      "text": "Database"
-    },
-    {
-      "type": "link or button",
-      "top": 9.5,
-      "left": 378.8125,
-      "width": 110.703125,
-      "height": 28,
-      "html": "<a aria-current=\"page\" class=\"eNPhnZ W7zX8j active\" href=\"/querylibrary\">Query Library</a>",
-      "text": "Query Library"
-    },
-    {
-      "type": "link or button",
-      "top": 9.5,
-      "left": 493.515625,
-      "width": 90.46875,
-      "height": 28,
-      "html": "<a class=\"eNPhnZ\" href=\"/workflows\">Workflows</a>",
-      "text": "Workflows"
-    },
-    {
-      "type": "text field",
-      "top": 65,
-      "left": 35,
-      "width": 148,
-      "height": 26,
-      "html": "<input id=\"react-aria2947673978-25\" autocomplete=\"off\" placeholder=\"Search queries\" autocapitalize=\"none\" spellcheck=\"false\" class=\"lPgV2z MjhMCf default\" type=\"text\" value=\"\" style=\"--retool-base-input-background: #ffffff; --retool-base-input-text: #0d0d0dff; --retool-base-input-placeholder: var(--gray-400); --retool-base-input-placeholder-font-size: 12px; --retool-base-input-placeholder-font-weight: 500; --retool-base-input-padding-horizontal: 8px; --retool-base-input-padding-vertical: 5px; --retool-base-input-content-padding-top: 5px; --retool-base-input-content-padding-right: 4px; --retool-base-input-content-padding-bottom: 5px; --retool-base-input-content-padding-left: 12px; --retool-base-input-input-hover-background: #ffffff; --retool-base-input-font-size: 12px;\">",
-      "placeholder": "Search queries"
-    },
-    {
-      "type": "text field",
-      "top": 180,
-      "left": 296,
-      "width": 16,
-      "height": 16,
-      "html": "<input aria-checked=\"false\" name=\"add-reply-to\" id=\"add-reply-to\" type=\"checkbox\" class=\"SOuFEZ\">"
-    },
-    {
-      "type": "text field",
-      "top": 255.390625,
-      "left": 296,
-      "width": 16,
-      "height": 16,
-      "html": "<input aria-checked=\"false\" name=\"add-cc-bcc\" id=\"add-cc-bcc\" type=\"checkbox\" class=\"SOuFEZ\">"
-    },
-    {
-      "type": "text field",
-      "top": 362.28125,
-      "left": 335.828125,
-      "width": 1,
-      "height": 1,
-      "html": "<input class=\"a_dNeR\" id=\"text\" tabindex=\"0\" type=\"radio\" value=\"text\">"
-    },
-    {
-      "type": "text field",
-      "top": 362.28125,
-      "left": 415.5,
-      "width": 1,
-      "height": 1,
-      "html": "<input class=\"a_dNeR\" id=\"html\" tabindex=\"0\" type=\"radio\" value=\"html\">"
-    },
-    {
-      "type": "text field",
-      "top": 362.28125,
-      "left": 495.171875,
-      "width": 1,
-      "height": 1,
-      "html": "<input class=\"a_dNeR\" id=\"markdown\" tabindex=\"0\" type=\"radio\" value=\"markdown\" checked=\"\">"
-    },
-    {
-      "type": "text field",
-      "top": 580.78125,
-      "left": 302,
-      "width": 9,
-      "height": 20,
-      "html": "<input autocomplete=\"off\" class=\"ant-select-search__field\" value=\"\">"
-    }
-  ]
+  {
+    "itemId": 0,
+    "type": "button",
+    "top": 9.5,
+    "left": 1281,
+    "width": 48,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"onBGlh\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:r2:\" data-state=\"closed\"><img class=\"BY8FO7\" src=\"https://lh3.googleusercontent.com/a/ACg8ocKTtzVRToEtFdTg_3i_oJAwdwiWjVLm0IGAJ5RsBPDBeBTKoeQt=s96-c\" style=\"--size: 28px;\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconCaretDown\" class=\"retool-icon retool-icon-IconCaretDown retool-icon-caret-down\"><path d=\"M8 10L10.5 12.1429L13 10\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"square\"></path></svg></button>"
+  },
+  {
+    "itemId": 1,
+    "type": "button",
+    "top": 64,
+    "left": 181,
+    "width": 64.5,
+    "height": 28,
+    "background": "rgb(59, 130, 246) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "New",
+    "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--always-white); --retool-button-content-icon: var(--always-white); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><svg width=\"8\" height=\"20\" viewBox=\"0 0 8 20\" fill=\"none\" data-testid=\"Icon::IconPlus\" class=\"\" style=\"margin-right: 4px;\"><line y1=\"10.2\" x2=\"8\" y2=\"10.2\" stroke=\"currentColor\" stroke-width=\"1.6\"></line><line x1=\"3.99922\" y1=\"6\" x2=\"3.99922\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.6\"></line></svg></div><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">New</p></span></div></div></button>"
+  },
+  {
+    "itemId": 2,
+    "type": "button",
+    "top": 63.5,
+    "left": 1128.3828125,
+    "width": 28,
+    "height": 28,
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg fill=\"none\" viewBox=\"0 0 16 16\" class=\"W_OR4v\"><path fill=\"currentColor\" d=\"M3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM6.5 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM13 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z\"></path></svg></div></div></div></button>"
+  },
+  {
+    "itemId": 3,
+    "type": "button",
+    "top": 63.5,
+    "left": 1164.3828125,
+    "width": 28,
+    "height": 28,
+    "background": "rgb(59, 130, 246) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak vx_2k6 PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--always-white); --retool-button-content-icon: var(--always-white); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"XlaFZr E02BOR Xa2Y6K\"><svg width=\"8\" height=\"20\" viewBox=\"0 0 8 20\" fill=\"none\" data-testid=\"Icon::IconRun\" class=\"\"><path d=\"M7.03783 9.22229C7.533 9.62253 7.533 10.3775 7.03783 10.7777L2.12862 14.7458C1.47468 15.2744 0.5 14.8089 0.5 13.9681L0.5 6.03193C0.5 5.19108 1.47468 4.72565 2.12862 5.25422L7.03783 9.22229Z\" fill=\"currentColor\"></path></svg></div></div></div></button>"
+  },
+  {
+    "itemId": 4,
+    "type": "button",
+    "top": 63.5,
+    "left": 1200.3828125,
+    "width": 53.6171875,
+    "height": 28,
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Share",
+    "html": "<button role=\"button\" class=\"nIczNC u8pzQq Fh7Sak PmC2sB\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--text-primary); --retool-button-content-icon: var(--text-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Share</p></span></div></div></button>"
+  },
+  {
+    "itemId": 5,
+    "type": "button",
+    "top": 63.5,
+    "left": 1262,
+    "width": 55.6875,
+    "height": 28,
+    "background": "rgb(96, 165, 250) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Saved",
+    "html": "<button role=\"button\" class=\"nIczNC u8pzQq PmC2sB\" disabled=\"\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--blue-150); --retool-button-content-icon: var(--blue-150); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"VOtRES\"><span class=\"ZD4F09 O9uUYA\"><p class=\"mYp_BM\">Saved</p></span></div></div></button>"
+  },
+  {
+    "itemId": 6,
+    "type": "button",
+    "top": 470.796875,
+    "left": 999,
+    "width": 20,
+    "height": 20,
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Open pop-out code editor\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--icon-primary); --retool-button-content-icon: var(--icon-primary); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 8 8\" class=\"JQrEBb\"><path fill=\"currentColor\" d=\"M0 5.5v.32c0 .167 0 .25.005.321a2 2 0 0 0 1.854 1.854C1.929 8 2.013 8 2.18 8h3.64c.167 0 .25 0 .321-.005a2 2 0 0 0 1.854-1.854C8 6.071 8 5.987 8 5.82V2.18c0-.167 0-.25-.005-.321A2 2 0 0 0 6.141.005 5.037 5.037 0 0 0 5.82 0H5.5v1.5h.25a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-.75.75h-3.5a.75.75 0 0 1-.75-.75V5.5H0Z\"></path><path fill=\"currentColor\" d=\"M0 0h4v1.5H2.56l2.22 2.22a.75.75 0 0 1-1.06 1.06L1.5 2.56V4H0V0Z\"></path></svg></div></div></div></button>"
+  },
+  {
+    "itemId": 7,
+    "type": "button",
+    "top": 492.796875,
+    "left": 995,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button role=\"button\" class=\"nIczNC NGAsrY Fh7Sak PmC2sB\" aria-label=\"Toggle AI Query Assistant\" type=\"button\"><div class=\"IFXHXl wDXZP1\" style=\"--retool-button-content-label: var(--text-brand); --retool-button-content-icon: var(--text-brand); --retool-button-content-font-size: 12px; --retool-button-content-font-weight: 600; --retool-button-content-progress-track: #00000080; --retool-button-content-progress-background: transparent;\"><div class=\"gblzVO\"><div class=\"kFeC2_\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"none\" class=\"PaVO0V\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M9 2a1 1 0 0 1-.5.866V4H11a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-1v1h1v1H5v-1h1v-1H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h2.5V2.866A1 1 0 1 1 9 2ZM5.5 6.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm5.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM6 9V8h4v1H6Z\" clip-rule=\"evenodd\"></path></svg></div></div></div></button>"
+  },
+  {
+    "itemId": 8,
+    "type": "button",
+    "top": 556.796875,
+    "left": 1009,
+    "width": 20,
+    "height": 32,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"QZad3S\" aria-label=\"Click to set value dynamically.\" data-testid=\"dynamic::toggle\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" data-testid=\"Icon::IconFunction\" class=\"b5oHUS PGW2Xp\"><path d=\"M4.51321 15C4.4471 15 4.39919 14.937 4.41684 14.8733L6.00776 9.13181C6.02541 9.06811 5.97749 9.00511 5.91139 9.00511H4.27581C4.21347 9.00511 4.16633 8.9487 4.1774 8.88735L4.39418 7.68629C4.40279 7.63855 4.44444 7.60388 4.49296 7.60406L6.15721 7.61027C6.20573 7.61045 6.24738 7.57577 6.256 7.52801L6.3163 7.19359C6.39833 6.71051 6.54417 6.28213 6.7538 5.90843C6.96344 5.53018 7.22548 5.21344 7.53993 4.95824C7.85894 4.70303 8.22353 4.50934 8.63368 4.37718C9.0484 4.24502 9.50185 4.18122 9.99404 4.18577C10.2903 4.19033 10.5842 4.21312 10.8759 4.25413C11.134 4.29043 11.3921 4.3303 11.6503 4.37374C11.7055 4.38304 11.7422 4.43604 11.7316 4.49104L11.4834 5.77893C11.4727 5.83468 11.4178 5.87022 11.3622 5.85839C11.1812 5.8198 10.9986 5.7909 10.8143 5.77171C10.6002 5.74437 10.3837 5.7307 10.1649 5.7307C9.65907 5.72614 9.22841 5.84235 8.87294 6.07933C8.52203 6.31175 8.29189 6.68317 8.18251 7.19359L8.11947 7.48942C8.10618 7.55174 8.1538 7.61042 8.21753 7.61026L10.6192 7.60405C10.6816 7.60389 10.7289 7.66036 10.7178 7.72182L10.5011 8.92287C10.4925 8.97048 10.451 9.00511 10.4027 9.00511H7.98505C7.94015 9.00511 7.90075 9.03504 7.88871 9.07831L6.26147 14.9268C6.24943 14.9701 6.21004 15 6.16513 15H4.51321Z\" fill=\"currentColor\"></path><path d=\"M14.3578 9.40707L13.1995 10.7864L12.5202 9.46299C12.4688 9.36292 12.3658 9.3 12.2533 9.3H11.1244C10.9008 9.3 10.7558 9.53585 10.8567 9.7354L12.0088 12.0131L9.97882 14.4932C9.8185 14.6891 9.95786 14.9832 10.211 14.9832H11.4569C11.546 14.9832 11.6305 14.9436 11.6875 14.8752L12.9017 13.4172L13.6425 14.8231C13.6944 14.9215 13.7966 14.9832 13.9079 14.9832H15.0375C15.2611 14.9832 15.4061 14.7474 15.3052 14.5479L14.1043 12.1725L16.0559 9.79011C16.2164 9.59426 16.077 9.3 15.8239 9.3H14.5875C14.4989 9.3 14.4148 9.3392 14.3578 9.40707Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 9,
+    "type": "button",
+    "top": 1214,
+    "left": 0,
+    "width": 88.3828125,
+    "height": 28,
+    "background": "rgb(60, 146, 220) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "production",
+    "html": "<button type=\"button\" class=\"Bp6KBY O9BdeO ant-dropdown-trigger retool-dropdown retool-dropdown--small noMargin\" style=\"--color: #3C92DC;\"><div class=\"dQkpM3\" style=\"--color: rgba(0,0,0,0.25); --size: 8px; --border-radius: 25px;\"></div><span class=\"F4px_g\" style=\"--text-color: #ffffffff;\">production</span></button>"
+  },
+  {
+    "itemId": 10,
+    "type": "button",
+    "top": 1214,
+    "left": 1280.9921875,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"Bp6KBY\" data-testid=\"DebugTools::EditingStatusBar_historyButton\" aria-label=\"History\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconHistory\" class=\"retool-icon retool-icon-IconHistory retool-icon-history\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1.64294 3.14291L0.426777 1.92675C0.269286 1.76926 0 1.8808 0 2.10353V5.74998C0 5.88805 0.111929 5.99998 0.25 5.99998H3.89645C4.11917 5.99998 4.23071 5.73069 4.07322 5.5732L2.715 4.21498C3.89508 2.57019 5.82314 1.5 8.00007 1.5C11.5899 1.5 14.5001 4.41015 14.5001 8C14.5001 11.5899 11.5899 14.5 8.00007 14.5C4.63773 14.5 1.87085 11.9464 1.53446 8.67332C1.49211 8.26128 1.12376 7.96158 0.711712 8.00393C0.299669 8.04628 -2.88747e-05 8.41463 0.0423185 8.82668C0.456521 12.8569 3.86076 16 8.00007 16C12.4183 16 16.0001 12.4183 16.0001 8C16.0001 3.58172 12.4183 0 8.00007 0C5.40771 0 3.10436 1.23301 1.64294 3.14291ZM7.75 4C8.16421 4 8.5 4.33579 8.5 4.75V7.74223L10.5285 8.55364C10.9131 8.70748 11.1002 9.14396 10.9464 9.52854C10.7925 9.91313 10.356 10.1002 9.97146 9.94636L7.47146 8.94636C7.18671 8.83246 7 8.55668 7 8.25V4.75C7 4.33579 7.33579 4 7.75 4Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 11,
+    "type": "button",
+    "top": 1214,
+    "left": 1308.9921875,
+    "width": 28,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" class=\"Bp6KBY ant-dropdown-trigger retool-dropdown retool-dropdown--default kjVNxy\" aria-label=\"Help\" data-testid=\"DebugTools::EditingStatusBar_helpButton\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" data-testid=\"Icon::IconStatusBarHelpButton\" class=\"retool-icon retool-icon-IconStatusBarHelpButton retool-icon-status-bar-help-button\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM9 11C9 11.5523 8.55229 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10C8.55229 10 9 10.4477 9 11ZM6.92082 6.08541C7.00133 5.92438 7.11032 5.78617 7.25977 5.68654C7.40453 5.59004 7.63124 5.5 8 5.5C8.27975 5.5 8.55291 5.58656 8.7375 5.725C8.90206 5.84842 9 6.01009 9 6.25C9 6.42662 8.95919 6.51381 8.92283 6.56835C8.87748 6.63639 8.79924 6.71162 8.64646 6.81349C8.57007 6.86441 8.48788 6.9139 8.38754 6.97411L8.38141 6.97779L8.38139 6.9778C8.28769 7.03402 8.17704 7.10041 8.06831 7.1729C7.84608 7.32107 7.58057 7.52712 7.37593 7.83412C7.14619 8.17878 7.23935 8.64442 7.58401 8.87417C7.92867 9.10391 8.39432 9.01075 8.62406 8.66609C8.66942 8.59803 8.74766 8.52279 8.90043 8.42093C8.97681 8.37001 9.059 8.32052 9.15933 8.26032L9.16554 8.25659L9.1656 8.25656C9.25926 8.20036 9.36986 8.134 9.47854 8.06154C9.70075 7.91339 9.96627 7.70737 10.1709 7.4004C10.3846 7.07994 10.5 6.69838 10.5 6.25C10.5 5.48991 10.1396 4.90158 9.6375 4.525C9.15542 4.16344 8.55358 4 8 4C7.36876 4 6.84547 4.15996 6.42772 4.43846C6.01467 4.71383 5.74866 5.07562 5.57918 5.41459C5.39393 5.78507 5.5441 6.23558 5.91459 6.42082C6.28507 6.60606 6.73558 6.45589 6.92082 6.08541Z\" fill=\"currentColor\"></path></svg></button>"
+  },
+  {
+    "itemId": 12,
+    "type": "button",
+    "top": 0,
+    "left": 0,
+    "width": 1,
+    "height": 0,
+    "background": "rgb(239, 239, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
+  },
+  {
+    "itemId": 13,
+    "type": "button",
+    "top": 0,
+    "left": 0,
+    "width": 1,
+    "height": 0,
+    "background": "rgb(239, 239, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;\"></button>"
+  },
+  {
+    "itemId": 14,
+    "type": "link or button",
+    "top": 0,
+    "left": 16,
+    "width": 88,
+    "height": 47,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Return to home pageClick this Retool logo to return to the home page",
+    "html": "<a class=\"CAUArm\" href=\"/\"><svg width=\"88\" height=\"20\" opacity=\"1\" viewBox=\"0 0 88 20\" role=\"img\" aria-labelledby=\"logoTitle logoDesc\" style=\"color: var(--always-white);\"><title id=\"logoTitle\">Return to home page</title><desc id=\"logoDesc\">Click this Retool logo to return to the home page</desc><path d=\"M1.5 1C0.671573 1 0 1.67157 0 2.5V4.25C0 4.66421 0.335786 5 0.75 5H8.25C8.66421 5 9 4.66421 9 4.25V2.5C9 1.67157 8.32843 1 7.5 1H1.5Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.4682 12.0868H28.6382V17.6421H25V2H31.601C35.2828 2 37.5703 3.76464 37.5703 7.03248C37.5703 9.36355 36.3503 10.9757 34.2589 11.6946L38.0278 17.6421H33.8668L30.4682 12.0868ZM28.6382 5.07178V9.12391H31.405C33.126 9.12391 33.9975 8.36141 33.9975 7.09784C33.9975 5.81249 33.126 5.07178 31.405 5.07178H28.6382Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M49.5163 14.5267C48.6667 16.7271 46.5753 17.8817 44.2878 17.8817C40.8239 17.8817 38.471 15.4635 38.471 11.8907C38.471 8.49212 40.911 5.92141 44.2224 5.92141C47.7081 5.92141 49.6035 8.49212 49.6035 11.7382V12.6532H41.826C42.0656 14.2217 43.0024 15.115 44.3313 15.115C45.4206 15.115 46.2703 14.5921 46.5971 13.59L49.5163 14.5267ZM46.1613 10.5182C46.1396 9.49426 45.4642 8.62283 44.1788 8.62283C43.1114 8.62283 42.2835 9.25462 41.9349 10.5182H46.1613Z\" fill=\"currentColor\"></path><path d=\"M51.5792 14.5703C51.5792 16.9232 52.8209 17.751 55.3045 17.751C56.1324 17.751 56.7859 17.6857 57.3959 17.5985V14.7446C57.0038 14.7882 56.8077 14.81 56.3938 14.81C55.5224 14.81 55.0213 14.6357 55.0213 13.6771V9.03676H57.2652V6.16106H55.0213V2.98035H51.5792V6.16106H50.1195V9.03676H51.5792V14.5703Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M64.1146 5.92141C67.4914 5.92141 69.866 8.33962 69.866 11.9125C69.866 15.4853 67.4914 17.8817 64.1146 17.8817C60.716 17.8817 58.3632 15.4853 58.3632 11.9125C58.3632 8.33962 60.716 5.92141 64.1146 5.92141ZM64.1146 8.77533C62.7203 8.77533 61.8271 9.90819 61.8271 11.9125C61.8271 13.9167 62.7203 15.0496 64.1146 15.0496C65.5089 15.0496 66.4021 13.9167 66.4021 11.9125C66.4021 9.90819 65.5089 8.77533 64.1146 8.77533Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M82.4183 11.9125C82.4183 8.33962 80.0436 5.92141 76.6668 5.92141C73.2683 5.92141 70.9154 8.33962 70.9154 11.9125C70.9154 15.4853 73.2683 17.8817 76.6668 17.8817C80.0436 17.8817 82.4183 15.4853 82.4183 11.9125ZM74.3794 11.9125C74.3794 9.90819 75.2726 8.77533 76.6668 8.77533C78.0611 8.77533 78.9543 9.90819 78.9543 11.9125C78.9543 13.9167 78.0611 15.0496 76.6668 15.0496C75.2726 15.0496 74.3794 13.9167 74.3794 11.9125Z\" fill=\"currentColor\"></path><path d=\"M84.0569 2H87.5426V17.6421H84.0569V2Z\" fill=\"currentColor\"></path><path d=\"M9 15.75C9 15.3358 9.33579 15 9.75 15H17.25C17.6642 15 18 15.3358 18 15.75V17.5C18 18.3284 17.3284 19 16.5 19H10.5C9.67157 19 9 18.3284 9 17.5V15.75Z\" fill=\"currentColor\"></path><path d=\"M0.75 7C0.335786 7 0 7.33579 0 7.75V11.5C0 12.3284 0.671573 13 1.5 13H17.25C17.6642 13 18 12.6642 18 12.25V8.5C18 7.67157 17.3284 7 16.5 7H0.75Z\" fill=\"currentColor\"></path></svg></a>"
+  },
+  {
+    "itemId": 15,
+    "type": "link or button",
+    "top": 9.5,
+    "left": 136,
+    "width": 56.6484375,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Apps",
+    "html": "<a class=\"eNPhnZ\" href=\"/\">Apps</a>"
+  },
+  {
+    "itemId": 16,
+    "type": "link or button",
+    "top": 9.5,
+    "left": 196.6484375,
+    "width": 90.3359375,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Resources",
+    "html": "<a class=\"eNPhnZ\" href=\"/resources\">Resources</a>"
+  },
+  {
+    "itemId": 17,
+    "type": "link or button",
+    "top": 9.5,
+    "left": 290.984375,
+    "width": 83.8046875,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Database",
+    "html": "<a class=\"eNPhnZ\" href=\"/resources/new/retooldb\">Database</a>"
+  },
+  {
+    "itemId": 18,
+    "type": "link or button",
+    "top": 9.5,
+    "left": 378.7890625,
+    "width": 110.703125,
+    "height": 28,
+    "background": "rgba(255, 255, 255, 0.12) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Query Library",
+    "html": "<a aria-current=\"page\" class=\"eNPhnZ W7zX8j active\" href=\"/querylibrary\">Query Library</a>"
+  },
+  {
+    "itemId": 19,
+    "type": "link or button",
+    "top": 9.5,
+    "left": 493.4921875,
+    "width": 90.4609375,
+    "height": 28,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "text": "Workflows",
+    "html": "<a class=\"eNPhnZ\" href=\"/workflows\">Workflows</a>"
+  },
+  {
+    "itemId": 20,
+    "type": "text field",
+    "top": 65,
+    "left": 35,
+    "width": 137,
+    "height": 26,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "placeholder": "Search queries",
+    "html": "<input id=\"react-aria2947673978-25\" autocomplete=\"off\" placeholder=\"Search queries\" autocapitalize=\"none\" spellcheck=\"false\" class=\"lPgV2z MjhMCf default\" type=\"text\" value=\"\" style=\"--retool-base-input-background: #ffffff; --retool-base-input-text: #0d0d0dff; --retool-base-input-placeholder: var(--gray-400); --retool-base-input-placeholder-font-size: 12px; --retool-base-input-placeholder-font-weight: 500; --retool-base-input-padding-horizontal: 8px; --retool-base-input-padding-vertical: 5px; --retool-base-input-content-padding-top: 5px; --retool-base-input-content-padding-right: 4px; --retool-base-input-content-padding-bottom: 5px; --retool-base-input-content-padding-left: 12px; --retool-base-input-input-hover-background: #ffffff; --retool-base-input-font-size: 12px;\">"
+  },
+  {
+    "itemId": 21,
+    "type": "text field",
+    "top": 160,
+    "left": 296,
+    "width": 16,
+    "height": 16,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input aria-checked=\"false\" name=\"add-reply-to\" id=\"add-reply-to\" type=\"checkbox\" class=\"SOuFEZ\">"
+  },
+  {
+    "itemId": 22,
+    "type": "text field",
+    "top": 235.3984375,
+    "left": 296,
+    "width": 16,
+    "height": 16,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input aria-checked=\"false\" name=\"add-cc-bcc\" id=\"add-cc-bcc\" type=\"checkbox\" class=\"SOuFEZ\">"
+  },
+  {
+    "itemId": 23,
+    "type": "text field",
+    "top": 342.296875,
+    "left": 335.828125,
+    "width": 1,
+    "height": 1,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input class=\"a_dNeR\" id=\"text\" tabindex=\"0\" type=\"radio\" value=\"text\">"
+  },
+  {
+    "itemId": 24,
+    "type": "text field",
+    "top": 342.296875,
+    "left": 415.4921875,
+    "width": 1,
+    "height": 1,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input class=\"a_dNeR\" id=\"html\" tabindex=\"0\" type=\"radio\" value=\"html\">"
+  },
+  {
+    "itemId": 25,
+    "type": "text field",
+    "top": 342.296875,
+    "left": 495.15625,
+    "width": 1,
+    "height": 1,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input class=\"a_dNeR\" id=\"markdown\" tabindex=\"0\" type=\"radio\" value=\"markdown\" checked=\"\">"
+  },
+  {
+    "itemId": 26,
+    "type": "text field",
+    "top": 560.796875,
+    "left": 302,
+    "width": 9,
+    "height": 20,
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "html": "<input autocomplete=\"off\" class=\"ant-select-search__field\" value=\"\">"
+  }
+]

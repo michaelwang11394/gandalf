@@ -1,4 +1,6 @@
 type ScreenLayoutItem = {
+    element: HTMLElement
+    itemId: number
     type: "button" | "link or button" | "text field" // TODO add dropdown?
     top: number
     left: number
@@ -7,23 +9,24 @@ type ScreenLayoutItem = {
     background: string
     text?: string
     placeholder?: string
-    html: string
 }
 
-function generateScreenLayoutInner(): ScreenLayoutItem[] {
+export function generateScreenLayout(): ScreenLayoutItem[] {
     const result: ScreenLayoutItem[] = [];
+    let counter = 0;
 
-    [].forEach.call(document.querySelectorAll("button"), (button: Element) => {
+    [].forEach.call(document.querySelectorAll("button"), (button: HTMLElement) => {
         if (button.checkVisibility() && !button.matches("[data-isgandalf] *, [data-isgandalf]")) {
             const rect = button.getBoundingClientRect()
             const info: ScreenLayoutItem = {
+                itemId: counter++,
                 type: "button",
                 top: rect.top,
                 left: rect.left,
                 width: rect.width,
                 height: rect.height,
                 background: window.getComputedStyle(button).background,
-                html: button.outerHTML
+                element: button,
             }
             const text = button.textContent?.trim()
             if (text) {
@@ -33,17 +36,18 @@ function generateScreenLayoutInner(): ScreenLayoutItem[] {
         }
     });
 
-    [].forEach.call(document.querySelectorAll(":link"), (link: Element) => {
+    [].forEach.call(document.querySelectorAll(":link"), (link: HTMLElement) => {
         if (link.checkVisibility() && !link.matches("[data-isgandalf] *, [data-isgandalf]")) {
             const rect = link.getBoundingClientRect()
             const info: ScreenLayoutItem = {
+                itemId: counter++,
                 type: "link or button",
                 top: rect.top,
                 left: rect.left,
                 width: rect.width,
                 height: rect.height,
                 background: window.getComputedStyle(link).background,
-                html: link.outerHTML
+                element: link
             }
             const text = link.textContent?.trim()
             if (text) {
@@ -54,17 +58,18 @@ function generateScreenLayoutInner(): ScreenLayoutItem[] {
     });
 
     // TODO: input may not always be text input
-    [].forEach.call(document.querySelectorAll("textarea, input"), (field: Element) => {
+    [].forEach.call(document.querySelectorAll("textarea, input"), (field: HTMLElement) => {
         if (field.checkVisibility() && !field.matches("[data-isgandalf] *, [data-isgandalf]")) {
             const rect = field.getBoundingClientRect()
             const info: ScreenLayoutItem = {
+                itemId: counter++,
                 type: "text field",
                 top: rect.top,
                 left: rect.left,
                 width: rect.width,
                 height: rect.height,
                 background: window.getComputedStyle(field).background,
-                html: field.outerHTML
+                element: field
             }
             const placeholder = (field as HTMLTextAreaElement).placeholder
             if (placeholder) {
@@ -75,8 +80,4 @@ function generateScreenLayoutInner(): ScreenLayoutItem[] {
     });
 
     return result;
-}
-
-export function generateScreenLayout(): string {
-    return JSON.stringify(generateScreenLayoutInner(), null, 2)
 }
