@@ -176,9 +176,11 @@ const Gandalf: React.FC<GandalfProps> = ({
           }
         }), null, 2)
 
+        const product = (window as any).__gandalf_product ?? "demo"
+
         const formData = new FormData();
         formData.append("user_input", query);
-        formData.append("product", "supabase");
+        formData.append("product", product);
         formData.append("dom_tree", domTreeString);
         formData.append("screen_layout", backendScreenLayout)
         console.log(backendScreenLayout)
