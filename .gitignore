@@ -7,6 +7,7 @@ frontend/dist/
 frontend/yarn.lock
 test-app/yarn.lock
 .DS_Store
+indexing/node_modules
 
 # benchmark output
 batched.csv

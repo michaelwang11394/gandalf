@@ -1,0 +1,24 @@
+{
+  "name": "gandalf-indexing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "@supabase/supabase-js": "^2.44.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "jsdom": "^24.1.0",
+    "openai": "^4.52.1",
+    "prettier": "^3.3.2",
+    "smart-chunks": "^0.1.12",
+    "tiktoken": "^1.0.15",
+    "turndown": "^7.2.0",
+    "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/turndown": "^5.0.4"
+  }
+}
