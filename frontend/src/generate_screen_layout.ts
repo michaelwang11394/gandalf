@@ -25,6 +25,43 @@ function walkDOM(dom: HTMLElement, process: (child: HTMLElement) => boolean) {
     })
 }
 
+function elementToInfo(element: HTMLElement, rect: DOMRect, styles: CSSStyleDeclaration, id: number): ScreenLayoutItem {
+    const info: ScreenLayoutItem = {
+        itemId: id,
+        top: Math.round(rect.top),
+        left: Math.round(rect.left),
+        width: Math.round(rect.width),
+        height: Math.round(rect.height),
+        element,
+    }
+    const backgroundColor = styles.backgroundColor
+    if (backgroundColor && backgroundColor !== 'rgba(0, 0, 0, 0)') {
+        info.backgroundColor = backgroundColor
+    }
+    const text = element.textContent?.trim()
+    if (text) {
+        info.text = text
+    }
+
+    let cur = element.parentElement
+    while (cur && cur !== document.body && cur.childElementCount === 1) {
+        const curRect = cur.getBoundingClientRect()
+        if (curRect.left !== rect.left || curRect.right !== rect.right || curRect.top !== rect.top || curRect.bottom !== rect.bottom) {
+            break;
+        }
+        if (!info.backgroundColor) {
+            const backgroundColor = window.getComputedStyle(cur).backgroundColor
+            if (backgroundColor && backgroundColor !== 'rgba(0, 0, 0, 0)') {
+                info.backgroundColor = backgroundColor
+            }
+        }
+        info.element = cur
+        cur = cur.parentElement
+    }
+
+    return info
+}
+
 export function generateScreenLayout(): ScreenLayoutItem[] {
     const result: ScreenLayoutItem[] = [];
     let counter = 0;
@@ -38,24 +75,7 @@ export function generateScreenLayout(): ScreenLayoutItem[] {
         if (element.checkVisibility() && (IncludedTags.has(element.tagName) || (element.onclick != null) || cursor == "pointer" || cursor == "grab")) {
             const rect = element.getBoundingClientRect()
             if (rect.width > 0 && rect.height > 0) {
-                const info: ScreenLayoutItem = {
-                    itemId: counter++,
-                    top: Math.round(rect.top),
-                    left: Math.round(rect.left),
-                    width: Math.round(rect.width),
-                    height: Math.round(rect.height),
-                    element,
-                }
-                const backgroundColor = styles.backgroundColor
-                if (backgroundColor && backgroundColor !== 'rgba(0, 0, 0, 0)') {
-                    info.backgroundColor = backgroundColor
-                }
-                const text = element.textContent?.trim()
-                if (text) {
-                    info.text = text
-                }
-
-                result.push(info)
+                result.push(elementToInfo(element, rect, styles, counter++))
             }
             return false
         }

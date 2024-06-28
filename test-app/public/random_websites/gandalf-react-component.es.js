@@ -16953,35 +16953,47 @@ function GC(A, e) {
     t instanceof HTMLElement && e(t) && GC(t, e);
   });
 }
-function X2() {
+function X2(A, e, t, r) {
+  var s;
+  const n = {
+    itemId: r,
+    top: Math.round(e.top),
+    left: Math.round(e.left),
+    // width: Math.round(rect.width),
+    // height: Math.round(rect.height),
+    element: A
+  }, i = t.backgroundColor;
+  i && i !== "rgba(0, 0, 0, 0)" && (n.backgroundColor = i);
+  const o = (s = A.textContent) == null ? void 0 : s.trim();
+  o && (n.text = o);
+  let a = A.parentElement;
+  for (; a && a !== document.body && a.childElementCount === 1; ) {
+    const l = a.getBoundingClientRect();
+    if (l.left !== e.left || l.right !== e.right || l.top !== e.top || l.bottom !== e.bottom)
+      break;
+    if (!n.backgroundColor) {
+      const u = window.getComputedStyle(a).backgroundColor;
+      u && u !== "rgba(0, 0, 0, 0)" && (n.backgroundColor = u);
+    }
+    n.element = a, a = a.parentElement;
+  }
+  return n;
+}
+function Y2() {
   const A = [];
   let e = 0;
   return GC(document.body, (t) => {
-    var a;
     if (t.attributes.getNamedItem("data-isgandalf"))
       return !1;
-    const r = window.getComputedStyle(t), n = r.cursor, i = r.backgroundColor, o = window.getComputedStyle(t, ":hover").backgroundColor;
-    if (t.checkVisibility() && (W2.has(t.tagName) || t.onclick != null || n == "pointer" || n == "grab" || o && i !== o)) {
-      const s = t.getBoundingClientRect();
-      if (s.width > 0 && s.height > 0) {
-        const l = {
-          itemId: e++,
-          top: Math.round(s.top),
-          left: Math.round(s.left),
-          width: Math.round(s.width),
-          height: Math.round(s.height),
-          element: t
-        };
-        i && i !== "rgba(0, 0, 0, 0)" && (l.backgroundColor = i);
-        const u = (a = t.textContent) == null ? void 0 : a.trim();
-        u && (l.text = u), A.push(l);
-      }
-      return !1;
+    const r = window.getComputedStyle(t), n = r.cursor;
+    if (t.checkVisibility() && (W2.has(t.tagName) || t.onclick != null || n == "pointer" || n == "grab")) {
+      const i = t.getBoundingClientRect();
+      return i.width > 0 && i.height > 0 && A.push(X2(t, i, r, e++)), !1;
     }
     return !0;
   }), A;
 }
-const Y2 = ({
+const z2 = ({
   productName: A,
   isWidgetVisible: e,
   widgetColor: t
@@ -17025,7 +17037,7 @@ const Y2 = ({
     c(!0);
     const M = _2(Kh(document.documentElement.outerHTML));
     n(M);
-    const V = X2();
+    const V = Y2();
     MH(document.body, { ignoreElements: (N) => N.hasAttribute("data-isgandalf") }).then((N) => {
       N.toBlob((_) => {
         if (location.hash) {
@@ -17121,6 +17133,6 @@ const Y2 = ({
 }, VC = document.createElement("div");
 document.body.appendChild(VC);
 hF.render(
-  /* @__PURE__ */ J.jsx(Y2, { productName: "Todo App", isWidgetVisible: !0, widgetColor: "pink" }),
+  /* @__PURE__ */ J.jsx(z2, { productName: "Todo App", isWidgetVisible: !0, widgetColor: "pink" }),
   VC
 );
