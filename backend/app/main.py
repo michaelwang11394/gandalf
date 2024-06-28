@@ -35,7 +35,7 @@ settings = Settings()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # TODO: Add AWS
+    allow_origins=["*"],  # TODO: Add AWS
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -1,7 +1,7 @@
 from openai import OpenAI
 from supabase import Client, create_client
 from app.settings import Settings
-from app.product_context.get_product_context import get_product_content
+from app.product_context.get_product_context import get_product_context
 
 settings = Settings()
 openai = OpenAI(api_key=settings.OPENAI_API_KEY)
@@ -60,7 +60,7 @@ def get_instruction(
         },
     ]
 
-    product_context = get_product_content(product=product, user_input=user_input)
+    product_context = get_product_context(product=product, user_input=user_input)
 
     # Include previous state and response if available
     if previous_screenshot_url and previous_response_instruction:
