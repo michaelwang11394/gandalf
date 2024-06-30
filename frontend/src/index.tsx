@@ -1,20 +1,10 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useMemo,
-  useCallback,
-} from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import ReactDOM from "react-dom";
-import html2canvas from "html2canvas";
-import { debounce } from "lodash";
 import Input from "./components/input";
-import parseTree, { serializeDocument } from "./utilities/parseTree";
 
 import gandalfStyles from "./Gandalf.module.css";
 import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
-import { generateScreenLayout } from "./generate_screen_layout";
-import { escapeSelector } from "./utilities/escapeSelector";
+import { sendUserRequest } from "./agent/sendUserRequest";
 
 interface GandalfProps {
   productName: string;
@@ -22,33 +12,30 @@ interface GandalfProps {
   widgetColor?: string;
 }
 
-// function useCallbackRef<T>(callback: () => T): () => T {
-//   const ref = useRef(callback);
+function isTarget(cur: HTMLElement, target: HTMLElement) {
+  return target === cur || target.contains(cur);
+}
 
-//   ref.current = callback;
+function useCallbackRef<T>(callback: () => T): () => T {
+  const ref = useRef(callback);
 
-//   return useCallback(() => {
-//     return ref.current();
-//   }, []);
-// }
+  ref.current = callback;
 
-// function useDebounce(callback: () => void, duration: number) {
-//   const inner = useCallbackRef(callback);
-//   return useMemo(() => {
-//     return debounce(inner, duration);
-//   }, [inner]);
-// }
+  return useCallback(() => {
+    return ref.current();
+  }, []);
+}
 
 const Gandalf: React.FC<GandalfProps> = ({
   productName,
   isWidgetVisible,
   widgetColor,
 }) => {
-  const [product, setProduct] = useState(productName);
-  const [domTree, setDomTree] = useState("");
-  const [screenshot, setScreenshot] = useState<File | null>(null);
   const [popoverContent, setPopoverContent] = useState("");
-  const hasMoreInstructionsRef = useRef(false);
+  const currentQueryRef = useRef<{
+    query: string;
+    completedSteps: string[];
+  } | null>(null);
   const [isApiCallInProgress, setIsApiCallInProgress] = useState(false);
   const [isOpenInput, setIsOpenInput] = useState(false);
   const [query, setQuery] = useState("");
@@ -86,12 +73,13 @@ const Gandalf: React.FC<GandalfProps> = ({
     overflow: "visible",
   };
 
-  // Debounce the check for more instructions to avoid excessive API calls
-  // const debouncedCheckForMoreInstructions = useDebounce(() => {
-  //   if (hasMoreInstructionsRef.current && !isApiCallInProgress) {
-  //     checkForMoreInstructions();
-  //   }
-  // }, 1000);
+  const advanceGuide = useCallbackRef(() => {
+    refs.setReference(null);
+    setPopoverContent("");
+    setTimeout(() => {
+      handleSubmit(query);
+    }, 100);
+  });
 
   // Effect to open the popover when the user presses the keyboard shortcut
   useEffect(() => {
@@ -105,34 +93,24 @@ const Gandalf: React.FC<GandalfProps> = ({
     // Add event listener
     document.addEventListener("keydown", handleKeyDown);
 
+    const handleClick = (event: MouseEvent) => {
+      if (event.target instanceof HTMLElement) {
+        if (
+          refs.domReference.current &&
+          isTarget(event.target, refs.domReference.current as HTMLElement)
+        ) {
+          advanceGuide();
+        }
+      }
+    };
+    document.addEventListener("click", handleClick);
+
     // Remove event listener on cleanup
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("click", handleClick);
     };
   }, []);
-
-  // Effect to check for more instructions
-  // useEffect(() => {
-  //   const handleUserInteraction = (event: Event) => {
-  //     if (event.type === "keyup" || event.type === "click") {
-  //       debouncedCheckForMoreInstructions();
-  //     }
-  //   };
-
-  //   document.addEventListener("click", handleUserInteraction);
-  //   document.addEventListener("keyup", handleUserInteraction);
-
-  //   return () => {
-  //     document.removeEventListener("click", handleUserInteraction);
-  //     document.removeEventListener("keyup", handleUserInteraction);
-  //   };
-  // }, [debouncedCheckForMoreInstructions]);
-
-  const checkForMoreInstructions = () => {
-    console.log("Checking for more instructions...");
-    // Trigger another handleSubmit or similar function to fetch the next set of instructions
-    handleSubmit(query);
-  };
 
   const handleSubmit = async (query: string) => {
     console.log("Submitting query from index:", query);
@@ -141,115 +119,34 @@ const Gandalf: React.FC<GandalfProps> = ({
     }
     setIsApiCallInProgress(true);
 
-    // Capture DOM Tree
-    const domTreeString = serializeDocument(parseTree(document.documentElement.outerHTML));
-    setDomTree(domTreeString);
-    const screenLayout = generateScreenLayout()
-
-    // Capture Screenshot
-    html2canvas(document.body, { ignoreElements: (element) => {
-      return element.hasAttribute("data-isgandalf")
-    }}).then((canvas) => {
-      canvas.toBlob((blob) => {
-        if (location.hash) {
-          const a = document.createElement("a");
-          document.body.appendChild(a);
-          const url = window.URL.createObjectURL(blob!);
-          a.href = url;
-          a.download = "screenshot.png";
-          a.click();
-          setTimeout(() => {
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-          }, 0);
-
-          console.log(domTreeString)
-        }
-
-        setScreenshot(blob as File);
-
-        const backendScreenLayout = JSON.stringify(screenLayout.map(item => {
-          const {element, ...rest} = item
-          return {
-            ...rest,
-            html: parseTree(element.outerHTML).body.innerHTML
-          }
-        }), null, 2)
-
-        const product = (window as any).__gandalf_product ?? "demo"
-
-        const formData = new FormData();
-        formData.append("user_input", query);
-        formData.append("product", product);
-        formData.append("dom_tree", domTreeString);
-        formData.append("screen_layout", backendScreenLayout)
-        console.log(backendScreenLayout)
-        if (blob) {
-          formData.append("screenshot", blob, "screenshot.png");
-        }
-
-        fetch("http://localhost:8000/gandalf", {
-          method: "POST",
-          body: formData,
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Success:", data);
-            // Extract and clean the JSON string from Markdown code block
-            const jsonString = data.result
-              .replace(/```json\n/, "")
-              .replace(/\n```/, "");
-
-            try {
-              const resultObject = JSON.parse(jsonString);
-              console.log("Result Object:", resultObject);
-              const { Instructions, itemId, hasMoreInstructions } =
-                resultObject;
-              console.log(
-                "Instructions:",
-                Instructions,
-                "itemId:",
-                itemId,
-                "hasMoreInstructions:",
-                hasMoreInstructions
-              );
-
-              if (Instructions) {
-                setPopoverContent(Instructions);
-              }
-              if (hasMoreInstructions) {
-                hasMoreInstructionsRef.current = true;
-              }
-
-              // Determine the target for the popover based on availability and document presence
-              let targetElement = screenLayout.find(item => item.itemId === itemId)?.element ?? null
-
-              // Update the target reference for Popper
-              // targetRef.current = targetElement;
-
-              refs.setReference(targetElement);
-
-              console.log("Target Element:", targetElement);
-
-              // If no valid target element is found, consider handling this scenario
-              if (!targetElement) {
-                console.warn("No valid target element found for the popover.");
-              }
-              setIsApiCallInProgress(false);
-              setIsOpenInput(false);
-            } catch (error) {
-              console.error("Error parsing JSON:", error);
-              setIsApiCallInProgress(false);
-              setIsOpenInput(false);
-            }
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            setIsApiCallInProgress(false);
-            setIsOpenInput(false);
-          });
-      });
-    });
+    try {
+      const { Instructions, targetElement, hasMoreInstructions } =
+        await sendUserRequest({
+          query,
+          previousSteps: currentQueryRef.current?.completedSteps ?? [],
+          product: productName,
+        });
+      if (Instructions) {
+        setPopoverContent(Instructions);
+      }
+      if (!hasMoreInstructions) {
+        currentQueryRef.current = null;
+      } else {
+        currentQueryRef.current = {
+          query,
+          completedSteps: [
+            ...(currentQueryRef.current?.completedSteps ?? []),
+            Instructions,
+          ],
+        };
+      }
+      refs.setReference(targetElement);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setIsApiCallInProgress(false);
+      setIsOpenInput(false);
+    }
   };
 
   return (
@@ -264,33 +161,49 @@ const Gandalf: React.FC<GandalfProps> = ({
           handleSubmit={handleSubmit}
         />
       </div>
-      <div ref={refs.setFloating} style={customFloatingStyles} data-isgandalf={true}>
-        {popoverContent}
+      {popoverContent !== "" && (
         <div
-          ref={arrowRef}
-          className={gandalfStyles.arrow}
-          style={{
-            [staticSide]: "-6px",
-            ...(middlewareData.arrow?.x != null && {
-              left: `${middlewareData.arrow.x}px`,
-            }),
-            ...(middlewareData.arrow?.y != null && {
-              top: `${middlewareData.arrow.y}px`,
-            }),
-          }}
-        />
-      </div>
+          ref={refs.setFloating}
+          style={customFloatingStyles}
+          data-isgandalf={true}
+        >
+          {popoverContent}
+          <div
+            ref={arrowRef}
+            className={gandalfStyles.arrow}
+            style={{
+              [staticSide]: "-6px",
+              ...(middlewareData.arrow?.x != null && {
+                left: `${middlewareData.arrow.x}px`,
+              }),
+              ...(middlewareData.arrow?.y != null && {
+                top: `${middlewareData.arrow.y}px`,
+              }),
+            }}
+          />
+        </div>
+      )}
 
       {isWidgetVisible && (
         <button
           className={gandalfStyles.widgetButton}
           style={{ backgroundColor: widgetColor || "#007bff" }}
           disabled={!isWidgetVisible}
-          onClick={() => setIsOpenInput(!isOpenInput)}
+          onMouseDown={(e) => {
+            e.stopPropagation();
+          }}
+          onPointerDown={(e) => {
+            e.stopPropagation();
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            setIsOpenInput(!isOpenInput);
+          }}
           aria-label="Toggle chat"
           data-isgandalf={true}
         >
-          💬
+          {isApiCallInProgress ? "<Cool animation>" : "💬"}
         </button>
       )}
     </>
@@ -298,11 +211,15 @@ const Gandalf: React.FC<GandalfProps> = ({
 };
 
 // uncomment this, comment out the export, then comment out the external options in vite.config.js to build a standalone injectable js bundle
-// const mountNode = document.createElement("div");
-// document.body.appendChild(mountNode);
-// ReactDOM.render(
-//   <Gandalf productName="Todo App" isWidgetVisible={true} widgetColor="pink" />,
-//   mountNode
-// );
+const mountNode = document.createElement("div");
+mountNode.style.zIndex = "100000";
+mountNode.style.position = "fixed";
+mountNode.style.pointerEvents = "auto";
+document.body.appendChild(mountNode);
+const product = (window as any).__gandalf_product ?? "demo";
+ReactDOM.render(
+  <Gandalf productName={product} isWidgetVisible={true} widgetColor="pink" />,
+  mountNode
+);
 
-export default Gandalf;
+// export default Gandalf;

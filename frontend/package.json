@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
-    "deploy": "yarn build && cp dist/gandalf-react-component.es.js ../test-app/public/random_websites/",
+    "deploy": "yarn build && cp dist/gandalf-react-component.es.js ../test-app/public/random_websites/ && cp dist/style.css ../test-app/public/random_websites/",
     "start": "vite"
   },
   "type": "module",

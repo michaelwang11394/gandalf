@@ -2,6 +2,8 @@ from openai import OpenAI
 from supabase import Client, create_client
 from app.settings import Settings
 from app.product_context.get_product_context import get_product_context
+from typing import List
+import time
 
 settings = Settings()
 openai = OpenAI(api_key=settings.OPENAI_API_KEY)
@@ -13,11 +15,10 @@ bucket_name = "screenshots"
 def get_instruction(
     product: str,
     dom_tree: str,
+    previous_steps: List[str],
     file_path: str,
     user_input: str,
     screen_layout: str,
-    previous_screenshot_url: str,
-    previous_response_instruction: str,
 ):
     # Get the signed URL of the uploaded file
     signed_url = supabase.storage.from_(bucket_name).create_signed_url(file_path, 36000)
@@ -28,12 +29,11 @@ def get_instruction(
             "role": "system",
             "content": (
                 f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, "
-                "and you will be given a screenshot of the user's current page, a json representation of their page that identifies each ui elemtns type (e.g., button, text field, dropdown), and its approximate position (use percentages for top, left, width, and height). You are also given a screenshot of the previous state/page of the user and the previous response from the llm for the next step the user should follow.\n"
+                "and you will be given a screenshot of the user's current page, a json representation of their page that identifies each various ui elements and their approximate position as well as the steps they have taken so far.\n"
                 "You have one job and you must return it in the correct format or else bad things might happen.\n"
                 "Your job is to return:\n"
-                "1- The english text Instruction for the next step they must take to complete their task or solve their issue based on their CURRENT progress. Also, you should consider the most recent state and instruction when giving the user the next step. \n"
-                "For example, if the screenshot shows the user has not yet entered the necessary information in a required field, the next step should be to complete that field. If they have completed all required fields, the next step for example is to submit the form by clicking a button. If they have just completed a step, and the next step is to verify/review default selections that they have the option to modify then you must describe what are the default choices and what their options are. You must be very specific with the step they must take.\n"
-                "2- The itemId of the element they need to click or fill in or take any action on ONLY for the next step they must take to resolve their issue. Again, you are ONLY focused on the NEXT step (1 step) that they must take given their current status to resolve the issue.\n"
+                "1- The english text Instruction for the next step they must take to complete their task or solve their issue based on their current progress. Also, you should consider the most recent state and instruction when giving the user the next step. \n"
+                "2- The itemId of the element they need to click or fill in or take any action on. Again, you are ONLY focused on the NEXT step (1 step) that they must take given their current status to resolve the issue.\n"
                 "3- A true or false flag 'hasMoreInstructions' indicating whether there are more steps after the current one.\n"
                 "4- You must ONLY return the following JSON format: { \"Instructions\": , \"itemId\": , \"hasMoreInstructions\": } and nothing else.\n"
                 "An example of a properly formatted response would be: { \"Instructions\": \"Click the submit button\", \"itemId\": 3, \"hasMoreInstructions\": false }\n"
@@ -63,39 +63,29 @@ def get_instruction(
     product_context = get_product_context(product=product, user_input=user_input)
 
     # Include previous state and response if available
-    if previous_screenshot_url and previous_response_instruction:
-        messages[1]["content"].insert(
-            0,
+    if len(previous_steps) > 0:
+        messages[1]["content"].append(
             {
                 "type": "text",
-                "text": "The user was previously at this step, shown in this screenshot",
-            },
-        )
-        messages[1]["content"].insert(
-            1,
-            {
-                "type": "image_url",
-                "image_url": {
-                    "url": previous_screenshot_url,
-                },
-            },
-        )
-        messages[1]["content"].insert(
-            2,
-            {
-                "type": "text",
-                "text": f"The llm responded with this instruction for the user to follow: {previous_response_instruction}",
+                "text": f"Steps taken so far: {', '.join(previous_steps)}",
             },
         )
         
     if product_context is not None:
         messages[1]["content"].append(f"Here's the relevant extract from the product manual: {product_context}")
+        
+    start = time.time()
+    print("waiting for openai")
 
     response = openai.chat.completions.create(
         model="gpt-4o",
         messages=messages,
         temperature=0,
+        timeout=1000
     )
+    
+    print(f"openai took {time.time() - start} seconds")
+    
     result = response.choices[0].message.content
     result = result.removeprefix("```json\n").removesuffix("\n```")
     return result 

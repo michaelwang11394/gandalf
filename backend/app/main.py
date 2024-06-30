@@ -1,7 +1,12 @@
+import json
+import time
+from typing import List
+
 import logging
 import os
 import shutil
 import uuid
+import httpx
 
 from supabase import Client, create_client
 
@@ -10,6 +15,10 @@ from app.settings import Settings
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
+
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+from starlette.responses import Response
 
 # OpenAI Realm Experiment 1
 # from app.experiments.openai_realm_1.base_2 import (
@@ -26,6 +35,19 @@ from app.experiments.realm_with_js.realm_with_js import (
     supabase,
 )
 
+class TimeoutMiddleware(BaseHTTPMiddleware):
+    def __init__(self, app, timeout: int):
+        super().__init__(app)
+        self.timeout = timeout
+
+    async def dispatch(self, request: Request, call_next):
+        try:
+            async with httpx.AsyncClient(timeout=self.timeout) as client:
+                response = await call_next(request)
+                return response
+        except httpx.RequestError:
+            return Response("Request timed out", status_code=504)
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -41,6 +63,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.add_middleware(TimeoutMiddleware, timeout=httpx.Timeout(1000))
+
 
 @app.get("/")
 async def root():
@@ -51,11 +75,11 @@ async def root():
 async def index(
     product: str = Form(...),
     user_input: str = Form(...),
-    dom_tree: str = Form(...),
     screen_layout: str = Form(...),
     screenshot: UploadFile = File(...),
-    session_id: str = Form(None),
+    previous_steps_json: str = Form(...),
 ):
+    print("starting")
     # Save the uploaded file temporarily
     unique_id = uuid.uuid4()
     temp_dir = "temp"
@@ -64,52 +88,30 @@ async def index(
     file_path = f"temp/{unique_id}_{screenshot.filename}"
     with open(file_path, "wb") as buffer:
         shutil.copyfileobj(screenshot.file, buffer)
+    print("saved screenshot")
     try:
+        print("uploading screenshot")
+        start = time.time()
         # Upload to Supabase
         bucket_response = supabase.storage.from_(bucket_name).upload(
             file_path, file_path
         )
-
-        # Retrieve previous state and response if session_id is provided
-        previous_screenshot_url = None
-        previous_response_instruction = None
-        if session_id:
-            response = (
-                supabase.table("session_data")
-                .select("screenshot_url", "response_instruction")
-                .eq("session_id", session_id)
-                .order("created_at", desc=True)
-                .limit(1)
-                .execute()
-            )
-            if response.data:
-                previous_screenshot_url = response.data[0].get("screenshot_url")
-                previous_response_instruction = response.data[0].get(
-                    "response_instruction"
-                )
+        print(f"uploading screenshot took {time.time() - start} seconds")
 
         result = get_instruction(
             product=product,
-            dom_tree=dom_tree,
+            dom_tree="",
             file_path=file_path,
             user_input=user_input,
+            previous_steps=json.loads(previous_steps_json),
             screen_layout=screen_layout,
-            previous_screenshot_url=previous_screenshot_url,
-            previous_response_instruction=previous_response_instruction,
         )
         logger.info(f"Result: {result}")
 
-        # Save the current state and response
-        if session_id:
-            supabase.table("session_data").upsert(
-                {
-                    "session_id": session_id,
-                    "screenshot_url": signed_url["signedURL"],
-                    "response_instruction": result,
-                }
-            ).execute()
-
         return {"result": result}
+    except Exception as e:
+        logger.error(f"Error: {e}")
+        return {"result": "Error"}
     finally:
         # Clean up the temporary file
         os.remove(file_path)
