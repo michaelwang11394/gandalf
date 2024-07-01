@@ -12,7 +12,7 @@ interface GandalfProps {
   widgetColor?: string;
 }
 
-function isTarget(cur: HTMLElement, target: HTMLElement) {
+function isTarget(cur: Element, target: Element): boolean {
   return target === cur || target.contains(cur);
 }
 
@@ -94,10 +94,11 @@ const Gandalf: React.FC<GandalfProps> = ({
     document.addEventListener("keydown", handleKeyDown);
 
     const handleClick = (event: MouseEvent) => {
-      if (event.target instanceof HTMLElement) {
+      if (event.target instanceof Element) {
         if (
           refs.domReference.current &&
-          isTarget(event.target, refs.domReference.current as HTMLElement)
+          refs.domReference.current instanceof Element &&
+          isTarget(event.target, refs.domReference.current)
         ) {
           advanceGuide();
         }

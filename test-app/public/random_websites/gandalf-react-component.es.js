@@ -17095,7 +17095,12 @@ const Z2 = ({
     };
     document.addEventListener("keydown", F);
     const U = (E) => {
-      E.target instanceof HTMLElement && B.domReference.current && j2(E.target, B.domReference.current) && h();
+      console.log("Click detected:", E.target), E.target instanceof Element && (console.log(
+        "Click on element:",
+        E.target.tagName,
+        E.target.id,
+        E.target.className
+      ), B.domReference.current && B.domReference.current instanceof Element && j2(E.target, B.domReference.current) && (console.log("Target element clicked, advancing guide"), h()));
     };
     return document.addEventListener("click", U), () => {
       document.removeEventListener("keydown", F), document.removeEventListener("click", U);
