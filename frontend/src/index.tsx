@@ -35,6 +35,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
     query: string;
     completedSteps: string[];
     hasMoreInstructions: boolean;
+    actionType: "click" | "fill";
   } | null>(null);
   const [state, setState] = useState<State>("idle");
   const [isOpenInput, setIsOpenInput] = useState(false);
@@ -74,6 +75,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
       return;
     }
     refs.setReference(null);
+    setState("loading");
     setTimeout(() => {
       handleSubmit(query);
     }, 100);
@@ -92,7 +94,10 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
     document.addEventListener("keydown", handleKeyDown);
 
     const handleClick = (event: MouseEvent) => {
-      if (event.target instanceof Element) {
+      if (
+        event.target instanceof Element &&
+        currentQueryRef.current?.actionType === "click"
+      ) {
         if (
           refs.domReference.current &&
           refs.domReference.current instanceof Element &&
@@ -102,12 +107,30 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
         }
       }
     };
+
+    const handleInput = (event: Event) => {
+      if (
+        event.target instanceof Element &&
+        currentQueryRef.current?.actionType === "fill"
+      ) {
+        if (
+          refs.domReference.current &&
+          refs.domReference.current instanceof Element &&
+          isTarget(event.target, refs.domReference.current)
+        ) {
+          advanceGuide();
+        }
+      }
+    };
+
     document.addEventListener("click", handleClick);
+    document.addEventListener("input", handleInput);
 
     // Remove event listener on cleanup
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("click", handleClick);
+      document.removeEventListener("input", handleInput);
     };
   }, []);
 
@@ -119,7 +142,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
     setState("loading");
 
     try {
-      const { Instructions, targetElement, hasMoreInstructions } =
+      const { Instructions, targetElement, hasMoreInstructions, actionType } =
         await sendUserRequest({
           query,
           previousSteps: currentQueryRef.current?.completedSteps ?? [],
@@ -135,6 +158,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
           Instructions,
         ],
         hasMoreInstructions,
+        actionType,
       };
       refs.setReference(targetElement);
       setState(hasMoreInstructions ? "waitingForUser" : "idle");
@@ -201,13 +225,13 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
 };
 
 // uncomment this, comment out the export, then comment out the external options in vite.config.js to build a standalone injectable js bundle
-const mountNode = document.createElement("div");
-mountNode.className = gandalfStyles.outerContainer;
-document.body.appendChild(mountNode);
-const product = (window as any).__gandalf_product ?? "demo";
-ReactDOM.render(
-  <Gandalf productName={product} isWidgetVisible={true} />,
-  mountNode
-);
+// const mountNode = document.createElement("div");
+// mountNode.className = gandalfStyles.outerContainer;
+// document.body.appendChild(mountNode);
+// const product = (window as any).__gandalf_product ?? "demo";
+// ReactDOM.render(
+//   <Gandalf productName={product} isWidgetVisible={true} />,
+//   mountNode
+// );
 
-// export default Gandalf;
+export default Gandalf;

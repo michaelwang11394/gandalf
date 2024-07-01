@@ -77,15 +77,9 @@ export async function sendUserRequest({
 
   const resultObject = JSON.parse(jsonString);
   console.log("Result Object:", resultObject);
-  const { Instructions, itemId, hasMoreInstructions } = resultObject;
-  console.log(
-    "Instructions:",
-    Instructions,
-    "itemId:",
-    itemId,
-    "hasMoreInstructions:",
-    hasMoreInstructions
-  );
+  const { Instructions, itemId, hasMoreInstructions, actionType } =
+    resultObject;
+  console.log(resultObject);
 
   // Determine the target for the popover based on availability and document presence
   const targetElement =
@@ -99,5 +93,6 @@ export async function sendUserRequest({
     Instructions,
     targetElement,
     hasMoreInstructions,
+    actionType,
   };
 }
