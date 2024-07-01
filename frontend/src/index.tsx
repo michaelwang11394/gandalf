@@ -79,7 +79,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
     refs.setReference(null);
     setState("loading");
     setTimeout(() => {
-      handleSubmit(query);
+      handleSubmit(query, false);
     }, 100);
   });
 
@@ -136,14 +136,16 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
     };
   }, []);
 
-  const handleSubmit = async (query: string) => {
+  const handleSubmit = async (query: string, showOption: boolean) => {
     console.log("Submitting query from index:", query);
     if (state === "loading") {
       return;
     }
 
     setState("loading");
-    smartButtonRef.current?.showOption();
+    if (showOption) {
+      smartButtonRef.current?.showOption();
+    }
 
     const id = getUniqueId();
     idRef.current = id;
@@ -188,7 +190,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
           isApiCallInProgress={state === "loading"}
           setQuery={setQuery}
           setOpen={setIsOpenInput}
-          handleSubmit={handleSubmit}
+          handleSubmit={(query) => handleSubmit(query, true)}
         />
       </div>
       {popoverContent !== "" && (
