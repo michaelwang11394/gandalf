@@ -7,6 +7,7 @@ import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
 import { sendUserRequest } from "./agent/sendUserRequest";
 import cx from "classnames";
 import { SmartButton, SmartButtonRef } from "./components/SmartButton";
+import { getUniqueId } from "./utilities/getUniqueId";
 
 interface GandalfProps {
   productName: string;
@@ -40,6 +41,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
   const [state, setState] = useState<State>("idle");
   const [isOpenInput, setIsOpenInput] = useState(false);
   const [query, setQuery] = useState("");
+  const idRef = useRef<number | null>(0);
 
   const arrowRef = useRef<HTMLDivElement>(null);
 
@@ -139,7 +141,12 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
     if (state === "loading") {
       return;
     }
+
     setState("loading");
+    smartButtonRef.current?.showOption();
+
+    const id = getUniqueId();
+    idRef.current = id;
 
     try {
       const { Instructions, targetElement, hasMoreInstructions, actionType } =
@@ -148,6 +155,9 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
           previousSteps: currentQueryRef.current?.completedSteps ?? [],
           product: productName,
         });
+      if (idRef.current !== id) {
+        return;
+      }
       if (Instructions) {
         setPopoverContent(Instructions);
       }
@@ -215,9 +225,17 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
         <SmartButton
           ref={smartButtonRef}
           state={state}
-          onClick={() => {
+          onActivate={() => {
             setIsOpenInput(true);
           }}
+          onCacnel={() => {
+            setState("idle");
+            setQuery("");
+            setPopoverContent("");
+            currentQueryRef.current = null;
+            idRef.current = null;
+          }}
+          currentQuery={query}
         />
       )}
     </>
