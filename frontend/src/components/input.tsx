@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { TailSpin } from "react-loader-spinner";
+import classNames from "classnames";
 
 interface InputProps {
   open: boolean;
@@ -66,7 +67,11 @@ export default function Input({
               leaveTo="opacity-0 scale-95"
             >
               <DialogPanel className={styles.dialogPanel}>
-                <div style={{ position: "relative" }}>
+                <div
+                  className={classNames(styles.inputWrapper, {
+                    [styles.loading]: isApiCallInProgress,
+                  })}
+                >
                   <FontAwesomeIcon
                     icon={faSearch}
                     className={styles.searchIcon}
@@ -77,7 +82,7 @@ export default function Input({
                     type="text"
                     autoFocus={true}
                     className={styles.inputField}
-                    placeholder="Enter how I can help you"
+                    placeholder="What do you want to do in the app?"
                     onChange={handleInputChange}
                     value={query}
                   />

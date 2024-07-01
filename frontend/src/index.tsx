@@ -5,11 +5,12 @@ import Input from "./components/input";
 import gandalfStyles from "./Gandalf.module.css";
 import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
 import { sendUserRequest } from "./agent/sendUserRequest";
+import cx from "classnames";
+import { SmartButton, SmartButtonRef } from "./components/SmartButton";
 
 interface GandalfProps {
   productName: string;
   isWidgetVisible?: boolean;
-  widgetColor?: string;
 }
 
 function isTarget(cur: Element, target: Element): boolean {
@@ -26,21 +27,22 @@ function useCallbackRef<T>(callback: () => T): () => T {
   }, []);
 }
 
-const Gandalf: React.FC<GandalfProps> = ({
-  productName,
-  isWidgetVisible,
-  widgetColor,
-}) => {
+export type State = "idle" | "waitingForUser" | "loading";
+
+const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
   const [popoverContent, setPopoverContent] = useState("");
   const currentQueryRef = useRef<{
     query: string;
     completedSteps: string[];
+    hasMoreInstructions: boolean;
   } | null>(null);
-  const [isApiCallInProgress, setIsApiCallInProgress] = useState(false);
+  const [state, setState] = useState<State>("idle");
   const [isOpenInput, setIsOpenInput] = useState(false);
   const [query, setQuery] = useState("");
 
   const arrowRef = useRef<HTMLDivElement>(null);
+
+  const smartButtonRef = useRef<SmartButtonRef>(null);
 
   const { refs, floatingStyles, middlewareData, placement } = useFloating({
     middleware: [offset(10), flip(), shift(), arrow({ element: arrowRef })],
@@ -55,27 +57,23 @@ const Gandalf: React.FC<GandalfProps> = ({
       left: "right",
     }[placement.split("-")[0] as "top" | "right" | "bottom" | "left"] || "top";
 
-  const customFloatingStyles = {
-    ...floatingStyles,
-    backgroundColor: "rgba(250, 250, 250, 0.95)",
-    color: "#000000",
-    border: "none",
-    borderRadius: "13px",
-    padding: "16px",
-    boxShadow: "0 8px 32px rgba(0, 0, 0, 0.15)",
-    backdropFilter: "blur(10px)",
-    WebkitBackdropFilter: "blur(10px)",
-    zIndex: 1000,
-    fontFamily:
-      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-    fontSize: "14px",
-    lineHeight: "1.4",
-    overflow: "visible",
-  };
-
   const advanceGuide = useCallbackRef(() => {
+    const currentQuery = currentQueryRef.current;
+    if (!currentQuery) {
+      return;
+    }
+    if (!currentQuery.hasMoreInstructions) {
+      setPopoverContent("");
+      setState("idle");
+      smartButtonRef.current?.showComplete();
+      setQuery("");
+      return;
+    }
+    const query = currentQuery.query;
+    if (!query) {
+      return;
+    }
     refs.setReference(null);
-    setPopoverContent("");
     setTimeout(() => {
       handleSubmit(query);
     }, 100);
@@ -115,10 +113,10 @@ const Gandalf: React.FC<GandalfProps> = ({
 
   const handleSubmit = async (query: string) => {
     console.log("Submitting query from index:", query);
-    if (isApiCallInProgress) {
+    if (state === "loading") {
       return;
     }
-    setIsApiCallInProgress(true);
+    setState("loading");
 
     try {
       const { Instructions, targetElement, hasMoreInstructions } =
@@ -130,23 +128,20 @@ const Gandalf: React.FC<GandalfProps> = ({
       if (Instructions) {
         setPopoverContent(Instructions);
       }
-      if (!hasMoreInstructions) {
-        currentQueryRef.current = null;
-      } else {
-        currentQueryRef.current = {
-          query,
-          completedSteps: [
-            ...(currentQueryRef.current?.completedSteps ?? []),
-            Instructions,
-          ],
-        };
-      }
+      currentQueryRef.current = {
+        query,
+        completedSteps: [
+          ...(currentQueryRef.current?.completedSteps ?? []),
+          Instructions,
+        ],
+        hasMoreInstructions,
+      };
       refs.setReference(targetElement);
+      setState(hasMoreInstructions ? "waitingForUser" : "idle");
+      setIsOpenInput(false);
     } catch (e) {
       console.error(e);
-    } finally {
-      setIsApiCallInProgress(false);
-      setIsOpenInput(false);
+      setState("idle");
     }
   };
 
@@ -156,7 +151,7 @@ const Gandalf: React.FC<GandalfProps> = ({
         <Input
           open={isOpenInput}
           query={query}
-          isApiCallInProgress={isApiCallInProgress}
+          isApiCallInProgress={state === "loading"}
           setQuery={setQuery}
           setOpen={setIsOpenInput}
           handleSubmit={handleSubmit}
@@ -165,47 +160,41 @@ const Gandalf: React.FC<GandalfProps> = ({
       {popoverContent !== "" && (
         <div
           ref={refs.setFloating}
-          style={customFloatingStyles}
+          style={floatingStyles}
           data-isgandalf={true}
         >
-          {popoverContent}
-          <div
-            ref={arrowRef}
-            className={gandalfStyles.arrow}
-            style={{
-              [staticSide]: "-6px",
-              ...(middlewareData.arrow?.x != null && {
-                left: `${middlewareData.arrow.x}px`,
-              }),
-              ...(middlewareData.arrow?.y != null && {
-                top: `${middlewareData.arrow.y}px`,
-              }),
-            }}
-          />
+          <div className={gandalfStyles.floatingPopover}>
+            {popoverContent}
+            {state === "loading" && (
+              <div className={gandalfStyles.popoverLoadingOuter}>
+                <div className={gandalfStyles.popoverLoading}></div>
+              </div>
+            )}
+            <div
+              ref={arrowRef}
+              className={gandalfStyles.arrow}
+              style={{
+                [staticSide]: "-6px",
+                ...(middlewareData.arrow?.x != null && {
+                  left: `${middlewareData.arrow.x}px`,
+                }),
+                ...(middlewareData.arrow?.y != null && {
+                  top: `${middlewareData.arrow.y}px`,
+                }),
+              }}
+            />
+          </div>
         </div>
       )}
 
       {isWidgetVisible && (
-        <button
-          className={gandalfStyles.widgetButton}
-          style={{ backgroundColor: widgetColor || "#007bff" }}
-          disabled={!isWidgetVisible}
-          onMouseDown={(e) => {
-            e.stopPropagation();
+        <SmartButton
+          ref={smartButtonRef}
+          state={state}
+          onClick={() => {
+            setIsOpenInput(true);
           }}
-          onPointerDown={(e) => {
-            e.stopPropagation();
-          }}
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            setIsOpenInput(!isOpenInput);
-          }}
-          aria-label="Toggle chat"
-          data-isgandalf={true}
-        >
-          {isApiCallInProgress ? "<Cool animation>" : "💬"}
-        </button>
+        />
       )}
     </>
   );
@@ -213,13 +202,11 @@ const Gandalf: React.FC<GandalfProps> = ({
 
 // uncomment this, comment out the export, then comment out the external options in vite.config.js to build a standalone injectable js bundle
 const mountNode = document.createElement("div");
-mountNode.style.zIndex = "100000";
-mountNode.style.position = "fixed";
-mountNode.style.pointerEvents = "auto";
+mountNode.className = gandalfStyles.outerContainer;
 document.body.appendChild(mountNode);
 const product = (window as any).__gandalf_product ?? "demo";
 ReactDOM.render(
-  <Gandalf productName={product} isWidgetVisible={true} widgetColor="pink" />,
+  <Gandalf productName={product} isWidgetVisible={true} />,
   mountNode
 );
 

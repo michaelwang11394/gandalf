@@ -27,9 +27,7 @@
   transform: scale(1);
   overflow: hidden;
   border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
 }
 
@@ -43,7 +41,8 @@
   pointer-events: none;
 }
 
-.inputField {
+/* Make this more specific with type="text" so that it's not overriden by other app styles */
+.inputField[type="text"] {
   height: 48px;
   width: 100%;
   border: 0;
@@ -54,4 +53,41 @@
   font-size: 0.875rem;
   border-radius: 16px;
   outline: none;
+}
+
+.inputWrapper {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2px;
+  border-radius: 12px;
+}
+
+.inputWrapper.loading {
+  background: linear-gradient(135deg,
+      rgba(65, 88, 208, 1) 0%,
+      rgba(200, 80, 192, 1) 25%,
+      rgba(255, 204, 112, 1) 50%,
+      rgba(80, 200, 120, 1) 75%,
+      rgba(65, 88, 208, 1) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 100% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 0% 100%;
+  }
 }
