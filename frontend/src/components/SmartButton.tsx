@@ -74,29 +74,45 @@ export const SmartButton = forwardRef<SmartButtonRef, SmartButtonProps>(
           </div>
         </button>
         {showOption && state !== "idle" && (
-          <div className={gandalfStyles.options} data-isGandalf={true}>
-            Current processing: {currentQuery}
-            <button
-              className={gandalfStyles.optionsButton}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                onCacnel();
-                setShowOption(false);
-              }}
-            >
-              Cancel
-            </button>
-            <button
-              className={gandalfStyles.optionsButton}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setShowOption(false);
-              }}
-            >
-              Hide
-            </button>
+          <div
+            className={gandalfStyles.options}
+            data-isGandalf={true}
+            onMouseDown={(e) => {
+              e.stopPropagation();
+            }}
+            onPointerDown={(e) => {
+              e.stopPropagation();
+            }}
+          >
+            <div className={gandalfStyles.optionPane}>{currentQuery}</div>
+            <div className={gandalfStyles.optionPane}>
+              <div className={gandalfStyles.stateText}>
+                {state === "loading"
+                  ? "Loading..."
+                  : "Waiting for user action..."}
+              </div>
+              <button
+                className={gandalfStyles.optionsButton}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  onCacnel();
+                  setShowOption(false);
+                }}
+              >
+                Cancel
+              </button>
+              <button
+                className={gandalfStyles.optionsButton}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setShowOption(false);
+                }}
+              >
+                Hide
+              </button>
+            </div>
           </div>
         )}
       </>

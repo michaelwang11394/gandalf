@@ -3,7 +3,14 @@ import ReactDOM from "react-dom";
 import Input from "./components/input";
 
 import gandalfStyles from "./Gandalf.module.css";
-import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
+import {
+  useFloating,
+  offset,
+  flip,
+  shift,
+  arrow,
+  autoUpdate,
+} from "@floating-ui/react";
 import { sendUserRequest } from "./agent/sendUserRequest";
 import cx from "classnames";
 import { SmartButton, SmartButtonRef } from "./components/SmartButton";
@@ -90,6 +97,7 @@ const Gandalf: React.FC<GandalfProps> = ({
 
   const { refs, floatingStyles, middlewareData, placement } = useFloating({
     middleware: [offset(10), flip(), shift(), arrow({ element: arrowRef })],
+    whileElementsMounted: autoUpdate,
   });
 
   // Custom styles for the floating element
