@@ -32,18 +32,18 @@ def get_instruction(
             "role": "system",
             "content": (
                 f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, "
-                "and you will be given a screenshot of the user's current page, a json representation of their page that identifies each various ui elements and their approximate position, the steps they have taken so far, and a summarized plan of how to solve the issue.\n"
+                "and you will be given a screenshot of the user's current page, a json representation of their page that identifies each various ui elements and their approximate position, the steps they have taken so far, and a highly generaalized plan of how to solve the issue but may have accuracy issues.\n"
                 "You have one job and you must return it in the correct format or else bad things might happen.\n"
+                "Here is the summarized plan. Please remember that it may be incorrect so you should use your best judgement \n"
+                f"{master_plan}"
                 "Your job is to return the following:\n"
                 "1- The text Instruction for the next step they must take to complete their task or solve their issue based on their current progress. Also, you should consider the most recent state and instructions given in the past when giving the user the next step. \n"
                 "2- The itemId of the element they need to click, fill, or take any action on. Again, you are ONLY focused on the NEXT step (1 step) that the user must take, given their current status to resolve the issue.\n"
                 "3- A true or false flag 'hasMoreInstructions' indicating whether there are more steps after the current one.\n"
-                '4- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": , "actionType": "click" | "fill" } and nothing else.\n'
+                "4- NEVER tell the user to view other documentation or an example project. That's very unhelpful and bad things will happen if you do that. \n"
+                "5- The summarized plan may be incorrect at specific steps, so you should consider the user's current state and the steps they have taken so far to provide the correct next step. \n"
+                '6- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": , "actionType": "click" | "fill" } and nothing else.\n'
                 'An example of a properly formatted response would be: { "Instructions": "Click the submit button", "itemId": 3, "hasMoreInstructions": false, "actionType": "click" }\n'
-                "5- NEVER tell the user to view other documentation or an example project. That's very unhelpful and bad things will happen if you do that. \n"
-                "6- The summarized plan may be incorrect at specific steps, so you should consider the user's current state and the steps they have taken so far to provide the correct next step. \n"
-                "Here is the summarized plan: \n"
-                f"{master_plan}"
             ),
         },
         {

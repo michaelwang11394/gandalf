@@ -25,7 +25,8 @@ def get_master_plan(product: str, user_input: str):
                 "1- A list of steps, each containing a step number and an instruction describing how to complete that step.\n"
                 '2- You must ONLY return the following JSON format: { "steps": [{ "stepNumber": 1, "instruction": "..." }, { "stepNumber": 2, "instruction": "..." }, ...]} and nothing else.\n'
                 "3- Ensure all steps are included in a single JSON structure.\n"
-                "4- Do NOT provide any code snippets or code examples. Just text instructions are great.\n"
+                "4- Only give steps that can be done in the product's interface. Do not provide steps that require code or other external tools.\n"
+                "5- Do NOT provide any code snippets or code examples. Just text instructions are great.\n"
             ),
         },
         {
