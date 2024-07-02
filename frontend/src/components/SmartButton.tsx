@@ -78,7 +78,9 @@ export const SmartButton = forwardRef<SmartButtonRef, SmartButtonProps>(
             Current processing: {currentQuery}
             <button
               className={gandalfStyles.optionsButton}
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 onCacnel();
                 setShowOption(false);
               }}
@@ -87,7 +89,9 @@ export const SmartButton = forwardRef<SmartButtonRef, SmartButtonProps>(
             </button>
             <button
               className={gandalfStyles.optionsButton}
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 setShowOption(false);
               }}
             >
