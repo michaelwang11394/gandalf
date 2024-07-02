@@ -12,6 +12,7 @@ import { getUniqueId } from "./utilities/getUniqueId";
 interface GandalfProps {
   productName: string;
   isWidgetVisible?: boolean;
+  apiUrl: string;
 }
 
 function isTarget(cur: Element, target: Element): boolean {
@@ -30,7 +31,11 @@ function useCallbackRef<T>(callback: () => T): () => T {
 
 export type State = "idle" | "waitingForUser" | "loading";
 
-const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
+const Gandalf: React.FC<GandalfProps> = ({
+  productName,
+  isWidgetVisible,
+  apiUrl,
+}) => {
   const [popoverContent, setPopoverContent] = useState("");
   const currentQueryRef = useRef<{
     query: string;
@@ -156,6 +161,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
           query,
           previousSteps: currentQueryRef.current?.completedSteps ?? [],
           product: productName,
+          apiUrl,
         });
       if (idRef.current !== id) {
         return;
@@ -245,13 +251,17 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
 };
 
 // uncomment this, comment out the export, then comment out the external options in vite.config.js to build a standalone injectable js bundle
-// const mountNode = document.createElement("div");
-// mountNode.className = gandalfStyles.outerContainer;
-// document.body.appendChild(mountNode);
-// const product = (window as any).__gandalf_product ?? "demo";
-// ReactDOM.render(
-//   <Gandalf productName={product} isWidgetVisible={true} />,
-//   mountNode
-// );
+const mountNode = document.createElement("div");
+mountNode.className = gandalfStyles.outerContainer;
+document.body.appendChild(mountNode);
+const product = (window as any).__gandalf_product ?? "demo";
+const apiUrl = (window as any).__gandalf_api_url ?? "http://localhost:8000";
+// const apiUrl =
+//   (window as any).__gandalf_api_url ??
+//   "https://pu34tzbmgb.execute-api.us-west-2.amazonaws.com/default/gandalf_api/gandalf";
+ReactDOM.render(
+  <Gandalf productName={product} isWidgetVisible={true} apiUrl={apiUrl} />,
+  mountNode
+);
 
-export default Gandalf;
+// export default Gandalf;

@@ -6,12 +6,14 @@ type SendUserRequestArgs = {
   product: string;
   query: string;
   previousSteps: string[];
+  apiUrl: string;
 };
 
 export async function sendUserRequest({
   product,
   query,
   previousSteps,
+  apiUrl,
 }: SendUserRequestArgs) {
   const domTreeString = serializeDocument(
     parseTree(document.documentElement.outerHTML)
@@ -66,11 +68,7 @@ export async function sendUserRequest({
 
   console.log(formData);
 
-  const response = await fetch("http://localhost:8000/gandalf", {
-    // uncomment for deployed endpoint
-    // const response = await fetch(
-    //   "https://pu34tzbmgb.execute-api.us-west-2.amazonaws.com/default/gandalf_api/gandalf",
-    //   {
+  const response = await fetch(`${apiUrl}/gandalf`, {
     method: "POST",
     body: formData,
   });

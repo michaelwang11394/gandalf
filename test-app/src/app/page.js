@@ -30,7 +30,7 @@ function Home() {
       <Gandalf
         productName="Todo App"
         isWidgetVisible={true}
-        widgetColor="pink"
+        apiUrl="http://localhost:8000"
       />
       <Header className="bg-pink-500 text-4xl text-white" />
       <TODOHero todos_completed={todos_completed} total_todos={total_todos} />
