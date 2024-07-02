@@ -67,6 +67,10 @@ export async function sendUserRequest({
   console.log(formData);
 
   const response = await fetch("http://localhost:8000/gandalf", {
+    // uncomment for deployed endpoint
+    // const response = await fetch(
+    //   "https://pu34tzbmgb.execute-api.us-west-2.amazonaws.com/default/gandalf_api/gandalf",
+    //   {
     method: "POST",
     body: formData,
   });

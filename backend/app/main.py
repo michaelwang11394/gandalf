@@ -7,6 +7,7 @@ import os
 import shutil
 import uuid
 import httpx
+import io
 
 from supabase import Client, create_client
 
@@ -19,6 +20,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 from starlette.responses import Response
+
+from mangum import Mangum
 
 # OpenAI Realm Experiment 1
 # from app.experiments.openai_realm_1.base_2 import (
@@ -82,19 +85,15 @@ async def index(
     print("starting")
     # Save the uploaded file temporarily
     unique_id = uuid.uuid4()
-    temp_dir = "temp"
-    if not os.path.exists(temp_dir):
-        os.makedirs(temp_dir)
     file_path = f"temp/{unique_id}_{screenshot.filename}"
-    with open(file_path, "wb") as buffer:
-        shutil.copyfileobj(screenshot.file, buffer)
-    print("saved screenshot")
     try:
-        print("uploading screenshot")
+        print(f"uploading screenshot {file_path}")
         start = time.time()
         # Upload to Supabase
+        bytes = screenshot.file.read()
+        print("byte size", len(bytes))
         bucket_response = supabase.storage.from_(bucket_name).upload(
-            file_path, file_path
+            file_path, bytes
         )
         print(f"uploading screenshot took {time.time() - start} seconds")
 
@@ -112,6 +111,9 @@ async def index(
     except Exception as e:
         logger.error(f"Error: {e}")
         return {"result": "Error"}
-    finally:
-        # Clean up the temporary file
-        os.remove(file_path)
+
+@app.api_route("/{path_name:path}", methods=["GET"])
+async def catch_all(request: Request, path_name: str):
+   return {"request_method": request.method, "path_name": path_name}
+
+handler = Mangum(app, api_gateway_base_path="/gandalf_api")

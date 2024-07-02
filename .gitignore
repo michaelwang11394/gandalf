@@ -17,3 +17,6 @@ backend/venv
 .env
 frontend/.yarn
 frontend/yarn.lock
+
+# lambda bundle
+function.zip
