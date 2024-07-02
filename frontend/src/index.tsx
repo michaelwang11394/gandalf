@@ -3,11 +3,36 @@ import ReactDOM from "react-dom";
 import Input from "./components/input";
 
 import gandalfStyles from "./Gandalf.module.css";
-import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
+import {
+  useFloating,
+  offset,
+  flip,
+  shift,
+  arrow,
+  autoUpdate,
+} from "@floating-ui/react";
 import { sendUserRequest } from "./agent/sendUserRequest";
 import cx from "classnames";
 import { SmartButton, SmartButtonRef } from "./components/SmartButton";
 import { getUniqueId } from "./utilities/getUniqueId";
+
+function detectNodeRemoval(node: Element, callback: () => void) {
+  const observer = new MutationObserver((record) => {
+    if (record.some((r) => r.removedNodes.length > 0)) {
+      if (!document.contains(node)) {
+        observer.disconnect();
+        callback();
+      }
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+
+  return observer;
+}
 
 interface GandalfProps {
   productName: string;
@@ -29,6 +54,23 @@ function useCallbackRef<T>(callback: () => T): () => T {
   }, []);
 }
 
+function useElementRemovalObserver() {
+  const observerRef = useRef<MutationObserver | null>(null);
+
+  return {
+    observe(node: Element, callback: () => void) {
+      this.disconnect();
+      observerRef.current = detectNodeRemoval(node, callback);
+    },
+    disconnect() {
+      const observer = observerRef.current;
+      if (observer) {
+        observer.disconnect();
+      }
+    },
+  };
+}
+
 export type State = "idle" | "waitingForUser" | "loading";
 
 const Gandalf: React.FC<GandalfProps> = ({
@@ -47,6 +89,7 @@ const Gandalf: React.FC<GandalfProps> = ({
   const [isOpenInput, setIsOpenInput] = useState(false);
   const [query, setQuery] = useState("");
   const idRef = useRef<number | null>(0);
+  const observer = useElementRemovalObserver();
 
   const arrowRef = useRef<HTMLDivElement>(null);
 
@@ -54,6 +97,7 @@ const Gandalf: React.FC<GandalfProps> = ({
 
   const { refs, floatingStyles, middlewareData, placement } = useFloating({
     middleware: [offset(10), flip(), shift(), arrow({ element: arrowRef })],
+    whileElementsMounted: autoUpdate,
   });
 
   // Custom styles for the floating element
@@ -83,7 +127,6 @@ const Gandalf: React.FC<GandalfProps> = ({
     if (!query) {
       return;
     }
-    refs.setReference(null);
     setState("loading");
     setTimeout(() => {
       handleSubmit(query, false);
@@ -182,6 +225,13 @@ const Gandalf: React.FC<GandalfProps> = ({
       };
       console.log(targetElement);
       refs.setReference(targetElement);
+      if (targetElement) {
+        observer.observe(targetElement, () => {
+          setPopoverContent("");
+        });
+      } else {
+        observer.disconnect();
+      }
       setState(hasMoreInstructions ? "waitingForUser" : "idle");
       setIsOpenInput(false);
     } catch (e) {
