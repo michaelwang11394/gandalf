@@ -23,20 +23,19 @@ from starlette.responses import Response
 
 from mangum import Mangum
 
-# OpenAI Realm Experiment 1
-# from app.experiments.openai_realm_1.base_2 import (
+# from app.experiments.realm_with_js.realm_with_js import (
 #     get_instruction,
 #     bucket_name,
 #     supabase,
 # )
 
-# OpenAI Realm Experiment 2
-# from app.experiments.openai_realm_2.base_3 import (
-from app.experiments.realm_with_js.realm_with_js import (
+from app.experiments.master_agent.master_agent import (
     get_instruction,
     bucket_name,
     supabase,
 )
+from app.experiments.master_agent.get_master_plan import get_master_plan
+
 
 class TimeoutMiddleware(BaseHTTPMiddleware):
     def __init__(self, app, timeout: int):
@@ -50,6 +49,7 @@ class TimeoutMiddleware(BaseHTTPMiddleware):
                 return response
         except httpx.RequestError:
             return Response("Request timed out", status_code=504)
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -79,6 +79,7 @@ async def index(
     product: str = Form(...),
     user_input: str = Form(...),
     screen_layout: str = Form(...),
+    current_plan: str = Form(None),
     screenshot: UploadFile = File(...),
     previous_steps_json: str = Form(...),
 ):
@@ -86,20 +87,22 @@ async def index(
     # Save the uploaded file temporarily
     unique_id = uuid.uuid4()
     file_path = f"temp/{unique_id}_{screenshot.filename}"
+    
+    # Get master plan for the product
+    master_plan = get_master_plan(product=product, user_input=user_input) if current_plan is None else current_plan
+    
     try:
         print(f"uploading screenshot {file_path}")
         start = time.time()
         # Upload to Supabase
         bytes = screenshot.file.read()
         print("byte size", len(bytes))
-        bucket_response = supabase.storage.from_(bucket_name).upload(
-            file_path, bytes
-        )
+        bucket_response = supabase.storage.from_(bucket_name).upload(file_path, bytes)
         print(f"uploading screenshot took {time.time() - start} seconds")
 
         result = get_instruction(
             product=product,
-            dom_tree="",
+            master_plan=master_plan,
             file_path=file_path,
             user_input=user_input,
             previous_steps=json.loads(previous_steps_json),
@@ -112,8 +115,10 @@ async def index(
         logger.error(f"Error: {e}")
         return {"result": "Error"}
 
+
 @app.api_route("/{path_name:path}", methods=["GET"])
 async def catch_all(request: Request, path_name: str):
-   return {"request_method": request.method, "path_name": path_name}
+    return {"request_method": request.method, "path_name": path_name}
+
 
 handler = Mangum(app, api_gateway_base_path="/gandalf_api")
