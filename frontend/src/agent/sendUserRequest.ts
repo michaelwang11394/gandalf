@@ -7,6 +7,7 @@ type SendUserRequestArgs = {
   query: string;
   previousSteps: string[];
   apiUrl: string;
+  currentPlan: string | undefined;
 };
 
 export async function sendUserRequest({
@@ -14,6 +15,7 @@ export async function sendUserRequest({
   query,
   previousSteps,
   apiUrl,
+  currentPlan,
 }: SendUserRequestArgs) {
   const domTreeString = serializeDocument(
     parseTree(document.documentElement.outerHTML)
@@ -61,6 +63,9 @@ export async function sendUserRequest({
   formData.append("product", product);
   formData.append("previous_steps_json", JSON.stringify(previousSteps));
   formData.append("screen_layout", backendScreenLayout);
+  if (currentPlan) {
+    formData.append("current_plan", currentPlan);
+  }
   console.log(backendScreenLayout);
   if (blob) {
     formData.append("screenshot", blob, "screenshot.png");
@@ -79,7 +84,7 @@ export async function sendUserRequest({
 
   const resultObject = JSON.parse(jsonString);
   console.log("Result Object:", resultObject);
-  const { Instructions, itemId, hasMoreInstructions, actionType } =
+  const { Instructions, itemId, hasMoreInstructions, actionType, updatedPlan } =
     resultObject;
   console.log(resultObject);
 
@@ -96,5 +101,6 @@ export async function sendUserRequest({
     targetElement,
     hasMoreInstructions,
     actionType,
+    updatedPlan,
   };
 }

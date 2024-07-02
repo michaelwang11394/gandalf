@@ -38,23 +38,26 @@ def get_instruction(
                 "1- The text Instruction for the next step they must take to complete their task or solve their issue based on their current progress. Also, you should consider the most recent state and instructions given in the past when giving the user the next step. \n"
                 "2- The itemId of the element they need to click, fill, or take any action on. Again, you are ONLY focused on the NEXT step (1 step) that the user must take, given their current status to resolve the issue.\n"
                 "3- A true or false flag 'hasMoreInstructions' indicating whether there are more steps after the current one.\n"
-                '4- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": , "actionType": "click" | "fill" } and nothing else.\n'
-                'An example of a properly formatted response would be: { "Instructions": "Click the submit button", "itemId": 3, "hasMoreInstructions": false, "actionType": "click" }\n'
-                "5- NEVER tell the user to view other documentation or an example project. That's very unhelpful and bad things will happen if you do that. \n"
-                "6- The summarized plan may be incorrect at specific steps, so you should consider the user's current state and the steps they have taken so far to provide the correct next step. \n"
-                "Here is the summarized plan: \n"
-                f"{master_plan}"
+                "4- An updated plan consisting of the remaining steps.\n"
+                'An example of a properly formatted response would be: { "Instructions": "Click the submit button", "itemId": 3, "hasMoreInstructions": false, "actionType": "click", "updatedPlan": "..." }\n'
+                "6- The plan may be incorrect at specific steps, so you should consider the user's current state and the steps they have taken so far to provide the correct next step. \n"
+                "7- Omit actions in the plan that requires going out of the product or are related to docs or tutorials.\n"
+                '7- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": , "actionType": "click" | "fill", "updatedPlan": } and nothing else.\n'
             ),
         },
         {
             "role": "user",
             "content": [
-                {"type": "text", "text": f"Here is my current issue: {user_input}"},
-                {"type": "text", "text": "Here is the screenshot of my current view:"},
+                {"type": "text", "text": f"Question: {user_input}"},
+                {"type": "text", "text": "Screenshot:"},
                 {"type": "image_url", "image_url": {"url": signed_url["signedURL"]}},
                 {
                     "type": "text",
-                    "text": f"Here is the JSON representation of a subset of elements in the current page layout:\n {screen_layout} that should match the screenshot.",
+                    "text": f"JSON representation of a subset of elements in the current page layout:\n {screen_layout} that should match the screenshot.",
+                },
+                {
+                    "type": "text",
+                    "text": f"Current plan: {master_plan}",
                 },
             ],
         },
