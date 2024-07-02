@@ -15,6 +15,7 @@ import { sendUserRequest } from "./agent/sendUserRequest";
 import cx from "classnames";
 import { SmartButton, SmartButtonRef } from "./components/SmartButton";
 import { getUniqueId } from "./utilities/getUniqueId";
+import { isLoading } from "./utilities/isLoading";
 
 function detectNodeRemoval(node: Element, callback: () => void) {
   const observer = new MutationObserver((record) => {
@@ -128,9 +129,12 @@ const Gandalf: React.FC<GandalfProps> = ({
       return;
     }
     setState("loading");
-    setTimeout(() => {
+    (async () => {
+      do {
+        await new Promise((resolve) => setTimeout(resolve, 500));
+      } while (isLoading());
       handleSubmit(query, false);
-    }, 100);
+    })();
   });
 
   // Effect to open the popover when the user presses the keyboard shortcut
