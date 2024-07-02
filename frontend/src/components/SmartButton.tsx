@@ -74,7 +74,7 @@ export const SmartButton = forwardRef<SmartButtonRef, SmartButtonProps>(
           </div>
         </button>
         {showOption && state !== "idle" && (
-          <div className={gandalfStyles.options}>
+          <div className={gandalfStyles.options} data-isGandalf={true}>
             Current processing: {currentQuery}
             <button
               className={gandalfStyles.optionsButton}

@@ -71,10 +71,12 @@ const Gandalf: React.FC<GandalfProps> = ({
       return;
     }
     if (!currentQuery.hasMoreInstructions) {
-      setPopoverContent("");
       setState("idle");
-      smartButtonRef.current?.showComplete();
       setQuery("");
+      setPopoverContent("");
+      currentQueryRef.current = null;
+      idRef.current = null;
+      smartButtonRef.current?.showComplete();
       return;
     }
     const query = currentQuery.query;
@@ -130,7 +132,7 @@ const Gandalf: React.FC<GandalfProps> = ({
       }
     };
 
-    document.addEventListener("click", handleClick);
+    document.addEventListener("click", handleClick, true);
     document.addEventListener("input", handleInput);
 
     // Remove event listener on cleanup
@@ -178,6 +180,7 @@ const Gandalf: React.FC<GandalfProps> = ({
         hasMoreInstructions,
         actionType,
       };
+      console.log(targetElement);
       refs.setReference(targetElement);
       setState(hasMoreInstructions ? "waitingForUser" : "idle");
       setIsOpenInput(false);
