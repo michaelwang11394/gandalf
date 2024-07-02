@@ -16,8 +16,6 @@ const enc = get_encoding("cl100k_base");
 
 const supabase = makeSupabase();
 
-const CHUNK_SIZE = 3000;
-
 class ConcurrentQueue {
   #queue: (() => Promise<void>)[];
   #concurrent: number;
@@ -50,6 +48,41 @@ class ConcurrentQueue {
   }
 }
 
+const MAX_CHUNK_SIZE = 7000; // Conservative since OpenAI limit is 8192
+
+function chunkDocument(content: string, title: string): string[] {
+  const chunks: string[] = [];
+  let currentChunk = title + "\n" + content;
+
+  if (enc.encode(currentChunk).length <= MAX_CHUNK_SIZE) {
+    // If the entire document fits, return it as a single chunk
+    return [currentChunk];
+  }
+
+  // If it doesn't fit, we'll split it into smaller chunks
+  const lines = content.split("\n");
+  currentChunk = title + "\n";
+
+  for (const line of lines) {
+    const potentialChunk = currentChunk + line + "\n";
+    if (
+      enc.encode(potentialChunk).length > MAX_CHUNK_SIZE &&
+      currentChunk !== title + "\n"
+    ) {
+      chunks.push(currentChunk);
+      currentChunk = title + "\n" + line + "\n";
+    } else {
+      currentChunk = potentialChunk;
+    }
+  }
+
+  if (currentChunk !== title + "\n") {
+    chunks.push(currentChunk);
+  }
+
+  return chunks;
+}
+
 async function main() {
   const result = await supabase
     .from("scrapped")
@@ -66,30 +99,11 @@ async function main() {
     const processedChunks = new Set<string>();
     for (let i = 0; i < data.length; i++) {
       const row = data[i];
-      const smart_markdown = new SmartMarkdown();
-      const blocks = smart_markdown
-        .parse({
-          content: row.markdown,
-        })
-        .blocks.map((b) => {
-          if (b.text.endsWith("\n")) {
-            return b.text;
-          } else {
-            return b.text + "\n";
-          }
-        });
-      const title = row.title + "\n";
-      const chunks: string[] = [];
-      let curChunk = title;
-      blocks.forEach((b) => {
-        if (enc.encode(curChunk + b).length > CHUNK_SIZE) {
-          chunks.push(curChunk);
-          curChunk = title + b;
-        } else {
-          curChunk += b;
-        }
-      });
-      chunks.push(curChunk);
+      const title = row.title;
+      const content = row.markdown;
+
+      const chunks = chunkDocument(content, title);
+
       const newChunks = chunks.filter((c) => !processedChunks.has(c));
       if (newChunks.length > 0) {
         newChunks.forEach((c) => processedChunks.add(c));
@@ -100,7 +114,7 @@ async function main() {
           });
           for (let i = 0; i < newChunks.length; i++) {
             supabaseQueue.enqueue(async () => {
-              const result = await supabase.from("supabase_embedding").insert({
+              const result = await supabase.from("supabase_embeddings").insert({
                 body: newChunks[i],
                 embedding: r.data[i].embedding,
               });
