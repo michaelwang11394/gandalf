@@ -1,3 +1,4 @@
+import json
 from openai import OpenAI
 from supabase import Client, create_client
 from app.settings import Settings
@@ -20,12 +21,8 @@ def get_master_plan(product: str, user_input: str):
             "role": "system",
             "content": (
                 f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, and you will be given relevent product context from documentation. Return for the user a complete set of instructions to fix the issue. \n"
-                "Your job is to return a summarized plan only on the action that the user can take in the product web app to resolve their issue.\n"
-                "Do so in 2 steps. In the first step, come up with all of the relevant instructions. In the second step, extract the instructions that can be performed within the product's web interface, which should exclude code samples, linkes to tutorials or docs.\n"
-                "### Step 1: Complete Set of Instructions:\n"
-                "..."
-                "### Step 2: Extracted In-Web-App-Product Steps\n"
-                "..."
+                "Your job is to return a summarized plan consisting of only the actions that the user can take in the product web app to resolve their issue.\n"
+                "Do so in 2 steps. In the first step, come up with all of the relevant instructions. In the second step, extract the instructions that can be performed within the product's web interface, which should exclude code samples and exclude links to tutorials or docs.\n"
             ),
         },
         {
@@ -43,16 +40,42 @@ def get_master_plan(product: str, user_input: str):
     print("Getting master plan...")
 
     response = openai.chat.completions.create(
-        model="gpt-4o", messages=messages, temperature=0, timeout=1000
+        model="gpt-4o",
+        messages=messages,
+        functions=[
+            {
+                "name": "format_master_plan",
+                "description": "Generate a master plan with complete instructions and extracted web app steps",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "complete_instructions": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "description": "An array of all relevant instructions to resolve the user's issue",
+                        },
+                        "web_app_steps": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "description": "An array of steps that can be performed within the product's web interface, which should exclude code samples and exclude links to tutorials or docs.",
+                        },
+                    },
+                    "required": ["complete_instructions", "web_app_steps"],
+                },
+            }
+        ],
+        function_call={"name": "format_master_plan"},
+        temperature=0,
+        timeout=1000,
     )
 
-    print(f"Ppenai took {time.time() - start} seconds to retreive the master plan")
+    print(f"Openai took {time.time() - start} seconds to retreive the master plan")
 
-    master_plan = response.choices[0].message.content
-    master_plan = (
-        master_plan.removeprefix("```json\n")
-        .removesuffix("\n```")
-        .split("### Step 2: Extracted In-Web-App-Product Steps\n")
-        .pop()
-    )
-    return master_plan
+    function_response = response.choices[0].message.function_call
+    if function_response and function_response.name == "format_master_plan":
+        master_plan = json.loads(function_response.arguments)
+        web_app_steps = master_plan.get("web_app_steps", [])
+        return web_app_steps
+    else:
+        print("No function response found for master plan")
+        return ""
