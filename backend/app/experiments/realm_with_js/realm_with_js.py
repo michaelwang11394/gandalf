@@ -35,8 +35,8 @@ def get_instruction(
                 "1- The text Instruction for the next step they must take to complete their task or solve their issue based on their current progress. Also, you should consider the most recent state and instructions given in the past when giving the user the next step. \n"
                 "2- The itemId of the element they need to click, fill, or take any action on. Again, you are ONLY focused on the NEXT step (1 step) that the user must take, given their current status to resolve the issue.\n"
                 "3- A true or false flag 'hasMoreInstructions' indicating whether there are more steps after the current one.\n"
-                '4- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": } and nothing else.\n'
-                'An example of a properly formatted response would be: { "Instructions": "Click the submit button", "itemId": 3, "hasMoreInstructions": false }\n'
+                '4- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": , "actionType": "click" | "fill" } and nothing else.\n'
+                'An example of a properly formatted response would be: { "Instructions": "Click the submit button", "itemId": 3, "hasMoreInstructions": false, "actionType": "click" }\n'
                 "Here are some types of Instructions to NEVER give: \n"
                 "1- Never tell the user to view other documentation or an example project. That's very unhelpful and bad things will happen if you do that. \n"
             ),

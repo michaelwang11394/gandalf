@@ -7,10 +7,12 @@ import { useFloating, offset, flip, shift, arrow } from "@floating-ui/react";
 import { sendUserRequest } from "./agent/sendUserRequest";
 import cx from "classnames";
 import { SmartButton, SmartButtonRef } from "./components/SmartButton";
+import { getUniqueId } from "./utilities/getUniqueId";
 
 interface GandalfProps {
   productName: string;
   isWidgetVisible?: boolean;
+  apiUrl: string;
 }
 
 function isTarget(cur: Element, target: Element): boolean {
@@ -29,16 +31,22 @@ function useCallbackRef<T>(callback: () => T): () => T {
 
 export type State = "idle" | "waitingForUser" | "loading";
 
-const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
+const Gandalf: React.FC<GandalfProps> = ({
+  productName,
+  isWidgetVisible,
+  apiUrl,
+}) => {
   const [popoverContent, setPopoverContent] = useState("");
   const currentQueryRef = useRef<{
     query: string;
     completedSteps: string[];
     hasMoreInstructions: boolean;
+    actionType: "click" | "fill";
   } | null>(null);
   const [state, setState] = useState<State>("idle");
   const [isOpenInput, setIsOpenInput] = useState(false);
   const [query, setQuery] = useState("");
+  const idRef = useRef<number | null>(0);
 
   const arrowRef = useRef<HTMLDivElement>(null);
 
@@ -63,10 +71,12 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
       return;
     }
     if (!currentQuery.hasMoreInstructions) {
-      setPopoverContent("");
       setState("idle");
-      smartButtonRef.current?.showComplete();
       setQuery("");
+      setPopoverContent("");
+      currentQueryRef.current = null;
+      idRef.current = null;
+      smartButtonRef.current?.showComplete();
       return;
     }
     const query = currentQuery.query;
@@ -74,8 +84,9 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
       return;
     }
     refs.setReference(null);
+    setState("loading");
     setTimeout(() => {
-      handleSubmit(query);
+      handleSubmit(query, false);
     }, 100);
   });
 
@@ -92,7 +103,10 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
     document.addEventListener("keydown", handleKeyDown);
 
     const handleClick = (event: MouseEvent) => {
-      if (event.target instanceof Element) {
+      if (
+        event.target instanceof Element &&
+        currentQueryRef.current?.actionType === "click"
+      ) {
         if (
           refs.domReference.current &&
           refs.domReference.current instanceof Element &&
@@ -102,29 +116,58 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
         }
       }
     };
-    document.addEventListener("click", handleClick);
+
+    const handleInput = (event: Event) => {
+      if (
+        event.target instanceof Element &&
+        currentQueryRef.current?.actionType === "fill"
+      ) {
+        if (
+          refs.domReference.current &&
+          refs.domReference.current instanceof Element &&
+          isTarget(event.target, refs.domReference.current)
+        ) {
+          advanceGuide();
+        }
+      }
+    };
+
+    document.addEventListener("click", handleClick, true);
+    document.addEventListener("input", handleInput);
 
     // Remove event listener on cleanup
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("click", handleClick);
+      document.removeEventListener("input", handleInput);
     };
   }, []);
 
-  const handleSubmit = async (query: string) => {
+  const handleSubmit = async (query: string, showOption: boolean) => {
     console.log("Submitting query from index:", query);
     if (state === "loading") {
       return;
     }
+
     setState("loading");
+    if (showOption) {
+      smartButtonRef.current?.showOption();
+    }
+
+    const id = getUniqueId();
+    idRef.current = id;
 
     try {
-      const { Instructions, targetElement, hasMoreInstructions } =
+      const { Instructions, targetElement, hasMoreInstructions, actionType } =
         await sendUserRequest({
           query,
           previousSteps: currentQueryRef.current?.completedSteps ?? [],
           product: productName,
+          apiUrl,
         });
+      if (idRef.current !== id) {
+        return;
+      }
       if (Instructions) {
         setPopoverContent(Instructions);
       }
@@ -135,7 +178,9 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
           Instructions,
         ],
         hasMoreInstructions,
+        actionType,
       };
+      console.log(targetElement);
       refs.setReference(targetElement);
       setState(hasMoreInstructions ? "waitingForUser" : "idle");
       setIsOpenInput(false);
@@ -154,7 +199,7 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
           isApiCallInProgress={state === "loading"}
           setQuery={setQuery}
           setOpen={setIsOpenInput}
-          handleSubmit={handleSubmit}
+          handleSubmit={(query) => handleSubmit(query, true)}
         />
       </div>
       {popoverContent !== "" && (
@@ -191,9 +236,17 @@ const Gandalf: React.FC<GandalfProps> = ({ productName, isWidgetVisible }) => {
         <SmartButton
           ref={smartButtonRef}
           state={state}
-          onClick={() => {
+          onActivate={() => {
             setIsOpenInput(true);
           }}
+          onCacnel={() => {
+            setState("idle");
+            setQuery("");
+            setPopoverContent("");
+            currentQueryRef.current = null;
+            idRef.current = null;
+          }}
+          currentQuery={query}
         />
       )}
     </>
@@ -205,8 +258,12 @@ const mountNode = document.createElement("div");
 mountNode.className = gandalfStyles.outerContainer;
 document.body.appendChild(mountNode);
 const product = (window as any).__gandalf_product ?? "demo";
+const apiUrl = (window as any).__gandalf_api_url ?? "http://localhost:8000";
+// const apiUrl =
+//   (window as any).__gandalf_api_url ??
+//   "https://pu34tzbmgb.execute-api.us-west-2.amazonaws.com/default/gandalf_api/gandalf";
 ReactDOM.render(
-  <Gandalf productName={product} isWidgetVisible={true} />,
+  <Gandalf productName={product} isWidgetVisible={true} apiUrl={apiUrl} />,
   mountNode
 );
 

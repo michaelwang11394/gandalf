@@ -6,12 +6,14 @@ type SendUserRequestArgs = {
   product: string;
   query: string;
   previousSteps: string[];
+  apiUrl: string;
 };
 
 export async function sendUserRequest({
   product,
   query,
   previousSteps,
+  apiUrl,
 }: SendUserRequestArgs) {
   const domTreeString = serializeDocument(
     parseTree(document.documentElement.outerHTML)
@@ -66,7 +68,7 @@ export async function sendUserRequest({
 
   console.log(formData);
 
-  const response = await fetch("http://localhost:8000/gandalf", {
+  const response = await fetch(`${apiUrl}/gandalf`, {
     method: "POST",
     body: formData,
   });
@@ -77,15 +79,9 @@ export async function sendUserRequest({
 
   const resultObject = JSON.parse(jsonString);
   console.log("Result Object:", resultObject);
-  const { Instructions, itemId, hasMoreInstructions } = resultObject;
-  console.log(
-    "Instructions:",
-    Instructions,
-    "itemId:",
-    itemId,
-    "hasMoreInstructions:",
-    hasMoreInstructions
-  );
+  const { Instructions, itemId, hasMoreInstructions, actionType } =
+    resultObject;
+  console.log(resultObject);
 
   // Determine the target for the popover based on availability and document presence
   const targetElement =
@@ -99,5 +95,6 @@ export async function sendUserRequest({
     Instructions,
     targetElement,
     hasMoreInstructions,
+    actionType,
   };
 }
