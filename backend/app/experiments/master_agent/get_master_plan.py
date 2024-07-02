@@ -20,13 +20,12 @@ def get_master_plan(product: str, user_input: str):
             "role": "system",
             "content": (
                 f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, and you will be given relevent product context from documentation. Return for the user a complete set of instructions to fix the issue. \n"
-                "You must return the instructions in the correct format or else bad things might happen.\n"
-                "Your job is to return the following:\n"
-                "1- A list of steps, each containing a step number and an instruction describing how to complete that step.\n"
-                '2- You must ONLY return the following JSON format: { "steps": [{ "stepNumber": 1, "instruction": "..." }, { "stepNumber": 2, "instruction": "..." }, ...]} and nothing else.\n'
-                "3- Ensure all steps are included in a single JSON structure.\n"
-                "4- Only give steps that can be done in the product's interface. Do not provide steps that require code or other external tools.\n"
-                "5- Do NOT provide any code snippets or code examples. Just text instructions are great.\n"
+                "Your job is to return a summarized plan only on the action that the user can take in the product web app to resolve their issue.\n"
+                "Do so in 2 steps. In the first step, come up with all of the relevant instructions. In the second step, extract the instructions that can be performed within the product's web interface, which should exclude code samples, linkes to tutorials or docs.\n"
+                "### Step 1: Complete Set of Instructions:\n"
+                "..."
+                "### Step 2: Extracted In-Web-App-Product Steps\n"
+                "..."
             ),
         },
         {
@@ -50,5 +49,10 @@ def get_master_plan(product: str, user_input: str):
     print(f"Ppenai took {time.time() - start} seconds to retreive the master plan")
 
     master_plan = response.choices[0].message.content
-    master_plan = master_plan.removeprefix("```json\n").removesuffix("\n```")
+    master_plan = (
+        master_plan.removeprefix("```json\n")
+        .removesuffix("\n```")
+        .split("### Step 2: Extracted In-Web-App-Product Steps\n")
+        .pop()
+    )
     return master_plan

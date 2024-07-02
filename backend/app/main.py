@@ -79,6 +79,7 @@ async def index(
     product: str = Form(...),
     user_input: str = Form(...),
     screen_layout: str = Form(...),
+    current_plan: str = Form(None),
     screenshot: UploadFile = File(...),
     previous_steps_json: str = Form(...),
 ):
@@ -86,10 +87,10 @@ async def index(
     # Save the uploaded file temporarily
     unique_id = uuid.uuid4()
     file_path = f"temp/{unique_id}_{screenshot.filename}"
-
+    
     # Get master plan for the product
-    master_plan = get_master_plan(product=product, user_input=user_input)
-
+    master_plan = get_master_plan(product=product, user_input=user_input) if current_plan is None else current_plan
+    
     try:
         print(f"uploading screenshot {file_path}")
         start = time.time()

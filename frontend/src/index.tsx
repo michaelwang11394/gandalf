@@ -84,6 +84,7 @@ const Gandalf: React.FC<GandalfProps> = ({
     completedSteps: string[];
     hasMoreInstructions: boolean;
     actionType: "click" | "fill";
+    currentPlan: string;
   } | null>(null);
   const [state, setState] = useState<State>("idle");
   const [isOpenInput, setIsOpenInput] = useState(false);
@@ -201,13 +202,19 @@ const Gandalf: React.FC<GandalfProps> = ({
     idRef.current = id;
 
     try {
-      const { Instructions, targetElement, hasMoreInstructions, actionType } =
-        await sendUserRequest({
-          query,
-          previousSteps: currentQueryRef.current?.completedSteps ?? [],
-          product: productName,
-          apiUrl,
-        });
+      const {
+        Instructions,
+        targetElement,
+        hasMoreInstructions,
+        actionType,
+        updatedPlan,
+      } = await sendUserRequest({
+        query,
+        previousSteps: currentQueryRef.current?.completedSteps ?? [],
+        product: productName,
+        apiUrl,
+        currentPlan: currentQueryRef.current?.currentPlan,
+      });
       if (idRef.current !== id) {
         return;
       }
@@ -222,6 +229,7 @@ const Gandalf: React.FC<GandalfProps> = ({
         ],
         hasMoreInstructions,
         actionType,
+        currentPlan: updatedPlan,
       };
       console.log(targetElement);
       refs.setReference(targetElement);
