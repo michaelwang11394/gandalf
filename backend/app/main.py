@@ -34,6 +34,7 @@ from app.experiments.master_agent.master_agent import (
     bucket_name,
     supabase,
 )
+from app.experiments.master_agent.get_master_plan import get_master_plan
 
 
 class TimeoutMiddleware(BaseHTTPMiddleware):
@@ -85,6 +86,10 @@ async def index(
     # Save the uploaded file temporarily
     unique_id = uuid.uuid4()
     file_path = f"temp/{unique_id}_{screenshot.filename}"
+
+    # Get master plan for the product
+    master_plan = get_master_plan(product=product, user_input=user_input)
+
     try:
         print(f"uploading screenshot {file_path}")
         start = time.time()
@@ -96,6 +101,7 @@ async def index(
 
         result = get_instruction(
             product=product,
+            master_plan=master_plan,
             file_path=file_path,
             user_input=user_input,
             previous_steps=json.loads(previous_steps_json),

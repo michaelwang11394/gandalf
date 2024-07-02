@@ -15,6 +15,7 @@ bucket_name = "screenshots"
 
 def get_instruction(
     product: str,
+    master_plan: str,
     previous_steps: List[str],
     file_path: str,
     user_input: str,
@@ -23,8 +24,6 @@ def get_instruction(
     # Get the signed URL of the uploaded file
     signed_url = supabase.storage.from_(bucket_name).create_signed_url(file_path, 36000)
 
-    # Get master plan
-    master_plan = get_master_plan(product=product, user_input=user_input)
     print(f"Master plan: {master_plan}")
 
     # Construct the messages for the OpenAI API call
