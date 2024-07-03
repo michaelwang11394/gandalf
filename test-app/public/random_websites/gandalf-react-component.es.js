@@ -17099,7 +17099,7 @@ function zC(A, e) {
   });
 }
 function QT(A, e, t, n) {
-  var s;
+  var l;
   const r = {
     itemId: n,
     top: Math.round(e.top),
@@ -17109,18 +17109,25 @@ function QT(A, e, t, n) {
     element: A
   }, i = t.backgroundColor;
   i && i !== "rgba(0, 0, 0, 0)" && (r.backgroundColor = i);
-  const o = (s = A.textContent) == null ? void 0 : s.trim();
+  const o = (l = A.textContent) == null ? void 0 : l.trim();
   o && (r.text = o);
-  let a = A.parentElement;
-  for (; a && a !== document.body && a.childElementCount === 1; ) {
-    const l = a.getBoundingClientRect();
-    if (l.left !== e.left || l.right !== e.right || l.top !== e.top || l.bottom !== e.bottom)
+  const a = (() => {
+    if (A instanceof HTMLInputElement)
+      return A.checked;
+    const u = A.querySelector('input[type="checkbox"]');
+    return u ? u.checked : null;
+  })();
+  a !== null && (r.checked = a);
+  let s = A.parentElement;
+  for (; s && s !== document.body && s.childElementCount === 1; ) {
+    const u = s.getBoundingClientRect();
+    if (u.left !== e.left || u.right !== e.right || u.top !== e.top || u.bottom !== e.bottom)
       break;
     if (!r.backgroundColor) {
-      const u = window.getComputedStyle(a).backgroundColor;
-      u && u !== "rgba(0, 0, 0, 0)" && (r.backgroundColor = u);
+      const c = window.getComputedStyle(s).backgroundColor;
+      c && c !== "rgba(0, 0, 0, 0)" && (r.backgroundColor = c);
     }
-    r.element = a, a = a.parentElement;
+    r.element = s, s = s.parentElement;
   }
   return r;
 }

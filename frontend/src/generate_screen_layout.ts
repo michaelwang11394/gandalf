@@ -7,6 +7,7 @@ type ScreenLayoutItem = {
   height: number;
   backgroundColor?: string;
   text?: string;
+  checked?: boolean;
 };
 
 const IncludedTags = new Set(["BUTTON", "A", "INPUT", "SELECT", "TEXTAREA"]);
@@ -40,6 +41,20 @@ function elementToInfo(
   const text = element.textContent?.trim();
   if (text) {
     info.text = text;
+  }
+
+  const checked = (() => {
+    if (element instanceof HTMLInputElement) {
+      return element.checked;
+    }
+    const innerCheckbox = element.querySelector('input[type="checkbox"]');
+    if (innerCheckbox) {
+      return (innerCheckbox as HTMLInputElement).checked;
+    }
+    return null;
+  })();
+  if (checked !== null) {
+    info.checked = checked;
   }
 
   let cur = element.parentElement;

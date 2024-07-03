@@ -43,7 +43,7 @@ def get_instruction(
                 "4- An updated plan consisting of the remaining steps.\n"
                 "5- The plan will most likely be incorrect at specific steps, so you should consider the user's current state and the steps they have taken so far to provide the correct next step. \n"
                 "6- Omit actions in the plan that requires going out of the product or are related to docs or tutorials.\n"
-                '7- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": , "actionType": "click" | "fill", "updatedPlan": } and nothing else.\n'
+                '7- You must ONLY return the following JSON format: { "Instructions": , "itemId": , "hasMoreInstructions": , "actionType": "click" | "fill", "updatedPlan": } and nothing else. No explanation before or after.\n'
                 'An example of a properly formatted response would be: { "Instructions": "Click the submit button", "itemId": 3, "hasMoreInstructions": false, "actionType": "click", "updatedPlan": "..." }\n'
             ),
         },
