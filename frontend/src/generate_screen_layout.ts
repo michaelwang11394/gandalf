@@ -3,8 +3,6 @@ type ScreenLayoutItem = {
   itemId: number;
   top: number;
   left: number;
-  width: number;
-  height: number;
   backgroundColor?: string;
   text?: string;
   checked?: boolean;
@@ -30,8 +28,6 @@ function elementToInfo(
     itemId: id,
     top: Math.round(rect.top),
     left: Math.round(rect.left),
-    width: Math.round(rect.width),
-    height: Math.round(rect.height),
     element,
   };
   const backgroundColor = styles.backgroundColor;
@@ -90,6 +86,9 @@ export function generateScreenLayout(): ScreenLayoutItem[] {
       return false;
     }
     const styles = window.getComputedStyle(element);
+    if (styles.opacity === "0") {
+      return false;
+    }
     const cursor = styles.cursor;
     if (
       element.checkVisibility() &&

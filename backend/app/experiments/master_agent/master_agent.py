@@ -34,8 +34,6 @@ def get_instruction(
             "content": (
                 f"You are an expert customer support agent for {product}. The user will describe an issue they are facing, "
                 "and you will be given a screenshot of the user's current page, a json representation of their page that identifies each various ui elements and their approximate position, the steps they have taken so far, and a highly generaalized plan of how to solve the issue but may have accuracy issues.\n"
-                "Here is the summarized plan. Please remember that it may be incorrect so you should use your best judgement \n"
-                f"{master_plan}"
                 "You have one job and you must return it in the correct format or else bad things might happen. Your job is to return the following:\n"
                 "1- The text Instruction for the next step they must take to complete their task or solve their issue based on their current progress. You should also consider the most recent state and instructions given in the past when giving the user the next step. \n"
                 "2- The itemId of the element they need to click, fill, or take any action on. Again, you are ONLY focused on the NEXT step (1 step) that the user must take, given their current status to resolve the issue.\n"
@@ -55,7 +53,7 @@ def get_instruction(
                 {"type": "image_url", "image_url": {"url": signed_url["signedURL"]}},
                 {
                     "type": "text",
-                    "text": f"JSON representation of a subset of elements in the current page layout:\n {screen_layout} that should match the screenshot.",
+                    "text": f"JSON representation of a subset of elements in the current page layout that should match the screenshot:\n {screen_layout} ",
                 },
                 {
                     "type": "text",
