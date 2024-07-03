@@ -212,6 +212,8 @@
 
 .stateText {
   font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .optionsButton {
@@ -226,6 +228,22 @@
   background: linear-gradient(135deg,
       rgba(200, 80, 192, 0.8) 0,
       rgba(255, 204, 112, 0.8) 100%);
+}
+
+.nextButton {
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+  font-size: 10px;
+  color: white;
+
+  background: linear-gradient(135deg,
+      rgba(80, 200, 120, 0.8) 0%,
+      rgba(65, 88, 208, 0.8) 100%);
+  ;
 }
 
 @keyframes optionAppear {

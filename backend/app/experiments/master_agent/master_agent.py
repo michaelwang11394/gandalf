@@ -84,5 +84,5 @@ def get_instruction(
     print(f"openai took {time.time() - start} seconds")
 
     result = response.choices[0].message.content
-    result = result.removeprefix("```json\n").removesuffix("\n```")
+    result = result.split("```json\n", 1)[-1].rsplit("\n```", 1)[0]
     return result

@@ -301,6 +301,7 @@ const Gandalf: React.FC<GandalfProps> = ({
           onActivate={() => {
             setIsOpenInput(true);
           }}
+          onAdvance={advanceGuide}
           onCacnel={() => {
             setState("idle");
             setQuery("");

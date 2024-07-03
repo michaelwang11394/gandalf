@@ -49,5 +49,6 @@ def get_master_plan(product: str, user_input: str):
     print(f"Ppenai took {time.time() - start} seconds to retreive the master plan")
 
     master_plan = response.choices[0].message.content
-    master_plan = master_plan.removeprefix("```json\n").removesuffix("\n```").split("### Step 2: Extracted In-Web-App-Product Steps\n").pop()
+    print("master plan response", response.choices[0].message.content)
+    master_plan = master_plan.split("### Step 2: Extracted In-Web-App-Product Steps\n").pop()
     return master_plan

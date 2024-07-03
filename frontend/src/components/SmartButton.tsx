@@ -14,6 +14,7 @@ type SmartButtonProps = {
   currentQuery: string;
   onActivate: () => void;
   onCacnel: () => void;
+  onAdvance: () => void;
 };
 
 export type SmartButtonRef = {
@@ -22,7 +23,7 @@ export type SmartButtonRef = {
 };
 
 export const SmartButton = forwardRef<SmartButtonRef, SmartButtonProps>(
-  ({ state, currentQuery, onActivate, onCacnel }, ref) => {
+  ({ state, currentQuery, onActivate, onCacnel, onAdvance }, ref) => {
     const [withComplete, setWithComplete] = useState(false);
     const completeTimerRef = useRef<NodeJS.Timeout>();
     const [showOption, setShowOption] = useState(false);
@@ -90,6 +91,18 @@ export const SmartButton = forwardRef<SmartButtonRef, SmartButtonProps>(
                 {state === "loading"
                   ? "Loading..."
                   : "Waiting for user action..."}
+                {state === "waitingForUser" && (
+                  <button
+                    className={gandalfStyles.nextButton}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      onAdvance();
+                    }}
+                  >
+                    ▶
+                  </button>
+                )}
               </div>
               <button
                 className={gandalfStyles.optionsButton}
