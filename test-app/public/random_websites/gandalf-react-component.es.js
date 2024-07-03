@@ -17091,13 +17091,7 @@ const Mh = (A) => {
 function mT(A) {
   return new XMLSerializer().serializeToString(A);
 }
-const vT = /* @__PURE__ */ new Set([
-  "BUTTON",
-  "A",
-  "INPUT",
-  "SELECT",
-  "TEXTAREA"
-]);
+const vT = /* @__PURE__ */ new Set(["BUTTON", "A", "INPUT", "SELECT", "TEXTAREA"]);
 function zC(A, e) {
   A.childNodes.forEach((t) => {
     t instanceof HTMLElement && e(t) && zC(t, e);
@@ -17136,7 +17130,7 @@ function QT() {
     if (t.attributes.getNamedItem("data-isgandalf"))
       return !1;
     const r = window.getComputedStyle(t), n = r.cursor;
-    if (t.checkVisibility() && (vT.has(t.tagName) || t.onclick != null || n == "pointer" || n == "grab")) {
+    if (t.checkVisibility() && (vT.has(t.tagName) || t.onclick && !t.onclick.toString().endsWith("(){}") || n == "pointer" || n == "grab")) {
       const i = t.getBoundingClientRect();
       return i.width > 0 && i.height > 0 && A.push(CT(t, i, r, e++)), !1;
     }
@@ -17280,7 +17274,10 @@ let UT = 0;
 function ET() {
   return UT++;
 }
-function IT(A, e) {
+function IT() {
+  return document.querySelector(".shimmering-loader") !== null;
+}
+function HT(A, e) {
   const t = new MutationObserver((r) => {
     r.some((n) => n.removedNodes.length > 0) && (document.contains(A) || (t.disconnect(), e()));
   });
@@ -17292,15 +17289,15 @@ function IT(A, e) {
 function Ph(A, e) {
   return e === A || e.contains(A);
 }
-function HT(A) {
+function xT(A) {
   const e = Q.useRef(A);
   return e.current = A, Q.useCallback(() => e.current(), []);
 }
-function xT() {
+function ST() {
   const A = Q.useRef(null);
   return {
     observe(e, t) {
-      this.disconnect(), A.current = IT(e, t);
+      this.disconnect(), A.current = HT(e, t);
     },
     disconnect() {
       const e = A.current;
@@ -17308,13 +17305,13 @@ function xT() {
     }
   };
 }
-const ST = ({
+const LT = ({
   productName: A,
   isWidgetVisible: e,
   apiUrl: t
 }) => {
   var F, U;
-  const [r, n] = Q.useState(""), i = Q.useRef(null), [o, a] = Q.useState("idle"), [s, l] = Q.useState(!1), [u, c] = Q.useState(""), f = Q.useRef(0), g = xT(), p = Q.useRef(null), w = Q.useRef(null), { refs: y, floatingStyles: B, middlewareData: d, placement: h } = F1({
+  const [r, n] = Q.useState(""), i = Q.useRef(null), [o, a] = Q.useState("idle"), [s, l] = Q.useState(!1), [u, c] = Q.useState(""), f = Q.useRef(0), g = ST(), p = Q.useRef(null), w = Q.useRef(null), { refs: y, floatingStyles: B, middlewareData: d, placement: h } = F1({
     middleware: [a1(10), l1(), s1(), u1({ element: p })],
     whileElementsMounted: A1
   }), m = {
@@ -17322,7 +17319,7 @@ const ST = ({
     right: "left",
     bottom: "top",
     left: "right"
-  }[h.split("-")[0]] || "top", C = HT(() => {
+  }[h.split("-")[0]] || "top", C = xT(() => {
     var P;
     const E = i.current;
     if (!E)
@@ -17332,9 +17329,12 @@ const ST = ({
       return;
     }
     const S = E.query;
-    S && (a("loading"), setTimeout(() => {
+    S && (a("loading"), (async () => {
+      do
+        await new Promise((N) => setTimeout(N, 500));
+      while (IT());
       v(S, !1);
-    }, 100));
+    })());
   });
   Q.useEffect(() => {
     const E = (N) => {
@@ -17449,8 +17449,8 @@ const ST = ({
 }, bB = document.createElement("div");
 bB.className = HA.outerContainer;
 document.body.appendChild(bB);
-const LT = window.__gandalf_product ?? "demo", bT = window.__gandalf_api_url ?? "http://localhost:8000";
+const bT = window.__gandalf_product ?? "demo", TT = window.__gandalf_api_url ?? "http://localhost:8000";
 CF.render(
-  /* @__PURE__ */ V.jsx(ST, { productName: LT, isWidgetVisible: !0, apiUrl: bT }),
+  /* @__PURE__ */ V.jsx(LT, { productName: bT, isWidgetVisible: !0, apiUrl: TT }),
   bB
 );
